@@ -2,26 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c3edffd-f03b-4e78-a4dc-9fb3e43437f0" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\yanan\Desktop\yanan.githup.com\html5\build.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\yanan\Desktop\yanan.githup.com\html5\game.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\yanan\Desktop\yanan.githup.com\html5\index.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\yanan\Desktop\yanan.githup.com\html5\project.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\yanan\Desktop\yanan.githup.com\html5\res\HelloWorld.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\yanan\Desktop\yanan.githup.com\html5\res\bg.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\yanan\Desktop\yanan.githup.com\html5\res\bg2.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\yanan\Desktop\yanan.githup.com\html5\res\candy\c0.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\yanan\Desktop\yanan.githup.com\html5\res\candy\c1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\yanan\Desktop\yanan.githup.com\html5\res\candy\c2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\yanan\Desktop\yanan.githup.com\html5\res\candy\c3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\yanan\Desktop\yanan.githup.com\html5\res\candy\c4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\yanan\Desktop\yanan.githup.com\html5\res\flare.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\yanan\Desktop\yanan.githup.com\html5\res\loading.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\yanan\Desktop\yanan.githup.com\html5\res\menu.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\yanan\Desktop\yanan.githup.com\html5\res\qiu.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\yanan\Desktop\yanan.githup.com\html5\res\startbg.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\yanan\Desktop\yanan.githup.com\html5\res\title.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\yanan\Desktop\yanan.githup.com\html5\res\ui\lv.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\yanan\Desktop\yanan.githup.com\html5\res\wrap.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="yanan.githup.com.iws" />
@@ -46,8 +26,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5294118">
-              <caret line="15" column="76" selection-start-line="15" selection-start-column="76" selection-end-line="15" selection-end-column="76" />
+            <state vertical-scroll-proportion="0.64705884">
+              <caret line="17" column="95" selection-start-line="17" selection-start-column="95" selection-end-line="17" selection-end-column="95" />
               <folding />
             </state>
           </provider>
@@ -212,8 +192,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5294118">
-          <caret line="15" column="76" selection-start-line="15" selection-start-column="76" selection-end-line="15" selection-end-column="76" />
+        <state vertical-scroll-proportion="0.64705884">
+          <caret line="17" column="95" selection-start-line="17" selection-start-column="95" selection-end-line="17" selection-end-column="95" />
           <folding />
         </state>
       </provider>
