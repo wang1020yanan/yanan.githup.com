@@ -30,7 +30,7 @@ bookStoreCtrls.controller('InformalEssayCtrl', ['$scope','$http',
         $scope.height = Math.max(document.documentElement.clientHeight, document.body.offsetHeight) - 150;
         //$scope.pageClass="list";
         $scope.loading="加载更多";
-        $http.post("./data/informalEssay.json").success(function(data){
+        $http.get("./data/informalEssay.json").success(function(data){
             var num=10;
             var add=num;
             $scope.allInfo=data.pro;
@@ -57,11 +57,11 @@ bookStoreCtrls.controller('InformalEssayCtrl', ['$scope','$http',
             //$scope.infos=data.pro;
 
         });
-        $http.post("./data/down.json").success(function(data){
+        $http.get("./data/down.json").success(function(data){
             $scope.allTool=data.pro;
             //$scope.infos=data.pro;
         });
-        $http.post("./data/link.json").success(function(data){
+        $http.get("./data/link.json").success(function(data){
             $scope.allLink=data.pro;
         })
 
@@ -69,7 +69,7 @@ bookStoreCtrls.controller('InformalEssayCtrl', ['$scope','$http',
 ]);
 bookStoreCtrls.controller('DetailCtrl', ['$scope','$http','$stateParams',
     function($scope,$http,$stateParams){
-        $http.post("./data/informalEssay.json").success(function(data){
+        $http.get("./data/informalEssay.json").success(function(data){
             $scope.allInfo=data.pro;
             $scope.newList=$scope.allInfo[$stateParams.id];
         });
