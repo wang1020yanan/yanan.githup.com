@@ -1,6 +1,7 @@
 body{
     /*background: #efc198;*/
-    /*background-image: url("../imgs/bg.png");*/
+    background-image: url("../imgs/bg.png");
+    color: #ffffff;
 }
 .my-title{
     padding-top: 120px;

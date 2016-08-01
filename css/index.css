@@ -302,3 +302,6 @@ body{
         width: 100%;
     }
 }
+.navbar-brand:hover{
+    background: #ccc;
+}
