@@ -10,21 +10,21 @@ bookStoreCtrls.controller('HelloCtrl', ['$scope',
     }
 ]);
 
-bookStoreCtrls.controller('BookListCtrl', ['$scope',
-    function($scope) {
-        $scope.books = [{
-            title: "《坏蛋是怎样炼成的》",
-            author: "YANAN"
-        }, {
-            title: "《开发应用》",
-            author: "YANAN"
-        }, {
-            title: "《用AngularJS开发下一代WEB应用》",
-            author: "YANAN"
-        }];
-        $scope.pageClass="list";
-    }
-]);
+//bookStoreCtrls.controller('BookListCtrl', ['$scope',
+//    function($scope) {
+//        $scope.books = [{
+//            title: "《坏蛋是怎样炼成的》",
+//            author: "YANAN"
+//        }, {
+//            title: "《开发应用》",
+//            author: "YANAN"
+//        }, {
+//            title: "《用AngularJS开发下一代WEB应用》",
+//            author: "YANAN"
+//        }];
+//        $scope.pageClass="list";
+//    }
+//]);
 bookStoreCtrls.controller('InformalEssayCtrl', ['$scope','$http',
     function($scope,$http){
         $scope.height = Math.max(document.documentElement.clientHeight, document.body.offsetHeight) - 150;
@@ -67,11 +67,12 @@ bookStoreCtrls.controller('InformalEssayCtrl', ['$scope','$http',
 
     }
 ]);
-bookStoreCtrls.controller('DetailCtrl', ['$scope','$http','$stateParams',
-    function($scope,$http,$stateParams){
+bookStoreCtrls.controller('DetailCtrl', ['$scope','$http','$stateParams','$sce',
+    function($scope,$http,$stateParams,$sce){
         $http.get("./data/informalEssay.json").success(function(data){
             $scope.allInfo=data.pro;
             $scope.newList=$scope.allInfo[$stateParams.id];
+            $scope.detailHtml=$sce.trustAsHtml($scope.newList.abstract);
         });
     }
 ]);
