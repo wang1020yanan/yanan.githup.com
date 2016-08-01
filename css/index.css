@@ -298,4 +298,7 @@ body{
        overflow-y:visible!important;
        height: auto!important;
    }
+    .all-contain img{
+        width: 100%;
+    }
 }
