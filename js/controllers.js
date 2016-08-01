@@ -1,0 +1,81 @@
+var bookStoreCtrls = angular.module('bookStoreCtrls', []);
+
+bookStoreCtrls.controller('HelloCtrl', ['$scope',
+    function($scope) {
+        //$scope.height = Math.max(document.documentElement.clientHeight, document.body.offsetHeight)+200;
+        $scope.greeting = {
+            text: 'Hello'
+        };
+        $scope.pageClass="index";
+    }
+]);
+
+bookStoreCtrls.controller('BookListCtrl', ['$scope',
+    function($scope) {
+        $scope.books = [{
+            title: "《坏蛋是怎样炼成的》",
+            author: "YANAN"
+        }, {
+            title: "《开发应用》",
+            author: "YANAN"
+        }, {
+            title: "《用AngularJS开发下一代WEB应用》",
+            author: "YANAN"
+        }];
+        $scope.pageClass="list";
+    }
+]);
+bookStoreCtrls.controller('InformalEssayCtrl', ['$scope','$http',
+    function($scope,$http){
+        $scope.height = Math.max(document.documentElement.clientHeight, document.body.offsetHeight) - 150;
+        //$scope.pageClass="list";
+        $scope.loading="加载更多";
+        $http.post("./data/informalEssay.json").success(function(data){
+            var num=10;
+            var add=num;
+            $scope.allInfo=data.pro;
+            $scope.infos=[];
+            for(var i=0;i<num;i++){
+                $scope.infos.push($scope.allInfo[i])
+            }
+            $scope.add=function(){
+                if($scope.allInfo.length-add>=0){
+                    $scope.loading="加载中...";
+                    for(var j=0;j<num;j++){
+                        if($scope.allInfo[add+j]!==undefined){
+                            $scope.infos.push($scope.allInfo[add+j]);
+                            $scope.loading="加载更多";
+                        }else{
+                            $scope.loading="已加载全部";
+                        }
+                    }
+                }else{
+                    $scope.loading="已加载全部";
+                }
+                add+=num;
+            };
+            //$scope.infos=data.pro;
+
+        });
+        $http.post("./data/down.json").success(function(data){
+            $scope.allTool=data.pro;
+            //$scope.infos=data.pro;
+        });
+        $http.post("./data/link.json").success(function(data){
+            $scope.allLink=data.pro;
+        })
+
+    }
+]);
+bookStoreCtrls.controller('DetailCtrl', ['$scope','$http','$stateParams',
+    function($scope,$http,$stateParams){
+        $http.post("./data/informalEssay.json").success(function(data){
+            $scope.allInfo=data.pro;
+            $scope.newList=$scope.allInfo[$stateParams.id];
+        });
+    }
+]);
+
+/**
+ * 这里接着往下写，如果控制器的数量非常多，需要分给多个开发者，可以借助于grunt来合并代码
+ */

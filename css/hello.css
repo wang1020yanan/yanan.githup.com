@@ -1,0 +1,17 @@
+body{
+    /*background: #efc198;*/
+    /*background-image: url("../imgs/bg.png");*/
+}
+.my-title{
+    padding-top: 120px;
+}
+.my-btn{
+    padding-top: 50px;
+    padding-bottom: 100px;
+    /*margin-bottom: 100px;*/
+}
+.my-btn a{
+    display: block;
+    /*width: 100%;*/
+    margin-top: 10px;
+}
