@@ -72,7 +72,7 @@ bookStoreCtrls.controller('DetailCtrl', ['$scope','$http','$stateParams','$sce',
         $http.get("./data/informalEssay.json").success(function(data){
             $scope.allInfo=data.pro;
             $scope.newList=$scope.allInfo[$stateParams.id];
-            $scope.detailHtml=$sce.trustAsHtml($scope.newList.abstract);
+            $scope.detailHtml=$sce.trustAsHtml($scope.newList.content);
         });
     }
 ]);

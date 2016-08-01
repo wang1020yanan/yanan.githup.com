@@ -2,8 +2,10 @@
 <div class="alert alert-warning" role="alert">
     <h2>
         <!--<i class="fa fa-edit"></i>-->
-        {{newList.id}}：{{newList.title}}</h2>
-    <p class="text-r"><a href="#/informalEssay/infos">返回列表<<</a></p>
+        {{newList.title}}&nbsp;&nbsp;<small>{{newList.time}}</small></h2>
+</div>
+<div class="alert alert-warning" role="alert">
+    <p class="text-r"><a href="#/informalEssay/infos">返回列表</a></p>
 </div>
 <div class="col-md-12 alert alert-info  all-info"  role="alert">
     <div data-ng-bind-html="detailHtml">
