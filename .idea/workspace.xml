@@ -65,20 +65,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="338" column="1" selection-start-line="338" selection-start-column="1" selection-end-line="338" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.15511551">
+              <caret line="315" column="33" selection-start-line="315" selection-start-column="33" selection-end-line="315" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.21122113">
+            <state vertical-scroll-proportion="0.0">
               <caret line="4" column="77" selection-start-line="4" selection-start-column="77" selection-end-line="4" selection-end-column="77" />
               <folding />
             </state>
@@ -159,8 +159,8 @@
         <option value="$PROJECT_DIR$/tpls/tpls2/infos.html" />
         <option value="$PROJECT_DIR$/css/hello.css" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/css/index.css" />
         <option value="$PROJECT_DIR$/js/app.js" />
+        <option value="$PROJECT_DIR$/css/index.css" />
       </list>
     </option>
   </component>
@@ -740,18 +740,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/index.css">
+    <entry file="file://$PROJECT_DIR$/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="338" column="1" selection-start-line="338" selection-start-column="1" selection-end-line="338" selection-end-column="1" />
+          <caret line="4" column="77" selection-start-line="4" selection-start-column="77" selection-end-line="4" selection-end-column="77" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/app.js">
+    <entry file="file://$PROJECT_DIR$/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21122113">
-          <caret line="4" column="77" selection-start-line="4" selection-start-column="77" selection-end-line="4" selection-end-column="77" />
+        <state vertical-scroll-proportion="0.15511551">
+          <caret line="315" column="33" selection-start-line="315" selection-start-column="33" selection-end-line="315" selection-end-column="33" />
           <folding />
         </state>
       </provider>
