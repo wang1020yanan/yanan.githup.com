@@ -2,7 +2,7 @@ var bookStoreApp = angular.module('bookStoreApp', [
     'ui.router', 'ngAnimate', 'bookStoreCtrls', 'bookStoreFilters',
     'bookStoreServices', 'bookStoreDirectives'
 ]);
-bookStoreApp.config(function($stateProvider, $urlRouterProvider) {
+bookStoreApp.config(function($stateProvider, $urlRouterProvider,$httpProvider) {
     $urlRouterProvider.when("", "hello");
     $stateProvider
         .state("hello", {
@@ -39,23 +39,21 @@ bookStoreApp.config(function($stateProvider, $urlRouterProvider) {
         }).state('/weixin', {
             templateUrl: 'tpls/weixin.html',
             controller: 'BookListCtrl'
-        })
-
+        });
+        $httpProvider.interceptors.push('timestampMarker');
 });
-//bookStoreApp.config(function($routeProvider) {
-//    $routeProvider.when('/hello', {
-//        templateUrl: 'tpls/hello.html',
-//        controller: 'HelloCtrl'
-//    }).when('/list', {
-//        templateUrl: 'tpls/bookList.html',
-//        controller: 'BookListCtrl'
-//    }).when('/weixin', {
-//        templateUrl: 'tpls/weixin.html',
-//        controller: 'BookListCtrl'
-//    }).when('/informalEssay', {
-//       templateUrl: 'tpls/informalEssay.html',
-//       controller: 'InformalEssayCtrl'
-//        }).otherwise({
-//        redirectTo: '/hello'
-//    })
-//});
+bookStoreApp.factory('timestampMarker', ["$rootScope", function ($rootScope) {
+    var timestampMarker = {
+        request: function (config) {
+            $rootScope.loading = true;
+            config.requestTimestamp = new Date().getTime();
+            return config;
+        },
+        response: function (response) {
+            $rootScope.loading = false;
+            response.config.responseTimestamp = new Date().getTime();
+            return response;
+        }
+    };
+    return timestampMarker;
+}]);
