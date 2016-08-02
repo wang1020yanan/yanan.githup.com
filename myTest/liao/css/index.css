@@ -1,0 +1,219 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{
+    margin:0;
+    padding:0
+}
+
+fieldset,img{
+    border:0
+}
+:focus{
+    outline:0
+}
+
+address,caption,cite,code,dfn,em,strong,th,var,optgroup{
+    font-style:normal;
+    font-weight:400
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-size:100%;
+    font-weight:400;
+    font-family:"Microsoft YaHei"
+}
+
+abbr,acronym{
+    border:0;
+    font-variant:normal
+}
+
+code,kbd,samp,tt{
+    font-size:100%
+}
+
+/*input,button,textarea,select{*/
+/**font-size:100%;*/
+/*border:0*/
+/*}*/
+
+body{
+    background:#fff;
+    color:#5e5e5e;
+    font:14px/2em Microsoft YaHei,SimSun,Arial;
+    overflow-x: hidden;
+}
+
+ol,ul{
+    list-style:none
+}
+
+table{
+    border-collapse:collapse;
+    border-spacing:0
+}
+
+caption,th{
+    text-align:left
+}
+
+sup,sub{
+    font-size:100%;
+    vertical-align:baseline
+}
+
+:link,:visited,ins{
+    text-decoration:none
+}
+
+blockquote,q{
+    quotes:none
+}
+
+blockquote:before,blockquote:after,q:before,q:after{
+    content:'';
+    content:none
+}
+a{
+    cursor: pointer;
+}
+/*a:link,a:visited{*/
+    /*color: #959595*/
+/*}*/
+
+a:hover{
+    color:#FFB822
+}
+
+a:active{
+    color:#666
+}
+
+.clearfix:after{
+    content:'\0020';
+    display:block;
+    height:0;
+    clear:both;
+    visibility:hidden
+}
+
+.clearfix{
+    *zoom:1
+}
+
+.l{
+    float:left
+}
+
+.r{
+    float:right
+}
+
+.clear{
+    height:0;
+    overflow:hidden;
+    clear:both
+}
+
+.hide{
+    display:none
+}
+
+.btn.hide{
+    display:none
+}
+
+a.hidefocus{
+    outline:0
+}
+
+button.hidefocus::-moz-focus-inner{
+    border:0
+}
+
+a:focus{
+    outline:0;
+    -moz-outline:0
+}
+
+input,textarea{
+    outline:0
+}
+
+h2{
+    font-size:20px
+}
+
+h3{
+    font-size:16px;
+    line-height:32px
+}
+
+h5{
+    font-size:14px;
+    line-height:28px
+}
+
+/*....reset...*/
+body {
+    font-family: Lato, "Microsoft Jhenghei", "Hiragino Sans GB", "Microsoft YaHei", sans-serif!important;
+    color: #14191e;
+    background: #eeeeee;
+    /*overflow-y:auto;*/
+}
+.text-c{
+    text-align: center;
+}
+.text-r{
+    text-align: right;
+}
+.mymodal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    background: rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+}
+
+.loading {
+    position: absolute;
+    top: 50%;
+    border-radius: 5px;
+    width: 100px;
+    height: 50px;
+    left: 50%;
+    margin-top: -55px;
+    margin-left: -50px;
+    text-align: center;
+    color: #FFB822;
+    font-size: 2em;
+}
+.f-color{
+    color: #FFB822;
+}
+.b-color{
+    background: #FFB822;
+}
+.my-nav{
+    border-radius: 0px!important;
+    margin-bottom: 0;
+    padding: 0;
+   border: none;
+}
+
+/*导航*/
+.my-nav{
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    /* font: bold 14px Montserrat; */
+    text-align: center;
+    display: block;
+    /* padding: 10px 0; */
+    /* width: 60%; */
+    line-height: 50px;
+    margin-bottom: 0;
+    cursor: pointer;
+    text-transform: uppercase;
+}

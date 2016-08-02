@@ -1,0 +1,20 @@
+.error-net{
+    background: #ff4a10;
+    color: #FFFFFF;
+    text-align: center;
+}
+.con-wrap{
+    border: 1px solid #eeeeee;
+    background: #ffffff;
+    color: #727374;
+    font-size: 15px;
+}
+a{
+    color: #727374;
+}
+.new-friend{
+    padding: 2px;
+}
+a:hover{
+    opacity: .5;
+}

@@ -1,0 +1,44 @@
+body{
+    background-image: url('../imgs/boxed-bg.jpg')!important;
+    background-size: cover;
+}
+.my-title{
+    color: #030303!important;
+}
+.info-con{
+    margin-top: 70px;
+    margin-bottom: 80px;
+}
+.all-contain{
+    /*padding: 10px;*/
+    border-radius: 5px;
+    /*background: #ffddd2;*/
+}
+.my-right{
+  /*padding: 0 10px!important;*/
+    background: rgba(0,0,0,0)!important;
+}
+.my-right a{
+    width: 100%;
+    margin: 5px 0;
+}
+.more{
+    margin-bottom: 10px;
+}
+.all-info{
+    padding: 10px;
+    margin-bottom: 10px;
+    /*background: #664338;*/
+
+    /*height: 50px;*/
+    /*background-image: -webkit-gradient(linear, center top, center bottom, from(rgba(255,255,255,0.55)), to(rgba(0,0,0,0.55) 84%));*/
+    /*background-image: -webkit-linear-gradient(top, rgba(255,255,255,0.55), rgba(0,0,0,0.55) 84%);*/
+    /*background-image: -moz-linear-gradient(top, rgba(255,255,255,0.55), rgba(0,0,0,0.55) 84%);*/
+    /*background-image: -o-linear-gradient(top, rgba(255,255,255,0.55), rgba(0,0,0,0.55) 84%);*/
+    /*background-image: -ms-linear-gradient(top, rgba(255,255,255,0.55), rgba(0,0,0,0.55) 84%);*/
+    /*background-image: linear-gradient(to bottom, rgba(255,255,255,0.55), rgba(0,0,0,0.55) 84%);*/
+    /*-webkit-box-shadow: -8px -2px 33px 8px rgba(0,0,0,0.39);*/
+    /*-moz-box-shadow: -8px -2px 33px 8px rgba(0,0,0,0.39);*/
+    /*box-shadow: -8px -2px 33px 8px rgba(0,0,0,0.39);*/
+    border-radius: 5px;
+}
