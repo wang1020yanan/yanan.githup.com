@@ -10,22 +10,6 @@ bookStoreCtrls.controller('HelloCtrl', ['$scope',
         $scope.pageClass="index";
     }
 ]);
-
-//bookStoreCtrls.controller('BookListCtrl', ['$scope',
-//    function($scope) {
-//        $scope.books = [{
-//            title: "《坏蛋是怎样炼成的》",
-//            author: "YANAN"
-//        }, {
-//            title: "《开发应用》",
-//            author: "YANAN"
-//        }, {
-//            title: "《用AngularJS开发下一代WEB应用》",
-//            author: "YANAN"
-//        }];
-//        $scope.pageClass="list";
-//    }
-//]);
 bookStoreCtrls.controller('InformalEssayCtrl', ['$scope','$http',
     function($scope,$http){
         $scope.height = Math.max(document.documentElement.clientHeight, document.body.offsetHeight) - 150;
