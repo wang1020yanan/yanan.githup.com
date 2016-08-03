@@ -1,33 +1,53 @@
 <!doctype html>
 <html ng-app="app">
 <head>
-    <script src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script>
+    <script src="libs/im-sdk/Web_SDK_Base_v2.5.0.js"></script>
+    <script src="libs/im-sdk/Web_SDK_NIM_v2.5.0.js"></script>
+    <script src="libs/im-sdk/Web_SDK_Chatroom_v2.5.0.js"></script>
 </head>
 <body>
-<div ng-controller="myCtrl">
-   {{test1}}
-    <div ng-click='test()'>wewe</div>
-</div>
 <script>
-
-    var app = angular.module('app', []);
-    app.factory('test', function(){
-            return 333
+    var data = {};
+    var nim = NIM.getInstance({
+        // debug: true,
+        appKey: 'b2af4f85848e65ff628d0c65538a5f0f',
+        account: 'uu1',
+        token: 'uuuuuu',
+        onconnect: onConnect,
+        onwillreconnect: onWillReconnect,
+        ondisconnect: onDisconnect,
+        onerror: onError
     });
-    app.controller('myCtrl', function ($scope, test,$compile) {
-        $scope.test1 = test;
-        $scope.userName='Welcome to Angular World!';
-        $scope.test = function test(){
-            console.log('Angular 动态添加元素');
-            var html="<div ng-click='test()'>wewe</div>";
-            var template = angular.element(html);
-            var mobileDialogElement = $compile(template)($scope);
-            angular.element(document.body).append(mobileDialogElement);
-        };
-//通过$compile动态编译html
-
-
-    });
+    function onConnect() {
+        console.log('连接成功');
+    }
+    function onWillReconnect(obj) {
+        // 此时说明 SDK 已经断开连接, 请开发者在界面上提示用户连接已断开, 而且正在重新建立连接
+        console.log('即将重连');
+        console.log(obj.retryCount);
+        console.log(obj.duration);
+    }
+    function onDisconnect(error) {
+        // 此时说明 SDK 处于断开状态, 开发者此时应该根据错误码提示相应的错误信息, 并且跳转到登录页面
+        console.log('丢失连接');
+        console.log(error);
+        if (error) {
+            switch (error.code) {
+                // 账号或者密码错误, 请跳转到登录页面并提示错误
+                case 302:
+                    break;
+                // 被踢, 请提示错误后跳转到登录页面
+                case 'kicked':
+                    break;
+                default:
+                    break;
+            }
+        }
+    }
+    function onError(error) {
+        console.log(error);
+    }
 </script>
+
 </body>
 </html>
