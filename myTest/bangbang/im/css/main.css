@@ -1,5 +1,6 @@
 html, body {
     background: #4e5359 url(../images/bg.png) repeat 0 0;
+    background-position: center;
     color: #3a4a59;
     font: 14px/1.5 Helvetica, Arial, Tahoma'微软雅黑';
 }
@@ -96,9 +97,9 @@ html, body {
     min-width: 1000px;
     min-height: 620px;
     width: 1002px;
-    padding: 100px 0;
+    padding: 30px 0;
     margin: 0 auto;
-    background: url(../images/logo_bg.png) no-repeat center;
+    /*background: url(../images/logo_bg.png) no-repeat center;*/
 }
 .content {
     position: relative;

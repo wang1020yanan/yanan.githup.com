@@ -1,10 +1,11 @@
 body {
     background: #f5f5f5;
+    overflow: hidden;
 }
 .bad-network {
     line-height: 38px;
     background-color: #7c858b;
-    width: 360px;
+    width: 320px;
     margin: 0 auto;
     color: #fff;
     font-size: 14px;
@@ -20,6 +21,7 @@ body {
     font-size: 14px;
     padding-top: 108px;
     box-sizing: border-box;
+    /*标题*/
     background: url(../images/logo.png) no-repeat top center;
 }
 .row {
@@ -77,10 +79,10 @@ input:-webkit-autofill {
 	position: absolute;
 	bottom: 40px;
 	left: 50%;
-	margin-left: -250px;
+	margin-left: -50%;
 	line-height: 20px;
 	color: #888;
-	width: 500px;
+	width: 100%;
 }
 .u-redirect{
     text-align: center;
