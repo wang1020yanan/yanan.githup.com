@@ -85,7 +85,7 @@ a:hover{
 }
 
 a:active{
-    color:#666
+    color:#666;  background: #bdc5bd !important;
 }
 
 .clearfix:after{
