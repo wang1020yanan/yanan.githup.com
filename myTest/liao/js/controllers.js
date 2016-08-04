@@ -7,7 +7,7 @@ bookStoreCtrls.controller('HelloCtrl', ['$scope',
         $scope.greeting = {
             text: 'Hello'
         };
-        //$scope.pageClass="index";
+        $scope.pageClass="index";
     }
 ]);
 bookStoreCtrls.controller('InformalEssayCtrl', ['$scope','$http',
