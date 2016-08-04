@@ -31,7 +31,7 @@ bookStoreCtrls.controller('InformalEssayCtrl', ['$scope','$http',
         //$scope.pageClass="list";
         $scope.loading="加载更多";
         $http.get("./data/informalEssay.json").success(function(data){
-            var num=10;
+            var num=5;
             var add=num;
             $scope.allInfo=data.pro;
             $scope.infos=[];
