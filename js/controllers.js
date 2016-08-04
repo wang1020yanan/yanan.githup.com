@@ -73,6 +73,7 @@ bookStoreCtrls.controller('DetailCtrl', ['$scope','$http','$stateParams','$sce',
             $scope.allInfo=data.pro;
             $scope.newList=$scope.allInfo[$stateParams.id];
             $scope.detailHtml=$sce.trustAsHtml($scope.newList.content);
+            $('html, body').animate({scrollTop: 0}, 300);
         });
     }
 ]);
