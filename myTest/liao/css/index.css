@@ -288,7 +288,7 @@ body {
     animation: rotateFall 1s both ease-in;
 }
 .list.ng-enter {
-    animation:slideInRight 0.5s both ease-in;
+    animation:slideInRight 0.3s both ease-in;
 }
 .list.ng-leave {
     animation:slideOutLeft 0s both ease-in;
