@@ -12,7 +12,7 @@ bookStoreApp.config(function($stateProvider, $urlRouterProvider,$httpProvider) {
         }).state('search', {
             url: "/search",
             templateUrl: 'tpls/search.html',
-            controller: 'HelloCtrl'
+            controller: 'SearchCtrl'
         })
 
 

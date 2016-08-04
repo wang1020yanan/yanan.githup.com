@@ -7,9 +7,21 @@ bookStoreCtrls.controller('HelloCtrl', ['$scope',
         $scope.greeting = {
             text: 'Hello'
         };
-        $scope.pageClass="index";
+        $scope.pageClass="list";
     }
 ]);
+bookStoreCtrls.controller('SearchCtrl', ['$scope',
+    function($scope) {
+        $scope.height = Math.max(document.documentElement.clientHeight, document.body.offsetHeight);
+        $scope.width = Math.max(document.documentElement.clientWidth, document.body.offsetWidth);
+        $scope.greeting = {
+            text: 'Hello'
+        };
+        //$scope.pageClass="list";
+    }
+]);
+
+
 bookStoreCtrls.controller('InformalEssayCtrl', ['$scope','$http',
     function($scope,$http){
         $scope.height = Math.max(document.documentElement.clientHeight, document.body.offsetHeight) - 150;
