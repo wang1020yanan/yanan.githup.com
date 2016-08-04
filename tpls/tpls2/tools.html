@@ -21,14 +21,14 @@
                    <div class="col-md-7 col-xs-7 my-down">
                        <h2>{{info.title}}</h2>
                        <p class="help-block">{{info.tips}}</p>
-                       <p><a href="{{info.downUrl}}" target="_blank" class="button button-primary button-rounded button-small">下载</a></p>
+                       <p><a href="{{info.downUrl}}" target="_blank" class="button button-primary button-rounded button-large">下载</a></p>
                    </div>
                    <div class="clearfix"></div>
                </div>
            </div>
            <div style="border-top: 1px solid rgba(0,0,0,.2);padding-top: 50px;padding-bottom: 160px">
                <div class="col-md-6" ng-repeat="info in allLink">
-                   <a href="{{info.linkUrl}}" target="_blank" onMouseOver="$(this).tooltip('show')"  data-toggle="tooltip" title="{{info.tips}}" data-placement="right">{{info.title}}</a>
+                   <a class="button button-primary button-rounded button-small" href="{{info.linkUrl}}" target="_blank" onMouseOver="$(this).tooltip('show')" style="margin: 5px"  data-toggle="tooltip" title="{{info.tips}}" data-placement="right">{{info.title}}</a>
                </div>
            </div>
            <div class="clearfix"></div>

@@ -3,9 +3,20 @@
 <html lang="zh-CN">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
     <title>fullPage.js — 回调函数演示_dowebok</title>
     <link rel="stylesheet" href="http://cdn.dowebok.com/77/css/jquery.fullPage.css">
     <style>
+        .section1 { background: url('http://idowebok.u.qiniudn.com/77/1.jpg') 50%;}
+        .section2 { background: url('http://idowebok.u.qiniudn.com/77/2.jpg') 50%;}
+        .section3 { background: url('http://idowebok.u.qiniudn.com/77/3.jpg') 50%;}
+        .section4 { background: url('http://idowebok.u.qiniudn.com/77/4.jpg') 50%;}
+
+        #menu { margin: 0; padding: 0; position: fixed; left: 10px; top: 10px; list-style-type: none; z-index: 70;}
+        #menu li { float: left; margin:  0 10px 0 0; font-size: 14px;}
+        #menu a { float: left; padding: 10px 20px; background-color: #fff; color: #333; text-decoration: none;}
+        #menu .active a { color: #fff; background-color: #333;}
+
         .section { text-align: center; font: 50px "Microsoft Yahei"; color: #fff;}
         .section2 p { position: relative; left: -120%;}
         .section3 p { position: relative; bottom: -120%;}
@@ -18,6 +29,11 @@
         $(function(){
             $('#dowebok').fullpage({
                 sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90'],
+                anchors: ['page1', 'page2', 'page3', 'page4'],
+                menu: '#menu',
+
+                'navigation': true,
+
                 afterLoad: function(anchorLink, index){
                     if(index == 2){
                         $('.section2').find('p').delay(500).animate({
@@ -49,20 +65,50 @@
                     }
                 }
             });
+
+//            自动
+//            $(window).resize(function(){
+//                autoScrolling();
+//            });
+//
+//            function autoScrolling(){
+//                var $ww = $(window).width();
+//                if($ww < 1024){
+//                    $.fn.fullpage.setAutoScrolling(false);
+//                } else {
+//                    $.fn.fullpage.setAutoScrolling(true);
+//                }
+//            }
+//
+//            autoScrolling();
+
         });
     </script>
 </head>
 
 <body>
+<!--<ul id="menu">-->
+    <!--<li data-menuanchor="page1" class="active"><a href="#page1">第一屏</a></li>-->
+    <!--<li data-menuanchor="page2"><a href="#page2">第二屏</a></li>-->
+    <!--<li data-menuanchor="page3"><a href="#page3">第三屏</a></li>-->
+    <!--<li data-menuanchor="page4"><a href="#page4">第四屏</a></li>-->
+<!--</ul>-->
+<ul id="menu">
+    <li data-menuanchor="page1" class="active"><a href="#page1">TOP</a></li>
+    <li data-menuanchor="page2"><a href="#page2">科技卷</a></li>
+    <li data-menuanchor="page3"><a href="#page3">人物卷</a></li>
+    <li data-menuanchor="page4"><a href="#page4">社会卷</a></li>
+</ul>
 
 <div id="dowebok">
-    <div class="section section1">
+    <div class="section section1" style="background: red">
         <h3>第一屏</h3>
         <p>fullPage.js — 回调函数演示</p>
     </div>
     <div class="section section2">
-        <h3>第二屏</h3>
-        <p>滚动到第二屏后的回调函数执行的效果</p>
+        <div class="slide"><h3>第二屏的第一屏</h3></div>
+        <div class="slide"><h3>第二屏的第二屏</h3></div>
+        <div class="slide"><h3>第二屏的第三屏</h3></div>
     </div>
     <div class="section section3">
         <h3>第三屏</h3>
