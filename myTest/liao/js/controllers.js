@@ -17,7 +17,7 @@ bookStoreCtrls.controller('SearchCtrl', ['$scope',
         $scope.greeting = {
             text: 'Hello'
         };
-        //$scope.pageClass="list";
+        $scope.pageClass="list";
     }
 ]);
 
