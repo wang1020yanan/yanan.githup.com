@@ -1,9 +1,9 @@
 body{
     /*background: #efc198;*/
-    background-image: url("../imgs/bg.png");
-    background-size: cover;
-    background-position: center;
-    color: #ffffff;
+
+}
+html{
+    height: 100%;
 }
 .my-title{
     padding-top: 120px;

@@ -6,7 +6,7 @@ bookStoreCtrls.controller('HelloCtrl', ['$scope',
         $scope.greeting = {
             text: 'Hello'
         };
-        $scope.pageClass="index";
+        $scope.pageClass="list";
     }
 ]);
 
