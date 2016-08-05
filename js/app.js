@@ -11,7 +11,7 @@ bookStoreApp.config(function($stateProvider, $urlRouterProvider,$httpProvider) {
             controller: 'HelloCtrl'
         }).state('informalEssay', {
             url: "/informalEssay",
-            templateUrl: 'tpls/informalEssay.html',
+            templateUrl: 'tpls/chat.html',
             controller: 'InformalEssayCtrl'
         }).state('informalEssay.infos', {
             url: "/infos",

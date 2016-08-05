@@ -13,14 +13,14 @@ bookStoreApp.config(function($stateProvider, $urlRouterProvider,$httpProvider) {
             url: "/search",
             templateUrl: 'tpls/search.html',
             controller: 'SearchCtrl'
+        }).state('chat', {
+            url: "/chat/:id",
+            templateUrl: 'tpls/chat.html',
+            controller: 'ChatCtrl'
         })
 
 
-        .state('informalEssay', {
-            url: "/informalEssay",
-            templateUrl: 'tpls/informalEssay.html',
-            controller: 'InformalEssayCtrl'
-        }).state('informalEssay.infos', {
+        .state('informalEssay.infos', {
             url: "/infos",
             templateUrl: 'tpls/tpls2/infos.html',
             controller: 'InformalEssayCtrl'
@@ -32,11 +32,12 @@ bookStoreApp.config(function($stateProvider, $urlRouterProvider,$httpProvider) {
             url: "/loves",
             templateUrl: 'tpls/tpls2/loves.html',
             controller: 'InformalEssayCtrl'
-        }).state('informalEssay.detail', {
-            url: "/detail/:id",
-            templateUrl: 'tpls/tpls2/detail.html',
-            controller: 'DetailCtrl'
         })
+        //.state('informalEssay.detail', {
+        //    url: "/detail/:id",
+        //    templateUrl: 'tpls/tpls2/detail.html',
+        //    controller: 'DetailCtrl'
+        //})
 
 
 

@@ -1,11 +1,11 @@
 var bookStoreCtrls = angular.module('bookStoreCtrls', []);
 
-bookStoreCtrls.controller('HelloCtrl', ['$scope',
-    function($scope) {
+bookStoreCtrls.controller('HelloCtrl', ['$scope','$state',
+    function($scope,$state) {
         $scope.height = Math.max(document.documentElement.clientHeight, document.body.offsetHeight);
         $scope.width = Math.max(document.documentElement.clientWidth, document.body.offsetWidth);
-        $scope.greeting = {
-            text: 'Hello'
+        $scope.toChat = function (friendId) {
+            $state.go('chat', {id: friendId});
         };
         $scope.pageClass="list";
     }
@@ -71,6 +71,12 @@ bookStoreCtrls.controller('DetailCtrl', ['$scope','$http','$stateParams','$sce',
             $scope.newList=$scope.allInfo[$stateParams.id];
             $scope.detailHtml=$sce.trustAsHtml($scope.newList.content);
         });
+    }
+]);
+bookStoreCtrls.controller('ChatCtrl', ['$scope','$http','$stateParams','$sce',
+    function($scope,$http,$stateParams,$sce){
+        $scope.friendId = $stateParams.id;
+        $scope.pageClass="list";
     }
 ]);
 
