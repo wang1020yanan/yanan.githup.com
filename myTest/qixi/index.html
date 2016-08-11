@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>七夕</title>
+    <link href="css/index.css" rel="stylesheet">
+    <link href="http://localhost/yanan.githup.com/libs/bootstrap/css/button.css" rel="stylesheet">
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+     <div id="content">
+         <ul class="content-wrap">
+             <li>
+                 <!-- 云 -->
+                 <div class="cloudArea">
+                     <div class="cloud cloud1"></div>
+                     <div class="cloud cloud2"></div>
+                 </div>
+                 <!-- 太阳 -->
+                 <div id="sun"></div>
+                 <!-- 商店 -->
+                 <div class="shop">
+                     <div class="door">
+                         <div class="door-left"></div>
+                         <div class="door-right"></div>
+                     </div>
+                     <!-- 灯 -->
+                     <div class="lamp"></div>
+                 </div>
+             </li>
+             <li>
+                <div class="ql" ></div>
+             </li>
+             <li>3</li>
+         </ul>
+         <div id="boy" class="charector"><div class="lt" style="display: none"></div></div>
+         <div class="btn-wrap">
+             <button class="button button-caution button-pill button-jumbo start">GO!GO!GO!</button>
+         </div>
+         <button class="button button-royal button-pill button-giant pause hid">暂停</button>
+     </div>
+<script>
+    $(function(){
+        var container = $("#content");
+        var swipe=Swipe($("#content"));
+        // 小孩走路 //
+        var boy = BoyWalk();
+// 页面滚动到指定的位置
+        function scrollTo(time, proportionX) {
+            var distX = container.width() * proportionX;
+            swipe.scrollTo(distX, time);
+        }
+
+
+
+        $('.start').click(function() {
+            $(".btn-wrap").fadeOut();
+//            $(".pause").removeClass('hid');
+            // 太阳公转
+            $("#sun").addClass('rotation');
+            // 飘云
+            $(".cloud:first").addClass('cloud1Anim');
+            $(".cloud:last").addClass('cloud2Anim');
+            var door=DoorRun();
+            // 开始第一次走路
+            boy.talk("天气不错哦！");
+            boy.walkTo(3000,.43)
+                    .then(function(){
+                        //第一次走路完成
+//                        scrollTo(2000, 1);
+                        //暂停走路
+//                        boy.stopWalk();
+                        boy.talk("买束花去！");
+                       door.openDoor();
+                    }).then(function() {
+                        //进商店
+                        return boy.toShop(1000)
+                    }).then(function(){
+                        // 取花
+                        return boy.talkFlower();
+                    }).then(function(){
+                        return boy.outShop(1000);
+//                        return boy.walkTo(4000, 0.5);
+                    }).then(function(){
+                        boy.talk("真尼玛贵！！");
+                        return boy.walkTo(1000,.60);
+                        return door.shutDoor();
+                    }).then(function(){
+                        boy.talk("好无聊啊！");
+                        return boy.walkTo(1500,.65)
+                    }).then(function(){
+                        boy.talk("瞅个美女去！");
+                        scrollTo(2000, 1);
+                    }).then(function(){
+                       return boy.walkTo(3000,.70)
+                    }).then(function(){
+                        var xx=1;
+                        boy.talk("这俩SB!");
+                        setInterval(function(){
+                            boy.talk("这俩SB!+"+xx);
+                            xx++
+                        },1300)
+                    });
+        });
+        // 暂停
+        $(".pause").click(function() {
+            var left = $boy.css('left');
+            // 强制做了一个改变目标left的处理
+            // 动画是要运行10秒,所以此时动画还是没有结束的
+            $boy.css('left',left);
+            // 增加暂停的样式
+            $boy.addClass('pauseWalk');
+        });
+    });
+</script>
+</body>
+</html>
