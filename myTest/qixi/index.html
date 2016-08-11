@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">-->
     <title>七夕</title>
     <link href="css/index.css" rel="stylesheet">
     <link href="http://localhost/yanan.githup.com/libs/bootstrap/css/button.css" rel="stylesheet">
@@ -84,14 +85,15 @@
 //                        return boy.walkTo(4000, 0.5);
                     }).then(function(){
                         boy.talk("真尼玛贵！！");
-                        return boy.walkTo(1000,.60);
-                        return door.shutDoor();
+                        return boy.walkTo(1500,.60);
                     }).then(function(){
                         boy.talk("好无聊啊！");
-                        return boy.walkTo(1500,.65)
+//                        boy.walkTo(1500,.65);
+
+                        return door.shutDoor();
                     }).then(function(){
                         boy.talk("瞅个美女去！");
-                        scrollTo(2000, 1);
+                        scrollTo(6000, 1);
                     }).then(function(){
                        return boy.walkTo(3000,.70)
                     }).then(function(){
