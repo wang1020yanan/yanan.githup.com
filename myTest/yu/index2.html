@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>达人</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background: black;
+            display: none;
+        }
+        #canvas{
+            background-image: url('bg.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <script>
+//        图片加载器
+        function loadImage(arr,fn){
+            var result={};
+            var iNow=0;
+            for(var i=0;i<arr.length;i++){
+                var oImg=new Image();
+                var tmp=arr[i].split('.');
+                result[tmp[0]]=oImg;
+                oImg.onload=function(){
+                    iNow++;
+                    if(iNow>=arr.length){
+                        fn(result);
+                    }
+                };
+                oImg.src=arr[i];
+            }
+        }
+        window.onload=function(){
+            var oCans=document.getElementById("canvas");
+            var cH=document.documentElement.clientHeight||document.body.clientHeight;
+            var cW=document.documentElement.clientWidth||document.body.clientWidth;
+            oCans.width=cW-5;
+            oCans.height=cH-5;
+            document.body.style.display="block";
+
+            var oGc=oCans.getContext("2d");
+            loadImage(["gun.png","zidan.png"],function(result){
+                oGc.drawImage(result['gun'],0,0,64,64,oCans.offsetWidth/2-32,oCans.offsetHeight-70,64,64);
+                var gun = {};
+                gun.x = oCans.offsetWidth/2;
+                gun.y = oCans.offsetHeight-70;
+                var zidanArr = [];
+                oCans.onmouseover = function(){
+                    this.onmousemove = function(ev){
+                        var oEvent = ev || event;
+                        var iMx = oEvent.layerX;
+                        var iMy = oEvent.layerY;
+                        gun.hudu = -(Math.atan2(iMx-gun.x,iMy-gun.y)+180*Math.PI/180);
+                        //炮
+                        oGc.save();
+                        oGc.translate(gun.x,gun.y+32);//设置原点
+                        oGc.rotate(gun.hudu);
+                        oGc.drawImage(result['gun'],0,0,64,64,-32,-32,64,64);
+                        oGc.restore();
+                    }
+                    this.onmousedown = function(ev){
+                        var oEvent = ev || event;
+                        var iCx = oEvent.layerX;
+                        var iCy = oEvent.layerY;
+                        zidanArr.push(
+                                {
+                                    x:gun.x,
+                                    y:gun.y,
+                                    startX:iCx,
+                                    startY:iCy,
+                                    iRatio:0,
+                                    hudu:gun.hudu,
+                                    curPoy:1
+                                }
+                        );
+                    }
+                }
+//                重绘
+                setInterval(function(){
+                    oGc.clearRect(0,0,oCans.offsetWidth,oCans.offsetHeight);
+                    //子弹
+                    for(i=0;i<zidanArr.length;i++){
+                        var theY = Math.floor(24-Math.cos(zidanArr[i].hudu)*24-10);
+                        var theX = Math.ceil(Math.sin(zidanArr[i].hudu)*24);
+                        var arcX = zidanArr[i].x+theX;
+                        var arcY = zidanArr[i].y+theY;
+                        zidanArr[i].iRatio = (zidanArr[i].startX-arcX)/(zidanArr[i].startY-arcY);
+
+                        oGc.save();
+                        oGc.translate(arcX,arcY);//设置原点
+                        oGc.rotate(zidanArr[i].hudu);
+                        oGc.drawImage(result['zidan'],0,parseInt(zidanArr[i].curPoy)*48,30,48,theX-15,theY-24,30,48);
+                        oGc.restore();
+
+                        zidanArr[i].y -= 6;
+                        zidanArr[i].x -= 6*zidanArr[i].iRatio.toFixed(2);
+                        zidanArr[i].curPoy += 0.3;
+                        if(zidanArr[i].curPoy>3){
+                            zidanArr[i].curPoy = 0;
+                        }
+                        if(zidanArr[i].x<=0 || zidanArr[i].x>=oCans.offsetWidth || zidanArr[i].y<=0 || zidanArr[i].y>=oCans.offsetHeight){
+                            zidanArr.splice(i,1);
+                            i--;
+                        }
+                    }
+                    //炮
+                    oGc.save();
+                    oGc.translate(gun.x,gun.y+32);//设置原点
+                    oGc.rotate(gun.hudu);
+                    oGc.drawImage(result['gun'],0,0,64,64,-32,-32,64,64);
+                    oGc.restore();
+                },3);
+            })
+        }
+    </script>
+</body>
+</html>

@@ -158,11 +158,11 @@ body {
     font-family: Lato, "Microsoft Jhenghei", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
     /*color: #14191e;*/
     overflow-y:auto;
-    background-image: url("../imgs/bg.png");
+    /*background-image: url("../imgs/bg.png");*/
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
-    color: #ffffff;
+    /*color: #ffffff;*/
 }
 .text-c{
     text-align: center;
@@ -199,7 +199,7 @@ body{
 }
 .list{
     /*background:#E59400;*/
-    color:#FFFFFF;
+    /*color:#FFFFFF;*/
 }
 @keyframes rotateFall {
     0% {
