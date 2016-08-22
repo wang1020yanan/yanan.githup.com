@@ -20,7 +20,7 @@ var SDKBridge = function (ctr,data) {
 	window.nim = this.nim = new NIM({
 		//控制台日志，上线时应该关掉
 		debug: true || { api: 'info', style: 'font-size:14px;color:blue;background-color:rgba(0,0,0,0.1)' },
-        appKey: "b2af4f85848e65ff628d0c65538a5f0f",
+        appKey: "84f0c8f386fdea6c4f1a7696a99cdbe8",
         account: userUID,
         token: sdktoken,
         //连接

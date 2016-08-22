@@ -1,24 +1,7 @@
 {
-  "pro":[
-    {
-      "title": "《坏蛋是怎样炼成的》",
-      "author": "YANAN"
-    }, {
-      "title": "《开发应用》",
-      "author": "YANAN"
-    }, {
-      "title": "《用AngularJS开发下一代WEB应用》",
-      "author": "YANAN"
-    },
-    {
-      "title": "《坏蛋是怎样炼成的》",
-      "author": "YANAN"
-    }, {
-      "title": "《开发应用》",
-      "author": "YANAN"
-    }, {
-      "title": "《用AngularJS开发下一代WEB应用》",
-      "author": "YANAN"
-    }
-  ]
+  "name":"grunt-test",
+  "version":"1.0.0",
+  "devDependencies":{
+
+  }
 }

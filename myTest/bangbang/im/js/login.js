@@ -73,8 +73,13 @@ var Login = {
 		setCookie('uid',account.toLocaleLowerCase());
 		//自己的appkey就不用加密了
 		// setCookie('sdktoken',pwd);
-		setCookie('sdktoken',pwd);
-		window.location.href = './main.html';
+		$.ajax("http://chat.uustudy.com.cn/index.php?r=public/login",{phone:account,pwd:pwd},function(data){
+            console.log(data)
+		});
+
+		//setCookie('sdktoken',pwd);
+		//console.log("fffff");
+		//window.location.href = './main.html';
 			
 	},
 
