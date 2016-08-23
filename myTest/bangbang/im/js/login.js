@@ -72,15 +72,21 @@ var Login = {
 	requestLogin: function(account, pwd) {
 		setCookie('uid',account.toLocaleLowerCase());
 		//自己的appkey就不用加密了
-		// setCookie('sdktoken',pwd);
-		$.ajax("http://chat.uustudy.com.cn/index.php?r=public/login",{phone:account,pwd:pwd},function(data){
-            console.log(data)
+		$.post("http://chat.uustudy.com.cn/index.php?r=public/login",{phone:account,pwd:pwd},function(msg){
+			console.log(msg.status);
+			if(msg.status=='1'){
+				console.log(msg.data.accid);
+				console.log(msg.data.token);
+				setCookie('uid',msg.data.accid);
+				setCookie('sdktoken',msg.data.acctoken);
+				window.location.href = './main.html';
+			}else{
+				$(".error-log").fadeIn();
+				setTimeout(function(){
+					$(".error-log").fadeOut();
+				},2000)
+			}
 		});
-
-		//setCookie('sdktoken',pwd);
-		//console.log("fffff");
-		//window.location.href = './main.html';
-			
 	},
 
 	/**

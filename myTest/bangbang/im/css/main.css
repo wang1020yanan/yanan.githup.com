@@ -1,5 +1,5 @@
 html, body {
-    background: #4e5359 url(../images/bg.png) repeat 0 0;
+    background:  url(../images/bg.png) center center / cover no-repeat;
     background-position: center;
     color: #3a4a59;
     font: 14px/1.5 Helvetica, Arial, Tahoma'微软雅黑';
@@ -183,7 +183,7 @@ html, body {
     height: 100%;
     float: left;
     z-index: 99;
-    border: 1px solid #424448;
+    /*border: 1px solid #424448;*/
     box-shadow: 0 2px 6px #313131;
     background-color: #fff;
 }
