@@ -2,7 +2,28 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input
     margin:0;
     padding:0
 }
-
+::-webkit-scrollbar
+{
+    width: 9px;
+    height: 9px;
+}
+::-webkit-scrollbar-track-piece
+{
+    background-color: #ebebeb;
+    -webkit-border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:vertical
+{
+    height: 32px;
+    background-color: #ccc;
+    -webkit-border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:horizontal
+{
+    width: 32px;
+    background-color: #ccc;
+    -webkit-border-radius: 4px;
+}
 fieldset,img{
     border:0;
     margin-top: 0;
