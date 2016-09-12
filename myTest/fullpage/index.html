@@ -36,12 +36,12 @@
 
                 afterLoad: function(anchorLink, index){
                     if(index == 2){
-                        $('.section2').find('p').delay(500).animate({
+                        $('.section2').find('p').delay(200).animate({
                             left: '0'
                         }, 1500, 'easeOutExpo');
                     }
                     if(index == 3){
-                        $('.section3').find('p').delay(500).animate({
+                        $('.section3').find('p').delay(200).animate({
                             bottom: '0'
                         }, 1500, 'easeOutExpo');
                     }
@@ -53,12 +53,12 @@
                 },
                 onLeave: function(index, direction){
                     if(index == '2'){
-                        $('.section2').find('p').delay(500).animate({
+                        $('.section2').find('p').delay(200).animate({
                             left: '-120%'
                         }, 1500, 'easeOutExpo');
                     }
                     if(index == '3'){
-                        $('.section3').find('p').delay(500).animate({
+                        $('.section3').find('p').delay(200).animate({
                             bottom: '-120%'
                         }, 1500, 'easeOutExpo');
                     }
