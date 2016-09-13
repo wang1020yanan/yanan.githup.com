@@ -16,8 +16,8 @@
         }
         #menu { margin: 0; padding: 0; position: fixed; left: 10px; top: 10px; list-style-type: none; z-index: 70;}
         #menu li { float: left; margin:  0 10px 0 0; font-size: 14px;}
-        #menu a { float: left; padding: 10px 20px; background-color: #fff; color: #333; text-decoration: none;}
-        #menu .active a { color: #fff; background-color: #333;}
+        #menu a { float: left; padding: 10px 20px; background-color: #fff; color: #f4a717; text-decoration: none;}
+        #menu .active a { color: #fff; background-color: #f4a717;}
 
         .section { text-align: center; font: 50px "Microsoft Yahei"; color: #fff;}
         .section1 p { position: relative; bottom: 120%;}
@@ -25,6 +25,21 @@
         .section2 p { position: relative; left: -120%;}
         .section3 p { position: relative;left: 120%;}
         .section4 p { position: relative;  bottom: -120%;}
+
+        #fp-nav ul li a.active span, .fp-slidesNav ul li a.active span {
+            background: #f4a717;
+        }
+        #fp-nav ul li a span, .fp-slidesNav ul li a span {
+            top: 2px;
+            left: 2px;
+            width: 8px;
+            height: 8px;
+            border: 1px solid #f4a717;
+            background: rgba(0, 0, 0, 0);
+            border-radius: 50%;
+            position: absolute;
+            z-index: 1;
+        }
     </style>
     <script src="http://cdn.staticfile.org/jquery/1.8.3/jquery.min.js"></script>
     <script src="http://cdn.dowebok.com/77/js/jquery.fullPage.min.js"></script>
