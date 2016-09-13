@@ -31,12 +31,12 @@
     <script src="http://cdn.staticfile.org/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script>
         $(function(){
-            $('.section1').find('p').animate({
-                bottom: '0'
-            }, 1500, 'easeOutExpo');
-            $('.section1').find('h3').animate({
-                bottom: '0'
-            }, 1500, 'easeOutExpo');
+//            $('.section1').find('p').animate({
+//                bottom: '0'
+//            }, 1500, 'easeOutExpo');
+//            $('.section1').find('h3').animate({
+//                bottom: '0'
+//            }, 1500, 'easeOutExpo');
 
             $('#dowebok').fullpage({
                 sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90'],
@@ -119,6 +119,12 @@
             $('#fp-nav').delay(800).fadeIn();
             $('.my-wrap').delay(800).fadeIn();
             $('.pro-wrap').delay(400).fadeOut();
+            $('.section1').find('p').delay(800).animate({
+                bottom: '0'
+            }, 1500, 'easeOutExpo');
+            $('.section1').find('h3').delay(800).animate({
+                bottom: '0'
+            }, 1500, 'easeOutExpo');
         });
     </script>
 </head>
@@ -126,7 +132,7 @@
 <body>
 <div class="pro-wrap" style="background: #CCCCCC;height: 40px;text-align: center;color: #fff;position: relative;border-radius: 5px;top: 44%;width: 80%;
     left: 10%;">
-    <div id="colors" style="position: absolute ;height: 40px;background: #f4cf22;z-index: 0;border-radius: 5px"></div>
+    <div id="colors" style="position: absolute ;height: 40px;background: #f4a717;z-index: 0;border-radius: 5px"></div>
     <h3 id="percents" style="position: relative;line-height: 40px">加载中...</h3>
 </div>
 
