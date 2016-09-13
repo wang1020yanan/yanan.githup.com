@@ -11,7 +11,9 @@
         .section2 { background: url('img/bg-2.jpg') no-repeat;background-size: cover}
         .section3 { background:url('img/bg-3.jpg') no-repeat;background-size: cover}
         .section4 { background:url('img/bg-4.jpg') no-repeat;background-size: cover}
-
+        #fp-nav{
+            display: none;
+        }
         #menu { margin: 0; padding: 0; position: fixed; left: 10px; top: 10px; list-style-type: none; z-index: 70;}
         #menu li { float: left; margin:  0 10px 0 0; font-size: 14px;}
         #menu a { float: left; padding: 10px 20px; background-color: #fff; color: #333; text-decoration: none;}
@@ -88,60 +90,74 @@
                     }
                 }
             });
-
-//            自动
-//            $(window).resize(function(){
-//                autoScrolling();
-//            });
-//
-//            function autoScrolling(){
-//                var $ww = $(window).width();
-//                if($ww < 1024){
-//                    $.fn.fullpage.setAutoScrolling(false);
-//                } else {
-//                    $.fn.fullpage.setAutoScrolling(true);
-//                }
-//            }
-//
-//            autoScrolling();
-
+        });
+        function loadImg(arr,callback){
+            var result={};
+            var iNow=0;
+            var per = $("#percents");
+            console.log(per);
+            for(var i=0;i<arr.length;i++){
+                var oImg=new Image();
+                var tmp=arr[i].split('.');
+                result[tmp[0]]=oImg;
+                oImg.onload=function(){
+                    iNow++;
+                    var nowPercent=parseInt(iNow/arr.length*100);
+                    $("#colors").animate({width:nowPercent+'%'},100,function(){
+                        $("#percents").text(nowPercent+"%");
+                    });
+                    console.log(nowPercent);
+                    if(iNow>=arr.length){
+                        callback(result);
+                    }
+                };
+                oImg.src='img/'+arr[i];
+            }
+        }
+        loadImg(['bg-1.jpg','bg-2.jpg','bg-3.jpg', 'bg-4.jpg'],function(result){
+            console.log(result);
+            $('#fp-nav').delay(800).fadeIn();
+            $('.my-wrap').delay(800).fadeIn();
+            $('.pro-wrap').delay(400).fadeOut();
         });
     </script>
 </head>
 
 <body>
-<!--<ul id="menu">-->
-    <!--<li data-menuanchor="page1" class="active"><a href="#page1">第一屏</a></li>-->
-    <!--<li data-menuanchor="page2"><a href="#page2">第二屏</a></li>-->
-    <!--<li data-menuanchor="page3"><a href="#page3">第三屏</a></li>-->
-    <!--<li data-menuanchor="page4"><a href="#page4">第四屏</a></li>-->
-<!--</ul>-->
-<ul id="menu">
-    <li data-menuanchor="page1" class="active"><a href="#page1">TOP</a></li>
-    <li data-menuanchor="page2"><a href="#page2">2</a></li>
-    <li data-menuanchor="page3"><a href="#page3">3</a></li>
-    <li data-menuanchor="page4"><a href="#page4">4</a></li>
-</ul>
+<div class="pro-wrap" style="background: #CCCCCC;height: 40px;text-align: center;color: #fff;position: relative;border-radius: 5px;top: 44%;width: 80%;
+    left: 10%;">
+    <div id="colors" style="position: absolute ;height: 40px;background: #f4cf22;z-index: 0;border-radius: 5px"></div>
+    <h3 id="percents" style="position: relative;line-height: 40px">加载中...</h3>
+</div>
 
-<div id="dowebok">
-    <div class="section section1">
-        <h3>第一屏</h3>
-        <p>fullPage.js — 回调函数演示</p>
-    </div>
-    <div class="section section2">
-        <h3>第2屏</h3>
-        <p>滚动到第三屏后的回调函数执行的效果</p>
-        <!--<div class="slide"><h3>第二屏的第一屏</h3></div>-->
-        <!--<div class="slide"><h3>第二屏的第二屏</h3></div>-->
-        <!--<div class="slide"><h3>第二屏的第三屏</h3></div>-->
-    </div>
-    <div class="section section3">
-        <h3>第三屏</h3>
-        <p>滚动到第三屏后的回调函数执行的效果</p>
-    </div>
-    <div class="section section4">
-        <h3>第四屏</h3>
-        <p>滚动到第四屏后的回调函数执行的效果</p>
+<div class="my-wrap" style="display: none">
+    <ul id="menu">
+        <li data-menuanchor="page1" class="active"><a href="#page1">TOP</a></li>
+        <li data-menuanchor="page2"><a href="#page2">2</a></li>
+        <li data-menuanchor="page3"><a href="#page3">3</a></li>
+        <li data-menuanchor="page4"><a href="#page4">4</a></li>
+    </ul>
+
+    <div id="dowebok">
+        <div class="section section1">
+            <h3>第一屏</h3>
+            <p>fullPage.js — 回调函数演示</p>
+        </div>
+        <div class="section section2">
+            <h3>第2屏</h3>
+            <p>滚动到第三屏后的回调函数执行的效果</p>
+            <!--<div class="slide"><h3>第二屏的第一屏</h3></div>-->
+            <!--<div class="slide"><h3>第二屏的第二屏</h3></div>-->
+            <!--<div class="slide"><h3>第二屏的第三屏</h3></div>-->
+        </div>
+        <div class="section section3">
+            <h3>第三屏</h3>
+            <p>滚动到第三屏后的回调函数执行的效果</p>
+        </div>
+        <div class="section section4">
+            <h3>第四屏</h3>
+            <p>滚动到第四屏后的回调函数执行的效果</p>
+        </div>
     </div>
 </div>
 
@@ -154,9 +170,8 @@
 
 
 
-<a href="http://www.dowebok.com/" style="display: none;">dowebok</a>
-<a href="http://www.dowebok.com/77.html" style="display: none;">jQuery全屏滚动插件fullPage.js</a>
-<script src="http://hm.baidu.com/h.js?988268596e7a833ffbfb2e9f82d93e18"></script>
+
+
 
 </body>
 </html>
