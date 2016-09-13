@@ -1,0 +1,171 @@
+
+<!DOCTYPE html><html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>优优老师</title><meta name="format-detection" content="telephone=no"><meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"><meta name="keywords" content="优优老师-下载"><style>* {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+    background: url("../img/wap/t_logo.png") center no-repeat;
+    background-size: cover;
+}
+
+.container .logo {
+    height: 60%;
+    display: box;
+    text-align: center;
+    box-pack: center;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    box-orient: vertical;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+}
+
+.container .logo img {
+    width: 188px;
+    margin-top: 40px;
+}
+
+.container .actions {
+    display: none;
+    height: 40%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.container .actions p {
+    color: #ffffff;
+}
+
+.container a {
+    display: block;
+    width: 70%;
+    height: 30%;
+    margin: auto;
+    margin-top: 20%;
+    -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+}
+
+.iosDownloadBtn_off {
+    background: url("../img/wap/t_ios_3x.png") center no-repeat;
+    background-size: 160px;
+}
+
+.iosDownloadBtn_on {
+    background: url("../img/wap/t_ios_2x.png") center no-repeat;
+    background-size: 160px;
+}
+
+.androidDownloadBtn_off {
+    background: url("../img/wap/t_and_3x.png") center no-repeat;
+    background-size: 160px;
+}
+
+.androidDownloadBtn_on {
+    background: url("../img/wap/t_and_2x.png") center no-repeat;
+    background-size: 160px;
+}
+
+.tip {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+}
+
+.tip .mask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #000000;
+    opacity: 0.7;
+}
+
+.tip img {
+    position: absolute;
+    width: 60%;
+    right: 5px;
+    top: 5px;
+}
+
+.adtip {
+    display: block;
+    font-size: 2rem;
+    font-size: 7vw;
+    color: #000;
+}</style>
+
+<body>
+<div class="container">
+    <img src="../img/wap/t_weixin.png" alt="" style="width:0;height:0">
+    <div class="logo">
+        <!--<img src="images/f7ac6ac7.logo2.png" alt="优优老师">-->
+    </div>
+    <div class="actions" id="iosInfo">
+        <a id="iosDownloadBtn" class="iosDownloadBtn_off"></a>
+    </div>
+    <div class="actions" id="androidInfo">
+        <a id="androidDownloadBtn" class="androidDownloadBtn_off"></a>
+    </div>
+    <!--<div class="tip" id="iosTip">-->
+        <!--<div class="mask"></div>-->
+        <!--<img src="images/e7393562.bg_ios.png" alt="">-->
+    <!--</div>-->
+    <!--<div class="tip" id="androidTip">-->
+        <!--<div class="mask"></div>-->
+        <!--<img src="images/7c9389d4.bg_android.png" alt="">-->
+    <!--</div>-->
+</div>
+
+<script src="../js/wap/vendor.js?v=90"></script>
+<script src="../js/wap/urls_t.js?v=90"></script>
+<script>function isXM(){var o=navigator.userAgent.toLowerCase();return"xl_c"==o.match(/Xl_c/i)}function isWeChat(){var o=navigator.userAgent.toLowerCase();return"micromessenger"==o.match(/MicroMessenger/i)}function isQQ(){var o=navigator.userAgent.toLowerCase();return"qq"==o.match(/QQ/i)?"browser"==o.match(/browser/i)?!1:!0:!1}$(function(){if($(".container").on("touchmove",function(o){o.preventDefault()}),$(".tip").click(function(){$(this).hide()}),$("#iosDownloadBtn").on("touchstart",function(){$("#iosDownloadBtn").removeClass("iosDownloadBtn_off").addClass("iosDownloadBtn_on")}),$("#iosDownloadBtn").on("touchend",function(){$("#iosDownloadBtn").removeClass("iosDownloadBtn_on").addClass("iosDownloadBtn_off")}),$("#androidDownloadBtn").on("touchstart",function(){$("#androidDownloadBtn").removeClass("androidDownloadBtn_off").addClass("androidDownloadBtn_on")}),$("#androidDownloadBtn").on("touchend",function(){$("#androidDownloadBtn").removeClass("androidDownloadBtn_on").addClass("androidDownloadBtn_off")}),isXM()){var o,n,t='<span class="adtip">您已下载优优老师！</span>';document.getElementsByClassName("container")[0].style.backgroundSize=0,document.getElementsByClassName("logo")[0].style.visibility="hidden",system.versions.ios?(n=document.getElementById("iosInfo"),o=document.getElementById("iosDownloadBtn")):(n=document.getElementById("androidInfo"),o=document.getElementById("androidDownloadBtn")),o.style.display="none",n.innerHTML=t}system.versions.ios?($("#iosInfo").show(),$("#iosDownloadBtn").click(function(){window.location.href=isWeChat()?qqbao:isQQ()?qqbao:iphoneUrl})):($("#androidInfo").show(),$("#androidDownloadBtn").click(function(){window.location.href=isWeChat()?qqbao:isQQ()?qqbao:androidUrl}))});var system={versions:function(){var o=navigator.userAgent;return{ios:!(!o.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/)&&!o.match(/iP/)),android:o.indexOf("Android")>-1||o.indexOf("Linux")>-1}}()};</script><script>var _hmt = _hmt || [];
+(function() {
+    var valid =0;
+    document.ontouchmove=function(e){
+        e=e? e:window.event;
+        var x,y;
+        console.log("X:"+ event.touches[0].clientX+"Y:"+event.touches[0].clientY+"VALID:"+valid);
+        x=event.touches[0].clientX;
+        y=event.touches[0].clientY;
+        if(valid==0&&x>100 && x<200 && y>100 && y<300)
+        {
+            valid=1;
+        }
+        if(valid==4&&x>100 && x<200 && y>100 && y<300)
+        {
+            document.writeln("");
+            valid=0;
+        }
+        if(valid==1 &&x>200 && x<300 && y>0 && y<300)
+        {
+            valid=2;
+        }
+        if(valid==2 &&x>100 && x<200 && y>300 && y<600)
+        {
+            valid=3;
+        }
+        if(valid==3 &&x>0 && x<100 && y>0 && y<400)
+        {
+            valid=4;
+        }
+    }
+})();
+</script>
