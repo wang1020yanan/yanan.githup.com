@@ -7,6 +7,111 @@
     <title>fullPage.js — 回调函数演示_dowebok</title>
     <link rel="stylesheet" href="http://cdn.dowebok.com/77/css/jquery.fullPage.css">
     <style>
+        html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+        body{
+            background: #e9ebe4;
+        }
+        /*加载层*/
+        .loading {
+            margin: auto;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 15%;
+            width: 120px;
+            height: 120px;
+            z-index: 10;
+        }
+
+        .loading-circle {
+            background-color: rgba(0,0,0,0);
+            opacity: .9;
+            border-top: 10px solid #fefdff;
+            border-right: 10px solid #f4a717;
+            border-bottom: 10px solid #fffcff;
+            border-left: 10px solid #f4a717;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+            -webkit-transition: all 0.4s ease-in;
+            -moz-transition: all 0.4s ease-in;
+            -ms-transition: all 0.4s ease-in;
+            -o-transition: all 0.4s ease-in;
+            transition: all 0.4s ease-in;
+            animation: spin 1s infinite linear;
+            -webkit-animation: spin 1s infinite linear;
+            -moz-animation: spin 1s infinite linear;
+            -o-animation: spin 1s infinite linear;
+        }
+        @keyframes spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+            50% {
+                -webkit-transform: rotate(60deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+
+        @-moz-keyframes spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+            50% {
+                -webkit-transform: rotate(60deg);
+            }
+            100% {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+
+        @-webkit-keyframes spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+            50% {
+                -webkit-transform: rotate(60deg);
+            }
+            100% {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+
+        @-o-keyframes spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+            50% {
+                -webkit-transform: rotate(60deg);
+            }
+            100% {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+        .loading-avatar {
+            width: 100px;
+            height: 100px;
+            overflow: hidden;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            border-radius: 50%;
+            -webkit-transition: border-width 0.4s ease-in;
+            -moz-transition: border-width 0.4s ease-in;
+            -ms-transition: border-width 0.4s ease-in;
+            -o-transition: border-width 0.4s ease-in;
+            transition: border-width 0.4s ease-in;
+        }
+
         .section1 { background: url('img/bg-1.jpg') no-repeat;background-size: cover}
         .section2 { background: url('img/bg-2.jpg') no-repeat;background-size: cover}
         .section3 { background:url('img/bg-3.jpg') no-repeat;background-size: cover}
@@ -135,21 +240,30 @@
             $('#fp-nav').delay(800).fadeIn();
             $('.my-wrap').delay(800).fadeIn();
             $('.pro-wrap').delay(400).fadeOut();
+            $('.loading').delay(400).fadeOut();
             $('.section1').find('p').delay(800).animate({
                 bottom: '0'
             }, 1500, 'easeOutExpo');
             $('.section1').find('h3').delay(800).animate({
                 bottom: '0'
             }, 1500, 'easeOutExpo');
+
         });
     </script>
 </head>
 
 <body>
-<div class="pro-wrap" style="background: #CCCCCC;height: 40px;text-align: center;color: #fff;position: relative;border-radius: 5px;top: 44%;width: 80%;
+<!--加载-->
+<div class="pro-wrap" style="background: #CCCCCC;height: 3px;text-align: center;color: #f4a717;position: relative;border-radius: 5px;top: 54%;width: 80%;
     left: 10%;">
-    <div id="colors" style="position: absolute ;height: 40px;background: #f4a717;z-index: 0;border-radius: 5px"></div>
+    <div id="colors" style="position: absolute ;height: 3px;background: #f4a717;z-index: 0;border-radius: 5px"></div>
     <h3 id="percents" style="position: relative;line-height: 40px">加载中...</h3>
+</div>
+
+<div class="loading">
+    <div class="loading-circle"></div>
+    <div class="loading-avatar"><img src="img/icon.jpg" alt="" width="100" height="100"></div>
+    <!--<div class="loading-info" style="color: #f4a717;text-align: center">加载中...</div>-->
 </div>
 
 <div class="my-wrap" style="display: none">
