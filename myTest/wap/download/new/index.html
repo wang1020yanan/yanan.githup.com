@@ -14,8 +14,19 @@
         }
         body{
             background: #e9ebe4;
+            font-family: 'PingFang SC', 'Helvetica Neue', 'Helvetica', 'STHeitiSC-Light', 'Arial', sans-serif;
         }
         /*加载层*/
+        .pro-wrap{
+            background: #CCCCCC;height: 3px;text-align: center;color: #f4a717;position: relative;border-radius: 5px;top: 5%;width: 200%;
+            left: -50%;
+        }
+        #colors{
+            position: absolute ;height: 3px;background: #f4a717;z-index: 0;border-radius: 5px
+        }
+        #percents{
+            position: relative;line-height: 40px
+        }
         .loading {
             margin: auto;
             position: fixed;
@@ -111,7 +122,8 @@
             -o-transition: border-width 0.4s ease-in;
             transition: border-width 0.4s ease-in;
         }
-
+        /*加载层*/
+        /*page层*/
         .section1 { background: url('img/bg-1.jpg') no-repeat;background-size: cover}
         .section2 { background: url('img/bg-2.jpg') no-repeat;background-size: cover}
         .section3 { background:url('img/bg-3.jpg') no-repeat;background-size: cover}
@@ -144,119 +156,137 @@
             border-radius: 50%;
             position: absolute;
             z-index: 1;
-
         }
+        /*page层*/
     </style>
     <script src="http://cdn.staticfile.org/jquery/1.8.3/jquery.min.js"></script>
     <script src="http://cdn.dowebok.com/77/js/jquery.fullPage.min.js"></script>
     <script src="http://cdn.staticfile.org/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script>
-        $(function(){
-            $('#dowebok').fullpage({
-                sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90'],
-                anchors: ['page1', 'page2', 'page3', 'page4'],
-                menu: '#menu',
-
-                'navigation': true,
-
-                afterLoad: function(anchorLink, index){
-                    if(index == 1){
-                        $('.section1').find('p').animate({
-                            bottom: '0'
-                        }, 1500, 'easeOutExpo');
-                    }
-                    if(index == 2){
-                        $('.section2').find('p').delay(0).animate({
-                            left: '0'
-                        }, 1500, 'easeOutExpo');
-                    }
-                    if(index == 3){
-                        $('.section3').find('p').delay(0).animate({
-                           left: '0'
-                        }, 1500, 'easeOutExpo');
-                    }
-                    if(index == 4){
-                        $('.section4').find('p').animate({
-                            bottom: '0'
-                        }, 1500, 'easeOutExpo');
-                    }
-                },
-                onLeave: function(index, direction){
-                    if(index == 1){
-                        $('.section1').find('p').animate({
-                            bottom: '120%'
-                        }, 1500, 'easeOutExpo');
-                    }
-                    if(index == '2'){
-                        $('.section2').find('p').delay(0).animate({
-                            left: '-120%'
-                        }, 1500, 'easeOutExpo');
-                    }
-                    if(index ==  '3'){
-                        $('.section3').find('p').delay(0).animate({
-                            left: '120%'
-                        }, 1500, 'easeOutExpo');
-                    }
-                    if(index == '4'){
-                        $('.section4').find('p').animate({
-                            bottom: '-120%'
-                        }, 1500, 'easeOutExpo');
-                    }
-                }
-            });
-        });
-        function loadImg(arr,callback){
-            var result={};
-            var iNow=0;
-            var per = $("#percents");
-            console.log(per);
-            for(var i=0;i<arr.length;i++){
-                var oImg=new Image();
-                var tmp=arr[i].split('.');
-                result[tmp[0]]=oImg;
-                oImg.onload=function(){
-                    iNow++;
-                    var nowPercent=parseInt(iNow/arr.length*100);
-                    $("#colors").animate({width:nowPercent+'%'},100,function(){
-                        $("#percents").text(nowPercent+"%");
-                    });
-                    console.log(nowPercent);
-                    if(iNow>=arr.length){
-                        callback(result);
-                    }
-                };
-                oImg.src='img/'+arr[i];
-            }
-        }
-        loadImg(['bg-1.jpg','bg-2.jpg','bg-3.jpg', 'bg-4.jpg'],function(result){
-            console.log(result);
-            $('#fp-nav').delay(800).fadeIn();
-            $('.my-wrap').delay(800).fadeIn();
-            $('.pro-wrap').delay(400).fadeOut();
-            $('.loading').delay(400).fadeOut();
-            $('.section1').find('p').delay(800).animate({
-                bottom: '0'
-            }, 1500, 'easeOutExpo');
-            $('.section1').find('h3').delay(800).animate({
-                bottom: '0'
-            }, 1500, 'easeOutExpo');
-
-        });
+        var myApp={
+              init:function(){
+                  this.imgInit();
+                  this.pageInit();
+              },
+              imgInit:function(){
+                  var that=this;
+//                  图片资源
+                  this.loadImg([
+                      'bg-1.jpg',
+                      'bg-2.jpg',
+                      'bg-3.jpg',
+                      'bg-4.jpg'
+                  ],function(result){
+                      that.startAni()
+                  });
+              },
+//            page1动画
+              startAni:function(){
+                  $('#fp-nav').delay(800).fadeIn();
+                  $('.my-wrap').delay(800).fadeIn();
+                  $('.pro-wrap').delay(400).fadeOut();
+                  $('.loading').delay(400).fadeOut();
+                  $('.section1').find('p').delay(800).animate({
+                      bottom: '0'
+                  }, 1500, 'easeOutExpo');
+                  $('.section1').find('h3').delay(800).animate({
+                      bottom: '0'
+                  }, 1500, 'easeOutExpo');
+              },
+//            页面动画
+              pageInit:function(){
+                  $(function(){
+                      $('#dowebok').fullpage({
+                          sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90'],
+                          anchors: ['page1', 'page2', 'page3', 'page4'],
+                          menu: '#menu',
+                          'navigation': true,
+                          afterLoad: function(anchorLink, index){
+                              if(index == 1){
+                                  $('.section1').find('p').delay(0).animate({
+                                      bottom: '0'
+                                  }, 1500, 'easeOutExpo');
+                              }
+                              if(index == 2){
+                                  $('.section2').find('p').delay(0).animate({
+                                      left: '0'
+                                  }, 1500, 'easeOutExpo');
+                              }
+                              if(index == 3){
+                                  $('.section3').find('p').delay(0).animate({
+                                      left: '0'
+                                  }, 1500, 'easeOutExpo');
+                              }
+                              if(index == 4){
+                                  $('.section4').find('p').animate({
+                                      bottom: '0'
+                                  }, 1500, 'easeOutExpo');
+                              }
+                          },
+                          onLeave: function(index, direction){
+                              if(index == 1){
+                                  $('.section1').find('p').delay(100).animate({
+                                      bottom: '120%'
+                                  }, 1500, 'easeOutExpo');
+                              }
+                              if(index == '2'){
+                                  $('.section2').find('p').delay(100).animate({
+                                      left: '-120%'
+                                  }, 1500, 'easeOutExpo');
+                              }
+                              if(index ==  '3'){
+                                  $('.section3').find('p').delay(100).animate({
+                                      left: '120%'
+                                  }, 1500, 'easeOutExpo');
+                              }
+                              if(index == '4'){
+                                  $('.section4').find('p').delay(100).animate({
+                                      bottom: '-120%'
+                                  }, 1500, 'easeOutExpo');
+                              }
+                          }
+                      });
+                  })
+              },
+              loadImg:function(arr,callback){
+                  var result={};
+                  var iNow=0;
+                  var per = $("#percents");
+                  console.log(per);
+                  for(var i=0;i<arr.length;i++){
+                      var oImg=new Image();
+                      var tmp=arr[i].split('.');
+                      result[tmp[0]]=oImg;
+                      oImg.onload=function(){
+                          iNow++;
+                          var nowPercent=parseInt(iNow/arr.length*100);
+                          $("#colors").animate({width:nowPercent+'%'},100,function(){
+                              $("#percents").text(nowPercent+"%");
+                          });
+                          console.log(nowPercent);
+                          if(iNow>=arr.length){
+                              callback(result);
+                          }
+                      };
+                      oImg.src='img/'+arr[i];
+                  }
+              }
+        };
+        myApp.init();
     </script>
 </head>
 
 <body>
 <!--加载-->
-<div class="pro-wrap" style="background: #CCCCCC;height: 3px;text-align: center;color: #f4a717;position: relative;border-radius: 5px;top: 56%;width: 80%;
-    left: 10%;">
-    <div id="colors" style="position: absolute ;height: 3px;background: #f4a717;z-index: 0;border-radius: 5px"></div>
-    <h3 id="percents" style="position: relative;line-height: 40px">加载中...</h3>
-</div>
+
 
 <div class="loading">
     <div class="loading-circle"></div>
     <div class="loading-avatar"><img src="img/icon.jpg" alt="" width="100" height="100"></div>
-    <!--<div class="loading-info" style="color: #f4a717;text-align: center">加载中...</div>-->
+    <div class="pro-wrap">
+        <div id="colors"></div>
+        <h3 id="percents">加载中...</h3>
+    </div>
 </div>
 
 <div class="my-wrap" style="display: none">
@@ -274,10 +304,6 @@
         <div class="section section2">
             <h3>JD.COM</h3>
             <p>Jingdong JD.COM- professional comprehensive online shopping mall</p>
-
-            <!--<div class="slide"><h3>第二屏的第一屏</h3></div>-->
-            <!--<div class="slide"><h3>第二屏的第二屏</h3></div>-->
-            <!--<div class="slide"><h3>第二屏的第三屏</h3></div>-->
         </div>
         <div class="section section3">
             <h3>JD.COM</h3>
@@ -287,7 +313,6 @@
         <div class="section section4">
             <h3>JD.COM</h3>
             <p>Jingdong JD.COM- professional comprehensive online shopping mall</p>
-
         </div>
     </div>
 </div>
