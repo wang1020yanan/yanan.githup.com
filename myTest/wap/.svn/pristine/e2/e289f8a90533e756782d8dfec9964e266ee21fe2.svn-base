@@ -1,0 +1,333 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>--新手指导--</title>
+    <link rel="stylesheet" href="http://cdn.dowebok.com/77/css/jquery.fullPage.css">
+    <style>
+        html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+        body{
+            background: #e9ebe4;
+            font-family: 'PingFang SC', 'Helvetica Neue', 'Helvetica', 'STHeitiSC-Light', 'Arial', sans-serif;
+        }
+        /*加载层*/
+        .pro-wrap{
+            background: #CCCCCC;height: 3px;text-align: center;color: #f4a717;position: relative;border-radius: 5px;top: 5%;width: 200%;
+            left: -50%;
+        }
+        #colors{
+            position: absolute ;height: 3px;background: #f4a717;z-index: 0;border-radius: 5px
+        }
+        #percents{
+            position: relative;line-height: 40px
+        }
+        .loading {
+            margin: auto;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 15%;
+            width: 120px;
+            height: 120px;
+            z-index: 10;
+        }
+
+        .loading-circle {
+            background-color: rgba(0,0,0,0);
+            opacity: .9;
+            border-top: 10px solid #fefdff;
+            border-right: 10px solid #f4a717;
+            border-bottom: 10px solid #fffcff;
+            border-left: 10px solid #f4a717;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+            -webkit-transition: all 0.4s ease-in;
+            -moz-transition: all 0.4s ease-in;
+            -ms-transition: all 0.4s ease-in;
+            -o-transition: all 0.4s ease-in;
+            transition: all 0.4s ease-in;
+            animation: spin .5s infinite linear;
+            -webkit-animation: spin .5s infinite linear;
+            -moz-animation: spin .5s infinite linear;
+            -o-animation: spin .5s infinite linear;
+        }
+        @keyframes spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+            50% {
+                -webkit-transform: rotate(100deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+
+        @-moz-keyframes spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+            50% {
+                -webkit-transform: rotate(100deg);
+            }
+            100% {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+
+        @-webkit-keyframes spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+            50% {
+                -webkit-transform: rotate(100deg);
+            }
+            100% {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+
+        @-o-keyframes spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+            50% {
+                -webkit-transform: rotate(100deg);
+            }
+            100% {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+        .loading-avatar {
+            width: 100px;
+            height: 100px;
+            overflow: hidden;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            border-radius: 50%;
+            -webkit-transition: border-width 0.4s ease-in;
+            -moz-transition: border-width 0.4s ease-in;
+            -ms-transition: border-width 0.4s ease-in;
+            -o-transition: border-width 0.4s ease-in;
+            transition: border-width 0.4s ease-in;
+        }
+        /*加载层*/
+        /*page层*/
+        .section1 { background: url('img/bg-1.jpg') no-repeat;background-size: cover}
+        .section2 { background: url('img/bg-2.jpg') no-repeat;background-size: cover}
+        .section3 { background:url('img/bg-3.jpg') no-repeat;background-size: cover}
+        .section4 { background:url('img/bg-4.jpg') no-repeat;background-size: cover}
+        #fp-nav{
+            display: none;
+        }
+        #menu { margin: 0; padding: 0; position: fixed; left: 10px; top: 10px; list-style-type: none; z-index: 70;}
+        #menu li { float: left; margin:  0 10px 0 0; font-size: 14px;}
+        #menu a { float: left; padding: 10px 20px; background-color: #fff; color: #f4a717; text-decoration: none;}
+        #menu .active a { color: #fff; background-color: #f4a717;}
+
+        .section { text-align: center; font: 50px "Microsoft Yahei"; color: #fff;}
+        .section1 p { position: relative; bottom: 120%;}
+        .section1 h3 { position: relative; bottom: 120%;}
+        .section2 p { position: relative; left: -120%;}
+        .section3 p { position: relative;left: 120%;}
+        .section4 p { position: relative;  bottom: -120%;}
+
+        #fp-nav ul li a.active span, .fp-slidesNav ul li a.active span {
+            background: #f4a717;
+        }
+        #fp-nav ul li a span, .fp-slidesNav ul li a span {
+            top: 2px;
+            left: 2px;
+            width: 8px;
+            height: 8px;
+            border: 1px solid #f4a717;
+            background: rgba(0, 0, 0, 0);
+            border-radius: 50%;
+            position: absolute;
+            z-index: 1;
+        }
+        /*page层*/
+    </style>
+    <script src="http://cdn.staticfile.org/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://cdn.dowebok.com/77/js/jquery.fullPage.min.js"></script>
+    <script src="http://cdn.staticfile.org/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script>
+        var myApp={
+              init:function(){
+                  this.imgInit();
+                  this.pageInit();
+              },
+              imgInit:function(){
+                  var that=this;
+//                  图片资源
+                  this.loadImg([
+                      'bg-1.jpg',
+                      'bg-2.jpg',
+                      'bg-3.jpg',
+                      'bg-4.jpg'
+                  ],function(result){
+                      that.startAni()
+                  });
+              },
+//            page1动画
+              startAni:function(){
+                  $('#fp-nav').delay(800).fadeIn();
+                  $('.my-wrap').delay(800).fadeIn();
+                  $('.pro-wrap').delay(400).fadeOut();
+                  $('.loading').delay(400).fadeOut();
+                  $('.section1').find('p').delay(800).animate({
+                      bottom: '0'
+                  }, 1500, 'easeOutExpo');
+                  $('.section1').find('h3').delay(800).animate({
+                      bottom: '0'
+                  }, 1500, 'easeOutExpo');
+              },
+//            页面动画
+              pageInit:function(){
+                  $(function(){
+                      $('#dowebok').fullpage({
+                          sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90'],
+                          anchors: ['page1', 'page2', 'page3', 'page4'],
+                          menu: '#menu',
+                          'navigation': true,
+                          afterLoad: function(anchorLink, index){
+                              if(index == 1){
+                                  $('.section1').find('p').delay(0).animate({
+                                      bottom: '0'
+                                  }, 1500, 'easeOutExpo');
+                              }
+                              if(index == 2){
+                                  $('.section2').find('p').delay(0).animate({
+                                      left: '0'
+                                  }, 1500, 'easeOutExpo');
+                              }
+                              if(index == 3){
+                                  $('.section3').find('p').delay(0).animate({
+                                      left: '0'
+                                  }, 1500, 'easeOutExpo');
+                              }
+                              if(index == 4){
+                                  $('.section4').find('p').animate({
+                                      bottom: '0'
+                                  }, 1500, 'easeOutExpo');
+                              }
+                          },
+                          onLeave: function(index, direction){
+                              if(index == 1){
+                                  $('.section1').find('p').delay(100).animate({
+                                      bottom: '120%'
+                                  }, 1500, 'easeOutExpo');
+                              }
+                              if(index == '2'){
+                                  $('.section2').find('p').delay(100).animate({
+                                      left: '-120%'
+                                  }, 1500, 'easeOutExpo');
+                              }
+                              if(index ==  '3'){
+                                  $('.section3').find('p').delay(100).animate({
+                                      left: '120%'
+                                  }, 1500, 'easeOutExpo');
+                              }
+                              if(index == '4'){
+                                  $('.section4').find('p').delay(100).animate({
+                                      bottom: '-120%'
+                                  }, 1500, 'easeOutExpo');
+                              }
+                          }
+                      });
+                  })
+              },
+              loadImg:function(arr,callback){
+                  var result={};
+                  var iNow=0;
+                  var per = $("#percents");
+                  console.log(per);
+                  for(var i=0;i<arr.length;i++){
+                      var oImg=new Image();
+                      var tmp=arr[i].split('.');
+                      result[tmp[0]]=oImg;
+                      oImg.onload=function(){
+                          iNow++;
+                          var nowPercent=parseInt(iNow/arr.length*100);
+                          $("#colors").animate({width:nowPercent+'%'},100,function(){
+                              $("#percents").text(nowPercent+"%");
+                          });
+                          console.log(nowPercent);
+                          if(iNow>=arr.length){
+                              callback(result);
+                          }
+                      };
+                      oImg.src='img/'+arr[i];
+                  }
+              }
+        };
+        myApp.init();
+    </script>
+</head>
+
+<body>
+<!--加载-->
+
+
+<div class="loading">
+    <div class="loading-circle"></div>
+    <div class="loading-avatar" style="background: #f4a717"><img src="img/icon.jpg" alt="" width="100" height="100"></div>
+    <div class="pro-wrap">
+        <div id="colors"></div>
+        <h3 id="percents">加载中...</h3>
+    </div>
+</div>
+
+<div class="my-wrap" style="display: none">
+    <!--<ul id="menu">-->
+        <!--<li data-menuanchor="page1" class="active"><a href="#page1">TOP</a></li>-->
+        <!--<li data-menuanchor="page2"><a href="#page2">2</a></li>-->
+        <!--<li data-menuanchor="page3"><a href="#page3">3</a></li>-->
+        <!--<li data-menuanchor="page4"><a href="#page4">4</a></li>-->
+    <!--</ul>-->
+    <div id="dowebok">
+        <div class="section section1">
+            <h3>JD.COM</h3>
+            <p>Jingdong JD.COM- professional comprehensive online shopping mall</p>
+        </div>
+        <div class="section section2">
+            <h3>JD.COM</h3>
+            <p>Jingdong JD.COM- professional comprehensive online shopping mall</p>
+        </div>
+        <div class="section section3">
+            <h3>JD.COM</h3>
+            <p>Jingdong JD.COM- professional comprehensive online shopping mall</p>
+
+        </div>
+        <div class="section section4">
+            <h3>JD.COM</h3>
+            <p>Jingdong JD.COM- professional comprehensive online shopping mall</p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

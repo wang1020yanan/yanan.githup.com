@@ -210,7 +210,7 @@
         .section4 p { position: relative;  bottom: -120%;}
         .section-1-1{width: 45%;position: absolute;left:-50%;top: 8%;}
         .section-1-2{width: 45%;position: absolute;right:-50%;top: 8%;}
-        .section-1-3{width: 90%;position: absolute;right: 5%;top: 110%;}
+        .section-1-3{width: 90%;position: absolute;right: 25%;top: 110%;}
         .section-1-4{opacity: 0 ;width: 45%;position: absolute;right: 5%;top: 8%;}
         .next,.pre{width: 6%;position: absolute;left: 47%;bottom: 2%}
         #fp-nav ul li a.active span, .fp-slidesNav ul li a.active span {
@@ -313,6 +313,36 @@
                      opacity:'0'
                  }, 1500, 'easeOutExpo');
               },
+            section2:function(x,time,time2){
+                var section=$(x);
+                section.find('.section-1-1').delay(time).animate({
+                    left:'20%',top: '3%'
+                }, 1500, 'easeOutExpo');
+                section.find('.section-1-2').delay(time).animate({
+                    right:'20%',top: '3%'
+                }, 1500, 'easeOutExpo');
+                section.find('.section-1-3').delay(time).animate({
+                    right:'25%',top: '75%'
+                }, 1500, 'easeOutExpo');
+                section.find('.section-1-4').delay(time2).animate({
+                    opacity:'1'
+                }, 1500, 'easeOutExpo');
+            },
+            onSection2:function(x,time,time2){
+                var section=$(x);
+                section.find('.section-1-1').delay(time).animate({
+                    left:'-50%',top: '8%'
+                }, 1500, 'easeOutExpo');
+                section.find('.section-1-2').delay(time).animate({
+                    right:'-50%',top: '8%'
+                }, 1500, 'easeOutExpo');
+                section.find('.section-1-3').delay(time).animate({
+                    right:'25%',top: '110%'
+                }, 1500, 'easeOutExpo');
+                section.find('.section-1-4').delay(time2).animate({
+                    opacity:'0'
+                }, 1500, 'easeOutExpo');
+            },
               changeColor:function(x){
                   $('#fp-nav ul li a span').css({'background':'#fff','border':'1px solid '+x});
                   $('#fp-nav ul li a.active span').css('background',x)
@@ -325,59 +355,102 @@
                      $('.my-wrap').delay(800).fadeIn();
                      $('.pro-wrap').delay(400).fadeOut();
                      $('.loading').delay(400).fadeOut();
-                     that.section('.section1','800','2200');
+                     if(isM==true){
+                         that.section2('.section1','800','2200');
+                     }else{
+                         that.section('.section1','800','2200');
+                     }
                  },800)
               },
 //            页面动画
               pageInit:function(){
                   var that=this;
                   $(function(){
-                      $('#dowebok').fullpage({
-                          sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90'],
-                          anchors: ['page1', 'page2', 'page3', 'page4'],
-                          menu: '#menu',
-//                          'navigation': true,
-                          afterLoad: function(anchorLink, index){
-                              if(index == 1){
-                                  that.section('.section1','100','1000');
-                                  that.changeColor('#ffb81f')
-                              }
-                              if(index == 2){
-                                  that.section('.section2','100','1000');
-                                  that.changeColor('#15c1f3')
-                              }
-                              if(index == 3){
-                                  that.section('.section3','100','1000');
-                                  that.changeColor('#46d0a8')
-                              }
-                              if(index == 4){
-                                  that.section('.section4','100','1000');
-                                  that.changeColor('#c573ff')
-                              }
-                          },
-                          onLeave: function(index, direction){
-                              if(index == 1){
-                                  that.onSection('.section1','100','100')
-                              }
-                              if(index == '2'){
-                                  that.onSection('.section2','100','100')
-                              }
-                              if(index ==  '3'){
-                                  that.onSection('.section3','100','100')
-                              }
-                              if(index == '4'){
-                                  that.onSection('.section4','100','100')
-                              }
-                          }
-                      });
                       var u = navigator.userAgent;
-                      var isM = u.match(/AppleWebKit.*Mobile.*/)||!!u.match(/AppleWebKit/);
+                      isM = u.match(/AppleWebKit.*Mobile.*/)||!!u.match(/AppleWebKit/);
                       if(isM==true){
-                         $(".my-wrap").css({
-                             'width':'400px',
-                             'margin':'auto',
-                             'overflow':'hidden'
-                         })
+                          $(".my-wrap").css({'width': '1200px','margin':'auto'});
+                          $(".section-1-1").css({'width': '20%','left':'-50%','top':'3%'});
+                          $(".section-1-2").css({'width': '20%','right':'-50%','top':'3%'});
+                          $(".section-1-3").css({'width': '50%','top':'100%'});
+                          $(".section-1-4").css({'width': '20%','right':'20%','top':'3%'});
+                          $('#dowebok').fullpage({
+                              sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90'],
+                              anchors: ['page1', 'page2', 'page3', 'page4'],
+                              menu: '#menu',
+//                          'navigation': true,
+                              afterLoad: function(anchorLink, index){
+                                  if(index == 1){
+                                      that.section2('.section1','100','1000');
+                                      that.changeColor('#ffb81f')
+                                  }
+                                  if(index == 2){
+                                      that.section2('.section2','100','1000');
+                                      that.changeColor('#15c1f3')
+                                  }
+                                  if(index == 3){
+                                      that.section2('.section3','100','1000');
+                                      that.changeColor('#46d0a8')
+                                  }
+                                  if(index == 4){
+                                      that.section2('.section4','100','1000');
+                                      that.changeColor('#c573ff')
+                                  }
+                              },
+                              onLeave: function(index, direction){
+                                  if(index == 1){
+                                      that.onSection2('.section1','100','100')
+                                  }
+                                  if(index == '2'){
+                                      that.onSection2('.section2','100','100')
+                                  }
+                                  if(index ==  '3'){
+                                      that.onSection2('.section3','100','100')
+                                  }
+                                  if(index == '4'){
+                                      that.onSection2('.section4','100','100')
+                                  }
+                              }
+                          });
+                      }else{
+                          $('#dowebok').fullpage({
+                              sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90'],
+                              anchors: ['page1', 'page2', 'page3', 'page4'],
+                              menu: '#menu',
+//                          'navigation': true,
+                              afterLoad: function(anchorLink, index){
+                                  if(index == 1){
+                                      that.section('.section1','100','1000');
+                                      that.changeColor('#ffb81f')
+                                  }
+                                  if(index == 2){
+                                      that.section('.section2','100','1000');
+                                      that.changeColor('#15c1f3')
+                                  }
+                                  if(index == 3){
+                                      that.section('.section3','100','1000');
+                                      that.changeColor('#46d0a8')
+                                  }
+                                  if(index == 4){
+                                      that.section('.section4','100','1000');
+                                      that.changeColor('#c573ff')
+                                  }
+                              },
+                              onLeave: function(index, direction){
+                                  if(index == 1){
+                                      that.onSection('.section1','100','100')
+                                  }
+                                  if(index == '2'){
+                                      that.onSection('.section2','100','100')
+                                  }
+                                  if(index ==  '3'){
+                                      that.onSection('.section3','100','100')
+                                  }
+                                  if(index == '4'){
+                                      that.onSection('.section4','100','100')
+                                  }
+                              }
+                          });
                       }
                   })
               },

@@ -15,7 +15,7 @@
             border: 0;
         }
         body{
-            background: #eaf2ea;
+            background: #e9ebe4;
             font-family: 'PingFang SC', 'Helvetica Neue', 'Helvetica', 'STHeitiSC-Light', 'Arial', sans-serif;
         }
         /*加载层*/
@@ -208,11 +208,7 @@
         .section2 p { position: relative; left: -120%;}
         .section3 p { position: relative;left: 120%;}
         .section4 p { position: relative;  bottom: -120%;}
-        .section-1-1{width: 45%;position: absolute;left:-50%;top: 8%;}
-        .section-1-2{width: 45%;position: absolute;right:-50%;top: 8%;}
-        .section-1-3{width: 90%;position: absolute;right: 5%;top: 110%;}
-        .section-1-4{opacity: 0 ;width: 45%;position: absolute;right: 5%;top: 8%;}
-        .next,.pre{width: 6%;position: absolute;left: 47%;bottom: 2%}
+
         #fp-nav ul li a.active span, .fp-slidesNav ul li a.active span {
             background: #f4a717;
         }
@@ -286,10 +282,10 @@
               section:function(x,time,time2){
                   var section=$(x);
                   section.find('.section-1-1').delay(time).animate({
-                      left:'3%',top: '8%'
+                      left:'3%',top: '10%'
                   }, 1500, 'easeOutExpo');
                   section.find('.section-1-2').delay(time).animate({
-                      right:'5%',top: '8%'
+                      right:'5%',top: '10%'
                   }, 1500, 'easeOutExpo');
                   section.find('.section-1-3').delay(time).animate({
                       right:'5%',top: '75%'
@@ -301,10 +297,10 @@
               onSection:function(x,time,time2){
                  var section=$(x);
                  section.find('.section-1-1').delay(time).animate({
-                     left:'-50%',top: '8%'
+                     left:'-50%',top: '10%'
                  }, 1500, 'easeOutExpo');
                  section.find('.section-1-2').delay(time).animate({
-                     right:'-50%',top: '8%'
+                     right:'-50%',top: '10%'
                  }, 1500, 'easeOutExpo');
                  section.find('.section-1-3').delay(time).animate({
                      right:'5%',top: '110%'
@@ -314,7 +310,8 @@
                  }, 1500, 'easeOutExpo');
               },
               changeColor:function(x){
-                  $('#fp-nav ul li a span').css({'background':'#fff','border':'1px solid '+x});
+                  $('#fp-nav ul li a span').css('background','#fff');
+                  $('#fp-nav ul li a span').css('border','1px solid '+x);
                   $('#fp-nav ul li a.active span').css('background',x)
               },
 //            动画
@@ -326,7 +323,7 @@
                      $('.pro-wrap').delay(400).fadeOut();
                      $('.loading').delay(400).fadeOut();
                      that.section('.section1','800','2200');
-                 },800)
+                 },1500)
               },
 //            页面动画
               pageInit:function(){
@@ -336,7 +333,7 @@
                           sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90'],
                           anchors: ['page1', 'page2', 'page3', 'page4'],
                           menu: '#menu',
-//                          'navigation': true,
+                          'navigation': true,
                           afterLoad: function(anchorLink, index){
                               if(index == 1){
                                   that.section('.section1','100','1000');
@@ -393,7 +390,7 @@
                       oImg.onload=function(){
                           iNow++;
                           var nowPercent=parseInt(iNow/arr.length*100);
-                          $("#colors").animate({width:nowPercent+'%'},30,function(){
+                          $("#colors").animate({width:nowPercent+'%'},10,function(){
                               $("#percents").text(nowPercent+"%");
                           });
                           console.log(nowPercent);
@@ -416,10 +413,10 @@
 <div class="loading">
     <div class="loading-circle"></div>
     <div class="loading-avatar" style="background: #f4a717"><img src="img/icon.png" alt="" width="60" height="60"></div>
-    <!--<div class="pro-wrap">-->
-        <!--<div id="colors"></div>-->
-        <!--<h3 id="percents">加载中...</h3>-->
-    <!--</div>-->
+    <div class="pro-wrap">
+        <div id="colors"></div>
+        <h3 id="percents">加载中...</h3>
+    </div>
 </div>
 
 <div class="my-wrap" style="display: none">
@@ -431,32 +428,32 @@
     <!--</ul>-->
     <div id="dowebok">
         <div class="section section1">
-            <img src="img/1-2.png" class="section-1-1" >
-            <img src="img/1-phone.png" class="section-1-2" >
-            <img src="img/1-font.png" class="section-1-3" >
-            <img src="img/1-interface.png" class="section-1-4" >
-            <a href="#page2"><img class="next" src="img/next.png" ></a>
+            <img src="img/1-2.png" class="section-1-1" style="width: 45%;position: absolute;left:-50%;top: 10%;">
+            <img src="img/1-phone.png" class="section-1-2" style="width: 45%;position: absolute;right:-50%;top: 10%;">
+            <img src="img/1-font.png" class="section-1-3" style="width: 90%;position: absolute;right: 5%;top: 110%;">
+            <img src="img/1-interface.png" class="section-1-4" style="opacity: 0 ;width: 45%;position: absolute;right: 5%;top: 10%;">
+            <a href="#page2"><img class="next" src="img/next.png" style="width: 6%;position: absolute;left: 47%;bottom: 2%"></a>
         </div>
         <div class="section section2">
-            <img src="img/2-2.png" class="section-1-1" >
-            <img src="img/2-phone.png" class="section-1-2" >
-            <img src="img/2-font.png" class="section-1-3" >
-            <img src="img/2-interface.png" class="section-1-4" >
-            <a href="#page3"><img class="next" src="img/next.png" ></a>
+            <img src="img/2-2.png" class="section-1-1" style="width: 45%;position: absolute;left:-50%;top: 10%;">
+            <img src="img/2-phone.png" class="section-1-2" style="width: 45%;position: absolute;right:-50%;top: 10%;">
+            <img src="img/2-font.png" class="section-1-3" style="width: 90%;position: absolute;right: 5%;top: 110%;">
+            <img src="img/2-interface.png" class="section-1-4" style="opacity: 0 ;width: 45%;position: absolute;right: 5%;top: 10%;">
+            <!--<a href="#page3"><img src="img/next.png" style="width: 10%;position: absolute;left: 45%;bottom: 5%"></a>-->
         </div>
         <div class="section section3">
-            <img src="img/3-2.png" class="section-1-1" >
-            <img src="img/3-phone.png" class="section-1-2" >
-            <img src="img/3-font.png" class="section-1-3" >
-            <img src="img/3-interface.png" class="section-1-4" >
-            <a href="#page4"><img class="next" src="img/next.png" ></a>
+            <img src="img/3-2.png" class="section-1-1" style="width: 45%;position: absolute;left:-50%;top: 10%;">
+            <img src="img/3-phone.png" class="section-1-2" style="width: 45%;position: absolute;right:-50%;top: 10%;">
+            <img src="img/3-font.png" class="section-1-3" style="width: 90%;position: absolute;right: 5%;top: 110%;">
+            <img src="img/3-interface.png" class="section-1-4" style="opacity: 0 ;width: 45%;position: absolute;right: 5%;top: 10%;">
+            <!--<a href="#page4"><img src="img/next.png" style="width: 10%;position: absolute;left: 45%;bottom: 5%"></a>-->
         </div>
         <div class="section section4">
-            <img src="img/4-2.png" class="section-1-1" >
-            <img src="img/4-phone.png" class="section-1-2" >
-            <img src="img/4-font.png" class="section-1-3" >
-            <img src="img/4-interface.png" class="section-1-4" >
-            <a href="#page1"><img class="pre" src="img/pre.png" ></a>
+            <img src="img/4-2.png" class="section-1-1" style="width: 45%;position: absolute;left:-50%;top: 10%;">
+            <img src="img/4-phone.png" class="section-1-2" style="width: 45%;position: absolute;right:-50%;top: 10%;">
+            <img src="img/4-font.png" class="section-1-3" style="width: 90%;position: absolute;right: 5%;top: 110%;">
+            <img src="img/4-interface.png" class="section-1-4" style="opacity: 0 ;width: 45%;position: absolute;right: 5%;top: 10%;">
+            <a href="#page1"><img class="pre" src="img/pre.png" style="width: 6%;position: absolute;left: 47%;bottom: 2%"></a>
         </div>
     </div>
 </div>

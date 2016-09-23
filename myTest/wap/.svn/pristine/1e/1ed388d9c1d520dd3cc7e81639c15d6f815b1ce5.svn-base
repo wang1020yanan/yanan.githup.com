@@ -314,7 +314,8 @@
                  }, 1500, 'easeOutExpo');
               },
               changeColor:function(x){
-                  $('#fp-nav ul li a span').css({'background':'#fff','border':'1px solid '+x});
+                  $('#fp-nav ul li a span').css('background','#fff');
+                  $('#fp-nav ul li a span').css('border','1px solid '+x);
                   $('#fp-nav ul li a.active span').css('background',x)
               },
 //            动画

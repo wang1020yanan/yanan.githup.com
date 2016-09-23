@@ -2,12 +2,10 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <title>--新手指导--</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-    <meta name="description" content="快去添加第一个好友吧，用好友雷达你可以知道他与你的距离！" />
+    <title>--新手指导--</title>
     <link rel="stylesheet" href="http://cdn.dowebok.com/77/css/jquery.fullPage.css">
-    <link href="img/icon.png" rel="shortcut icon" type="image/x-icon"/>
     <style>
         html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
             margin: 0;
@@ -15,7 +13,7 @@
             border: 0;
         }
         body{
-            background: #eaf2ea;
+            background: #e9ebe4;
             font-family: 'PingFang SC', 'Helvetica Neue', 'Helvetica', 'STHeitiSC-Light', 'Arial', sans-serif;
         }
         /*加载层*/
@@ -36,8 +34,8 @@
             left: 0;
             right: 0;
             bottom: 15%;
-            width: 100px;
-            height: 100px;
+            width: 120px;
+            height: 120px;
             z-index: 10;
         }
 
@@ -49,8 +47,8 @@
             border-bottom: 10px solid #fffcff;
             border-left: 10px solid #f4a717;
             border-radius: 50%;
-            width: 60px;
-            height: 60px;
+            width: 100px;
+            height: 100px;
             margin: 0 auto;
             -webkit-transition: all 0.4s ease-in;
             -moz-transition: all 0.4s ease-in;
@@ -111,12 +109,12 @@
             }
         }
         .loading-avatar {
-            width: 60px;
-            height: 60px;
+            width: 100px;
+            height: 100px;
             overflow: hidden;
             position: absolute;
             top: 10px;
-            left: 20px;
+            left: 10px;
             border-radius: 50%;
             -webkit-transition: border-width 0.4s ease-in;
             -moz-transition: border-width 0.4s ease-in;
@@ -125,70 +123,6 @@
             transition: border-width 0.4s ease-in;
         }
         /*加载层*/
-        .next{ -webkit-animation:change 1.5s linear infinite;}
-        .pre{ -webkit-animation:change 1.5s linear infinite;}
-        @keyframes change {
-            0% {
-                bottom: 2%;
-                /*-webkit-transform: rotate(0deg);*/
-            }
-            50% {
-                bottom: 5%;
-                /*-webkit-transform: rotate(100deg);*/
-            }
-
-            100% {
-                bottom: 2%;
-                /*-webkit-transform: rotate(360deg);*/
-            }
-        }
-        @-moz-keyframes change {
-            0% {
-                bottom: 2%;
-                /*-webkit-transform: rotate(0deg);*/
-            }
-            50% {
-                bottom: 5%;
-                /*-webkit-transform: rotate(100deg);*/
-            }
-
-            100% {
-                bottom: 2%;
-                /*-webkit-transform: rotate(360deg);*/
-            }
-        }
-
-        @-webkit-keyframes change {
-            0% {
-                bottom: 2%;
-                /*-webkit-transform: rotate(0deg);*/
-            }
-            50% {
-                bottom: 5%;
-                /*-webkit-transform: rotate(100deg);*/
-            }
-
-            100% {
-                bottom: 2%;
-                /*-webkit-transform: rotate(360deg);*/
-            }
-        }
-
-        @-o-keyframes change {
-            0% {
-                bottom: 2%;
-                /*-webkit-transform: rotate(0deg);*/
-            }
-            50% {
-                bottom: 5%;
-                /*-webkit-transform: rotate(100deg);*/
-            }
-
-            100% {
-                bottom: 2%;
-                /*-webkit-transform: rotate(360deg);*/
-            }
-        }
         /*page层*/
         .section1 { background: url('img/1-bg.png') no-repeat;background-size: cover}
         .section2 { background: url('img/2-bg.png') no-repeat;background-size: cover}
@@ -208,11 +142,7 @@
         .section2 p { position: relative; left: -120%;}
         .section3 p { position: relative;left: 120%;}
         .section4 p { position: relative;  bottom: -120%;}
-        .section-1-1{width: 45%;position: absolute;left:-50%;top: 8%;}
-        .section-1-2{width: 45%;position: absolute;right:-50%;top: 8%;}
-        .section-1-3{width: 90%;position: absolute;right: 5%;top: 110%;}
-        .section-1-4{opacity: 0 ;width: 45%;position: absolute;right: 5%;top: 8%;}
-        .next,.pre{width: 6%;position: absolute;left: 47%;bottom: 2%}
+
         #fp-nav ul li a.active span, .fp-slidesNav ul li a.active span {
             background: #f4a717;
         }
@@ -235,24 +165,8 @@
     <script>
         var myApp={
               init:function(){
-                  window.location.href='#page1';
                   this.imgInit();
                   this.pageInit();
-              },
-              versions:function(){
-                  var u = navigator.userAgent, app = navigator.appVersion;
-                  return {//移动终端浏览器版本信息
-                      trident: u.indexOf('Trident') > -1, //IE内核
-                      presto: u.indexOf('Presto') > -1, //opera内核
-                      webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
-                      gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
-                      mobile: !!u.match(/AppleWebKit.*Mobile.*/)||!!u.match(/AppleWebKit/), //是否为移动终端
-                      ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
-                      android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器
-                      iPhone: u.indexOf('iPhone') > -1 || u.indexOf('Mac') > -1, //是否为iPhone或者QQHD浏览器
-                      iPad: u.indexOf('iPad') > -1, //是否iPad
-                      webApp: u.indexOf('Safari') == -1 //是否web应该程序，没有头部与底部
-                  };
               },
               imgInit:function(){
                   var that=this;
@@ -286,10 +200,10 @@
               section:function(x,time,time2){
                   var section=$(x);
                   section.find('.section-1-1').delay(time).animate({
-                      left:'3%',top: '8%'
+                      left:'3%',top: '10%'
                   }, 1500, 'easeOutExpo');
                   section.find('.section-1-2').delay(time).animate({
-                      right:'5%',top: '8%'
+                      right:'5%',top: '10%'
                   }, 1500, 'easeOutExpo');
                   section.find('.section-1-3').delay(time).animate({
                       right:'5%',top: '75%'
@@ -301,10 +215,10 @@
               onSection:function(x,time,time2){
                  var section=$(x);
                  section.find('.section-1-1').delay(time).animate({
-                     left:'-50%',top: '8%'
+                     left:'-50%',top: '10%'
                  }, 1500, 'easeOutExpo');
                  section.find('.section-1-2').delay(time).animate({
-                     right:'-50%',top: '8%'
+                     right:'-50%',top: '10%'
                  }, 1500, 'easeOutExpo');
                  section.find('.section-1-3').delay(time).animate({
                      right:'5%',top: '110%'
@@ -314,7 +228,8 @@
                  }, 1500, 'easeOutExpo');
               },
               changeColor:function(x){
-                  $('#fp-nav ul li a span').css({'background':'#fff','border':'1px solid '+x});
+                  $('#fp-nav ul li a span').css('background','#fff');
+                  $('#fp-nav ul li a span').css('border','1px solid '+x);
                   $('#fp-nav ul li a.active span').css('background',x)
               },
 //            动画
@@ -326,7 +241,7 @@
                      $('.pro-wrap').delay(400).fadeOut();
                      $('.loading').delay(400).fadeOut();
                      that.section('.section1','800','2200');
-                 },800)
+                 },1500)
               },
 //            页面动画
               pageInit:function(){
@@ -336,22 +251,22 @@
                           sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90'],
                           anchors: ['page1', 'page2', 'page3', 'page4'],
                           menu: '#menu',
-//                          'navigation': true,
+                          'navigation': true,
                           afterLoad: function(anchorLink, index){
                               if(index == 1){
-                                  that.section('.section1','100','1000');
+                                  that.section('.section1','100','1500');
                                   that.changeColor('#ffb81f')
                               }
                               if(index == 2){
-                                  that.section('.section2','100','1000');
+                                  that.section('.section2','100','1500');
                                   that.changeColor('#15c1f3')
                               }
                               if(index == 3){
-                                  that.section('.section3','100','1000');
+                                  that.section('.section3','100','1500');
                                   that.changeColor('#46d0a8')
                               }
                               if(index == 4){
-                                  that.section('.section4','100','1000');
+                                  that.section('.section4','100','1500');
                                   that.changeColor('#c573ff')
                               }
                           },
@@ -370,15 +285,6 @@
                               }
                           }
                       });
-                      var u = navigator.userAgent;
-                      var isM = u.match(/AppleWebKit.*Mobile.*/)||!!u.match(/AppleWebKit/);
-                      if(isM==true){
-                         $(".my-wrap").css({
-                             'width':'400px',
-                             'margin':'auto',
-                             'overflow':'hidden'
-                         })
-                      }
                   })
               },
               loadImg:function(arr,callback){
@@ -393,7 +299,7 @@
                       oImg.onload=function(){
                           iNow++;
                           var nowPercent=parseInt(iNow/arr.length*100);
-                          $("#colors").animate({width:nowPercent+'%'},30,function(){
+                          $("#colors").animate({width:nowPercent+'%'},100,function(){
                               $("#percents").text(nowPercent+"%");
                           });
                           console.log(nowPercent);
@@ -415,11 +321,11 @@
 
 <div class="loading">
     <div class="loading-circle"></div>
-    <div class="loading-avatar" style="background: #f4a717"><img src="img/icon.png" alt="" width="60" height="60"></div>
-    <!--<div class="pro-wrap">-->
-        <!--<div id="colors"></div>-->
-        <!--<h3 id="percents">加载中...</h3>-->
-    <!--</div>-->
+    <div class="loading-avatar" style="background: #f4a717"><img src="img/icon.jpg" alt="" width="100" height="100"></div>
+    <div class="pro-wrap">
+        <div id="colors"></div>
+        <h3 id="percents">加载中...</h3>
+    </div>
 </div>
 
 <div class="my-wrap" style="display: none">
@@ -431,34 +337,47 @@
     <!--</ul>-->
     <div id="dowebok">
         <div class="section section1">
-            <img src="img/1-2.png" class="section-1-1" >
-            <img src="img/1-phone.png" class="section-1-2" >
-            <img src="img/1-font.png" class="section-1-3" >
-            <img src="img/1-interface.png" class="section-1-4" >
-            <a href="#page2"><img class="next" src="img/next.png" ></a>
+            <img src="img/1-2.png" class="section-1-1" style="width: 45%;position: absolute;left:-50%;top: 10%;">
+            <img src="img/1-phone.png" class="section-1-2" style="width: 45%;position: absolute;right:-50%;top: 10%;">
+            <img src="img/1-font.png" class="section-1-3" style="width: 90%;position: absolute;right: 5%;top: 110%;">
+            <img src="img/1-interface.png" class="section-1-4" style="opacity: 0 ;width: 45%;position: absolute;right: 5%;top: 10%;">
+            <a href="#page2"><img src="img/next.png" style="width: 10%;position: absolute;left: 45%;bottom: 5%"></a>
         </div>
         <div class="section section2">
-            <img src="img/2-2.png" class="section-1-1" >
-            <img src="img/2-phone.png" class="section-1-2" >
-            <img src="img/2-font.png" class="section-1-3" >
-            <img src="img/2-interface.png" class="section-1-4" >
-            <a href="#page3"><img class="next" src="img/next.png" ></a>
+            <img src="img/2-2.png" class="section-1-1" style="width: 45%;position: absolute;left:-50%;top: 10%;">
+            <img src="img/2-phone.png" class="section-1-2" style="width: 45%;position: absolute;right:-50%;top: 10%;">
+            <img src="img/2-font.png" class="section-1-3" style="width: 90%;position: absolute;right: 5%;top: 110%;">
+            <img src="img/2-interface.png" class="section-1-4" style="opacity: 0 ;width: 45%;position: absolute;right: 5%;top: 10%;">
+            <a href="#page3"><img src="img/next.png" style="width: 10%;position: absolute;left: 45%;bottom: 5%"></a>
         </div>
         <div class="section section3">
-            <img src="img/3-2.png" class="section-1-1" >
-            <img src="img/3-phone.png" class="section-1-2" >
-            <img src="img/3-font.png" class="section-1-3" >
-            <img src="img/3-interface.png" class="section-1-4" >
-            <a href="#page4"><img class="next" src="img/next.png" ></a>
+            <img src="img/2-2.png" class="section-1-1" style="width: 45%;position: absolute;left:-50%;top: 10%;">
+            <img src="img/2-phone.png" class="section-1-2" style="width: 45%;position: absolute;right:-50%;top: 10%;">
+            <img src="img/2-font.png" class="section-1-3" style="width: 90%;position: absolute;right: 5%;top: 110%;">
+            <img src="img/2-interface.png" class="section-1-4" style="opacity: 0 ;width: 45%;position: absolute;right: 5%;top: 10%;">
+            <a href="#page4"><img src="img/next.png" style="width: 10%;position: absolute;left: 45%;bottom: 5%"></a>
         </div>
         <div class="section section4">
-            <img src="img/4-2.png" class="section-1-1" >
-            <img src="img/4-phone.png" class="section-1-2" >
-            <img src="img/4-font.png" class="section-1-3" >
-            <img src="img/4-interface.png" class="section-1-4" >
-            <a href="#page1"><img class="pre" src="img/pre.png" ></a>
+            <img src="img/2-2.png" class="section-1-1" style="width: 45%;position: absolute;left:-50%;top: 10%;">
+            <img src="img/2-phone.png" class="section-1-2" style="width: 45%;position: absolute;right:-50%;top: 10%;">
+            <img src="img/2-font.png" class="section-1-3" style="width: 90%;position: absolute;right: 5%;top: 110%;">
+            <img src="img/2-interface.png" class="section-1-4" style="opacity: 0 ;width: 45%;position: absolute;right: 5%;top: 10%;">
+            <a href="#page1"><img src="img/pre.png" style="width: 10%;position: absolute;left: 45%;bottom: 5%"></a>
         </div>
     </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>
