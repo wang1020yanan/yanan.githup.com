@@ -43,10 +43,10 @@ body{
 }
 .section1 { background: url('../img/bg-2.jpg') no-repeat;background-size: cover}
 .section2 { background: url('../img/bg-1.jpg') no-repeat;background-size: cover}
-.section3 { background: url('../img/bg-1.jpg') no-repeat;background-size: cover}
+.section3 { background: url('../img/bg-3.jpg') no-repeat;background-size: cover}
 .section4 { background: url('http://idowebok.u.qiniudn.com/77/4.jpg') 50%;}
 
-#menu ul{list-style-type: none;padding: 0 }
+#menu ul{list-style-type: none;padding: 0 ;border-bottom: 1px solid rgba(255, 255, 255, 0.6);}
 #menu { margin: 0; padding: 0; position: fixed; width:100%;list-style-type: none; z-index: 70;background: rgba(0, 0, 0, 0.6)}
 #menu li { width: 33.3333%;line-height: 80px;float: left;text-align: center;font-size: 20px;}
 #menu .logo{border-radius: 50%;
