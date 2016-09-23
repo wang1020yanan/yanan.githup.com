@@ -44,7 +44,7 @@ var myApp={
                 anchors: ['page1', 'page2', 'page3', 'page4', 'page5'],
                 menu: '#menu',
 
-                'navigation': true,
+                //'navigation': true,
 
                 afterLoad: function(anchorLink, index){
                     if(index == 1){
