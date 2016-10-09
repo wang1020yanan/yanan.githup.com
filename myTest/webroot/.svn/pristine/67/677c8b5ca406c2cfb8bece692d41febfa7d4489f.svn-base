@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap -->
+    <link href="//cdn.bootcss.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://cdn.dowebok.com/77/css/jquery.fullPage.css">
+    <link href="css/ihover.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div id="loading">
+    <div class="circle"></div>
+    <div class="logo"><img src="img/icon.png"></div>
+</div>
+<div id="menu">
+    <ul class="col-md-8 col-md-offset-2">
+        <li><a href="">网页版Only</a></li>
+        <!--<li data-menuanchor="page3"><a href="#page3">下载APP</a></li>-->
+        <li data-menuanchor="page1" class="active"><a href="#page1"><img class="logo" src="img/icon.png"></a></li>
+        <li data-menuanchor="page2"><a href="#page2">下载APP</a></li>
+        <!--<li data-menuanchor="page5"><a href="#page5">在线聊天</a></li>-->
+    </ul>
+</div>
+
+<div id="dowebok">
+    <div class="section section1">
+        <div class="col-md-offset-2 col-md-8" style="">
+            <div class="col-md-12" style="">
+                <div class="col-md-6">
+                    <img class="s2" src="img/font-all.png" style="width: 100%;position: relative;left: -170%;top: -50px">
+                    <!--<img class="s1" src="img/cube.png" style="top: -144px;width: 342px; position: relative;display: none;left: 0%;">-->
+                    <!--<img class="s3" src="img/font-1.png" style="width: 100%;position: relative;top: -277px;left: -170%">-->
+                </div>
+            </div>
+            <div class="col-md-12" style="text-align: center">
+                <a href="">  <img class="s4" src="img/talk-button.png" style="position: absolute;right: -170%;top: 50px"></a>
+            </div>
+        </div>
+    </div>
+    <div class="section section2">
+        <div class="row" style="margin-top: 50px">
+            <div class="col-md-offset-2 col-md-8">
+                <div class="col-md-4 col-xs-7 down down1"> <!-- normal -->
+                    <div class="ih-item circle effect4 left_to_right"><a href="#">
+                        <div class="img"><img src="img/apple.png" alt="img"></div>
+                        <div class="info">
+                            <img src="img/er.png" alt="img">
+                        </div></a></div>
+                    <!-- end normal -->
+                </div>
+                <div class="col-md-4 col-xs-7 down down2"> <!-- normal -->
+                    <div class="ih-item circle effect4 left_to_right"><a href="#">
+                        <div class="img"><img src="img/android.png" alt="img"></div>
+                        <div class="info">
+                            <img src="img/er.png" alt="img">
+                        </div></a></div>
+                    <!-- end normal -->
+                </div>
+            </div>
+
+        </div>
+        <div class="footer hidden-xs">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="col-md-6 footer1">
+                       <div class="row">
+                           <div class="col-md-2"><img class="foot-logo" src="img/icon.png"></div>
+                           <div class="col-md-10  f-address">
+                               <p>上海优优教育科技有限公司&nbsp;版权所有</p>
+                               <p>Copyright @ 2015  All Rights Reserved.</p>
+                           </div>
+                       </div>
+                    </div>
+                    <div class="col-md-6 hidden-xs hidden-sm footer2">
+                        <div class="row">
+                            <div class="col-md-10 f-address">
+                                <p>021-64666013</p>
+                                <p>上海市徐汇区虹桥路333号交大慧谷四楼</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script src="http://cdn.dowebok.com/77/js/jquery.fullPage.min.js"></script>
+<script src="http://cdn.staticfile.org/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

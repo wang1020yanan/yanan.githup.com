@@ -1,0 +1,72 @@
+<!--添加接口 start-->
+
+<!--js自动保存到cookie  star-->
+<script src="./MinPHP/res/jquery.min.js"></script>
+<script>
+
+    $(function(){
+
+        $("textarea[name='des'],textarea[name='re'],textarea[name='memo']").keydown(function () {
+            AutoSave();
+        });
+
+        $(".btn-success").click(function(){
+            DeleteCookie('apimanage');
+        });
+
+    });
+</script>
+
+<!--js自动保存到cookie  end-->
+
+<div style="border:1px solid #ddd">
+    <div style="background:#f5f5f5;padding:20px;position:relative">
+        <h4>添加模块<span style="font-size:12px;padding-left:20px;color:#a94442">注:"此色"边框为必填项</span></h4>
+        <div style="margin-left:20px;">
+            <form action="?act=api&tag=<?php echo $_GET['tag']?>&type=do&op=add" method="post">
+                <h5>基本信息</h5>
+                <div class="form-group has-error">
+                    <div class="input-group">
+                        <div class="input-group-addon">模块名称</div>
+                        <input type="text" class="form-control" name="name" placeholder="模块名称" required="required">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <textarea name="des" class="form-control" placeholder="描述"></textarea>
+                </div>
+                <div class="form-group">
+                    <h5>备注</h5>
+                    <textarea name="memo" rows="3" class="form-control" placeholder="备注"></textarea>
+                </div>
+                <button class="btn btn-success">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+<script>
+    function add(){
+        var $html ='<tr>' +
+                '<td class="form-group has-error" ><input type="text" class="form-control has-error" name="p[name][]" placeholder="参数名" required="required"></td>' +
+                '<td class="form-group has-error">' +
+                '<input type="text" class="form-control" name="p[paramType][]" placeholder="参数类型" required="required"></td>' +
+                '<td>' +
+                '<select class="form-control" name="p[type][]">' +
+                '<option value="Y">Y</option> <option value="N">N</option>' +
+                '</select >' +
+                '</td>' +
+                '<td>' +
+                '<input type="text" class="form-control" name="p[default][]" placeholder="缺省值"></td>' +
+                '<td>' +
+                '<textarea name="p[des][]" rows="1" class="form-control" placeholder="描述"></textarea>' +
+                '</td>' +
+                '<td>' +
+                '<button type="button" class="btn btn-danger" onclick="del(this)">删除</button>' +
+                '</td>' +
+                '</tr >';
+        $('#parameter').append($html);
+    }
+    function del(obj){
+        $(obj).parents('tr').remove();
+    }
+</script>
+<!--添加接口 end-->

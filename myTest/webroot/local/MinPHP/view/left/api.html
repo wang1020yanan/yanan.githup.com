@@ -1,0 +1,84 @@
+<!--api左侧菜单-->
+<div class="form-group">
+    <input type="text" class="form-control" id="searchapi" placeholder="search here" onkeyup="search('api',this)">
+</div>
+<div class="list">
+    <ul class="list-unstyled" style="padding:10px">
+        <?php foreach($list as $v){ ?>
+        <li class="menu" id="api_<?php echo md5($v['id']);?>" style="padding-bottom: 15px; padding-top: 15px">
+                <a class="modlog" href="javascript:void(0)" values="<?php echo $v['id']?>"> <span class="glyphicon glyphicon-menu-right " aria-hidden="true" ></span></a>
+                <?php echo $v['name'] ?>
+            <form action="?act=api&tag=<?php echo $_GET['tag'];?>&op=add&fid=<?php echo $v['id']?>" method="post">
+                <?php if(is_supper()){?>
+                <!--只有超级管理员才可以添加接口-->
+                <div style="float:right;margin-right:20px;">
+                    <input type="hidden" value="<?php echo $_GET['tag']?>" name="aid">
+                    <button class="btn btn-success btn-xs">+</button>
+                    <a class="btn btn-danger btn-xs " onclick="deleteApi(<?php echo $v['id']?>,'<?php echo md5($v['id'])?>')">delete</a>&nbsp;
+                    <a class="btn btn-info btn-xs " onclick="editApi('<?php echo U(array('act'=>'api','op'=>'editmod','id'=>$v['id'],'tag'=>$_GET['tag']))?>')">edit</a>
+                </div>
+                <?php } ?>
+            </form>
+            <ul class="list-unstyled ul<?php echo $v['id']?>" style="padding:10px;padding-top: 15px;padding-bottom: 5px" status="hidden" hidden>
+            <?php foreach($v['list'] as $vo){ ?>
+                <li class="menu" id="api_<?php echo md5($vo['id']);?>">
+            <a href="<?php echo U(array('act'=>'api','tag'=>$_GET['tag'])); ?>#info_api_<?php echo md5($vo['id']) ?>"
+               id="<?php echo 'menu_'.md5($vo['id'])?>">
+                <?php echo $vo['name'] ?>
+            </a>
+        </li>
+            <?php } ?>
+            </ul>
+        </li>
+        <!--接口关键字(js通过此关健字进行模糊查找)start-->
+        <span class="keyword" id="<?php echo md5($v['id'])?>"><?php echo $v['name'].'<|-|>'.$v['num'].'<|-|>'.$v['des'].'<|-|>'.$v['memo'].'<|-|>'.$v['parameter'].'<|-|>'.$v['url'].'<|-|>'.$v['type'].'<|-|>'.strtolower($v['type']);?></span>
+        <!--接口关键字(js通过此关健字进行模糊查找)end-->
+        <?php } ?>
+    </ul>
+</div>
+
+<form action="?act=api&tag=<?php echo $_GET['tag'];?>&op=addmod" method="post">
+    <?php if(is_supper()){?>
+    <!--只有超级管理员才可以添加接口-->
+    <div style="float:right;margin-right:20px;">
+        <input type="hidden" value="<?php echo $_GET['tag']?>" name="aid">
+        <button class="btn btn-success">新建模块</button>
+    </div>
+    <?php } ?>
+</form>
+
+
+
+<!--jquery模糊查询start-->
+<script src="./MinPHP/res/menu.js"></script>
+<script>
+    window.onload=function(){
+        //添加关闭,打开左侧菜单的功能
+        <?php if($_COOKIE[C('cookie->navbar')]==1){
+            echo 'var status_flg="&gt";var cursor="e-resize";';
+        }else{
+            echo 'var status_flg="&lt";var cursor="w-resize"';
+        }?>
+
+        var navbarButton = '<div onclick="navbar(this)" ' +
+                'style="text-align:center;line-height:120px;border-bottom-right-radius:5px;cursor:'+cursor+';border-top-right-radius:5px;width:14px;height:120px;background: rgba(91,192,222, 0.8);position:fixed;left:0;top:260px;color:#fff;box-shadow: 0px 0px 0px 1px #cccccc;">' +
+                status_flg +
+                '</div>'
+        $('body').append(navbarButton);
+
+        $(".modlog").click(function () {
+            console.log($(this).attr("values"));
+            if($(".ul"+$(this).attr("values")).attr("status")=="act"){
+                $(".ul"+$(this).attr("values")).attr("hidden",true);
+                $(".ul"+$(this).attr("values")).attr("status","hidden")
+            } else{
+                $(".ul"+$(this).attr("values")).removeAttr("hidden");
+                $(".ul"+$(this).attr("values")).attr("status","act")
+            }
+        })
+    }
+
+    // 全屏和normal
+</script>
+<!--jquery模糊查询end-->
+<!--end-->

@@ -1,0 +1,21 @@
+<?php
+
+namespace app\controllers;
+
+use Yii;
+
+class SiteController extends CommonController
+{
+    public function actionIndex()
+    {
+        $girls= Yii::$app->redis->get('girlss');
+        if(!$girls){
+            echo "aaa";
+        }
+        var_dump($girls);
+    }
+
+    public function actionTest(){
+        echo Yii::$app->params['environment'];
+    }
+}

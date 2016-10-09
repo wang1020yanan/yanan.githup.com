@@ -1,0 +1,253 @@
+<?php
+
+namespace app\controllers;
+
+use app\models\Friends;
+use app\models\Local;
+use app\models\Member;
+use app\models\Request;
+use app\models\UpdateMember;
+use app\models\Upload;
+use Yii;
+use yii\web\UploadedFile;
+
+
+class PersonController extends CommonController
+{
+
+    public function actionUpdate(){
+        $member=$this->checklogin();
+        $updatemember=new UpdateMember();
+        $arr['UpdateMember']=$_POST;
+        $updatemember->load($arr);
+
+        //检查文件上传
+        $img=$this->upload();
+        if($img)
+            $updatemember->img=$img;
+
+        if($updatemember->save()){
+            $yunxin['accid']=$member->accid;
+            $yunxin["mobile"]=$member->phone;
+            if($updatemember->img)
+                $yunxin['icon']=$this->fillurl($updatemember->img);
+            if($updatemember->birthday)
+                $yunxin['birthday']=$updatemember->birthday;
+            if($updatemember->sex)
+                $yunxin['gender']=$updatemember->sex;
+            if($updatemember->nickname)
+                $yunxin['name']=$updatemember->nickname;
+            if($updatemember->sign)
+                $yunxin['sign']=$updatemember->sign;
+
+            //更新至网易云信
+            require_once(Yii::$app->basePath.'/vendor/yunxin/Api.php');
+            $yunxins=new \YunxinApi();
+            $yunxins->updateUinfo($yunxin);
+
+            if($updatemember->img)
+                $this->success(array(['img'=>$updatemember->img]));
+            $this->success("更新成功");
+        }else{
+            $this->error($updatemember->errors?$updatemember->errors:"更新失败");
+        }
+    }
+
+    //获取本人最新信息
+    public function actionGet(){
+        $member=$this->checklogin();
+        $data=Member::getmessage($member->accid,1);
+        $this->success($data);
+    }
+
+
+    public function actionTest(){
+        if ($_FILES) {
+            $model = new Upload();
+            $model->image = UploadedFile::getInstance($model, 'image');
+            return $model->uploadImage();
+        }
+    }
+
+    public function actionLocal($arr=null,$type=1){
+        if(!$arr){
+            $member=$this->checklogin();
+            $arr['Local']=$_POST;
+            $type=0;
+        }
+        if((!$arr['Local']['longitude'])==(!$arr['Local']['latitude'])){
+            $local=new Local();
+            if($local->load($arr)&&$local->save()){
+                if($local->longitude)
+                    $member->longitude=$local->longitude;
+                if($local->latitude)
+                    $member->latitude=$local->latitude;
+                if($local->sign)
+                    $member->sign=$local->sign;
+                if($local->location)
+                    $member->location=$local->location;
+                if($local->create_time)
+                    $member->update_time=$local->create_time;
+                if($local->city)
+                    $member->city=$local->city;
+                $member->save();
+                $type==0?$this->success("更新成功"):$flag=0;
+            }else{
+                $type==0?$this->error("更新失败"):$flag=0;
+            }
+        }else{
+            $type==0?$this->error("经纬度必须一起提交"):$flag=0;
+        }
+    }
+
+    //好友添加请求
+    public function actionRequest(){
+        $member=$this->checklogin();
+
+        //检查参数
+        if(!$_POST['faccid'])
+            $this->error("参数填写有误");
+
+        //检查是否已为好友
+        if(Friends::check($member->accid,$_POST['faccid']))
+            $this->error("该用户已存在好友关系");
+
+
+        //向云信发送好友请求
+
+        $yunxin=new \YunxinApi();
+        $result=$yunxin->add($member->accid,$_POST['faccid']);
+
+
+        //检查云信请求是否成功
+        if($result["code"]!=200)
+            $this->error("请求信息有误");
+
+
+        $request = new Request();
+        if ($request->log($member->accid)) {
+            $this->success("处理成功");
+        } else {
+            $request->errors ? $this->error($request->errors) : $this->error("好友关系更新失败");
+        }
+    }
+
+    //同意好友请求
+    public function actionAgree(){
+        $member=$this->checklogin();
+
+        //检查参数
+        if(!$_POST['accid'])
+            $this->error("参数填写有误");
+
+        //检查是否有最新请求
+        $arr["Request"]=$_POST;
+        $arr['Request']['faccid']=$member->accid;
+        $request=Request::find()->where(['accid'=>$arr['Request']['accid'],'faccid'=>$arr['Request']['faccid'],'status'=>0])->orderBy("create_time desc")->one();
+        if(!$request)
+            $this->error("请求状态有误");
+
+        //请求云信
+        $yunxin=new \YunxinApi();
+        if($_POST['status']==2)
+            $result=$yunxin->add($_POST['accid'],$member->accid,4);
+        else
+            $result=$yunxin->add($member->accid,$_POST['accid'],3);
+
+        if($result["code"]!=200)
+            $this->error($result['desc']);
+
+        if($request->handle($arr)){
+            $this->success("处理成功");
+        }else{
+            $request->errors? $this->error($request->errors):$this->error("请求信息有误");
+        }
+    }
+
+    public function actionDeletequest(){
+        $member=$this->checklogin();
+
+        if(!$_POST['accid'])
+            $this->error("参数填写有误");
+
+        if(Request::updateAll(['status'=>-1,'handling_time'=>time()],"status in (0,1) and accid=".$_POST['accid']." and faccid=".$member->accid))
+            $this->success("处理成功");
+        else
+            $this->error("请求数据有误");
+
+    }
+
+    public function actionApplylist(){
+        $member=$this->checklogin();
+        $data=Request::applylist($member->accid);
+        $this->success($data);
+    }
+
+
+    //好友列表
+    public function actionFriends(){
+        $member=$this->checklogin();
+        $data=Friends::friends($member->accid);
+        if($data){
+            for($i=0;$i<count($data);$i++){
+                $data[$i]=Friends::is_show($member,$data[$i]);
+            }
+        }
+        $this->success($data);
+    }
+
+    //删除好友
+    public function actionDeletefriends(){
+        $member=$this->checklogin();
+
+        if(!$_POST['faccid'])
+            $this->error("输入参数有误");
+
+        $friends=new Friends();
+        $result=$friends->remove($member->accid,$_POST['faccid']);
+        if($result[0]==1){
+            /*
+            $text="\r".date('Y-m-d H:i:s')."\r".$member->accid."\r".$_POST['faccid']."\r".var_export($result[1],true)."\r";
+            $this->debugs($text);
+            */
+            $this->success("解除好友关系成功");
+        }else{
+            $this->error($result[1]);
+        }
+    }
+
+    //位置对好友不可见
+    public function  actionUpdatefriends(){
+        $member=$this->checklogin();
+        $friends=new Friends();
+        $result=$friends->reload($member->accid);
+        if($result[0]){
+            $this->success("更新成功");
+        }else{
+            $this->error($result[1]);
+        }
+    }
+
+    public function actionFriendlist(){
+        $member=$this->checklogin();
+        $list=json_decode($_POST['accids'],true);
+        if($list){
+            $data=array();
+            for($i=0;$i<count($list);$i++){
+                $friends=Friends::friends($member->accid,$list[$i]);
+                if($friends){
+                    array_push($data,Friends::is_show($member,$friends));
+                }else{
+                    $result['msg']="用户与其不是好友关系";
+                    $result['is_show']=0;
+                    $result['doubles']=-2;
+                    $result['faccid']=$list[$i];
+                    array_push($data,$result);
+                }
+            }
+            $this->success($data);
+        }else{
+            $this->error("参数有误");
+        }
+    }
+}

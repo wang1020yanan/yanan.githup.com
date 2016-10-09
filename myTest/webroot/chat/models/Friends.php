@@ -1,0 +1,186 @@
+<?php
+
+namespace app\models;
+
+use Yii;
+use yii\db\Query;
+
+class Friends extends \yii\db\ActiveRecord
+{
+    public static function tableName()
+    {
+        return 'friends';
+    }
+
+    public function rules()
+    {
+        return [
+            [['accid','faccid'],'required'],
+            [['accid','faccid','remark'],'string'],
+            ['create_time','default','value'=>time()],
+            [['doubles','fis_show'],'default','value'=>1],
+            [['fis_show'],'boolean']
+        ];
+    }
+
+    public function attributeLabels()
+    {
+        return [
+            'fid'=>'序列号',
+            'accid'=>'用户云信id',
+            'faccid'=>'好友云信id',
+            'doubles'=>'是否是双向好友',
+            'fis_show'=>'是否对好友显示位置',
+            'create_time'=>'添加好友时间'
+        ];
+    }
+
+    //双向好友
+    public function double($accid,$faccid,$type=0){
+        $flag=0;
+        if($type==0){
+            $friends=$this->findone(['accid'=>$accid,'faccid'=>$faccid]);
+            if(!$friends) {
+                $friends=new Friends();
+                $friends->accid = $accid;
+                $friends->faccid = $faccid;
+            }else{
+                $friends->doubles = 1;
+            }
+            if($friends->save()){
+                $flag+=1;
+            }
+
+            $friends=$this->findone(['faccid'=>$accid,'accid'=>$faccid]);
+            if(!$friends) {
+                $friends=new Friends();
+                $friends->accid=$faccid;
+                $friends->faccid=$accid;
+            }else {
+                $friends->doubles = 1;
+            }
+            if($friends->save()){
+                $flag+=1;
+            }
+            return $flag;
+        }
+    }
+
+    //好友列表
+    public static function friends($accid,$faccid=null){
+        $query=new Query();
+        if(!$faccid) {
+            $data = $query->select([
+                'friends.fid', 'friends.faccid', 'friends.doubles', 'friends.create_time', 'friends.fis_show', 'friends.remark'
+                , 'member.phone', 'member.img', 'member.nickname', 'member.is_show', 'member.latitude', 'member.longitude','member.location','member.city','member.update_time'
+            ])->from('friends')->innerJoin('member', 'member.accid=friends.faccid')->where("friends.accid='" . $accid . "' and friends.doubles>-1")->createCommand()->queryAll();
+        }else {
+            $data = $query->select([
+                'friends.fid', 'friends.faccid', 'friends.doubles', 'friends.create_time', 'friends.fis_show', 'friends.remark'
+                , 'member.phone', 'member.img', 'member.nickname', 'member.is_show', 'member.latitude', 'member.longitude','member.location','member.city','member.update_time'
+            ])->from('friends')->innerJoin('member', 'member.accid=friends.faccid')->where("friends.accid='" . $accid . "' and friends.faccid='" . $faccid . "'  and friends.doubles>-1")->createCommand()->queryOne();
+        }
+        return $data;
+    }
+
+
+
+    //好友间是否显示距离位置
+    public static function is_show($member,$data){
+        if($member->is_show){
+            if($data['is_show']&&$data['fis_show']&&is_numeric($data['latitude'])&&is_numeric($data['longitude'])){
+                $friends=Friends::find()->where(['accid'=>$data['faccid'],'faccid'=>$member->accid,'doubles'=>1])->one();
+                if(!$friends||!$friends->fis_show){
+                    $data['for_show']=0;
+                    $data['is_show']=0;
+                }else{
+                    $data['is_show']=$data['is_show'];
+                    $data['for_show']=$friends->fis_show;
+                }
+            }else{
+                $data['is_show']=0;
+                 $data['for_show']="";
+            }
+        }else {
+            $data['is_show']=0;
+            $data['for_show']="";
+        }
+        if($data['is_show']==1){
+            $data['location']='';
+            $data['city']='';
+        }elseif($data['is_show']==0){
+            $data['location']='';
+            $data['city']='';
+            $data['latitude']='';
+            $data['longitude']='';
+        }
+
+
+        return $data;
+    }
+
+    //解除好友关系
+    public function remove($accid,$faccid){
+        $friends=$this->findone(['accid'=>$accid,'faccid'=>$faccid]);
+        if($friends&&$friends->doubles>-1){
+            if($friends->doubles==1){
+                require_once(Yii::$app->basePath.'/vendor/yunxin/Api.php');
+                $yunxin=new \YunxinApi();
+                $result=$yunxin->delete($accid,$faccid);
+
+                //检查云信请求是否成功,当返回为不是好友时默认通过
+                if($result["code"]!=200&&$result['desc']!='not friend') {
+                    return ['0', $result['desc']];
+                }
+
+                $debugs['yunxin']=$result;
+            }
+
+            $debugs['doubles']=$friends->doubles;
+
+            $friends->doubles = -1;
+            if($friends->save()){
+                $friends=$this->findone(['accid'=>$faccid,'faccid'=>$accid]);
+                if($friends->doubles==1) {
+                    $friends->doubles = 0;
+                    $friends->save();
+                }
+                return ['1',$debugs];
+            }else{
+                return ['0',$friends->errors?$friends->errors:"状态更新失败"];
+            }
+        }else{
+            return ['0','不存在该好友关系'];
+        }
+    }
+
+    //更新好友关系
+    public function reload($accid){
+        if($_POST['faccid']){
+        $friends=$this->findOne(['accid'=>$accid,"faccid"=>$_POST['faccid'],'doubles'=>1]);
+        if($friends){
+            $arr['Friends']=$_POST;
+            if($friends->load($arr)&&$friends->save()){
+                return ['1'];
+            }else{
+                return ['0','更新失败'];
+            }
+        }else{
+            return ['0','好友关系有误'];
+        }
+        }else{
+            return ['0','参数填写有误'];
+        }
+    }
+
+    //检查好友关系
+    public static function check($accid,$faccid){
+        if((new \yii\db\Query())->from('friends')
+            ->where("accid='".$accid."' and faccid='".$faccid."' and doubles in (0,1)")
+            ->one()){
+            return true;
+        }else{
+            return false;
+        }
+    }
+}

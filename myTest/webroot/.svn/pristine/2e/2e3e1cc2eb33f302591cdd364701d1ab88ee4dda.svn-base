@@ -1,0 +1,18 @@
+<?php
+
+namespace app\controllers;
+
+use Yii;
+
+class SiteController extends CommonController
+{
+    public function actionIndex()
+    {
+        echo date("Y-m-d",time());
+        $value = json_encode(array('name'=>'ball', 'age'=>'male'));
+        Yii::$app->redis->set('girls',$value);
+        Yii::$app->redis->expire('girls',60*60);
+        $girls= Yii::$app->redis->get('girls');
+        var_dump($girls);
+    }
+}

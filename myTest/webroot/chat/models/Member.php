@@ -1,0 +1,152 @@
+<?php
+
+namespace app\models;
+
+use Yii;
+
+class Member extends \yii\db\ActiveRecord
+{
+    /**
+     * @inheritdoc
+     */
+    public static function tableName()
+    {
+        return 'Member';
+    }
+
+    public function rules()
+    {
+        return [
+            [['phone','pwd','area','accid','acctoken'], 'required'],
+            [['phone','mid'],'unique'],
+            [['addrequest'],'boolean'],
+            [['mid','phone','create_time','last_time','update_time'], 'integer'],
+            [['pwd','nickname','sign','birthday','area','accid','acctoken','first_ip','last_ip','location'],'string'],
+            [['longitude','latitude'],'double'],
+            [['img','nickname','birthday'],'default','value'=>' '],
+            [['last_time','create_time'],'default','value'=>time()],
+            [['last_ip','first_ip'],'default','value'=>$_SERVER['REMOTE_ADDR']],
+            ['token','default','value'=>$this->gettoken()],
+            [['img'], 'image', 'skipOnEmpty' => true, 'extensions' => 'png,jpg,jpeg'],
+            [['sex','hidden'],'boolean'],
+            ['is_show','in','range'=>[0,1,2]]
+        ];
+    }
+
+    public function attributeLabels()
+    {
+        return [
+            'mid' => '用户唯一标识',
+            'phone'=>'手机号',
+            'pwd'=>'密码',
+            'token'=>'用户token值',
+            'area'=>'国家',
+            'nickname'=>'昵称',
+            'birthday'=>'生日',
+            'sex'=>'性别',
+            'ccid'=>'网易云信id',
+            'cctoken'=>'网易云信token',
+            'create_time'=>'注册时间',
+            'last_time'=>'上一次登录时间',
+            'first_ip'=>'注册ip',
+            'last_ip'=>'上一次登录ip',
+            'addrequest'=>'添加好友验证类型',
+            'is_show'=>'是否对好友显示位置',
+            'sign'=>'签名',
+            'longitude'=>'经度',
+            'latitude'=>'纬度',
+            'location'=>'位置',
+            'update_time'=>'上传时间',
+            'hidden'=>'是否能通过手机号查找'
+        ];
+    }
+
+    public function login($arr)
+    {
+        if(!$this->load($arr)||!$this->phone||!$this->pwd)
+            return [0,"参数填写有误"];
+        $member=$this->findOne(['phone'=>$this->phone,'pwd'=>$this->pwd]);
+        if($member){
+            $this->load(['Member'=>$member->attributes]);
+            $this->oldAttributes=$this->attributes;
+            $this->last_ip=$_SERVER['REMOTE_ADDR'];
+            $this->last_time=time();
+            $this->token=$this->gettoken();
+            if( $this->save()){
+                return [1];
+            }
+            else {
+                return [0,$this->errors];
+            }
+        }else{
+            return [0,"账号密码有误"];
+        }
+    }
+
+
+    //检查登录状态
+    public function islogin($arr){
+        if(!$this->load($arr)||!$this->mid||!$this->token)
+            return false;
+        $member=$this->findOne(['mid'=>$this->mid,'token'=>$this->token]);
+        if($member){
+            $this->load(['Member'=>$member->attributes]);
+            $this->oldAttributes=$this->attributes;
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+    protected function gettoken(){
+        return base64_encode(md5(time().rand(100000,999999)));
+    }
+
+    public function getRequest()
+    {
+        //同样第一个参数指定关联的子表模型类名
+        //
+        return $this->hasMany(Request::className(), ['accid' => 'accid']);
+    }
+
+    public static function getmessage($accid=null,$type=null,$map=null){
+        if(!$map)
+            $map['accid']=$accid;
+
+        if($type==1)
+            $member=(new \yii\db\Query())
+                ->select(['mid','phone','area','img','nickname','birthday','sex','accid','acctoken','sign','latitude','longitude'])
+                ->from('member')
+                ->where($map)
+                ->one();
+        elseif($type==2)
+            $member=(new \yii\db\Query())
+                ->select(['mid','phone','area','img','nickname','birthday','sex','accid','sign'])
+                ->from('member')
+                ->where($map)
+                ->all();
+        else
+            $member=(new \yii\db\Query())
+                ->select(['mid','phone','area','img','nickname','birthday','sex','accid','sign'])
+                ->from('member')
+                ->where($map)
+                ->one();
+
+
+
+        return $member;
+    }
+
+
+    //查询是否注册
+    public static function is_register($mobile){
+        if((new \yii\db\Query())
+            ->select(['mid'])
+            ->from('member')
+            ->where(['phone'=>$mobile])
+            ->one())
+            return true;
+        else
+            return false;
+    }
+}

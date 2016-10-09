@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<a href="[scheme]://[host]/[path]?[query]">22</a>
+<a href="myapp://jp.app/openwith?name=zhangsan&age=26">启动应用程序</a>
+</body>
+</html>

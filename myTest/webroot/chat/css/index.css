@@ -1,0 +1,110 @@
+html, body, div, span, applet,ul,li, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body{
+    background: #eaf2ea;
+    font-family: arial,verdana,Microsoft YaHei,Tahoma,Simsun,sans-serif;
+}
+#dowebok,#menu{
+    display: none;
+}
+#loading{
+    position: fixed;
+    top: 40%;left: 0;  right: 0;;z-index: 999;text-align: center}
+#loading .circle{ background-color: rgba(0,0,0,0);
+    opacity: .9;
+    display: inline-block;
+    border-top: 10px solid #fefdff;
+    border-right: 10px solid #f4a717;
+    border-bottom: 10px solid #fffcff;
+    border-left: 10px solid #f4a717;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    -webkit-transition: all 0.4s ease-in;
+    -moz-transition: all 0.4s ease-in;
+    -ms-transition: all 0.4s ease-in;
+    -o-transition: all 0.4s ease-in;
+    transition: all 0.4s ease-in;
+    animation: spin .5s infinite linear;
+    -webkit-animation: spin .5s infinite linear;
+    -moz-animation: spin .5s infinite linear;
+    -o-animation: spin .5s infinite linear;}
+#loading .logo img{
+    width: 82px;
+    height: 82px;
+    overflow: hidden;
+    position: relative;
+    top: -96px;
+    border-radius: 50%;
+}
+.section1 { background: url('../img/1-bg.png') no-repeat;background-size: cover}
+.section2 { background: url('../img/2-bg.png') no-repeat;background-size: cover}
+.section3 { background: url('../img/bg-3.jpg') no-repeat;background-size: cover}
+.section4 { background: url('http://idowebok.u.qiniudn.com/77/4.jpg') 50%;}
+
+#menu ul{list-style-type: none;padding: 0 ;border-bottom: 1px solid rgba(244, 207, 34, 0.6);}
+#menu { margin: 0; padding: 0; position: fixed; width:100%;list-style-type: none; z-index: 70;background: rgba(0, 0, 0, 0.6)}
+#menu li { width: 33.3333%;line-height: 60px;float: left;text-align: center;font-size: 20px;}
+#menu li a:active{color: #f4cf22}
+#menu li a:hover{color: #f4cf22}
+
+#menu .logo{
+    width: 50px;
+    margin-top: -3px;
+    /*border-top: 5px solid #fefffa;*/
+    /*border-right: 5px solid #f4a717;*/
+    /*border-bottom: 5px solid #fefdff;*/
+    /*border-left: 5px solid #f4a717;*/
+    /*animation: spin 3s infinite linear;*/
+    /*-webkit-animation: spin 3s infinite linear;*/
+    /*-moz-animation: spin 3s infinite linear;*/
+    /*-o-animation: spin 3s infinite linear;*/
+    /*display: table-cell;*/
+    /*vertical-align: middle;*/
+}
+@keyframes spin { 0% {  -webkit-transform: rotate(0deg); } 100% {  -webkit-transform: rotate(360deg);  } }
+@-moz-keyframes spin { 0% {  -webkit-transform: rotate(0deg);  } 100% {  -webkit-transform: rotate(360deg);  } }
+@-webkit-keyframes spin { 0% {  -webkit-transform: rotate(0deg);  } 100% {  -webkit-transform: rotate(360deg);  } }
+@-o-keyframes spin { 0% {  -webkit-transform: rotate(0deg);  } 100% {  -webkit-transform: rotate(360deg);  }
+}
+/*#menu li { float: left; margin:  0 10px 0 0; font-size: 14px;width: 20%}*/
+#menu a {color: #faf4ee; text-decoration: none;}
+#menu .active a { color: #f4a717;}
+
+.section { text-align: center; color: #fff;}
+.section1 p { position: relative; bottom: 120%;}
+.section1 h3 { position: relative; bottom: 120%;}
+/*.section2 p { position: relative; left: -120%;}*/
+.section3 p { position: relative;left: 120%;}
+.section4 p { position: relative;  bottom: -120%;}
+
+.down{position: relative;left: 170%}
+
+.footer{
+    background: rgba(0, 0, 0, 0.6);position:absolute;bottom: 0;width: 100%;
+}
+.foot-logo{
+    padding: 5px;
+    width: 60px;
+}
+.f-address{
+    top: 12px;
+}
+.footer2{
+    text-align: right;
+}
+
+@media (max-width:700px ) {
+    .s4{
+        position: relative!important;
+    }
+}
+@media (max-width:330px ) {
+    .s4{
+        position: absolute!important;
+    }
+}

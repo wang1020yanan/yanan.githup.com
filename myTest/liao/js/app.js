@@ -15,7 +15,7 @@ bookStoreApp.config(function($stateProvider, $urlRouterProvider,$httpProvider) {
             controller: 'SearchCtrl'
         }).state('chat', {
             url: "/chat/:id",
-            templateUrl: 'tpls/chat.html',
+            templateUrl: 'tpls/index.html',
             controller: 'ChatCtrl'
         })
 
