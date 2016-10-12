@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Only，题库！</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Only，题库！Only，题库！Only，题库！Only，题库！Only，题库！" />
+    <link href="../img/icon.png" rel="shortcut icon" type="image/x-icon"/>
+
+    <!-- Bootstrap -->
+    <link href="//cdn.bootcss.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <!--<link rel="stylesheet" href="http://cdn.dowebok.com/77/css/jquery.fullPage.css">-->
+    <link rel="stylesheet" href="css/index.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script language="javascript" src="http://webapi.amap.com/maps?v=1.3&key=c8d499635271ab4f9d449d35911e2cf1"></script>
+</head>
+<body>
+  <div class="container">
+      <div class="col-md-12">
+          <div class="page-header">
+              <h1>题库添加<small>----你懂我吗</small></h1>
+          </div>
+      </div>
+  </div>
+  <div class="container">
+      <div class="col-md-8">
+          <div class="panel panel-default">
+              <div class="panel-body">
+                  <div>
+                      <div class="form-group">
+                          <label style="color: #ff8870">问题</label>
+                          <input type="text" class="form-control" id="question" placeholder="问题">
+                      </div>
+                      <div class="form-group">
+                          <label >答案1</label>
+                          <input type="text" class="form-control" id="answer1" placeholder="">
+                      </div>
+                      <div class="form-group">
+                          <label >答案2</label>
+                          <input type="text" class="form-control" id="answer2"  placeholder="">
+                      </div>
+                      <div class="form-group">
+                          <label >答案3</label>
+                          <input type="text" class="form-control" id="answer3"  placeholder="">
+                      </div>
+                      <div class="form-group">
+                          <label >答案4</label>
+                          <input type="text" class="form-control"  id="answer4" placeholder="">
+                      </div>
+                      <!--<div class="form-group">-->
+                          <!--<label >答案5</label>-->
+                          <!--<input type="text" class="form-control"  id="answer5" placeholder="">-->
+                      <!--</div>-->
+                      <div class="form-group">
+                          <label >问题图片</label>
+                          <form id= "uploadForm">
+                              <!--<p >指定文件名： <input type="text" name="filename" id="file" value= ""/></p>-->
+                              <p >上传文件： <input type="file" name="Upload[image]" id="questionImg"/></p>
+                              <input type="hidden"   name="aaaa"   value="1111"/>
+                          </form>
+                          <p class="help-block">每个问题对应的图片(尺寸：宽高2:1).</p>
+                      </div>
+                      <div id="alert" class="alert alert-danger" role="alert" style="display: none">...</div>
+
+                      <div id="sub-ok" class="alert alert-info" role="alert" style="display: none">...</div>
+
+
+                      <button type="submit" id="save" class="btn btn-default">提交</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4">
+          <div class="panel panel-default">
+              <div class="col-md-12">
+                  <div class="page-header">
+                      <h3 style="color: #9e9e9e">问题列表</h3>
+                  </div>
+              </div>
+              <div class="panel-body" id="q-con" style="height: 550px;overflow-y: scroll">
+                   <!--列表-->
+              </div>
+          </div>
+      </div>
+  </div>
+
+<script>
+    (function () {
+        document.addEventListener('DOMContentLoaded', function () {
+            var html = document.documentElement;
+            var windowWidth = html.clientWidth;
+            html.style.fontSize = windowWidth / 6.4 + 'px';
+            // 等价于html.style.fontSize = windowWidth / 640 * 100 + 'px';
+        }, false);
+    })();
+</script>
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+  <script src="http://www.uustudy.com.cn/index/Public/js/jquery-2.1.1.min.js"></script>
+<script src="//cdn.bootcss.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<!--<script src="http://cdn.dowebok.com/77/js/jquery.fullPage.min.js"></script>-->
+<script src="http://cdn.staticfile.org/jquery-easing/1.3/jquery.easing.min.js"></script>
+ <script src="js/img.js"></script>
+  <script>
+
+    (function(){
+//                节点初始化
+         var question=$("#question").val();
+         var answer1=$("#answer1").val();
+         var answer2=$("#answer2").val();
+         var answer3=$("#answer3").val();
+         var answer4=$("#answer4").val();
+         var answer5=$("#answer5").val();
+         var submit=$("#save");
+         var alertW=$("#alert");
+         var questionImg=$("#questionImg");
+         function getVal(ele){
+             return ele.val();
+         }
+        function getCookie(name)
+        {
+            var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
+            if(arr=document.cookie.match(reg))
+                return unescape(arr[2]);
+            else
+                return null;
+        }
+         var app={
+            init:function(){
+//                问题列表初始化
+                this.questionList();
+                this.questionForm();
+            },
+//             问题列表
+            questionList:function(){
+                console.log(answer1);
+                $.post('http://wx.uustudy.com.cn/index.php?r=question/list',{},function(data){
+//                    console.log(data.data);
+                    $.each(data.data,function(idx,obj){
+                         $("#q-con").append('<div class=".col-md-12 q-wrap"> <h5>'+obj.content+'<a class="qDelete btn btn-danger" data-value="'+obj.qid+ '">删除</a></h5> <div><img src="'+obj.img+'"></div><div class="q-all" style="color: darkgrey"> <p>A:'+obj.answer1+'</p> <p>B:'+obj.answer2+'</p> <p>C:'+obj.answer3+'</p> <p>D:'+obj.answer4+'</p></div> </div>');
+                         if(obj.answer4==null){
+                             $("#q-all").remove();
+                         }
+//                         console.log(obj.content)
+                    });
+                    $(function(){
+                        $(".qDelete").click(function(){
+                            var that=$(this);
+                            var qid=$(this).attr('data-value');
+                            var is_del=1;
+                            var isLogins=getCookie('manager');
+                            var mid=getCookie('mid');
+                            $.post('http://wx.uustudy.com.cn/index.php?r=question/edit',{'qid':qid,'is_del':is_del,'mid':mid,'token':isLogins},function(data){
+                                     console.log('删除成功');
+                                that.parent().parent().remove();
+                            })
+                        })
+                    })
+                })
+            },
+//             提交问题详情
+            questionForm:function(){
+                $(function(){
+                    submit.click(function(){
+                        var isLogins=getCookie('manager');
+                        var mid=getCookie('mid');
+                        question=$("#question").val();
+                        answer1=$("#answer1").val();
+                        answer2=$("#answer2").val();
+                        answer3=$("#answer3").val();
+                        answer4=$("#answer4").val();
+                        questionImg=$("#questionImg");
+                        var formData = new FormData($( "#uploadForm" )[0]);
+                        if(question==''||answer1==''||answer2==''||answer3==''||questionImg.val()==''){
+                            alertW.text('请输入一个问题和至少三个选项&&图片').fadeIn().delay(1000).fadeOut();
+                        }else{
+                            if(answer4!==''){
+                                formData.append('answer4',answer4);
+                                console.log(formData);
+                            }
+                            formData.append('content',question);
+                            formData.append('token',isLogins);
+                            formData.append('mid',mid);
+                            formData.append('answer1',answer1);
+                            formData.append('answer2',answer2);
+                            formData.append('answer3',answer3);
+//                            formData.append('answer5',answer5);
+
+                            console.log(formData);
+                            $.ajax({
+                                    url: 'http://wx.uustudy.com.cn/index.php?r=question/edit' ,
+                                    type: 'POST',
+                                    data: formData,
+                                    async: false,
+                                    cache: false,
+                                    contentType: false,
+                                    processData: false,
+                                    success: function (data) {
+                                        if(data.status==1){
+                                            $("#sub-ok").text('保存成功').fadeIn();
+                                            setTimeout(function(){
+                                                window.location.reload();
+                                            },500)
+                                        }else{
+                                            window.location.href='index.html'
+                                        }
+                                    },
+                                    error: function () {
+                                        window.location.href='index.html'
+                                    }
+                                });
+                        }
+                    });
+                })
+            }
+         };
+         app.init();
+    })()
+</script>
+</body>
+</html>

@@ -1,0 +1,1815 @@
+2016-09-18 10:57:31 [116.228.167.234][-][-][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Unable to verify your data submission.' in D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\web\Controller.php:110
+Stack trace:
+#0 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('index', Array)
+#2 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/index', Array)
+#3 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 D:\AppServ_ONE\webroot\test\index.php(11): yii\base\Application->run()
+#5 {main}
+2016-09-18 10:57:31 [116.228.167.234][-][-][info][application] $_GET = [
+    'r' => 'site/index'
+]
+
+$_POST = [
+    'phone' => '18788888888'
+    'pwd' => '12345678'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'test.uustudy.com.cn'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36'
+    'CONTENT_LENGTH' => '245'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundarygV1v8ZN2uITXnF9A'
+    'HTTP_ORIGIN' => 'chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop'
+    'HTTP_POSTMAN_TOKEN' => '1cdeb037-fc81-2ac5-ba10-776571f336dd'
+    'HTTP_X_LANTERN_AUTH_TOKEN' => 'P2arBG5AwFZtAeyQ71YVeeNdKxrR8BX3cY6bQ737UcMUytnQAHbxOE3Mm7uXqwO7'
+    'HTTP_X_LANTERN_DEVICE_ID' => 'mFrr4UD+'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\VisualSVN Server\\bin;C:\\Program Files\\TortoiseSVN\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.2.8 (Win32) PHP/5.4.45 Server at test.uustudy.com.cn Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.2.8 (Win32) PHP/5.4.45'
+    'SERVER_NAME' => 'test.uustudy.com.cn'
+    'SERVER_ADDR' => '139.196.29.70'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '116.228.167.234'
+    'DOCUMENT_ROOT' => 'D:/AppServ_ONE/webroot/test'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.x'
+    'SCRIPT_FILENAME' => 'D:/AppServ_ONE/webroot/test/index.php'
+    'REMOTE_PORT' => '36961'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site/index'
+    'REQUEST_URI' => '/index.php?r=site/index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1474167451.356
+    'REQUEST_TIME' => 1474167451
+]
+2016-09-18 11:21:34 [116.228.167.234][-][-][error][ReflectionException] exception 'ReflectionException' with message 'Class test does not exist' in D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\di\Container.php:417
+Stack trace:
+#0 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\di\Container.php(417): ReflectionClass->__construct('test')
+#1 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\di\Container.php(360): yii\di\Container->getDependencies('test')
+#2 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\di\Container.php(153): yii\di\Container->build('test', Array, Array)
+#3 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\BaseYii.php(340): yii\di\Container->get('test', Array)
+#4 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\di\ServiceLocator.php(133): yii\BaseYii::createObject('test')
+#5 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\di\ServiceLocator.php(71): yii\di\ServiceLocator->get('environment')
+#6 D:\AppServ_ONE\webroot\test\controllers\SiteController.php(20): yii\di\ServiceLocator->__get('environment')
+#7 [internal function]: app\controllers\SiteController->actionTest()
+#8 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#9 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#10 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('test', Array)
+#11 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/test', Array)
+#12 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 D:\AppServ_ONE\webroot\test\index.php(11): yii\base\Application->run()
+#14 {main}
+2016-09-18 11:21:34 [116.228.167.234][-][-][info][application] $_GET = [
+    'r' => 'site/test'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'test.uustudy.com.cn'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36'
+    'HTTP_POSTMAN_TOKEN' => '51618825-6d3a-89c3-d131-36cf8360b7c1'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\VisualSVN Server\\bin;C:\\Program Files\\TortoiseSVN\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.2.8 (Win32) PHP/5.4.45 Server at test.uustudy.com.cn Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.2.8 (Win32) PHP/5.4.45'
+    'SERVER_NAME' => 'test.uustudy.com.cn'
+    'SERVER_ADDR' => '139.196.29.70'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '116.228.167.234'
+    'DOCUMENT_ROOT' => 'D:/AppServ_ONE/webroot/test'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.x'
+    'SCRIPT_FILENAME' => 'D:/AppServ_ONE/webroot/test/index.php'
+    'REMOTE_PORT' => '41857'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site/test'
+    'REQUEST_URI' => '/index.php?r=site/test'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1474168894.298
+    'REQUEST_TIME' => 1474168894
+]
+2016-09-19 14:52:14 [116.228.167.234][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: app\models\Code::mobile' in D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\db\BaseActiveRecord.php(252): yii\base\Component->__get('mobile')
+#1 D:\AppServ_ONE\webroot\test\models\Code.php(70): yii\db\BaseActiveRecord->__get('mobile')
+#2 D:\AppServ_ONE\webroot\test\controllers\PublicController.php(67): app\models\Code->resave()
+#3 [internal function]: app\controllers\PublicController->actionSms()
+#4 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('sms', Array)
+#7 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('public/sms', Array)
+#8 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 D:\AppServ_ONE\webroot\test\index.php(11): yii\base\Application->run()
+#10 {main}
+2016-09-19 14:52:14 [116.228.167.234][-][-][info][application] $_GET = [
+    'r' => 'public/sms'
+    'mobile' => '15367496826'
+    'type' => '1'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'test.uustudy.com.cn'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36'
+    'HTTP_POSTMAN_TOKEN' => '9e795126-3e60-d7f8-1b04-37bd8c36c95a'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\VisualSVN Server\\bin;C:\\Program Files\\TortoiseSVN\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.2.8 (Win32) PHP/5.4.45 Server at test.uustudy.com.cn Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.2.8 (Win32) PHP/5.4.45'
+    'SERVER_NAME' => 'test.uustudy.com.cn'
+    'SERVER_ADDR' => '139.196.29.70'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '116.228.167.234'
+    'DOCUMENT_ROOT' => 'D:/AppServ_ONE/webroot/test'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.x'
+    'SCRIPT_FILENAME' => 'D:/AppServ_ONE/webroot/test/index.php'
+    'REMOTE_PORT' => '52673'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=public/sms&mobile=15367496826&type=1'
+    'REQUEST_URI' => '/index.php?r=public/sms&mobile=15367496826&type=1'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1474267934.069
+    'REQUEST_TIME' => 1474267934
+]
+2016-09-19 15:00:51 [116.228.167.234][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: app\models\Code::codes' in D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\db\BaseActiveRecord.php(252): yii\base\Component->__get('codes')
+#1 D:\AppServ_ONE\webroot\test\models\Code.php(71): yii\db\BaseActiveRecord->__get('codes')
+#2 D:\AppServ_ONE\webroot\test\controllers\PublicController.php(68): app\models\Code->resave()
+#3 [internal function]: app\controllers\PublicController->actionSms()
+#4 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('sms', Array)
+#7 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('public/sms', Array)
+#8 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 D:\AppServ_ONE\webroot\test\index.php(11): yii\base\Application->run()
+#10 {main}
+2016-09-19 15:00:51 [116.228.167.234][-][-][info][application] $_GET = [
+    'r' => 'public/sms'
+    'mobile' => '15367496826'
+    'type' => '1'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'test.uustudy.com.cn'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36'
+    'HTTP_POSTMAN_TOKEN' => '34938920-03a0-883b-fbc1-39eb575cae9d'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\VisualSVN Server\\bin;C:\\Program Files\\TortoiseSVN\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.2.8 (Win32) PHP/5.4.45 Server at test.uustudy.com.cn Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.2.8 (Win32) PHP/5.4.45'
+    'SERVER_NAME' => 'test.uustudy.com.cn'
+    'SERVER_ADDR' => '139.196.29.70'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '116.228.167.234'
+    'DOCUMENT_ROOT' => 'D:/AppServ_ONE/webroot/test'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.x'
+    'SCRIPT_FILENAME' => 'D:/AppServ_ONE/webroot/test/index.php'
+    'REMOTE_PORT' => '13377'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=public/sms&mobile=15367496826&type=1'
+    'REQUEST_URI' => '/index.php?r=public/sms&mobile=15367496826&type=1'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1474268451.131
+    'REQUEST_TIME' => 1474268451
+]
+2016-09-20 15:42:03 [116.228.167.234][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to a member function saveAs() on a non-object' in D:\AppServ_ONE\webroot\test\models\Upload.php:27
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-09-20 15:42:03 [116.228.167.234][-][-][info][application] $_GET = [
+    'r' => 'public/register'
+]
+
+$_POST = [
+    'phone' => '15367496826'
+    'code' => '694689'
+    'nickname' => '111'
+    'sex' => '111'
+    'birthday' => '2003-01-11'
+]
+
+$_FILES = [
+    'img' => [
+        'name' => '注册登陆.png'
+        'type' => 'image/png'
+        'tmp_name' => 'C:\\Windows\\Temp\\php62D4.tmp'
+        'error' => 0
+        'size' => 1115961
+    ]
+    'Upload' => [
+        'img' => [
+            'name' => '注册登陆.png'
+            'type' => 'image/png'
+            'tmp_name' => 'C:\\Windows\\Temp\\php62D4.tmp'
+            'error' => 0
+            'size' => 1115961
+        ]
+    ]
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'test.uustudy.com.cn'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '1116732'
+    'HTTP_POSTMAN_TOKEN' => '7c7f4b13-dbe9-546a-8059-b92eb7ab6122'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_ORIGIN' => 'chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryszPS7AZOqKmro2mS'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\VisualSVN Server\\bin;C:\\Program Files\\TortoiseSVN\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.2.8 (Win32) PHP/5.4.45 Server at test.uustudy.com.cn Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.2.8 (Win32) PHP/5.4.45'
+    'SERVER_NAME' => 'test.uustudy.com.cn'
+    'SERVER_ADDR' => '139.196.29.70'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '116.228.167.234'
+    'DOCUMENT_ROOT' => 'D:/AppServ_ONE/webroot/test'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.x'
+    'SCRIPT_FILENAME' => 'D:/AppServ_ONE/webroot/test/index.php'
+    'REMOTE_PORT' => '4417'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=public/register'
+    'REQUEST_URI' => '/index.php?r=public/register'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1474357322.941
+    'REQUEST_TIME' => 1474357322
+]
+2016-09-20 16:02:41 [116.228.167.234][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to a member function saveAs() on a non-object' in D:\AppServ_ONE\webroot\test\models\Upload.php:27
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-09-20 16:02:41 [116.228.167.234][-][-][info][application] $_GET = [
+    'r' => 'public/register'
+]
+
+$_POST = [
+    'phone' => '15367496826'
+    'code' => '694689'
+    'nickname' => '111'
+    'sex' => '111'
+    'birthday' => '2003-01-11'
+]
+
+$_FILES = [
+    'upload' => [
+        'name' => [
+            'img' => '注册登陆.png'
+        ]
+        'type' => [
+            'img' => 'image/png'
+        ]
+        'tmp_name' => [
+            'img' => 'C:\\Windows\\Temp\\php43E7.tmp'
+        ]
+        'error' => [
+            'img' => 0
+        ]
+        'size' => [
+            'img' => 1115961
+        ]
+    ]
+    'Upload' => [
+        'upload' => [
+            'name' => [
+                'img' => '注册登陆.png'
+            ]
+            'type' => [
+                'img' => 'image/png'
+            ]
+            'tmp_name' => [
+                'img' => 'C:\\Windows\\Temp\\php43E7.tmp'
+            ]
+            'error' => [
+                'img' => 0
+            ]
+            'size' => [
+                'img' => 1115961
+            ]
+        ]
+    ]
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'test.uustudy.com.cn'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '1116740'
+    'HTTP_POSTMAN_TOKEN' => '2cea18cc-cd05-6add-6c2e-5115440c7e74'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_ORIGIN' => 'chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundary9PhFrBWFpTSBJcgz'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\VisualSVN Server\\bin;C:\\Program Files\\TortoiseSVN\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.2.8 (Win32) PHP/5.4.45 Server at test.uustudy.com.cn Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.2.8 (Win32) PHP/5.4.45'
+    'SERVER_NAME' => 'test.uustudy.com.cn'
+    'SERVER_ADDR' => '139.196.29.70'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '116.228.167.234'
+    'DOCUMENT_ROOT' => 'D:/AppServ_ONE/webroot/test'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.x'
+    'SCRIPT_FILENAME' => 'D:/AppServ_ONE/webroot/test/index.php'
+    'REMOTE_PORT' => '18081'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=public/register'
+    'REQUEST_URI' => '/index.php?r=public/register'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1474358560.191
+    'REQUEST_TIME' => 1474358560
+]
+2016-09-20 16:04:07 [116.228.167.234][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to a member function saveAs() on a non-object' in D:\AppServ_ONE\webroot\test\models\Upload.php:27
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-09-20 16:04:07 [116.228.167.234][-][-][info][application] $_GET = [
+    'r' => 'public/register'
+]
+
+$_POST = [
+    'phone' => '15367496826'
+    'code' => '694689'
+    'nickname' => '111'
+    'sex' => '111'
+    'birthday' => '2003-01-11'
+]
+
+$_FILES = [
+    'upload' => [
+        'name' => [
+            'img' => '注册登陆.png'
+        ]
+        'type' => [
+            'img' => 'image/png'
+        ]
+        'tmp_name' => [
+            'img' => 'C:\\Windows\\Temp\\php9744.tmp'
+        ]
+        'error' => [
+            'img' => 0
+        ]
+        'size' => [
+            'img' => 1115961
+        ]
+    ]
+    'Upload' => [
+        'upload' => [
+            'name' => [
+                'img' => '注册登陆.png'
+            ]
+            'type' => [
+                'img' => 'image/png'
+            ]
+            'tmp_name' => [
+                'img' => 'C:\\Windows\\Temp\\php9744.tmp'
+            ]
+            'error' => [
+                'img' => 0
+            ]
+            'size' => [
+                'img' => 1115961
+            ]
+        ]
+    ]
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'test.uustudy.com.cn'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '1116740'
+    'HTTP_POSTMAN_TOKEN' => '1d409497-6740-557a-ae23-07ada32aa6f5'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_ORIGIN' => 'chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryTtAxAEH4ej5HBSnE'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\VisualSVN Server\\bin;C:\\Program Files\\TortoiseSVN\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.2.8 (Win32) PHP/5.4.45 Server at test.uustudy.com.cn Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.2.8 (Win32) PHP/5.4.45'
+    'SERVER_NAME' => 'test.uustudy.com.cn'
+    'SERVER_ADDR' => '139.196.29.70'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '116.228.167.234'
+    'DOCUMENT_ROOT' => 'D:/AppServ_ONE/webroot/test'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.x'
+    'SCRIPT_FILENAME' => 'D:/AppServ_ONE/webroot/test/index.php'
+    'REMOTE_PORT' => '32929'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=public/register'
+    'REQUEST_URI' => '/index.php?r=public/register'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1474358647.081
+    'REQUEST_TIME' => 1474358647
+]
+2016-09-20 16:08:59 [116.228.167.234][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to a member function saveAs() on a non-object' in D:\AppServ_ONE\webroot\test\models\Upload.php:27
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-09-20 16:08:59 [116.228.167.234][-][-][info][application] $_GET = [
+    'r' => 'public/register'
+]
+
+$_POST = [
+    'phone' => '15367496826'
+    'code' => '694689'
+    'nickname' => '111'
+    'sex' => '111'
+    'birthday' => '2003-01-11'
+]
+
+$_FILES = [
+    'upload' => [
+        'name' => [
+            'img' => '注册登陆.png'
+        ]
+        'type' => [
+            'img' => 'image/png'
+        ]
+        'tmp_name' => [
+            'img' => 'C:\\Windows\\Temp\\php698.tmp'
+        ]
+        'error' => [
+            'img' => 0
+        ]
+        'size' => [
+            'img' => 1115961
+        ]
+    ]
+    'Upload' => [
+        'upload' => [
+            'name' => [
+                'img' => '注册登陆.png'
+            ]
+            'type' => [
+                'img' => 'image/png'
+            ]
+            'tmp_name' => [
+                'img' => 'C:\\Windows\\Temp\\php698.tmp'
+            ]
+            'error' => [
+                'img' => 0
+            ]
+            'size' => [
+                'img' => 1115961
+            ]
+        ]
+    ]
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'test.uustudy.com.cn'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '1116740'
+    'HTTP_POSTMAN_TOKEN' => 'ffc33e82-358c-1edf-486d-f053a24a6d99'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_ORIGIN' => 'chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryVDshkH2Zl7X3HtTs'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\VisualSVN Server\\bin;C:\\Program Files\\TortoiseSVN\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.2.8 (Win32) PHP/5.4.45 Server at test.uustudy.com.cn Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.2.8 (Win32) PHP/5.4.45'
+    'SERVER_NAME' => 'test.uustudy.com.cn'
+    'SERVER_ADDR' => '139.196.29.70'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '116.228.167.234'
+    'DOCUMENT_ROOT' => 'D:/AppServ_ONE/webroot/test'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.x'
+    'SCRIPT_FILENAME' => 'D:/AppServ_ONE/webroot/test/index.php'
+    'REMOTE_PORT' => '12577'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=public/register'
+    'REQUEST_URI' => '/index.php?r=public/register'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1474358937.644
+    'REQUEST_TIME' => 1474358937
+]
+2016-09-20 16:13:45 [116.228.167.234][-][-][error][yii\db\Exception] exception 'yii\db\Exception' with message 'Redis error: ERR Protocol error: invalid bulk length
+Redis command was: set membermid16 Array' in D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2-redis\Connection.php:418
+Stack trace:
+#0 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2-redis\Connection.php(395): yii\redis\Connection->parseResponse('set membermid16...')
+#1 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2-redis\Connection.php(356): yii\redis\Connection->executeCommand('set', Array)
+#2 D:\AppServ_ONE\webroot\test\models\Common.php(9): yii\redis\Connection->__call('set', Array)
+#3 D:\AppServ_ONE\webroot\test\models\Common.php(9): yii\redis\Connection->set('membermid16', Array)
+#4 D:\AppServ_ONE\webroot\test\models\Member.php(159): app\models\Common->setcache('membermid16', Array)
+#5 D:\AppServ_ONE\webroot\test\controllers\PublicController.php(123): app\models\Member->cache()
+#6 [internal function]: app\controllers\PublicController->actionRegister()
+#7 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('register', Array)
+#10 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('public/register', Array)
+#11 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 D:\AppServ_ONE\webroot\test\index.php(11): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+)
+
+2016-09-20 16:13:45 [116.228.167.234][-][-][info][application] $_GET = [
+    'r' => 'public/register'
+]
+
+$_POST = [
+    'phone' => '15367496826'
+    'code' => '694689'
+    'nickname' => '111'
+    'sex' => '1'
+    'birthday' => '2003-01-11'
+    'pwd' => '123456'
+    'area' => '中国'
+]
+
+$_FILES = [
+    'upload' => [
+        'name' => [
+            'img' => '注册登陆.png'
+        ]
+        'type' => [
+            'img' => 'image/png'
+        ]
+        'tmp_name' => [
+            'img' => 'C:\\Windows\\Temp\\php68B1.tmp'
+        ]
+        'error' => [
+            'img' => 0
+        ]
+        'size' => [
+            'img' => 1115961
+        ]
+    ]
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'test.uustudy.com.cn'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '1116844'
+    'HTTP_POSTMAN_TOKEN' => '4cddc23f-6ee5-f79d-e4c2-e21ebd1c56fd'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_ORIGIN' => 'chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryMOp93xt0dZOQBLq5'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\VisualSVN Server\\bin;C:\\Program Files\\TortoiseSVN\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.2.8 (Win32) PHP/5.4.45 Server at test.uustudy.com.cn Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.2.8 (Win32) PHP/5.4.45'
+    'SERVER_NAME' => 'test.uustudy.com.cn'
+    'SERVER_ADDR' => '139.196.29.70'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '116.228.167.234'
+    'DOCUMENT_ROOT' => 'D:/AppServ_ONE/webroot/test'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.x'
+    'SCRIPT_FILENAME' => 'D:/AppServ_ONE/webroot/test/index.php'
+    'REMOTE_PORT' => '10049'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=public/register'
+    'REQUEST_URI' => '/index.php?r=public/register'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1474359224.956
+    'REQUEST_TIME' => 1474359224
+]
+2016-09-20 16:16:31 [116.228.167.234][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: app\models\Member::mobile' in D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\db\BaseActiveRecord.php(252): yii\base\Component->__get('mobile')
+#1 D:\AppServ_ONE\webroot\test\models\Member.php(160): yii\db\BaseActiveRecord->__get('mobile')
+#2 D:\AppServ_ONE\webroot\test\controllers\PublicController.php(123): app\models\Member->cache()
+#3 [internal function]: app\controllers\PublicController->actionRegister()
+#4 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('register', Array)
+#7 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('public/register', Array)
+#8 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 D:\AppServ_ONE\webroot\test\index.php(11): yii\base\Application->run()
+#10 {main}
+2016-09-20 16:16:31 [116.228.167.234][-][-][info][application] $_GET = [
+    'r' => 'public/register'
+]
+
+$_POST = [
+    'phone' => '15367496826'
+    'code' => '694689'
+    'nickname' => '111'
+    'sex' => '1'
+    'birthday' => '2003-01-11'
+    'pwd' => '123456'
+    'area' => '中国'
+]
+
+$_FILES = [
+    'upload' => [
+        'name' => [
+            'img' => '注册登陆.png'
+        ]
+        'type' => [
+            'img' => 'image/png'
+        ]
+        'tmp_name' => [
+            'img' => 'C:\\Windows\\Temp\\phpF1CF.tmp'
+        ]
+        'error' => [
+            'img' => 0
+        ]
+        'size' => [
+            'img' => 1115961
+        ]
+    ]
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'test.uustudy.com.cn'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '1116844'
+    'HTTP_POSTMAN_TOKEN' => 'c746ed8d-2a7e-6de4-4aee-2083226b9fe7'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_ORIGIN' => 'chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryQKvwk3JebN73kMop'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\VisualSVN Server\\bin;C:\\Program Files\\TortoiseSVN\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.2.8 (Win32) PHP/5.4.45 Server at test.uustudy.com.cn Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.2.8 (Win32) PHP/5.4.45'
+    'SERVER_NAME' => 'test.uustudy.com.cn'
+    'SERVER_ADDR' => '139.196.29.70'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '116.228.167.234'
+    'DOCUMENT_ROOT' => 'D:/AppServ_ONE/webroot/test'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.x'
+    'SCRIPT_FILENAME' => 'D:/AppServ_ONE/webroot/test/index.php'
+    'REMOTE_PORT' => '33505'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=public/register'
+    'REQUEST_URI' => '/index.php?r=public/register'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1474359391.128
+    'REQUEST_TIME' => 1474359391
+]
+2016-09-21 15:02:26 [116.228.167.234][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected ')'' in D:\AppServ_ONE\webroot\test\models\Member.php:71
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-09-21 15:02:26 [116.228.167.234][-][-][info][application] $_GET = [
+    'r' => 'person/get'
+]
+
+$_POST = [
+    'mid' => '26'
+    'token' => 'ZDc4MGEwOWM1NzE4ZWM2NGQ2ZTE4ODkyZmYzODY3MTI='
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'test.uustudy.com.cn'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '272'
+    'HTTP_POSTMAN_TOKEN' => 'fb60a71c-d8da-e732-0e0e-0dda434ad0aa'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_ORIGIN' => 'chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryPFgBzrXQ4RJySGyQ'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\VisualSVN Server\\bin;C:\\Program Files\\TortoiseSVN\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.2.8 (Win32) PHP/5.4.45 Server at test.uustudy.com.cn Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.2.8 (Win32) PHP/5.4.45'
+    'SERVER_NAME' => 'test.uustudy.com.cn'
+    'SERVER_ADDR' => '139.196.29.70'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '116.228.167.234'
+    'DOCUMENT_ROOT' => 'D:/AppServ_ONE/webroot/test'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.x'
+    'SCRIPT_FILENAME' => 'D:/AppServ_ONE/webroot/test/index.php'
+    'REMOTE_PORT' => '28929'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=person/get'
+    'REQUEST_URI' => '/index.php?r=person/get'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1474441346.237
+    'REQUEST_TIME' => 1474441346
+]
+2016-09-21 15:09:58 [116.228.167.234][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "publuc/login".' in D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\Module.php:460
+Stack trace:
+#0 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('publuc/login', Array)
+#1 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\AppServ_ONE\webroot\test\index.php(11): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\AppServ_ONE\webroot\test\index.php(11): yii\base\Application->run()
+#2 {main}
+2016-09-21 15:09:58 [116.228.167.234][-][-][info][application] $_GET = [
+    'r' => 'publuc/login'
+]
+
+$_POST = [
+    'phone' => '123456'
+    'pwd' => '123456'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'test.uustudy.com.cn'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '238'
+    'HTTP_POSTMAN_TOKEN' => '9a13c49d-4974-6c69-215d-9cfabc9357d9'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_ORIGIN' => 'chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundarylm7KAeuMNLrMDjeR'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\VisualSVN Server\\bin;C:\\Program Files\\TortoiseSVN\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.2.8 (Win32) PHP/5.4.45 Server at test.uustudy.com.cn Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.2.8 (Win32) PHP/5.4.45'
+    'SERVER_NAME' => 'test.uustudy.com.cn'
+    'SERVER_ADDR' => '139.196.29.70'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '116.228.167.234'
+    'DOCUMENT_ROOT' => 'D:/AppServ_ONE/webroot/test'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.x'
+    'SCRIPT_FILENAME' => 'D:/AppServ_ONE/webroot/test/index.php'
+    'REMOTE_PORT' => '35169'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=publuc/login'
+    'REQUEST_URI' => '/index.php?r=publuc/login'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1474441798.799
+    'REQUEST_TIME' => 1474441798
+]
+2016-09-22 10:58:16 [116.228.167.234][-][-][error][yii\base\UnknownMethodException] exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: app\models\Member::midcache()' in D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\Component.php:285
+Stack trace:
+#0 D:\AppServ_ONE\webroot\test\models\Member.php(96): yii\base\Component->__call('midcache', Array)
+#1 D:\AppServ_ONE\webroot\test\models\Member.php(96): app\models\Member->midcache('26', 'mid')
+#2 D:\AppServ_ONE\webroot\test\controllers\CommonController.php(134): app\models\Member->islogin(Array)
+#3 D:\AppServ_ONE\webroot\test\controllers\PersonController.php(58): app\controllers\CommonController->checklogin()
+#4 [internal function]: app\controllers\PersonController->actionGet()
+#5 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#6 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#7 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('get', Array)
+#8 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('person/get', Array)
+#9 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 D:\AppServ_ONE\webroot\test\index.php(11): yii\base\Application->run()
+#11 {main}
+2016-09-22 10:58:16 [116.228.167.234][-][-][info][application] $_GET = [
+    'r' => 'person/get'
+]
+
+$_POST = [
+    'mid' => '26'
+    'token' => 'ZTU1OWJkMjMyMjUxZjdlNmY3YjBiMGU2YTA0MDU3ZDE='
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'test.uustudy.com.cn'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '272'
+    'HTTP_POSTMAN_TOKEN' => '17b6f70c-66bd-7707-0991-a19029926020'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_ORIGIN' => 'chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryuWE4dyftSAMA125d'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\VisualSVN Server\\bin;C:\\Program Files\\TortoiseSVN\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.2.8 (Win32) PHP/5.4.45 Server at test.uustudy.com.cn Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.2.8 (Win32) PHP/5.4.45'
+    'SERVER_NAME' => 'test.uustudy.com.cn'
+    'SERVER_ADDR' => '139.196.29.70'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '116.228.167.234'
+    'DOCUMENT_ROOT' => 'D:/AppServ_ONE/webroot/test'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.x'
+    'SCRIPT_FILENAME' => 'D:/AppServ_ONE/webroot/test/index.php'
+    'REMOTE_PORT' => '45729'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=person/get'
+    'REQUEST_URI' => '/index.php?r=person/get'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1474513095.98
+    'REQUEST_TIME' => 1474513095
+]
+2016-09-22 11:23:44 [116.228.167.234][-][-][error][yii\base\UnknownMethodException] exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: app\controllers\PublicController::load()' in D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\Component.php:285
+Stack trace:
+#0 D:\AppServ_ONE\webroot\test\models\Member.php(66): yii\base\Component->__call('load', Array)
+#1 D:\AppServ_ONE\webroot\test\models\Member.php(66): app\controllers\PublicController->load(Array)
+#2 D:\AppServ_ONE\webroot\test\controllers\PublicController.php(133): app\models\Member->login(Array)
+#3 [internal function]: app\controllers\PublicController->actionLogin()
+#4 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('login', Array)
+#7 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('public/login', Array)
+#8 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 D:\AppServ_ONE\webroot\test\index.php(11): yii\base\Application->run()
+#10 {main}
+2016-09-22 11:23:44 [116.228.167.234][-][-][info][application] $_GET = [
+    'r' => 'public/login'
+]
+
+$_POST = [
+    'phone' => '15367496826'
+    'pwd' => '123456'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'test.uustudy.com.cn'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '243'
+    'HTTP_POSTMAN_TOKEN' => '1b494e0f-ce97-2ebd-2840-9c0dac0d32a8'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_ORIGIN' => 'chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryUQf3zLj6RycpsUjf'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\VisualSVN Server\\bin;C:\\Program Files\\TortoiseSVN\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.2.8 (Win32) PHP/5.4.45 Server at test.uustudy.com.cn Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.2.8 (Win32) PHP/5.4.45'
+    'SERVER_NAME' => 'test.uustudy.com.cn'
+    'SERVER_ADDR' => '139.196.29.70'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '116.228.167.234'
+    'DOCUMENT_ROOT' => 'D:/AppServ_ONE/webroot/test'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.x'
+    'SCRIPT_FILENAME' => 'D:/AppServ_ONE/webroot/test/index.php'
+    'REMOTE_PORT' => '46881'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=public/login'
+    'REQUEST_URI' => '/index.php?r=public/login'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1474514624.323
+    'REQUEST_TIME' => 1474514624
+]
+2016-09-22 11:25:52 [116.228.167.234][-][-][error][yii\base\UnknownMethodException] exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: app\controllers\PublicController::load()' in D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\Component.php:285
+Stack trace:
+#0 D:\AppServ_ONE\webroot\test\models\Member.php(66): yii\base\Component->__call('load', Array)
+#1 D:\AppServ_ONE\webroot\test\models\Member.php(66): app\controllers\PublicController->load(Array)
+#2 D:\AppServ_ONE\webroot\test\controllers\PublicController.php(133): app\models\Member->login(Array)
+#3 [internal function]: app\controllers\PublicController->actionLogin()
+#4 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('login', Array)
+#7 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('public/login', Array)
+#8 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 D:\AppServ_ONE\webroot\test\index.php(11): yii\base\Application->run()
+#10 {main}
+2016-09-22 11:25:52 [116.228.167.234][-][-][info][application] $_GET = [
+    'r' => 'public/login'
+]
+
+$_POST = [
+    'phone' => '15367496826'
+    'pwd' => '123456'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'test.uustudy.com.cn'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '243'
+    'HTTP_POSTMAN_TOKEN' => 'cbfc408a-26d1-bb80-ccda-a8b20f7fad74'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_ORIGIN' => 'chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryclzGhDdsGrm5dz3e'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\VisualSVN Server\\bin;C:\\Program Files\\TortoiseSVN\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.2.8 (Win32) PHP/5.4.45 Server at test.uustudy.com.cn Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.2.8 (Win32) PHP/5.4.45'
+    'SERVER_NAME' => 'test.uustudy.com.cn'
+    'SERVER_ADDR' => '139.196.29.70'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '116.228.167.234'
+    'DOCUMENT_ROOT' => 'D:/AppServ_ONE/webroot/test'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.x'
+    'SCRIPT_FILENAME' => 'D:/AppServ_ONE/webroot/test/index.php'
+    'REMOTE_PORT' => '3457'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=public/login'
+    'REQUEST_URI' => '/index.php?r=public/login'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1474514752.323
+    'REQUEST_TIME' => 1474514752
+]
+2016-09-22 14:02:29 [116.228.167.234][-][-][error][yii\base\UnknownMethodException] exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: app\controllers\PublicController::load()' in D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\Component.php:285
+Stack trace:
+#0 D:\AppServ_ONE\webroot\test\models\Member.php(226): yii\base\Component->__call('load', Array)
+#1 D:\AppServ_ONE\webroot\test\models\Member.php(226): app\controllers\PublicController->load('15367496826', 'phone', 1)
+#2 D:\AppServ_ONE\webroot\test\controllers\PublicController.php(145): app\models\Member->reset('123456', '15367496826')
+#3 [internal function]: app\controllers\PublicController->actionReset()
+#4 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('reset', Array)
+#7 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('public/reset', Array)
+#8 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 D:\AppServ_ONE\webroot\test\index.php(11): yii\base\Application->run()
+#10 {main}
+2016-09-22 14:02:29 [116.228.167.234][-][-][info][application] $_GET = [
+    'r' => 'public/reset'
+]
+
+$_POST = [
+    'phone' => '15367496826'
+    'pwd' => '123456'
+    'code' => '965447'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'test.uustudy.com.cn'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '340'
+    'HTTP_POSTMAN_TOKEN' => 'c63ade2b-e0b1-bc25-da10-65d146a24911'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_ORIGIN' => 'chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryvPBjvotLTVcW3zgk'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\VisualSVN Server\\bin;C:\\Program Files\\TortoiseSVN\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.2.8 (Win32) PHP/5.4.45 Server at test.uustudy.com.cn Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.2.8 (Win32) PHP/5.4.45'
+    'SERVER_NAME' => 'test.uustudy.com.cn'
+    'SERVER_ADDR' => '139.196.29.70'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '116.228.167.234'
+    'DOCUMENT_ROOT' => 'D:/AppServ_ONE/webroot/test'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.x'
+    'SCRIPT_FILENAME' => 'D:/AppServ_ONE/webroot/test/index.php'
+    'REMOTE_PORT' => '28289'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=public/reset'
+    'REQUEST_URI' => '/index.php?r=public/reset'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1474524149.135
+    'REQUEST_TIME' => 1474524149
+]
+2016-09-22 14:06:36 [116.228.167.234][-][-][error][yii\base\UnknownMethodException] exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: app\controllers\PublicController::getcache()' in D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\Component.php:285
+Stack trace:
+#0 D:\AppServ_ONE\webroot\test\models\Member.php(190): yii\base\Component->__call('getcache', Array)
+#1 D:\AppServ_ONE\webroot\test\models\Member.php(190): app\controllers\PublicController->getcache('memberphone1536...')
+#2 D:\AppServ_ONE\webroot\test\models\Member.php(226): app\models\Member->loadcache('15367496826', 'phone', 1)
+#3 D:\AppServ_ONE\webroot\test\controllers\PublicController.php(145): app\models\Member->reset('123456', '15367496826')
+#4 [internal function]: app\controllers\PublicController->actionReset()
+#5 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#6 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#7 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('reset', Array)
+#8 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('public/reset', Array)
+#9 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 D:\AppServ_ONE\webroot\test\index.php(11): yii\base\Application->run()
+#11 {main}
+2016-09-22 14:06:36 [116.228.167.234][-][-][info][application] $_GET = [
+    'r' => 'public/reset'
+]
+
+$_POST = [
+    'phone' => '15367496826'
+    'pwd' => '123456'
+    'code' => '965447'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'test.uustudy.com.cn'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '340'
+    'HTTP_POSTMAN_TOKEN' => '3caba2e8-4989-4b99-2e1b-24a581330943'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_ORIGIN' => 'chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryL5VnDXd9PLVqhLI3'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\VisualSVN Server\\bin;C:\\Program Files\\TortoiseSVN\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.2.8 (Win32) PHP/5.4.45 Server at test.uustudy.com.cn Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.2.8 (Win32) PHP/5.4.45'
+    'SERVER_NAME' => 'test.uustudy.com.cn'
+    'SERVER_ADDR' => '139.196.29.70'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '116.228.167.234'
+    'DOCUMENT_ROOT' => 'D:/AppServ_ONE/webroot/test'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.x'
+    'SCRIPT_FILENAME' => 'D:/AppServ_ONE/webroot/test/index.php'
+    'REMOTE_PORT' => '22529'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=public/reset'
+    'REQUEST_URI' => '/index.php?r=public/reset'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1474524396.323
+    'REQUEST_TIME' => 1474524396
+]
+2016-09-22 14:07:09 [116.228.167.234][-][-][error][yii\base\UnknownMethodException] exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: app\controllers\PublicController::getcache()' in D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\Component.php:285
+Stack trace:
+#0 D:\AppServ_ONE\webroot\test\models\Member.php(190): yii\base\Component->__call('getcache', Array)
+#1 D:\AppServ_ONE\webroot\test\models\Member.php(190): app\controllers\PublicController->getcache('memberphone1536...')
+#2 D:\AppServ_ONE\webroot\test\models\Member.php(226): app\models\Member->loadcache('15367496826', 'phone', 1)
+#3 D:\AppServ_ONE\webroot\test\controllers\PublicController.php(145): app\models\Member->reset('123456', '15367496826')
+#4 [internal function]: app\controllers\PublicController->actionReset()
+#5 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#6 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#7 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('reset', Array)
+#8 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('public/reset', Array)
+#9 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 D:\AppServ_ONE\webroot\test\index.php(11): yii\base\Application->run()
+#11 {main}
+2016-09-22 14:07:09 [116.228.167.234][-][-][info][application] $_GET = [
+    'r' => 'public/reset'
+]
+
+$_POST = [
+    'phone' => '15367496826'
+    'pwd' => '123456'
+    'code' => '965447'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'test.uustudy.com.cn'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '340'
+    'HTTP_POSTMAN_TOKEN' => 'f4598c23-f58a-d6bb-a0c4-b029c05582e1'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_ORIGIN' => 'chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryEPWdtpk0MrUc2vaZ'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\VisualSVN Server\\bin;C:\\Program Files\\TortoiseSVN\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.2.8 (Win32) PHP/5.4.45 Server at test.uustudy.com.cn Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.2.8 (Win32) PHP/5.4.45'
+    'SERVER_NAME' => 'test.uustudy.com.cn'
+    'SERVER_ADDR' => '139.196.29.70'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '116.228.167.234'
+    'DOCUMENT_ROOT' => 'D:/AppServ_ONE/webroot/test'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.x'
+    'SCRIPT_FILENAME' => 'D:/AppServ_ONE/webroot/test/index.php'
+    'REMOTE_PORT' => '27265'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=public/reset'
+    'REQUEST_URI' => '/index.php?r=public/reset'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1474524429.37
+    'REQUEST_TIME' => 1474524429
+]
+2016-09-22 14:08:00 [116.228.167.234][-][-][error][yii\base\UnknownMethodException] exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: app\controllers\PublicController::loadcache()' in D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\Component.php:285
+Stack trace:
+#0 D:\AppServ_ONE\webroot\test\models\Member.php(226): yii\base\Component->__call('loadcache', Array)
+#1 D:\AppServ_ONE\webroot\test\models\Member.php(226): app\controllers\PublicController->loadcache('15367496826', 'phone', 1)
+#2 D:\AppServ_ONE\webroot\test\controllers\PublicController.php(145): app\models\Member->reset('123456', '15367496826')
+#3 [internal function]: app\controllers\PublicController->actionReset()
+#4 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('reset', Array)
+#7 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('public/reset', Array)
+#8 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 D:\AppServ_ONE\webroot\test\index.php(11): yii\base\Application->run()
+#10 {main}
+2016-09-22 14:08:00 [116.228.167.234][-][-][info][application] $_GET = [
+    'r' => 'public/reset'
+]
+
+$_POST = [
+    'phone' => '15367496826'
+    'pwd' => '123456'
+    'code' => '965447'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'test.uustudy.com.cn'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '340'
+    'HTTP_POSTMAN_TOKEN' => 'f1a14b93-21e6-0ecf-4ec3-bc0007d70906'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_ORIGIN' => 'chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryBpgf4O8KhEkl5IGf'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\VisualSVN Server\\bin;C:\\Program Files\\TortoiseSVN\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.2.8 (Win32) PHP/5.4.45 Server at test.uustudy.com.cn Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.2.8 (Win32) PHP/5.4.45'
+    'SERVER_NAME' => 'test.uustudy.com.cn'
+    'SERVER_ADDR' => '139.196.29.70'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '116.228.167.234'
+    'DOCUMENT_ROOT' => 'D:/AppServ_ONE/webroot/test'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.x'
+    'SCRIPT_FILENAME' => 'D:/AppServ_ONE/webroot/test/index.php'
+    'REMOTE_PORT' => '38722'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=public/reset'
+    'REQUEST_URI' => '/index.php?r=public/reset'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1474524480.839
+    'REQUEST_TIME' => 1474524480
+]
+2016-09-22 14:09:24 [116.228.167.234][-][-][error][yii\base\UnknownMethodException] exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: app\models\Member::md6()' in D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\Component.php:285
+Stack trace:
+#0 D:\AppServ_ONE\webroot\test\models\Member.php(231): yii\base\Component->__call('md6', Array)
+#1 D:\AppServ_ONE\webroot\test\models\Member.php(231): app\models\Member->md6('123456')
+#2 D:\AppServ_ONE\webroot\test\controllers\PublicController.php(146): app\models\Member->reset('123456', '15367496826')
+#3 [internal function]: app\controllers\PublicController->actionReset()
+#4 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('reset', Array)
+#7 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('public/reset', Array)
+#8 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 D:\AppServ_ONE\webroot\test\index.php(11): yii\base\Application->run()
+#10 {main}
+2016-09-22 14:09:24 [116.228.167.234][-][-][info][application] $_GET = [
+    'r' => 'public/reset'
+]
+
+$_POST = [
+    'phone' => '15367496826'
+    'pwd' => '123456'
+    'code' => '965447'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'test.uustudy.com.cn'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '340'
+    'HTTP_POSTMAN_TOKEN' => '9580981f-4103-f118-21d9-55671b4f38d8'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_ORIGIN' => 'chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryuCJnfyJT7NrGryxP'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\VisualSVN Server\\bin;C:\\Program Files\\TortoiseSVN\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.2.8 (Win32) PHP/5.4.45 Server at test.uustudy.com.cn Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.2.8 (Win32) PHP/5.4.45'
+    'SERVER_NAME' => 'test.uustudy.com.cn'
+    'SERVER_ADDR' => '139.196.29.70'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '116.228.167.234'
+    'DOCUMENT_ROOT' => 'D:/AppServ_ONE/webroot/test'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.x'
+    'SCRIPT_FILENAME' => 'D:/AppServ_ONE/webroot/test/index.php'
+    'REMOTE_PORT' => '50241'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=public/reset'
+    'REQUEST_URI' => '/index.php?r=public/reset'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1474524564.214
+    'REQUEST_TIME' => 1474524564
+]
+2016-09-22 14:11:37 [116.228.167.234][-][-][error][yii\base\UnknownMethodException] exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: app\controllers\PublicController::md6()' in D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\Component.php:285
+Stack trace:
+#0 D:\AppServ_ONE\webroot\test\models\Member.php(69): yii\base\Component->__call('md6', Array)
+#1 D:\AppServ_ONE\webroot\test\models\Member.php(69): app\controllers\PublicController->md6('123456')
+#2 D:\AppServ_ONE\webroot\test\controllers\PublicController.php(133): app\models\Member->login()
+#3 [internal function]: app\controllers\PublicController->actionLogin()
+#4 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('login', Array)
+#7 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('public/login', Array)
+#8 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 D:\AppServ_ONE\webroot\test\index.php(11): yii\base\Application->run()
+#10 {main}
+2016-09-22 14:11:37 [116.228.167.234][-][-][info][application] $_GET = [
+    'r' => 'public/login'
+]
+
+$_POST = [
+    'phone' => '15367496826'
+    'pwd' => '123456'
+    'code' => '965447'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'test.uustudy.com.cn'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '340'
+    'HTTP_POSTMAN_TOKEN' => '37018ab1-bd83-ff4f-a7b1-b1278f6a116a'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_ORIGIN' => 'chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundary2uaQN4BsC30QjZuO'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\VisualSVN Server\\bin;C:\\Program Files\\TortoiseSVN\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.2.8 (Win32) PHP/5.4.45 Server at test.uustudy.com.cn Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.2.8 (Win32) PHP/5.4.45'
+    'SERVER_NAME' => 'test.uustudy.com.cn'
+    'SERVER_ADDR' => '139.196.29.70'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '116.228.167.234'
+    'DOCUMENT_ROOT' => 'D:/AppServ_ONE/webroot/test'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.x'
+    'SCRIPT_FILENAME' => 'D:/AppServ_ONE/webroot/test/index.php'
+    'REMOTE_PORT' => '11649'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=public/login'
+    'REQUEST_URI' => '/index.php?r=public/login'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1474524697.682
+    'REQUEST_TIME' => 1474524697
+]
+2016-09-22 14:12:53 [116.228.167.234][-][-][error][yii\base\UnknownMethodException] exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: app\controllers\PublicController::gettoken()' in D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\Component.php:285
+Stack trace:
+#0 D:\AppServ_ONE\webroot\test\models\Member.php(73): yii\base\Component->__call('gettoken', Array)
+#1 D:\AppServ_ONE\webroot\test\models\Member.php(73): app\controllers\PublicController->gettoken()
+#2 D:\AppServ_ONE\webroot\test\controllers\PublicController.php(133): app\models\Member->login()
+#3 [internal function]: app\controllers\PublicController->actionLogin()
+#4 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('login', Array)
+#7 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('public/login', Array)
+#8 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 D:\AppServ_ONE\webroot\test\index.php(11): yii\base\Application->run()
+#10 {main}
+2016-09-22 14:12:53 [116.228.167.234][-][-][info][application] $_GET = [
+    'r' => 'public/login'
+]
+
+$_POST = [
+    'phone' => '15367496826'
+    'pwd' => '123456'
+    'code' => '965447'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'test.uustudy.com.cn'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '340'
+    'HTTP_POSTMAN_TOKEN' => '6f1a8e9e-3150-a8a7-47a1-e521c719429b'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_ORIGIN' => 'chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryQs2X2h5JC8FRcXYa'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\VisualSVN Server\\bin;C:\\Program Files\\TortoiseSVN\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.2.8 (Win32) PHP/5.4.45 Server at test.uustudy.com.cn Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.2.8 (Win32) PHP/5.4.45'
+    'SERVER_NAME' => 'test.uustudy.com.cn'
+    'SERVER_ADDR' => '139.196.29.70'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '116.228.167.234'
+    'DOCUMENT_ROOT' => 'D:/AppServ_ONE/webroot/test'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.x'
+    'SCRIPT_FILENAME' => 'D:/AppServ_ONE/webroot/test/index.php'
+    'REMOTE_PORT' => '27361'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=public/login'
+    'REQUEST_URI' => '/index.php?r=public/login'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1474524773.104
+    'REQUEST_TIME' => 1474524773
+]
+2016-09-23 15:50:50 [116.228.167.234][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'app\controllers\Version' not found' in D:\AppServ_ONE\webroot\test\controllers\PublicController.php:165
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-09-23 15:50:50 [116.228.167.234][-][-][info][application] $_GET = [
+    'r' => 'public/version'
+]
+
+$_POST = [
+    'type' => 'ios'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'test.uustudy.com.cn'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36'
+    'CONTENT_LENGTH' => '138'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundarymleYobt0YO4Eoir8'
+    'HTTP_ORIGIN' => 'chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop'
+    'HTTP_POSTMAN_TOKEN' => '64e4e141-f4c0-84ec-92bc-814d17a5c610'
+    'HTTP_X_LANTERN_AUTH_TOKEN' => 'P2arBG5AwFZtAeyQ71YVeeNdKxrR8BX3cY6bQ737UcMUytnQAHbxOE3Mm7uXqwO7'
+    'HTTP_X_LANTERN_DEVICE_ID' => 'mFrr4UD+'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\VisualSVN Server\\bin;C:\\Program Files\\TortoiseSVN\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.2.8 (Win32) PHP/5.4.45 Server at test.uustudy.com.cn Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.2.8 (Win32) PHP/5.4.45'
+    'SERVER_NAME' => 'test.uustudy.com.cn'
+    'SERVER_ADDR' => '139.196.29.70'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '116.228.167.234'
+    'DOCUMENT_ROOT' => 'D:/AppServ_ONE/webroot/test'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.x'
+    'SCRIPT_FILENAME' => 'D:/AppServ_ONE/webroot/test/index.php'
+    'REMOTE_PORT' => '11329'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=public/version'
+    'REQUEST_URI' => '/index.php?r=public/version'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1474617050.117
+    'REQUEST_TIME' => 1474617050
+]
+2016-09-23 17:40:41 [116.228.167.234][-][-][error][yii\base\UnknownMethodException] exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: app\controllers\PublicController::getcache()' in D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\Component.php:285
+Stack trace:
+#0 D:\AppServ_ONE\webroot\test\models\Version.php(41): yii\base\Component->__call('getcache', Array)
+#1 D:\AppServ_ONE\webroot\test\models\Version.php(41): app\controllers\PublicController->getcache('versionios')
+#2 D:\AppServ_ONE\webroot\test\controllers\PublicController.php(166): app\models\Version->getversion()
+#3 [internal function]: app\controllers\PublicController->actionVersion()
+#4 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('version', Array)
+#7 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('public/version', Array)
+#8 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 D:\AppServ_ONE\webroot\test\index.php(11): yii\base\Application->run()
+#10 {main}
+2016-09-23 17:40:41 [116.228.167.234][-][-][info][application] $_GET = [
+    'r' => 'public/version'
+]
+
+$_POST = [
+    'type' => 'ios'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'test.uustudy.com.cn'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '138'
+    'HTTP_POSTMAN_TOKEN' => 'e4e0aaa2-353d-2554-1688-6e66f418c51d'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_ORIGIN' => 'chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundarymremNPK87O2QGADf'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\VisualSVN Server\\bin;C:\\Program Files\\TortoiseSVN\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.2.8 (Win32) PHP/5.4.45 Server at test.uustudy.com.cn Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.2.8 (Win32) PHP/5.4.45'
+    'SERVER_NAME' => 'test.uustudy.com.cn'
+    'SERVER_ADDR' => '139.196.29.70'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '116.228.167.234'
+    'DOCUMENT_ROOT' => 'D:/AppServ_ONE/webroot/test'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.x'
+    'SCRIPT_FILENAME' => 'D:/AppServ_ONE/webroot/test/index.php'
+    'REMOTE_PORT' => '6818'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=public/version'
+    'REQUEST_URI' => '/index.php?r=public/version'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1474623641.851
+    'REQUEST_TIME' => 1474623641
+]
+2016-09-23 17:41:31 [116.228.167.234][-][-][error][yii\base\UnknownMethodException] exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: app\controllers\PublicController::getcache()' in D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\Component.php:285
+Stack trace:
+#0 D:\AppServ_ONE\webroot\test\models\Version.php(41): yii\base\Component->__call('getcache', Array)
+#1 D:\AppServ_ONE\webroot\test\models\Version.php(41): app\controllers\PublicController->getcache('versionios')
+#2 D:\AppServ_ONE\webroot\test\controllers\PublicController.php(166): app\models\Version->getversion()
+#3 [internal function]: app\controllers\PublicController->actionVersion()
+#4 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('version', Array)
+#7 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('public/version', Array)
+#8 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 D:\AppServ_ONE\webroot\test\index.php(11): yii\base\Application->run()
+#10 {main}
+2016-09-23 17:41:31 [116.228.167.234][-][-][info][application] $_GET = [
+    'r' => 'public/version'
+]
+
+$_POST = [
+    'type' => 'ios'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'test.uustudy.com.cn'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '138'
+    'HTTP_POSTMAN_TOKEN' => 'e52a0acb-c788-36ee-cc69-b074613bb83b'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_ORIGIN' => 'chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundary52OIPmE0IcZTB9Ul'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\VisualSVN Server\\bin;C:\\Program Files\\TortoiseSVN\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.2.8 (Win32) PHP/5.4.45 Server at test.uustudy.com.cn Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.2.8 (Win32) PHP/5.4.45'
+    'SERVER_NAME' => 'test.uustudy.com.cn'
+    'SERVER_ADDR' => '139.196.29.70'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '116.228.167.234'
+    'DOCUMENT_ROOT' => 'D:/AppServ_ONE/webroot/test'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.x'
+    'SCRIPT_FILENAME' => 'D:/AppServ_ONE/webroot/test/index.php'
+    'REMOTE_PORT' => '38849'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=public/version'
+    'REQUEST_URI' => '/index.php?r=public/version'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1474623691.679
+    'REQUEST_TIME' => 1474623691
+]
+2016-09-23 17:42:50 [116.228.167.234][-][-][error][yii\db\Exception] exception 'yii\db\Exception' with message 'Redis error: ERR Protocol error: invalid bulk length
+Redis command was: set versionios Array' in D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2-redis\Connection.php:418
+Stack trace:
+#0 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2-redis\Connection.php(395): yii\redis\Connection->parseResponse('set versionios ...')
+#1 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2-redis\Connection.php(356): yii\redis\Connection->executeCommand('set', Array)
+#2 D:\AppServ_ONE\webroot\test\models\Common.php(9): yii\redis\Connection->__call('set', Array)
+#3 D:\AppServ_ONE\webroot\test\models\Common.php(9): yii\redis\Connection->set('versionios', Array)
+#4 D:\AppServ_ONE\webroot\test\models\Version.php(44): app\models\Common->setcache('versionios', Array)
+#5 D:\AppServ_ONE\webroot\test\controllers\PublicController.php(166): app\models\Version->getversion()
+#6 [internal function]: app\controllers\PublicController->actionVersion()
+#7 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('version', Array)
+#10 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('public/version', Array)
+#11 D:\AppServ_ONE\webroot\test\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 D:\AppServ_ONE\webroot\test\index.php(11): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+)
+
+2016-09-23 17:42:50 [116.228.167.234][-][-][info][application] $_GET = [
+    'r' => 'public/version'
+]
+
+$_POST = [
+    'type' => 'ios'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'test.uustudy.com.cn'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '138'
+    'HTTP_POSTMAN_TOKEN' => '80cf383f-6a0e-87ac-6424-e308a6a08b1b'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_ORIGIN' => 'chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryjLAAAJ6Qc2BfsYeS'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\VisualSVN Server\\bin;C:\\Program Files\\TortoiseSVN\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.2.8 (Win32) PHP/5.4.45 Server at test.uustudy.com.cn Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.2.8 (Win32) PHP/5.4.45'
+    'SERVER_NAME' => 'test.uustudy.com.cn'
+    'SERVER_ADDR' => '139.196.29.70'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '116.228.167.234'
+    'DOCUMENT_ROOT' => 'D:/AppServ_ONE/webroot/test'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.x'
+    'SCRIPT_FILENAME' => 'D:/AppServ_ONE/webroot/test/index.php'
+    'REMOTE_PORT' => '23649'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=public/version'
+    'REQUEST_URI' => '/index.php?r=public/version'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1474623770.569
+    'REQUEST_TIME' => 1474623770
+]
+2016-09-27 14:41:06 [45.32.41.129][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to a member function cache() on a non-object' in D:\AppServ_ONE\webroot\test\models\UpdateMember.php:58
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-09-27 14:41:06 [45.32.41.129][-][-][info][application] $_GET = [
+    'r' => 'person/update'
+]
+
+$_POST = [
+    'mid' => '26'
+    'token' => 'ZWFmZGFlZjFiZTE4Yzg5NjdjNjhjODYzMmQ3OTUzOWE='
+    'sign' => '我思故我在'
+    'phone' => '15367496826'
+    'pwd' => '123456'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'test.uustudy.com.cn'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36'
+    'CONTENT_LENGTH' => '664'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundarysbI3NKjPKDIqVp9U'
+    'HTTP_ORIGIN' => 'chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop'
+    'HTTP_POSTMAN_TOKEN' => '00a55705-978b-0bce-6982-63a6d6057af6'
+    'HTTP_X_FORWARDED_FOR' => '116.228.167.234'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\VisualSVN Server\\bin;C:\\Program Files\\TortoiseSVN\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.2.8 (Win32) PHP/5.4.45 Server at test.uustudy.com.cn Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.2.8 (Win32) PHP/5.4.45'
+    'SERVER_NAME' => 'test.uustudy.com.cn'
+    'SERVER_ADDR' => '139.196.29.70'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '45.32.41.129'
+    'DOCUMENT_ROOT' => 'D:/AppServ_ONE/webroot/test'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.x'
+    'SCRIPT_FILENAME' => 'D:/AppServ_ONE/webroot/test/index.php'
+    'REMOTE_PORT' => '36170'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=person/update'
+    'REQUEST_URI' => '/index.php?r=person/update'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1474958466.296
+    'REQUEST_TIME' => 1474958466
+]
+2016-09-27 15:01:43 [45.32.41.129][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to a member function load() on a non-object' in D:\AppServ_ONE\webroot\test\models\UpdateMember.php:55
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-09-27 15:01:42 [45.32.41.129][-][-][info][application] $_GET = [
+    'r' => 'person/update'
+]
+
+$_POST = [
+    'mid' => '26'
+    'token' => 'ZTQ2ZjNlMDc3ZTVhNTcxNTc0NThjMjYyMzdkN2I1NTE='
+    'sign' => '我思故我在。'
+    'nickname' => '221'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'test.uustudy.com.cn'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36'
+    'CONTENT_LENGTH' => '479'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryWweLq93zAe1MYxBS'
+    'HTTP_ORIGIN' => 'chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop'
+    'HTTP_POSTMAN_TOKEN' => 'e82d4b94-3e90-76f6-2edb-3fc0957e0596'
+    'HTTP_X_FORWARDED_FOR' => '116.228.167.234'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\VisualSVN Server\\bin;C:\\Program Files\\TortoiseSVN\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.2.8 (Win32) PHP/5.4.45 Server at test.uustudy.com.cn Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.2.8 (Win32) PHP/5.4.45'
+    'SERVER_NAME' => 'test.uustudy.com.cn'
+    'SERVER_ADDR' => '139.196.29.70'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '45.32.41.129'
+    'DOCUMENT_ROOT' => 'D:/AppServ_ONE/webroot/test'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.x'
+    'SCRIPT_FILENAME' => 'D:/AppServ_ONE/webroot/test/index.php'
+    'REMOTE_PORT' => '57280'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=person/update'
+    'REQUEST_URI' => '/index.php?r=person/update'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1474959702.937
+    'REQUEST_TIME' => 1474959702
+]

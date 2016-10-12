@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Only，赶快测一测！</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="快去添加第一个好友吧，用好友雷达你可以知道他与你的距离！" />
+    <link href="../img/icon.png" rel="shortcut icon" type="image/x-icon"/>
+
+    <!-- Bootstrap -->
+    <link href="//cdn.bootcss.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <!--<link rel="stylesheet" href="http://cdn.dowebok.com/77/css/jquery.fullPage.css">-->
+    <link rel="stylesheet" href="css/index.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script language="javascript" src="http://webapi.amap.com/maps?v=1.3&key=c8d499635271ab4f9d449d35911e2cf1"></script>
+</head>
+<body>
+<div class="last-page"></div>
+<div class="wrap">
+   <div class="col-xs-12 titles" style="padding:0 5px;margin-top: 0 ">
+       <div class="content">
+           <div id="J_hint" class="labels">
+               <span class="theNum">1</span>/<span class="nums">10</span>
+               <span class="clock" data-timestamp="0"><!--28:45--></span>
+           </div>
+           <div class="question col-xs-12">
+               <div class="question-wrap" style="z-index: 10">
+                   <img id="qImg"style="width: 100%">
+                   <div id="J_question" class="desc">
+                       <!--爱情观是？-->
+                   </div>
+               </div>
+           </div>
+           <div id="J_answers" class="answer" style="margin-top:10px;clear: both">
+               <ul>
+                   <!--<li>答案一</li>-->
+                   <!--<li>答案二</li>-->
+                   <!--<li>答案三</li>-->
+                   <!--<li>答案四</li>-->
+                   <!--<li>答案五</li>-->
+               </ul>
+           </div>
+           <p id="change" style="background: #ffb25c;padding: 10px;border-radius: 5px">换题</p>
+           <p style="color: #d8d8d8;padding: 10px;border-radius: 5px;font-size: .2rem">Copyright @ 2015 All Rights Reserved.</p>
+
+       </div>
+   </div>
+</div>
+<script>
+    (function () {
+        document.addEventListener('DOMContentLoaded', function () {
+            var html = document.documentElement;
+            var windowWidth = html.clientWidth;
+            html.style.fontSize = windowWidth / 6.4 + 'px';
+            // 等价于html.style.fontSize = windowWidth / 640 * 100 + 'px';
+        }, false);
+    })();
+</script>
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<!--<script src="http://cdn.dowebok.com/77/js/jquery.fullPage.min.js"></script>-->
+<script src="http://cdn.staticfile.org/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script type="text/javascript">
+
+    var datass = [{"title":"111\u6b22\u770b\u97e9\u5267\uff1f",
+        "answers":["\u662f\u7684","\u4e0d\u662f","\u8fd8\u597d"]},
+        {"title":"222\u4f60\u5f88\u4e0d\u559c\u6b22\u6c14\u6c1b\u641e\u5f97\u592a\u7d27\u5f20\u5417\uff1f",
+            "answers":["\u662f\u7684","\u4e0d\u662f","\u770b\u60c5\u51b5"]},
+        {"title":"333\u4f60\u73b0\u5728\u5f88\u8ffd\u6c42\u7a33\u5b9a\u7684\u751f\u6d3b\u5417\uff1f",
+            "answers":["\u662f\u7684","\u4e0d\u662f","\u8fd8\u597d"]},
+        {"title":"444\u4f60\u73b0\u5728\u89c9\u5f97\u81ea\u5df1\u662f\u4e00\u4e2a\u5f88\u73b0\u5b9e\u7684\u4eba\u5417\uff1f",
+            "answers":["\u662f\u7684","\u4e0d\u662f","\u8fd8\u597d"]},
+        {"title":"555\u73b0\u5728\u7684\u4f60\uff0c\u4f9d\u7136\u5bf9\u7231\u60c5\u62b1\u6709\u79cd\u79cd\u5e7b\u60f3\u5417\uff1f",
+            "answers":["\u662f\u7684","\u4e0d\u662f","\u8fd8\u597d"]},
+        {"title":"666\u5982\u679c\u4f60\u521b\u9020\u4e00\u79cd\u54c1\u724c\uff0c\u7528\u4e0b\u9762\u67d0\u79cd\u6c34\u679c\u505a\u5f62\u8c61\uff0c\u4f60\u4f1a\u9009\u62e9\uff1f",
+            "answers":["\u6a59\u5b50","\u6a31\u6843","\u6843\u5b50"]},
+        {"title":"777\u4e0b\u9762\u51e0\u79cd\u4eba\uff0c\u4f60\u6700\u4e0d\u559c\u6b22\u7684\u662f\uff1f",
+            "answers":["\u5c0f\u5fc3\u773c\u7684","\u4f1a\u5439\u5618\u7684","\u7206\u7c97\u53e3\u7684"]},
+        {"title":"888\u5018\u82e5\u4e8b\u4e1a\u6ca1\u6709\u4ec0\u4e48\u8d77\u8272\uff0c\u4f60\u4f1a\u8003\u8651\u505a\u4e0b\u9762\u54ea\u4e00\u7c7b\u578b\u7684\u4eba\uff1f",
+            "answers":["\u575a\u6301\u4e0d\u61c8\uff0c\u594b\u6597\u5230\u5e95","\u5f97\u8fc7\u4e14\u8fc7\uff0c\u5e73\u5e73\u6de1\u6de1","\u80cc\u5305\u65c5\u884c\uff0c\u81ea\u7531\u5929\u4e0b"]},
+        {"title":"999\u4e0b\u9762\u51e0\u4e2a\u8bcd\u8bed\uff0c\u4f60\u6700\u559c\u6b22\u7684\u662f\uff1f",
+            "answers":["\u7389\u6811\u4e34\u98ce","\u56fd\u8272\u5929\u9999","\u7cbe\u81f4\u4f18\u96c5"]},
+        {"title":"000\u4e0b\u9762\u4e09\u6b3e\u655e\u7bf7\u8f66\uff0c\u4f60\u89c9\u5f97\u7537\u4eba\u5f00\u54ea\u4e00\u6b3e\u6700\u5e05\uff1f",
+            "answers":["\u7ea2\u8272\u7684","\u9ec4\u8272\u7684","\u7d2b\u8272\u7684"]},
+        {"title":"1000\u4e0b\u9762\u4e09\u6b3e\u655e\u7bf7\u8f66\uff0c\u4f60\u89c9\u5f97\u7537\u4eba\u5f00\u54ea\u4e00\u6b3e\u6700\u5e05\uff1f",
+            "answers":["\u7ea2\u8272\u7684","\u9ec4\u8272\u7684","\u7d2b\u8272\u7684"]},
+        {"title":"1000\u4e0b\u9762\u4e09\u6b3e\u655e\u7bf7\u8f66\uff0c\u4f60\u89c9\u5f97\u7537\u4eba\u5f00\u54ea\u4e00\u6b3e\u6700\u5e05\uff1f",
+            "answers":["\u7ea2\u8272\u7684","\u9ec4\u8272\u7684","\u7d2b\u8272\u7684"]}
+    ];
+
+
+    //		var countdown = new Countdown(); 创建倒计时
+
+    var QuestionResponse = (function () {
+
+        var _theQuestionNumShow = $('#J_hint .theNum'),
+                _totalQuestionNumShow = $('#J_hint .nums'),
+                _questionShow = $('#J_question'),
+                _answersShow = $('#J_answers>ul'),
+                _waiting = $('#waiting'),
+                _answerNum = 0,
+                _datasNum = 0,
+                _timer = null,
+                _result = [],
+                _cut = '_';
+        var setData=[];//设置的问题
+
+        var _getDataLength = function (datas) {
+            return datas.length;
+        };
+
+        var _getRandomId = function (datas) {
+            var dataLength = _getDataLength(datas);
+            return Math.floor(Math.random() * dataLength);
+        };
+
+        var _getRandomData = function (datas) {
+            var randomId = _getRandomId(datas);
+            var randomData = datas[randomId];
+            datas.splice(randomId, 1);
+            return randomData;
+        };
+
+        var _getTurnData = function (datas) {
+            var dataItem = datas[0];
+            datas.splice(0, 1);
+            return dataItem;
+        };
+
+        var _getSubstringObj = function (str) {
+            var cutIndex = str.lastIndexOf(_cut);
+            var foreStr = str.slice(0, cutIndex);
+            var score = str.slice(cutIndex+1);
+            return { str : foreStr, score : score };
+        };
+        var bAsk=function(randomData){
+            _questionShow.html(randomData.content);
+            $("#qImg").attr('src',randomData.img);
+            _answersShow.html(null);
+            $.each(randomData.answer.split(','), function (asindex, asdata) {
+                var	answer = $('<li></li>').attr('data-index', asindex + 1).html(asdata).appendTo(_answersShow).fadeIn(500);
+                answer.on('click', function () {
+                    clearTimeout(_timer);
+                    $(this).css('background','#f4cf22');
+                    $('.wrap').fadeOut(400);
+                    $('.wrap').fadeIn(400);
+                    _timer = setTimeout(function () {
+                        resultItem.q=randomData.qid;
+                        resultItem.a = answer.attr('data-index');  // 呈现回答
+//                        console.log(resultItem);// 呈现每个题目设置
+                        setData.push(resultItem);
+                        console.log(setData);
+                        if(_answerNum >= 10) {
+                            var sum = 0;
+                            $.each(_result, function(index, value) {
+                                sum += Number(value.a);
+                            });
+                            console.log(_result);//设置题目结果
+                            console.log(sum);
+                            $('#score').val(sum);
+                            _answersShow.find('li').off('click');
+                            _waiting.show();
+                            $("#submitForm").submit();
+//                            提交设置的问题和个人信息
+                            window.location.href='meToOther.html'
+                        } else {
+                            _renderTheData(datas);
+                        }
+                        setTimeout(function(){
+                            $('#J_answers ul li').css('background','#f00000');
+                            $('#J_answers ul li').css('background','#ffffff')},0)
+                    }, 400);
+                });
+
+            });
+        }
+        var resultItem = {}; // 存储每个题目
+        var _renderTheData = function (datas) {
+            _answerNum ++;
+            var randomData = _getRandomData(datas);// 随机题目
+            _result.push(resultItem); // 存储全部题目
+            resultItem.q = randomData.id; // 呈现问题
+
+            _theQuestionNumShow.html('第' + _answerNum + '题');
+            bAsk(randomData)
+        };
+        var change=$('#change');
+        cNum=0;
+        var changeFn=function(){
+            change.on('click', function () {
+                $('.wrap').fadeOut(400).fadeIn(400);
+                cNum++;
+                if(cNum==2){
+                        change.fadeOut()
+                    }
+                if(cNum<=2){
+                    setTimeout(function () {
+                        var randomData = _getRandomData(datas);// 随机题目
+                        console.log(randomData);
+                        bAsk(randomData);
+                    }, 300);
+                }
+
+            });
+        };
+        var QuestionResponseFn = function () { };
+
+        QuestionResponseFn.prototype = {
+            init : function (datas) {
+                _datasNum = _getDataLength(datas);
+                _renderTheData(datas);
+                changeFn();
+                return this;
+            },
+            render : function () {
+                _totalQuestionNumShow.html('共' + 10 + '题');
+                return this;
+            }
+        };
+
+        return QuestionResponseFn;
+
+    }());
+
+    var questionResponse = new QuestionResponse();
+    $(function(){
+        $.post('http://wx.uustudy.com.cn/index.php?r=question/list',{},function(data){
+//                    console.log(data.data);
+//            console.log(datass);
+             datas=data.data;
+                    questionResponse.init(datas).render();
+        });
+
+    })
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Only，题库！</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Only，题库！Only，题库！Only，题库！Only，题库！Only，题库！" />
+    <link href="../img/icon.png" rel="shortcut icon" type="image/x-icon"/>
+
+    <!-- Bootstrap -->
+    <link href="//cdn.bootcss.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <!--<link rel="stylesheet" href="http://cdn.dowebok.com/77/css/jquery.fullPage.css">-->
+    <link rel="stylesheet" href="css/index.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script language="javascript" src="http://webapi.amap.com/maps?v=1.3&key=c8d499635271ab4f9d449d35911e2cf1"></script>
+</head>
+<body>
+  <div class="container">
+      <div class="col-md-12">
+          <div class="page-header">
+              <h1>题库编辑<small>----登录</small></h1>
+          </div>
+      </div>
+  </div>
+  <div class="container">
+      <div class="col-md-8">
+          <div class="panel panel-default">
+              <div class="panel-body">
+                  <div>
+                      <div class="form-group">
+                          <label style="color: #ff8870">问题</label>
+                          <input value="111" type="text" class="form-control" id="question" placeholder="问题">
+                      </div>
+                      <div class="form-group">
+                          <label >答案1</label>
+                          <input type="text" class="form-control" id="answer1" placeholder="">
+                      </div>
+                      <div class="form-group">
+                          <label >答案2</label>
+                          <input type="text" class="form-control" id="answer2"  placeholder="">
+                      </div>
+                      <div class="form-group">
+                          <label >答案3</label>
+                          <input type="text" class="form-control" id="answer3"  placeholder="">
+                      </div>
+                      <div class="form-group">
+                          <label >答案4</label>
+                          <input type="text" class="form-control"  id="answer4" placeholder="">
+                      </div>
+                      <div class="form-group">
+                          <label >答案5</label>
+                          <input type="text" class="form-control"  id="answer5" placeholder="">
+                      </div>
+                      <div class="form-group">
+                          <label for="exampleInputFile">问题图片</label>
+                          <input type="file" id="exampleInputFile">
+                          <p class="help-block">每个问题对应的图片(尺寸：宽高2:1).</p>
+                      </div>
+                      <button type="submit" id="save" class="btn btn-default">提交</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4">
+          <div class="panel panel-default">
+              <div class="col-md-12">
+                  <div class="page-header">
+                      <h3 style="color: #9e9e9e">问题列表</h3>
+                  </div>
+              </div>
+              <div class="panel-body" style="height: 550px;overflow-y: scroll">
+                   <!--列表-->
+                   <div class=".col-md-12 q-wrap">
+                       <h5>请问你几岁？</h5>
+                       <div class="q-all" style="color: darkgrey">
+                           <p>你几岁</p>
+                           <p>你几的岁</p>
+                           <p>你几地方岁</p>
+                       </div>
+                   </div>
+                  <div class=".col-md-12 q-wrap">
+                      <h5>请问你几岁？</h5>
+                      <div class="q-all" style="color: darkgrey">
+                          <p>你几岁</p>
+                          <p>你几的岁</p>
+                          <p>你几地方岁</p>
+                      </div>
+                  </div>
+                  <div class=".col-md-12 q-wrap">
+                      <h5>请问你几岁？</h5>
+                      <div class="q-all" style="color: darkgrey">
+                          <p>你几岁</p>
+                          <p>你几的岁</p>
+                          <p>你几地方岁</p>
+                      </div>
+                  </div>
+                  <div class=".col-md-12 q-wrap">
+                      <h5>请问你几岁？</h5>
+                      <div class="q-all" style="color: darkgrey">
+                          <p>你几岁</p>
+                          <p>你几的岁</p>
+                          <p>你几地方岁</p>
+                      </div>
+                  </div>
+                  <div class=".col-md-12 q-wrap">
+                      <h5>请问你几岁？</h5>
+                      <div class="q-all" style="color: darkgrey">
+                          <p>你几岁</p>
+                          <p>你几的岁</p>
+                          <p>你几地方岁</p>
+                      </div>
+                  </div>
+
+              </div>
+          </div>
+      </div>
+  </div>
+
+<script>
+    (function () {
+        document.addEventListener('DOMContentLoaded', function () {
+            var html = document.documentElement;
+            var windowWidth = html.clientWidth;
+            html.style.fontSize = windowWidth / 6.4 + 'px';
+            // 等价于html.style.fontSize = windowWidth / 640 * 100 + 'px';
+        }, false);
+    })();
+</script>
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<!--<script src="http://cdn.dowebok.com/77/js/jquery.fullPage.min.js"></script>-->
+<script src="http://cdn.staticfile.org/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script>
+    (function(){
+//                节点初始化
+         var question=$("#question");
+         var answer1=$("#answer1");
+         var answer2=$("#answer2");
+         var answer3=$("#answer3");
+         var answer4=$("#answer4");
+         var answer5=$("#answer5");
+         var submit=$("#save");
+         var app={
+            init:function(){
+//                问题列表初始化
+                this.questionList();
+                this.questionForm();
+            },
+//             问题列表
+            questionList:function(){
+                console.log(answer1);
+                $.post('',{},function(data){
+
+                })
+            },
+//             提交问题详情
+            questionForm:function(){
+                $(function(){
+                    submit.click(function(){
+                        console.log(answer1);
+                        $.post('http://chat.uustudy.com.cn/index.php?r=public/login',{},function(data){
+                              console.log(data)
+                        })
+                    })
+                })
+            }
+         };
+         app.init();
+    })()
+</script>
+</body>
+</html>

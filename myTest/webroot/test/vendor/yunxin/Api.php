@@ -92,4 +92,28 @@ class YunxinApi {
         $result=$this->curlPost($url,$arr);
         return json_decode($result,true);
     }
+
+    //加入黑名单
+    public function setSpecialRelation($accid,$faccid,$value){
+        $url="http://api.netease.im/nimserver/user/setSpecialRelation.action";
+
+        $arr['accid']=$accid;
+        $arr['targetAcc']=$faccid;
+        $arr['relationType']=1;
+        $arr['value']=$value;
+
+        $result=$this->curlPost($url,$arr);
+        return json_decode($result,true);
+    }
+
+    //拉取静音和黑名单列表
+    public function getlist($accid){
+        $url="http://api.netease.im/nimserver/user/listBlackAndMuteList.action";
+
+        $arr['accid']=$accid;
+
+        $result=$this->curlPost($url,$arr);
+        return json_decode($result,true);
+    }
+
 }

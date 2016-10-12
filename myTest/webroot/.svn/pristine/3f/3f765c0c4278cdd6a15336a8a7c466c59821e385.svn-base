@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+<body>
+<div class="wrapper" >
+    <form id= "uploadForm">
+        <p >指定文件名： <input type="text" name="filename" id="file" value= ""/></p >
+        <p >上传文件： <input type="file" name="file"/></p>
+        <input type="hidden"   name="aaaa"   value="1111"/>
+        <input type="button" value="上传" onclick="doUpload()" />
+    </form>
+</div>
+
+<script>
+    //Api.php?m=Api&c=index&a=test
+    function doUpload() {
+        var formData = new FormData($( "#uploadForm" )[0]);
+
+        console.log(formData);
+
+
+        $.ajax({
+            url: 'http://wx.uustudy.com.cn/index.php?r=question/edit' ,
+            type: 'POST',
+            data: formData,
+            async: false,
+            cache: false,
+            contentType: false,
+            processData: false,
+            success: function (returndata) {
+                console.log(returndata);
+            },
+            error: function (returndata) {
+                console.log(returndata);
+            }
+        });
+    }
+</script>
+</body>
+</html>

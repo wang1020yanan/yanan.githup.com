@@ -1,0 +1,46 @@
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, fieldset, legend, label, button, input, textarea, th, td { margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+html { background: #ffffff; width: 100%; height: 100%; }
+body, button, input, select, textarea {  color: #333; font: 14px/1.5 Helvetica, 'Microsoft Yahei','微软雅黑', Arial, Tahoma, "\5b8b\4f53", sans-serif; }
+address, cite, dfn, em, var, i, b { font-style: normal; }
+ul, ol, li, dl, dd, dt{ list-style: none; }
+a { text-decoration: none; -webkit-tap-highlight-color: transparent; color: #333; }
+a:hover { text-decoration: none; }
+legend { color: #000; }
+fieldset { border: none; }
+label, button { cursor: pointer; }
+h1, h2, h3, h4, h5, h6, button, input, select, textarea { font-weight: normal; }
+img { border: none; display: block; -ms-interpolation-mode: bicubic; }
+::-webkit-scrollbar
+{
+    width: 9px;
+    height: 9px;
+}
+::-webkit-scrollbar-track-piece
+{
+    background-color: #ebebeb;
+    -webkit-border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:vertical
+{
+    height: 32px;
+    background-color: #ccc;
+    -webkit-border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:horizontal
+{
+    width: 32px;
+    background-color: #ccc;
+    -webkit-border-radius: 4px;
+}
+fieldset,img{
+    border:0;
+    margin-top: 0;
+}
+:focus{
+    outline:0
+}
+h1{color: #999999 !important;}
+.q-wrap{padding: 10px 0;    border-bottom: 1px solid #eeeeee}
+.q-all{padding: 10px 0}
+.q-wrap img{width: 50%;padding: 10px;border-radius: 10px}
+.qDelete{float: right}
