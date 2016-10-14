@@ -1,0 +1,8 @@
+/**
+ * Created by yanan on 2016/10/13.
+ */
+(function(){
+    $(function(){
+
+    });
+})();

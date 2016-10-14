@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Only，赶快测一测！</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="快去添加第一个好友吧，用好友雷达你可以知道他与你的距离！" />
+    <link href="../img/icon.png" rel="shortcut icon" type="image/x-icon"/>
+
+    <!-- Bootstrap -->
+    <link href="//cdn.bootcss.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <!--<link rel="stylesheet" href="http://cdn.dowebok.com/77/css/jquery.fullPage.css">-->
+    <link rel="stylesheet" href="css/index.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script language="javascript" src="http://webapi.amap.com/maps?v=1.3&key=c8d499635271ab4f9d449d35911e2cf1"></script>
+</head>
+<body>
+<div class="last-page"></div>
+<div class="wrap">
+   <div class="col-xs-12 titles" style="padding:5px;margin-top: 0 ">
+       <img src="img/title.png" style="width: 80%;margin: auto;margin-top: .4rem">
+       <div id="topLoader"  style="padding: .3rem"></div>
+       <div class="other-wrap">
+           <div class="col-xs-6"><p id="change" style="background: #fefdff;padding: 10px;border-radius: 5px"><a href="ask.html">我也要玩</a></p></div>
+           <div class="col-xs-6"><p style="background: #0b0c0e;padding: 10px;border-radius: 5px;"><a style="color: #ffffff" href="">你有新消息</a></p></div>
+           <div class="col-xs-12"><p style="background: #ffb25c;padding: 10px;border-radius: 5px;"><a style="color: #ffffff"  href="">更多精彩下载APP</a></p></div>
+       </div>
+       <div class="col-xs-12" style="padding: 5px">
+           <div class="col-xs-12" style="background: #fefdff ;border-radius: 5px;padding: 2px;clear: both">
+                   <div class="col-xs-12 friend-item">
+                       <div class="col-xs-2"><img src="img/icon.png"></div>
+                       <div class="col-xs-8 f-wrap">
+                           <p class=" f-name">亚楠</p>
+                           <p class="f-tit">能不能努力睡一张床？</p>
+                       </div>
+                       <div class="col-xs-2 f-percent">80%</div>
+                   </div>
+                   <div class="col-xs-12 friend-item">
+                       <div class="col-xs-2"><img src="img/icon.JPG"></div>
+                       <div class="col-xs-8 f-wrap">
+                           <p class=" f-name">亚楠</p>
+                           <p class="f-tit">能不能努力睡一张床？</p>
+                       </div>
+                       <div class="col-xs-2 f-percent">80%</div>
+                   </div>
+                   <div class="col-xs-12 friend-item">
+                   <div class="col-xs-2"><img src="img/icon.png"></div>
+                   <div class="col-xs-8 f-wrap">
+                       <p class=" f-name">亚楠</p>
+                       <p class="f-tit">能不能努力睡一张床？</p>
+                   </div>
+                   <div class="col-xs-2 f-percent">80%</div>
+               </div>
+
+           </div>
+       </div>
+
+       <div class="col-xs-11">
+           <p style="color: #d8d8d8;padding: 20px;border-radius: 5px;font-size: .2rem">Copyright @ 2015 All Rights Reserved.</p>
+       </div>
+   </div>
+</div>
+<script>
+    (function () {
+        document.addEventListener('DOMContentLoaded', function () {
+            var html = document.documentElement;
+            var windowWidth = html.clientWidth;
+            html.style.fontSize = windowWidth / 6.4 + 'px';
+            // 等价于html.style.fontSize = windowWidth / 640 * 100 + 'px';
+        }, false);
+    })();
+</script>
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<!--<script src="http://cdn.dowebok.com/77/js/jquery.fullPage.min.js"></script>-->
+<script src="http://cdn.staticfile.org/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script src="js/jqpercent.js"></script>
+<script src="js/main.js"></script>
+
+<script>
+    $(function() {
+//        初试分数
+//        var  myPercent=40;
+        var fOpenid=getQueryString(fOpenid);
+        var mOpenid=localStorage.openid;
+        var myPercent=0;
+        $.post('http://wx.uustudy.com.cn/index.php?r=question/answers',{'openid':mOpenid,'fopenid':fOpenid},function(data){
+            if(fOpenid==mOpenid){//自己打开
+                $("#topLoader").removeChild()
+            }else{//朋友打开
+
+            }
+//            alert(JSON.stringify(data));
+            console.log()
+        });
+
+
+
+//        动画
+        var $topLoader = $("#topLoader").percentageLoader({width: 150, height: 150, controllable : true, progress : 0.5, onProgressUpdate : function(val) {
+            $topLoader.setValue(Math.round(val * 100.0));
+        }});
+
+        var topLoaderRunning = false;
+
+            if (topLoaderRunning) {
+                return;
+            }
+            topLoaderRunning = true;
+            $topLoader.setProgress(0);
+            $topLoader.setValue('');
+            var kb = 0;
+            var totalKb = 100;
+
+            var animateFunc = function() {
+                kb += 1;
+                $topLoader.setProgress(kb / totalKb);
+//                $topLoader.setValue(kb.toString() + 'kb');
+
+                if (kb < myPercent) {
+                    setTimeout(animateFunc, 25);
+                } else {
+                    topLoaderRunning = false;
+                }
+            };
+
+            setTimeout(animateFunc, 25);
+
+    });
+</script>
+
+</body>
+</html>

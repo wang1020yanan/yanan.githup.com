@@ -1,0 +1,25 @@
+/**
+ * Created by yanan on 2016/10/13.
+ */
+(function(){
+    $(function(){
+        console.log(localStorage.islo);
+        if(localStorage.islog!=='yesss'){
+            var nowUrl=window.location.href;
+            localStorage.islog='yesss';
+            var wxUrl='https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxfc09c3333418f5c4&' +
+                'redirect_uri='+nowUrl+'&response_type=code&scope=snsapi_userinfo&state=STATE';
+            window.location.href=wxUrl;
+            console.log('ffff');
+        }else{
+            $.post('http://wx.uustudy.com.cn/index.php?r=weixin/userinfo',{code:'23'},function(data){
+                //document.write(JSON.stringify(data));
+                alert(JSON.stringify(data))
+            })
+        }
+
+
+
+        console.log(window.location.href)
+    });
+})();
