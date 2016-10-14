@@ -157,7 +157,7 @@
 
     $(function(){
         var ffOpenid=getQueryString('fOpenid');
-        var mOpenid=localStorage.openid;
+        var mOpenid=localStorage.oPenid;
         console.log(ffOpenid+"lllllll"+mOpenid);
         if(mOpenid!==ffOpenid){
             namesss='朋友';
