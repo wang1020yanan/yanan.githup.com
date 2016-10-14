@@ -90,7 +90,7 @@
               }
         });
         $.post('http://wx.uustudy.com.cn/index.php?r=question/answers',{'openid':mOpenid,'fopenid':fOpenid},function(data){
-
+            $('body').fadeIn(0);
            console.log(data);
             if(data.data.list.length==0&&data.data.user.length==0&&mOpenid==fOpenid){
                 $(".f-list").html("<p style='padding:1rem 0'>还没有好友回答问题哦！</p>");
@@ -115,7 +115,7 @@
                 if(v.result<=30){fPerr='能否用红包多关心关心我'}else if(v.result<=70){fPerr='活捉亲密好友一枚'}else{fPerr='能否争取睡一张床'}
                 $(".f-list").append('<div class="col-xs-12 friend-item"><div class="col-xs-2"><img class="f-img" src="'+ v.headimgurl+'"></div> <div class="col-xs-8 f-wrap"> <p class=" f-name">'+v.nickname+'</p> <p class="f-tit">'+fPerr+'</p> </div> <div class="col-xs-2 f-percent" style="color: hotpink">'+ v.result+'%</div> </div>')
             });
-            $('body').fadeIn(0);
+
             console.log(data);
 
 //            alert(JSON.stringify(data));
