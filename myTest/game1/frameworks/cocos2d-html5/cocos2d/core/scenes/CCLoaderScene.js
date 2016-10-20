@@ -42,6 +42,7 @@ cc.LoaderScene = cc.Scene.extend({
         var img=new cc.Sprite(res.Bg_png);
         img.x=winSize.width/2;
         img.y=winSize.height/2;
+        img.scaleX=1.5;
         bgLayer.addChild(img,0);
 
         //var bgLayer = self._bgLayer = cc.LayerColor.create(cc.color(32, 33, 32, 255));
