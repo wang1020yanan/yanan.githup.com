@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <script>
+//        xss='d';
+        if(xss!==undefined){
+            alert("aa")
+        }
+//        alert(typeof(xss))
+    </script>
+</body>
+</html>
