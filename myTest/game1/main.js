@@ -1,6 +1,6 @@
 cc.game.onStart = function(){
     cc.view.adjustViewPort(true);
-    cc.view.setDesignResolutionSize(1000, 1280, cc.ResolutionPolicy.SHOW_ALL);
+    cc.view.setDesignResolutionSize(813, 1280, cc.ResolutionPolicy.SHOW_ALL);
     cc.view.resizeWithBrowserSize(true);
     //load resources
 

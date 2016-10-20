@@ -4,7 +4,6 @@
 var Game={
     user:{
         lives:GameConstants.HERO_LIVES,
-        score:0,
-
+        score:0
     }
-}
+};
