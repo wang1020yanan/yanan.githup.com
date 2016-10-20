@@ -87,7 +87,7 @@ var MenuScene = cc.Scene.extend({
         layer.addChild(title);
         //菜单英雄
         this._hero=new cc.Sprite(res.HeroWelcome_png);
-        this._hero.attr({x:winSize.width/2,y:700});
+        this._hero.attr({x:0,y:500});
         layer.addChild(this._hero);
         //菜单按钮
         this._playBtn=new cc.MenuItemImage(res.PlayBtn_png,res.PlayBtn_png,this._play);
@@ -95,12 +95,15 @@ var MenuScene = cc.Scene.extend({
         this._aboutBtn=new cc.MenuItemImage(res.AboutBtn_png,res.AboutBtn_png,this._play);
         this._aboutBtn.attr({x:winSize.width/2,y:350});
         //new一个声音按钮
-        var soundButton=new SoundButton();
-        soundButton.attr({x:45,y:winSize.height-45});
+        //var soundButton=new SoundButton();
+        //soundButton.attr({x:45,y:winSize.height-45});
         //按钮组
-        var menu= new cc.Menu(this._playBtn,this._aboutBtn,soundButton);
+        var menu= new cc.Menu(this._playBtn,this._aboutBtn);
         layer.addChild(menu);
         menu.x=menu.y=0;
+        //英雄动画
+        var move=cc.moveTo(2,cc.p(winSize.width/2,700)).easing(cc.easeOut(2));
+        this._hero.runAction(move)
     }
 });
 

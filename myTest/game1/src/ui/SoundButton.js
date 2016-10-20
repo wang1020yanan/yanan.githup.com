@@ -13,12 +13,13 @@ var SoundButton=cc.MenuItemToggle.extend({
        sprite.runAction(action);
 
        this._super(
-           new cc.MenuItemSprite(sprite,null,null),
+           new cc.MenuItemSprite(sprite,0,0),
            new cc.MenuItemImage(res.SoundOff)
        );
        this.setCallback(this._soundOnOff,this);
    },
+
     _soundOnOff:function(){
-        Sound.toggleOnOff();
+        Sound.toggle();
     }
 });

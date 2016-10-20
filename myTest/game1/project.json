@@ -11,8 +11,11 @@
     "modules" : ["cocos2d"],
 
     "jsList" : [
+        "src/ui/SoundButton.js",
         "src/resource.js",
         "src/app.js",
-        "src/ui/SoundButton.js"
+        "src/game.js"
+
+
     ]
 }
