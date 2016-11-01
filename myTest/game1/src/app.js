@@ -107,6 +107,7 @@ var MenuScene = cc.Scene.extend({
         this._hero.runAction(move);
         //进入游戏
 
+
     },
     _play:function() {
         //Sound.playCoffee();

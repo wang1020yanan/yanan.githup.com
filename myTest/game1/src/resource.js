@@ -18,6 +18,7 @@ var res = {
     BgLayer3: "res/graphics/small_images/bgLayer3.png",
     BgLayer4: "res/graphics/small_images/bgLayer4.png",
     Texture: "res/particles/texture.png",
+    HeroGif:"res/graphics/small_images/hero.gif",
     Fly0001:"res/graphics/small_images/fly_0001.png",
     Fly0002:"res/graphics/small_images/fly_0002.png",
     Fly0003:"res/graphics/small_images/fly_0003.png",

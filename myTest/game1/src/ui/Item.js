@@ -1,4 +1,5 @@
 /**
+ * Created by kenkozheng on 2014/8/21.
  */
 
 var Item = cc.Sprite.extend({

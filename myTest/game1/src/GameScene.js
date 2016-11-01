@@ -30,7 +30,6 @@ var GameScene = cc.Scene.extend({
         this.addChild(this._hero);
         this._hero.y=500;
         this._hero.x=-100;
-
         this.itemBatchLayer = new cc.SpriteBatchNode(res.Texture);
         this.addChild(this.itemBatchLayer);
         //积分
