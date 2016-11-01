@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+
+    <link href="//cdn.bootcss.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body style="background: #000">
+               <img id="im" style="width: .1rem" src="img/po.png"><span style="color: #ffffff">上海交通大学</span>
+   <script>
+    (function () {
+        document.addEventListener('DOMContentLoaded', function () {
+            var html = document.documentElement;
+            var windowWidth = html.clientWidth;
+            html.style.fontSize = windowWidth / 6.4 + 'px';
+            // 等价于html.style.fontSize = windowWidth / 640 * 100 + 'px';
+        }, false);
+    })();
+    $(function(){
+        var msg={
+                    device_id:'41083019-DEC6-497C-9D61-8E12471DEFBA-1115-0000019105AE9795',
+                    game_mode:	2,
+                    kill:	0,
+                    length:1989999,
+                    market:	'apple',
+                    platform:1,
+                    push_channel:	1,
+                    push_id:'',
+                    sid:'3c04e82602a9017bba478179cae7b21f',
+                    snake_sign:'cyyt5HXnLmnixx7GBzRwQG/WdMg=',
+                    uid:'86973087-f696-4fa6-9f60-0158f3e25b9f',
+                 version:	3.0
+        };
+//        $.post('http://snakeapi.afunapp.com/top_list_v2/update_score',msg,function(data){
+//            console.log(data)
+//        });
+        $.ajax({
+            url: "http://snakeapi.afunapp.com/top_list_v2/update_score",
+            type: 'POST',
+            data:{
+                device_id:'41083019-DEC6-497C-9D61-8E12471DEFBA-1115-0000019105AE9795',
+                game_mode:	2,
+                kill:	0,
+                length:198,
+                market:	'apple',
+                platform:1,
+                push_channel:	1,
+                push_id:'',
+                sid:'3c04e82602a9017bba478179cae7b21f',
+                snake_sign:'cyyt5HXnLmnixx7GBzRwQG/WdMg=',
+                uid:'86973087-f696-4fa6-9f60-0158f3e25b9f',
+                version:	3.0
+            },
+            dataType: 'JSON',//here
+            success: function (data) {
+                console.log(data)
+            }
+        });
+
+    })
+</script>
+</body>
+</html>

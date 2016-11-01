@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+
+    <link href="//cdn.bootcss.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body style="background: #000">
+               <img id="im" style="width: .1rem" src="img/po.png"><span style="color: #ffffff">上海交通大学</span>
+   <script>
+    (function () {
+        document.addEventListener('DOMContentLoaded', function () {
+            var html = document.documentElement;
+            var windowWidth = html.clientWidth;
+            html.style.fontSize = windowWidth / 6.4 + 'px';
+            // 等价于html.style.fontSize = windowWidth / 640 * 100 + 'px';
+        }, false);
+    })();
+    $(function(){
+        $("#im")
+    })
+</script>
+</body>
+</html>

@@ -103,7 +103,13 @@ var MenuScene = cc.Scene.extend({
         menu.x=menu.y=0;
         //英雄动画
         var move=cc.moveTo(2,cc.p(winSize.width/2,700)).easing(cc.easeOut(2));
-        this._hero.runAction(move)
-    }
+        this._hero.runAction(move);
+        //进入游戏
+
+    },
+    _play:function() {
+        //Sound.playCoffee();
+        cc.director.runScene(new GameScene());
+    },
 });
 

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>你懂我吗？测测你有多懂我？！</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" content="你懂我吗？测测你有多懂我？！" />
+    <!-- Bootstrap -->
+    <link href="//cdn.bootcss.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <!--<link rel="stylesheet" href="http://cdn.dowebok.com/77/css/jquery.fullPage.css">-->
+    <link rel="stylesheet" href="css/index.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script language="javascript" src="http://webapi.amap.com/maps?v=1.3&key=c8d499635271ab4f9d449d35911e2cf1"></script>
+</head>
+<body>
+<div class="last-page"></div>
+<div class="wrap">
+   <div class="col-xs-12 titles">
+      <img src="img/title.png" style="width: 86%;margin: auto">
+   </div>
+   <div class="col-xs-12 start">
+      <a id="furl" href=""><img src="img/start.png" style="width: 95%"></a>
+   </div>
+</div>
+<script>
+    (function () {
+        document.addEventListener('DOMContentLoaded', function () {
+            var html = document.documentElement;
+            var windowWidth = html.clientWidth;
+            html.style.fontSize = windowWidth / 6.4 + 'px';
+            // 等价于html.style.fontSize = windowWidth / 640 * 100 + 'px';
+        }, false);
+    })();
+</script>
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<!--<script src="http://cdn.dowebok.com/77/js/jquery.fullPage.min.js"></script>-->
+<script src="http://cdn.staticfile.org/jquery-easing/1.3/jquery.easing.min.js"></script>
+<!--<script src="js/main.js"></script>-->
+<script>
+    $(function(){
+        var codes=getQueryString("fOpenid");
+        $("#furl").attr('href','answer.html?fOpenid='+codes);
+//        var mmmcode=getQueryString("code");
+//        if(getCookie('islogss')!=='qq'||typeof(localStorage.islog)==undefined){
+//            var nowUrl=window.location.href;
+//            setCookie('islogss','qq');
+//            var wxUrl='https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxfc09c3333418f5c4&' +
+//                    'redirect_uri='+nowUrl+'&response_type=code&scope=snsapi_userinfo&state=STATE';
+//            window.location.href=wxUrl;
+//            //alert(code)
+//        }else if(!localStorage.openid){
+//            $.get('http://wx.uustudy.com.cn/index.php?r=weixin/userinfo',{'code':mmmcode},function(data){
+//                localStorage.openid=data.data.openid;
+//                localStorage.nickname=data.data.nickname;
+//                localStorage.headImg=data.data.headimgurl;
+//                //alert(JSON.stringify(data))
+//            });
+//        }
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ONLY 应用</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" content="快去添加第一个好友吧，用好友雷达你可以知道他与你的距离！" />
+    <link href="img/icon.png" rel="shortcut icon" type="image/x-icon"/>
+
+    <!-- Bootstrap -->
+    <link href="//cdn.bootcss.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://cdn.dowebok.com/77/css/jquery.fullPage.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script language="javascript" src="http://webapi.amap.com/maps?v=1.3&key=c8d499635271ab4f9d449d35911e2cf1"></script>
+    <style>
+        body, html{height: 100%}
+
+        .row{padding: 0!important;}
+        .headImg{width: 1.3rem;border: 3px solid #92DAF5;border-radius: 50%;margin-bottom: .5rem;position: relative;
+            bottom: 1.59rem;left: -0.55rem;
+        }
+        .sets{display: block;width: 10px;height: 10px;background: #02B8FD}
+        @keyframes myfirst
+        {
+            5%{transform: scale(1);opacity: 1}
+            99.999% {transform: scale(35);opacity: 0}
+            100% {transform: scale(1);opacity: 1}
+        }
+
+        @-moz-keyframes myfirst /* Firefox */
+        {
+            5%{transform: scale(1);opacity: 1}
+            99.999% {transform: scale(35);opacity: 0}
+            100% {transform: scale(1);opacity: 1}
+        }
+
+        @-webkit-keyframes myfirst /* Safari 和 Chrome */
+        {
+            5%{transform: scale(1);opacity: 1}
+            99.999% {transform: scale(35);opacity: 0}
+            100% {transform: scale(1);opacity: 1}
+        }
+
+        @-o-keyframes myfirst /* Opera */
+        {
+            5%{transform: scale(1);opacity: 1}
+            99.999% {transform: scale(35);opacity: 0}
+            100% {transform: scale(1);opacity: 1}
+        }
+        @keyframes myfirst2
+        {
+            20%{transform: scale(1);opacity: 1}
+            99.999% {transform: scale(35);opacity: 0}
+            100% {transform: scale(1);opacity: 1}
+        }
+
+        @-moz-keyframes myfirst2 /* Firefox */
+        {
+            20%{transform: scale(1);opacity: 1}
+            99.999% {transform: scale(35);opacity: 0}
+            100% {transform: scale(1);opacity: 1}
+        }
+
+        @-webkit-keyframes myfirst2 /* Safari 和 Chrome */
+        {
+            20%{transform: scale(1);opacity: 1}
+            99.999% {transform: scale(35);opacity: 0}
+            100% {transform: scale(1);opacity: 1}
+        }
+
+        @-o-keyframes myfirst2 /* Opera */
+        {
+            20%{transform: scale(1);opacity: 1}
+            99.999% {transform: scale(35);opacity: 0}
+            100% {transform: scale(1);opacity: 1}
+        }
+        #im{
+            animation: myfirst 2s infinite;
+        }
+        .sets1{
+            animation: myfirst2 2s infinite;
+        }
+        .amap-marker-content{
+            top: .43rem!important;
+            left: .1rem!important;
+        }
+        #share-img:hover{opacity: 0.9;background: #000}
+        #backTo:hover{transform: scale(1.1);background:#000}
+    </style>
+</head>
+<body onLoad="mapInit()">
+<div style="height: 100%">
+    <div class="row" style="height: 100%;padding: 6px;box-sizing: border-box;border-radius: 5px;">
+        <div class="" style="height: 100%">
+            <div id="iCenter" style="width:100%;height: 100%;background: #fff"></div>
+        </div>
+    </div>
+</div>
+<div id="backTo" style="position: fixed;bottom: 1.8rem;z-index: 999;left: .5rem;width:0.8rem;height:0.8rem;border-radius: 50%;background:#9e9e9e;opacity: .8"></div>
+<a class="btn btn-info" style="width: 100%;position: fixed;bottom: 0;z-index: 999;display: block;font-size: .3rem;line-height: 0.7rem;background:#02B8FD;border-radius: 0" href="http://a.app.qq.com/o/simple.jsp?pkgname=com.example.bob.uuchat"><span class="glyphicon glyphicon-cloud-download"></span>下载ONLY应用，实时关注好友方位</a>
+
+
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script src="http://cdn.dowebok.com/77/js/jquery.fullPage.min.js"></script>
+<script src="http://cdn.staticfile.org/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script src="js/base64.js"></script>
+<script>
+$(function(){
+    //移动端过滤
+    var browser={
+        versions:function(){
+            var u = navigator.userAgent, app = navigator.appVersion;
+            return {//移动终端浏览器版本信息
+                trident: u.indexOf('Trident') > -1, //IE内核
+                presto: u.indexOf('Presto') > -1, //opera内核
+                webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+                gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
+                mobile: !!u.match(/AppleWebKit.*Mobile.*/)||!!u.match(/AppleWebKit/), //是否为移动终端
+                ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+                android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器
+                iPhone: u.indexOf('iPhone') > -1 || u.indexOf('Mac') > -1, //是否为iPhone或者QQHD浏览器
+                iPad: u.indexOf('iPad') > -1, //是否iPad
+                webApp: u.indexOf('Safari') == -1 //是否web应该程序，没有头部与底部
+            };
+        }(),
+        language:(navigator.browserLanguage || navigator.language).toLowerCase()
+    };
+    function is_weixin() {
+        var ua = navigator.userAgent.toLowerCase();      if(ua.match(/MicroMessenger/i)=="micromessenger") {          return true;      } else {          return false;      }
+    }
+    if(!is_weixin()){
+        window.location.href='https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxfc09c3333418f5c4&redirect_uri=http://wx.uustudy.com.cn/understand/index.html?fOpenid=oJmAJwfB2aa7JSbGIoYG_3Bl6Fck&response_type=code&scope=snsapi_userinfo&state=STATE&connect_redirect=1#wechat_redirect'
+    }
+    function getQueryString(name) {
+        var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) {
+            return unescape(r[2]);
+        }
+        return null;
+    }
+    function GetDateDiff(startDate,endDate)
+    {
+        var t=endDate-startDate;
+        return t;
+    }
+        sImg=decodeURI(getQueryString('img'));
+        sLat=getQueryString('lat');
+        sLng=getQueryString('lng');
+        sName=utf8to16(base64decode(getQueryString('name')));
+        if(getQueryString('address')){
+            sAddress=utf8to16(base64decode(getQueryString('address')));
+        }
+        sTime=getQueryString('time');
+        if(getQueryString('showState')){
+            sAddress='位置仅精确到好友当前城市！'
+        }
+        var timestamps =Date.parse( new Date())/1000;
+        console.log(getQueryString('name'));
+        if(GetDateDiff(sTime,timestamps)/2592000>=1){
+            sTime=Math.floor(GetDateDiff(sTime,timestamps)/2592000)+'月前';
+        }else if(GetDateDiff(sTime,timestamps)/86400>=1){
+            sTime=Math.floor(GetDateDiff(sTime,timestamps)/86400)+'天前';
+        }else if(GetDateDiff(sTime,timestamps)/3600>=1){
+            sTime=Math.floor(GetDateDiff(sTime,timestamps)/3600)+'小时前';
+        }else if(GetDateDiff(sTime,timestamps)/60>=1){
+            sTime=Math.floor(GetDateDiff(sTime,timestamps)/60)+'分钟前';
+        }else if(GetDateDiff(sTime,timestamps)/60<1){
+            sTime=1+'分钟前';
+        }
+
+
+        var shareTitle='ONLY--应用';
+        var shareDesc='我在ONLY,你在哪？使用ONLY,随时随地查看好友位置，实时、精确、免费！';
+        var shareImg=sImg;
+        var shareUrl=window.location.href;
+        var url=window.location.href;
+        $('title').text(shareTitle);
+        $.post('http://wx.uustudy.com.cn/index.php?r=weixin/jssdk',{'url':url},function(data){
+            timestamp=data.data.timestamp;
+            nonceStr=data.data.nonceStr;
+            signature=data.data.signature;
+
+            wx.config({
+                debug: '', // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+                appId: 'wxfc09c3333418f5c4', // 必填，公众号的唯一标识
+                timestamp: timestamp, // 必填，生成签名的时间戳
+                nonceStr: nonceStr, // 必填，生成签名的随机串
+                signature:signature,// 必填，签名，见附录1
+                jsApiList: [
+                    'checkJsApi',
+                    'onMenuShareTimeline',
+                    'onMenuShareAppMessage',
+                    'onMenuShareQQ',
+                    'onMenuShareWeibo',
+                    'onMenuShareQZone',
+                    'hideMenuItems',
+                    'showMenuItems',
+                    'hideAllNonBaseMenuItem',
+                    'showAllNonBaseMenuItem',
+                    'translateVoice',
+                    'startRecord',
+                    'stopRecord',
+                    'onVoiceRecordEnd',
+                    'playVoice',
+                    'onVoicePlayEnd',
+                    'pauseVoice',
+                    'stopVoice',
+                    'uploadVoice',
+                    'downloadVoice',
+                    'chooseImage',
+                    'previewImage',
+                    'uploadImage',
+                    'downloadImage',
+                    'getNetworkType',
+                    'openLocation',
+                    'getLocation',
+                    'hideOptionMenu',
+                    'showOptionMenu',
+                    'closeWindow',
+                    'scanQRCode',
+                    'chooseWXPay',
+                    'openProductSpecificView',
+                    'addCard',
+                    'chooseCard',
+                    'openCard'
+                ] // 必填，需要使用的JS接口列表，所有JS接口列表见附录2
+            });
+            wx.ready(function () {
+
+                // 1 判断当前版本是否支持指定 JS 接口，支持批量判断
+
+                wx.checkJsApi({
+                    jsApiList: [
+                        'getNetworkType',
+                        'previewImage'
+                    ],
+                    success: function (res) {
+
+                    }
+                });
+
+
+                // 2. 分享接口
+                // 2.1 监听“分享给朋友”，按钮点击、自定义分享内容及分享结果接口
+
+                wx.onMenuShareAppMessage({
+                    title: shareTitle,
+                    desc: shareDesc,
+                    link: shareUrl,
+                    imgUrl: shareImg,
+                    trigger: function (res) {
+                        // 不要尝试在trigger中使用ajax异步请求修改本次分享的内容，因为客户端分享操作是一个同步操作，这时候使用ajax的回包会还没有返回
+
+                    },
+                    success: function (res) {
+
+                    },
+                    cancel: function (res) {
+
+                    },
+                    fail: function (res) {
+                        alert(JSON.stringify(res));
+                    }
+                });
+
+
+
+                // 2.2 监听“分享到朋友圈”按钮点击、自定义分享内容及分享结果接口
+
+                wx.onMenuShareTimeline({
+                    title: shareTitle,
+                    desc: shareDesc,
+                    link: shareUrl,
+                    imgUrl: shareImg,
+                    trigger: function (res) {
+                        // 不要尝试在trigger中使用ajax异步请求修改本次分享的内容，因为客户端分享操作是一个同步操作，这时候使用ajax的回包会还没有返回
+
+                    },
+                    success: function (res) {
+
+                    },
+                    cancel: function (res) {
+
+                    },
+                    fail: function (res) {
+
+                    }
+                });
+
+
+
+                // 2.3 监听“分享到QQ”按钮点击、自定义分享内容及分享结果接口
+
+                wx.onMenuShareQQ({
+                    title: shareTitle,
+                    desc: shareDesc,
+                    link: shareUrl,
+                    imgUrl: shareImg,
+                    trigger: function (res) {
+
+                    },
+                    complete: function (res) {
+                        alert(JSON.stringify(res));
+                    },
+                    success: function (res) {
+
+                    },
+                    cancel: function (res) {
+
+                    },
+                    fail: function (res) {
+                        alert(JSON.stringify(res));
+                    }
+                });
+
+
+
+                // 2.4 监听“分享到微博”按钮点击、自定义分享内容及分享结果接口
+
+                wx.onMenuShareWeibo({
+                    title: shareTitle,
+                    desc: shareDesc,
+                    link: shareUrl,
+                    imgUrl: shareImg,
+                    trigger: function (res) {
+
+                    },
+                    complete: function (res) {
+
+                    },
+                    success: function (res) {
+
+                    },
+                    cancel: function (res) {
+
+                    },
+                    fail: function (res) {
+
+                    }
+                });
+
+
+
+                // 2.5 监听“分享到QZone”按钮点击、自定义分享内容及分享接口
+
+                wx.onMenuShareQZone({
+                    title: shareTitle,
+                    desc: shareDesc,
+                    link: shareUrl,
+                    imgUrl: shareImg,
+                    trigger: function (res) {
+
+                    },
+                    complete: function (res) {
+
+                    },
+                    success: function (res) {
+
+                    },
+                    cancel: function (res) {
+
+                    },
+                    fail: function (res) {
+
+                    }
+                });
+                // 3 智能接口
+                var voice = {
+                    localId: '',
+                    serverId: ''
+                };
+                // 3.1 识别音频并返回识别结果
+                document.querySelector('#translateVoice').onclick = function () {
+                    if (voice.localId == '') {
+
+                        return;
+                    }
+                    wx.translateVoice({
+                        localId: voice.localId,
+                        complete: function (res) {
+                            if (res.hasOwnProperty('translateResult')) {
+
+                            } else {
+
+                            }
+                        }
+                    });
+                };
+
+                // 4 音频接口
+                // 4.2 开始录音
+                document.querySelector('#startRecord').onclick = function () {
+                    wx.startRecord({
+                        cancel: function () {
+
+                        }
+                    });
+                };
+                var shareData = {
+                    title: '微信JS-SDK Demo',
+                    desc: '微信JS-SDK,帮助第三方为用户提供更优质的移动web服务',
+                    link: 'http://demo.open.weixin.qq.com/jssdk/',
+                    imgUrl: 'http://mmbiz.qpic.cn/mmbiz/icTdbqWNOwNRt8Qia4lv7k3M9J1SKqKCImxJCt7j9rHYicKDI45jRPBxdzdyREWnk0ia0N5TMnMfth7SdxtzMvVgXg/0'
+                };
+                wx.onMenuShareAppMessage(shareData);
+                wx.onMenuShareTimeline(shareData);
+
+                function decryptCode(code, callback) {
+                    $.getJSON('/jssdk/decrypt_code.php?code=' + encodeURI(code), function (res) {
+                        if (res.errcode == 0) {
+                            codes.push(res.code);
+                        }
+                    });
+                }
+            });
+
+        });
+        $("#share").click(function(){
+            $("#share-wrap").fadeIn()
+        });
+        $("#share-wrap").click(function(){
+            $("#share-wrap").fadeOut()
+        });
+
+
+        wx.error(function (res) {
+            alert(res.errMsg);
+        });
+
+})
+</script>
+<script language="javascript">
+    (function () {
+        document.addEventListener('DOMContentLoaded', function () {
+            var html = document.documentElement;
+            var windowWidth = html.clientWidth;
+            html.style.fontSize = windowWidth / 6.4 + 'px';
+            // 等价于html.style.fontSize = windowWidth / 640 * 100 + 'px';
+        }, false);
+    })();
+    $(function(){
+//        navigator.geolocation.getCurrentPosition( // 该函数有如下三个参数
+//
+//                function(pos){ // 如果成果则执行该回调函数
+//
+////                    alert(
+////
+////                            '  经度：' + pos.coords.latitude +
+////
+////                            '  纬度：' + pos.coords.longitude +
+////
+////                            '  高度：' + pos.coords.altitude +
+////
+////                            '  精确度(经纬)：' + pos.coords.accuracy +
+////
+////                            '  精确度(高度)：' + pos.coords.altitudeAccuracy +
+////
+////                            '  速度：' + pos.coords.speed
+////
+////                    );
+//
+//                }, function(err){ // 如果失败则执行该回调函数
+//
+////                    alert(err.message);
+//
+//                }, { // 附带参数
+//
+//                    enableHighAccuracy: false, // 提高精度(耗费资源)
+//
+//                    timeout: 3000, // 超过timeout则调用失败的回调函数
+//
+//                    maximumAge: 1000 // 获取到的地理信息的有效期，超过有效期则重新获取一次位置信息
+//
+//                }
+//
+//        );
+        function GetQueryString(name)
+        {
+            var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+            var r = window.location.search.substr(1).match(reg);
+            if(r!=null)return  unescape(r[2]); return null;
+        }
+// 调用方法
+//        alert(GetQueryString("aa"));
+    });
+    var mapObj;
+    var marker = new Array();
+    var windowsArr = new Array();
+    var cloudDataLayer;
+    var MSearch;
+    //初始化地图对象，加载地图
+    function mapInit(){
+        mapObj = new AMap.Map("iCenter",{
+            center:new AMap.LngLat(sLng,sLat), //地图中心点
+            level:16  //地图显示的比例尺级别
+        });
+
+//        AMap.event.addListener(mapObj,'click',getLnglat); //点击事件
+        var contents= '<div><span class="sets sets2" style="border-radius: 50%;position: absolute"></span><span class="sets" style="border-radius: 50%" id="im"></span><img class="headImg" src="'+sImg+'"> <div style="width:5rem;left: -2.45rem;top: -1.4rem;height: 1.21rem;background: rgba(2, 184, 253, 0.75);border-radius: 6px;position: relative"><div style="width:0px;height:0px;left: 2.33rem;border-bottom:.3rem solid  rgba(2, 184, 253, 0.75);border-left:.2rem solid transparent;border-top:0px solid transparent;border-right:.2rem solid transparent;position: absolute;bottom: 1.21rem"></div> <div class="col-xs-12" style="font-size: .3rem;padding: 10px 0"> <div class="col-xs-8" style="text-align: left;color: #f4cf22">'+sName+'</div> <div class="col-xs-4" style="text-align: right;color: #ffffff;font-size: 0.2rem">'+sTime+'</div> <div class="col-xs-12"> <img style="width: .15rem;margin-bottom: 0.01rem" src="img/po.png">&nbsp<span style="color: #ffffff;font-size: .2rem">'+sAddress+'</span> </div> </div></div> </div>';
+        marker = new AMap.Marker({
+            content:contents,
+            icon : 'http://wx.uustudy.com.cn/share/img/set.png',//24px*24px
+            position: [sLng,sLat],
+            title:'我的位置'
+        });
+        marker.setMap(mapObj);
+        $("#backTo").click(function(){
+            // 设置缩放级别和中心点
+            mapObj.setZoomAndCenter(16, [sLng,sLat]);
+        });
+        //加载输入提示插件
+        mapObj.plugin(["AMap.Autocomplete"], function() {
+            //判断是否IE浏览器
+            if (navigator.userAgent.indexOf("MSIE") > 0) {
+                document.getElementById("keyword").onpropertychange = autoSearch;
+            }
+            else {
+                document.getElementById("keyword").oninput = autoSearch;
+            }
+        });
+    }
+    //鼠标点击，获取经纬度坐标
+    function getLnglat(e){
+        var x = e.lnglat.getLng();
+        var y = e.lnglat.getLat();
+        console.log(e);
+//                                document.getElementById("lnglats").innerHTML = x + "," + y;
+    }
+    //清空地图
+    function clearMap(){
+        mapObj.clearMap();
+        document.getElementById("result").innerHTML = '&nbsp;';
+    }
+    function clearCloud(){
+        cloudDataLayer.setMap(null);
+        mapObj.clearMap();
+        document.getElementById("result").innerHTML = '&nbsp;';
+    }
+    //关键词查询
+    function placeSearch1() {
+        clearMap();
+        mapObj.plugin(["AMap.PlaceSearch"], function() {
+            MSearch = new AMap.PlaceSearch({ //构造地点查询类
+                pageSize:10,
+                pageIndex:1,
+                city:"021" //城市
+            });
+            AMap.event.addListener(MSearch, "complete", Search_CallBack);//返回地点查询结果
+            MSearch.search(''); //关键字查询
+        });
+    }
+    //添加marker&infowindow
+    function addmarker(i, d) {
+        var lngX;
+        var latY;
+        var iName;
+        var iAddress;
+        if(d.location){
+            lngX = d.location.getLng();
+            latY = d.location.getLat();
+        }else{
+            lngX = d._location.getLng();
+            latY = d._location.getLat();
+        }
+        if(d.name){
+            iName = d.name;
+        }else{
+            iName = d._name;
+        }
+        if(d.name){
+            iAddress = d.address;
+        }else{
+            iAddress = d._address;
+        }
+        var markerOption = {
+            map:mapObj,
+            icon:"http://webapi.amap.com/images/" + (i + 1) + ".png",
+            position:new AMap.LngLat(lngX, latY)
+        };
+        var mar = new AMap.Marker(markerOption);
+        marker.push(new AMap.LngLat(lngX, latY));
+
+        var infoWindow = new AMap.InfoWindow({
+            content:"<h3><font color=\"#00a6ac\">" + (i + 1) + ". " + iName + "</font></h3>" + TipContents(d.type, iAddress, d.tel),
+            size:new AMap.Size(300, 0),
+            autoMove:true,
+            offset:new AMap.Pixel(0,-30)
+        });
+        windowsArr.push(infoWindow);
+        var aa = function (e) {infoWindow.open(mapObj, mar.getPosition());};
+        AMap.event.addListener(mar, "click", aa);
+    }
+    //回调函数
+    function Search_CallBack(data) {
+        var resultStr = "";
+        var poiArr = data.poiList.pois;
+//                                保存经纬度
+        localStorage.JING=poiArr[0].location.D;
+        localStorage.WEI=poiArr[0].location.J;
+        console.log( localStorage.JING+"..."+ localStorage.WEI);
+        var resultCount = poiArr.length;
+        for (var i = 0; i <1; i++) {
+            resultStr += "<div id='divid" + (i + 1) + "' onmouseover='openMarkerTipById1(" + i + ",this)' onmouseout='onmouseout_MarkerStyle(" + (i + 1) + ",this)' style=\"font-size: 12px;cursor:pointer;padding:0px 0 4px 2px; border-bottom:1px solid #C1FFC1;\"><table><tr><td><img src=\"http://webapi.amap.com/images/" + (i + 1) + ".png\"></td>" + "<td><h3><font color=\"#00a6ac\">" + poiArr[i].name+ '-'+ poiArr[i].address+ "</font></h3>";
+            resultStr += TipContents(poiArr[i].type, poiArr[i].address, poiArr[i].tel) + "</td></tr></table></div>";
+            addmarker(i, poiArr[i]);
+        }
+        mapObj.setFitView();
+        document.getElementById("result").innerHTML = resultStr;
+    }
+    function TipContents(type, address, tel) {  //窗体内容
+        if (type == "" || type == "undefined" || type == null || type == " undefined" || typeof type == "undefined") {
+            type = "暂无";
+        }
+        if (address == "" || address == "undefined" || address == null || address == " undefined" || typeof address == "undefined") {
+            address = "暂无";
+        }
+        if (tel == "" || tel == "undefined" || tel == null || tel == " undefined" || typeof address == "tel") {
+            tel = "暂无";
+        }
+        var str = "&nbsp;&nbsp;地址：" + address + "<br />&nbsp;&nbsp;电话：" + tel + " <br />&nbsp;&nbsp;类型：" + type;
+        return str;
+    }
+    function openMarkerTipById1(pointid, thiss) {  //根据id 打开搜索结果点tip
+        thiss.style.background = '#CAE1FF';
+        windowsArr[pointid].open(mapObj, marker[pointid]);
+    }
+    function onmouseout_MarkerStyle(pointid, thiss) { //鼠标移开后点样式恢复
+        thiss.style.background = "";
+    }
+
+    //输入提示
+    function autoSearch() {
+        var keywords = document.getElementById("keyword").value;
+        var auto;
+        var autoOptions = {
+            pageIndex:1,
+            pageSize:10,
+            city: "" //城市，默认全国
+        };
+        auto = new AMap.Autocomplete(autoOptions);
+        //查询成功时返回查询结果
+        AMap.event.addListener(auto, "complete", autocomplete_CallBack);
+        auto.search(keywords);
+    }
+    //输出输入提示结果的回调函数
+    function autocomplete_CallBack(data) {
+        var resultStr = "";
+        var tipArr = [];
+        tipArr = data.tips;
+        if (tipArr.length>0) {
+            for (var i = 0; i < tipArr.length; i++) {
+                resultStr += "<div id='divid" + (i + 1) + "' onmouseover='openMarkerTipById(" + (i + 1)
+                        + ",this)' onclick='selectResult(" + i + ")' onmouseout='onmouseout_MarkerStyle(" + (i + 1)
+                        + ",this)' style=\"font-size: 13px;cursor:pointer;padding:5px 5px 5px 5px;\">" + tipArr[i].name + "<span style='color:#C1C1C1;'>"+ tipArr[i].district + "</span></div>";
+            }
+        }
+        else  {
+            resultStr = " π__π 亲,人家找不到结果!<br />要不试试：<br />1.请确保所有字词拼写正确<br />2.尝试不同的关键字<br />3.尝试更宽泛的关键字";
+        }
+
+        document.getElementById("result1").innerHTML = resultStr;
+        document.getElementById("result1").style.display = "block";
+    }
+
+    //输入提示框鼠标滑过时的样式
+    function openMarkerTipById(pointid, thiss) {  //根据id打开搜索结果点tip
+        thiss.style.background = '#CAE1FF';
+    }
+
+    //输入提示框鼠标移出时的样式
+    function onmouseout_MarkerStyle(pointid, thiss) {  //鼠标移开后点样式恢复
+        thiss.style.background = "";
+    }
+
+    //从输入提示框中选择关键字并查询
+    function selectResult(index) {
+        if (navigator.userAgent.indexOf("MSIE") > 0) {
+            document.getElementById("keyword").onpropertychange = null;
+            document.getElementById("keyword").onfocus = focus_callback;
+        }
+        //截取输入提示的关键字部分
+        var text = document.getElementById("divid" + (index + 1)).innerHTML.replace(/<[^>].*?>.*<\/[^>].*?>/g,"");;
+        document.getElementById("keyword").value = text;
+        document.getElementById("result1").style.display = "none";
+        //根据选择的输入提示关键字查询
+        mapObj.plugin(["AMap.PlaceSearch"], function() {
+            var msearch = new AMap.PlaceSearch();  //构造地点查询类
+            AMap.event.addListener(msearch, "complete", Search_CallBack); //查询成功时的回调函数
+            msearch.search(text);  //关键字查询查询
+        });
+    }
+
+    //定位选择输入提示关键字
+    function focus_callback() {
+        if (navigator.userAgent.indexOf("MSIE") > 0) {
+            document.getElementById("keyword").onpropertychange = autoSearch;
+        }
+    }
+    //道路交叉口
+    function roadCrossSearchByRoadName(){
+        var roadname = '101';
+        var city2 = '北京';
+        var RoadSearchOption = {
+            number:10,//每页数量,默认10
+            batch:1,//请求页数，默认1
+            ext:""//扩展字段
+        };
+        var road = new AMap.RoadSearch(RoadSearchOption);
+        road.roadCrossSearchByRoadName(roadname,city2,roadCrossSearch_CallBack);
+        //清空本次搜索的marker和windowsArr
+        marker=[];
+        windowsArr=[];
+    }
+    function roadCrossSearch_CallBack(data){
+        mapObj.clearMap();
+        var resultStr="";
+        if(data.status =="E0") {
+            var marker = new Array();
+            for (var i = 0; i < data.list.length; i++) {
+                resultStr += "<div id='divid"+(i+1)+"' onmouseover='openMarkerTipById1("+(i)+",this)' onmouseout='onmouseout_MarkerStyle("+(i+1)+",this)' style=\"font-size: 13px;cursor:pointer;padding:2px 0 10px 5px;\"><b>"+(i+1)+"、"+data.list[i].roadname2+"和"+data.list[i].roadname1+"交叉口</b>"+"<br \/></div>";
+                resultStr += "<div>道路交叉口坐标："+data.list[i].x+","+data.list[i].y+"<br></div>";
+                addmarker2(i,data.list[i]);
+            }
+            mapObj.setFitView();
+        }
+        else if(data.status =="E1")
+        {
+            resultStr = "未查找到任何结果!<br />建议：<br />1.请确保所有字词拼写正确。<br />2.尝试不同的关键字。<br />3.尝试更宽泛的关键字。";
+        }
+        else
+        {
+            resultStr= "错误信息："+data.state+"请对照API Server v2.0.0 简明提示码对照表查找错误类型";
+        }
+        document.getElementById("result").innerHTML = resultStr;
+    }
+    function addmarker2(i,d){
+        var markerOption = {
+            map:mapObj,
+            icon:"http://webapi.amap.com/images/point.png",
+            position:new AMap.LngLat(d.x,d.y),
+            offset:{x:-8,y:-9}
+        };
+        var mar =new AMap.Marker(markerOption);
+        marker.push(new AMap.LngLat(d.x,d.y));
+        var infoWindow = new AMap.InfoWindow({
+            content:"&nbsp;&nbsp;"+(i+1) + ". "+ d.roadname2 +"和"+d.roadname1+"交叉口"+"<br />",
+            size:new AMap.Size(300,0),
+            autoMove:true
+        });
+        windowsArr.push(infoWindow);
+
+        var aa=function(e){infoWindow.open(mapObj,mar.getPosition());};
+        AMap.event.addListener(mar,"click",aa);
+    }
+    var yunPoint = new AMap.LngLat(120.169144,30.293164);
+    //叠加云数据图层
+    function addCloudLayer() {
+        mapObj.setZoomAndCenter(14,yunPoint);
+        //加载云图层插件
+        mapObj.plugin('AMap.CloudDataLayer', function () {
+            var layerOptions = {
+                query:{keywords: ''},
+                clickable:true
+            };
+            cloudDataLayer = new AMap.CloudDataLayer('5358f853e4b01214f369d851', layerOptions); //实例化云图层类
+            cloudDataLayer.setMap(mapObj); //叠加云图层到地图
+            AMap.event.addListener(cloudDataLayer, 'click', function (result) {
+                var clouddata = result.data;
+                var infoWindowYun = new AMap.InfoWindow({
+                    content:"<h3><font face=\"微软雅黑\"color=\"#3366FF\">"+ clouddata._name +"</font></h3><hr />地址："+ clouddata._address + "<br />" + "创建时间：" + clouddata._createtime+ "<br />" + "更新时间：" + clouddata._updatetime,
+                    size:new AMap.Size(300, 0),
+                    autoMove:true,
+                    offset:new AMap.Pixel(0,-5)
+                });
+                infoWindowYun.open(mapObj, clouddata._location);
+            });
+        });
+    }
+    function cloudSearch(){
+        var arr = new Array();
+        var search;
+        var searchOptions = {
+            keywords:'酒店',
+            orderBy:'_id:ASC'
+        };
+        //加载CloudDataSearch服务插件
+        mapObj.plugin(["AMap.CloudDataSearch"], function() {
+            search = new AMap.CloudDataSearch('5358f853e4b01214f369d851', searchOptions); //构造云数据检索类
+            AMap.event.addListener(search, "complete", cloudSearch_CallBack); //查询成功时的回调函数
+            AMap.event.addListener(search, "error", errorInfo); //查询失败时的回调函数
+            search.searchNearBy(yunPoint, 10000); //周边检索
+        });
+    }
+    function cloudSearch_CallBack(data) {
+        var resultStr="";
+        var resultArr = data.datas;
+        var resultNum = resultArr.length;
+        for (var i = 0; i < resultNum; i++) {
+            resultStr += "<div id='divid" + (i+1) + "' onmouseover='openMarkerTipById1(" + i + ",this)' onmouseout='onmouseout_MarkerStyle(" + (i+1) + ",this)' style=\"font-size: 12px;cursor:pointer;padding:2px 0 4px 2px; border-bottom:1px solid #C1FFC1;\"><table><tr><td><h3><font face=\"微软雅黑\"color=\"#3366FF\">" + (i+1) + "." + resultArr[i]._name + "</font></h3>";
+            resultStr += '地址：' + resultArr[i]._address + '<br/>类型：' + resultArr[i].type + '<br/>ID：' + resultArr[i]._id + "</td></tr></table></div>";
+            addmarker(i, resultArr[i]);
+        }
+        mapObj.setFitView();
+        document.getElementById("result").innerHTML = resultStr;
+    }
+    //回调函数
+    function errorInfo(data) {
+        resultStr = data.info;
+        document.getElementById("result").innerHTML = resultStr;
+    }
+    $(function(){
+//        $("#result").on("click",function(e){
+//            var x=$(this).find("td").find("h3").text();
+////                                    $(".all_id").val(x);
+//            localStorage.address=x;
+//        });
+//        $(".address_wrap h3").click(function(){
+//            $(".add_win").slideToggle();
+//        });
+//        $(".add_ok a").click(function(){
+//            var add=$(".all_id").val();
+//            $(".add_add").append('<p>'+add+'</p>')
+//        });
+    })
+</script>
+
+</body>
+</html>
