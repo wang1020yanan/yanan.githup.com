@@ -79,7 +79,7 @@ var MenuScene = cc.Scene.extend({
         var bgWelcome=new cc.Sprite(res.BgWelcome_jpg);
         bgWelcome.x=winSize.width/2;
         bgWelcome.y=winSize.height/2;
-        bgWelcome.scaleY=2.1;
+        bgWelcome.scale=1.3;
         layer.addChild(bgWelcome);
         //菜单标题
         var title=new cc.Sprite(res.TitleWelcome_png);
@@ -88,6 +88,7 @@ var MenuScene = cc.Scene.extend({
         //菜单英雄
         this._hero=new cc.Sprite(res.HeroWelcome_png);
         this._hero.attr({x:0,y:500});
+        this._hero.scale=2;
         layer.addChild(this._hero);
         //菜单按钮
         this._playBtn=new cc.MenuItemImage(res.PlayBtn_png,res.PlayBtn_png,this._play);
@@ -102,7 +103,7 @@ var MenuScene = cc.Scene.extend({
         layer.addChild(menu);
         menu.x=menu.y=0;
         //英雄动画
-        var move=cc.moveTo(2,cc.p(winSize.width/2,700)).easing(cc.easeOut(2));
+        var move=cc.moveTo(2,cc.p(winSize.width/2,800)).easing(cc.easeOut(2));
         this._hero.runAction(move);
         //进入游戏
 

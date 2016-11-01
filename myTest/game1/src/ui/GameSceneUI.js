@@ -14,7 +14,7 @@ var GameSceneUI = cc.Layer.extend({
         var winSize=cc.director.getWinSize();
 
         //生命值
-        var lifeLabel=new cc.LabelTTF("LIVES",'arial',36);
+        var lifeLabel=new cc.LabelTTF("生命值",'arial',36);
         this.addChild(lifeLabel);
         lifeLabel.x=213;
         lifeLabel.y=winSize.height-25;
@@ -25,7 +25,7 @@ var GameSceneUI = cc.Layer.extend({
         this._lifeText.y=winSize.height-60;
 
         //distance
-        var distanceLabel=new cc.LabelTTF("DISTANCE",'arial',36);
+        var distanceLabel=new cc.LabelTTF("卡卡卡",'arial',36);
         this.addChild(distanceLabel);
         distanceLabel.x=363;
         distanceLabel.y=winSize.height-25;
@@ -48,6 +48,7 @@ var GameSceneUI = cc.Layer.extend({
 
        //暂停按钮
         var pauseButton=new cc.MenuItemImage(res.Pause,res.Pause,this._pauseResume);
+        pauseButton.scale=2;
         var menu=new cc.Menu(pauseButton);
         menu.x=80;
         menu.y=winSize.height-45;
