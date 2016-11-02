@@ -17,6 +17,8 @@
         "src/app.js",
         "src/ui/GameBackground.js",
         "src/ui/GameSceneUI.js",
-        "src/ui/Hero.js"
+        "src/ui/Hero.js",
+        "src/ui/Food.js",
+        "src/ui/foodLogin.js"
     ]
 }

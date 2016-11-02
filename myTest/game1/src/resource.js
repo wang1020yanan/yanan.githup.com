@@ -38,11 +38,12 @@ var res = {
     Fly0017:"res/graphics/small_images/fly_0017.png",
     Fly0018:"res/graphics/small_images/fly_0018.png",
     Fly0019:"res/graphics/small_images/fly_0019.png",
-    Fly0020:"res/graphics/small_images/fly_0020.png"
-
-
-
-
+    Fly0020:"res/graphics/small_images/fly_0020.png",
+    g1:"res/g1.png",
+    g2:"res/g2.png",
+    //g3:"res/g3.png",
+    b1:"res/b1.png"
+    //b2:"res/b2.png"
 };
 
 var g_resources = [];

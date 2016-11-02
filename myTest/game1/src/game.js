@@ -11,5 +11,6 @@ Game = {
         mushroom:0,
         hitObstacle:0
     },
-    gameState:0
+    gameState:0,
+    foodspeed:5
 };

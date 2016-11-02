@@ -54,11 +54,15 @@ var GameBackground = cc.Layer.extend({
         this._bg4.x=-30;
 
         this.addChild(this._bg4);
-
+        this.scheduleUpdate();
         return true;
     },
 
     update:function(dt) {
+        this.speed+=0.008;
+        if(this.speed>=30){
+            this.speed=30;
+        }
         var winSize = cc.director.getWinSize();
         this._bg1.x -= Math.ceil(this.speed * 0.02);
         if (this._bg1.x < -parseInt(winSize.width))

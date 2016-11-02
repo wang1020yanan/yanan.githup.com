@@ -14,36 +14,36 @@ var GameSceneUI = cc.Layer.extend({
         var winSize=cc.director.getWinSize();
 
         //生命值
-        var lifeLabel=new cc.LabelTTF("生命值",'arial',36);
+        var lifeLabel=new cc.LabelTTF("生命",'arial',36);
         this.addChild(lifeLabel);
         lifeLabel.x=213;
         lifeLabel.y=winSize.height-25;
 
-        this._lifeText=new cc.LabelTTF('0','arial',36);
+        this._lifeText=new cc.LabelTTF('1','arial',36);
         this.addChild(this._lifeText);
         this._lifeText.x=213;
         this._lifeText.y=winSize.height-60;
 
         //distance
-        var distanceLabel=new cc.LabelTTF("卡卡卡",'arial',36);
+        var distanceLabel=new cc.LabelTTF("",'arial',36);
         this.addChild(distanceLabel);
         distanceLabel.x=363;
         distanceLabel.y=winSize.height-25;
 
-        this._distanceText=new cc.LabelTTF('0','arial',36);
+        this._distanceText=new cc.LabelTTF('','arial',36);
         this.addChild(this._distanceText);
         this._distanceText.x=363;
         this._distanceText.y=winSize.height-60;
 
         //分数
-        var scoreLabel=new cc.LabelTTF("分数",'arial',36);
+        var scoreLabel=new cc.LabelTTF('分数','arial',36);
         this.addChild(scoreLabel);
-        scoreLabel.x=513;
+        scoreLabel.x=363;
         scoreLabel.y=winSize.height-25;
 
-        this._scoreText=new cc.LabelTTF('0','arial',36);
+        this._scoreText=new cc.LabelTTF('没有分数','arial',36);
         this.addChild(this._scoreText);
-        this._scoreText.x=513;
+        this._scoreText.x=363;
         this._scoreText.y=winSize.height-60;
 
        //暂停按钮
@@ -53,6 +53,8 @@ var GameSceneUI = cc.Layer.extend({
         menu.x=80;
         menu.y=winSize.height-45;
         this.addChild(menu);
+        this.scheduleUpdate();
+
         return true;
     },
     _pauseResume:function() {
@@ -62,9 +64,8 @@ var GameSceneUI = cc.Layer.extend({
             cc.director.pause();
     },
     update:function(){
-        console.log(Game);
         this._lifeText.setString(Game.user.lives);
-        this._distanceText.setString(parseInt(Game.user.distance));
+        //this._distanceText.setString(parseInt(Game.user.distance));
         this._scoreText.setString(Game.user.score)
     }
 

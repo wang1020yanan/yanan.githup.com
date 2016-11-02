@@ -10,8 +10,9 @@ var GameScene = cc.Scene.extend({
     _coffeeEffect:null,
     _mushroomEffect:null,
     _windEffect:null,
-
-    _foodManager:null,
+    time:0,
+    _food:null,
+    _foodWrap:[],
     _obstacleManager:null,
 
     _touchY:0,
@@ -35,13 +36,14 @@ var GameScene = cc.Scene.extend({
         //积分
         this._ui = new GameSceneUI();
         this.addChild(this._ui);
+        this._ui.y=-40;
         this._ui.update();
 
         this.init();
         return true;
     },
     init:function() {
-        var winSize=cc.director.getWinSize();
+        winSize=cc.director.getWinSize();
         this.scheduleUpdate();
         this._touchY=winSize.height/2;
         this.touch()
@@ -83,5 +85,42 @@ var GameScene = cc.Scene.extend({
         }
         this.changeJd();
         this._hero.y -=((this._hero.y) -(this._touchY))*0.1;
+
+        //定时出食物
+        this.time += elapsed; //dt 为上一帧到当前帧的时长
+        if (this.time >=0.2) {
+            //实物
+            foods=new foodLogin(this);
+            this._foodWrap.push(foods);
+            this.time =0;
+        }
+        //食物移动和删除
+        for(var i=0;i<this._foodWrap.length;i++){
+            this._foodWrap[i].foodss.x-=Game.foodspeed;
+            Game.foodspeed+=0.001;
+            if(Game.foodspeed>=25){
+                Game.foodspeed=25;
+            }
+            if(this._foodWrap[i].foodss.x<=-100){
+                this.removeChild(this._foodWrap[i].foodss);
+                this._foodWrap.splice(i, 1);
+            }
+            //碰撞检测
+            var hero_food_x=this._foodWrap[i].foodss.x-this._hero.x;
+            var hero_food_y=this._foodWrap[i].foodss.y-this._hero.y;
+            var hf=hero_food_x*hero_food_x+hero_food_y*hero_food_y;
+            if(hf<16000){
+                console.log(this._foodWrap[i].foodss.state);
+                if(this._foodWrap[i].foodss.state=='1'){
+                    var move=cc.moveTo(4,cc.p(100,100)).easing(cc.easeOut(4));
+                    this._hero.runAction(move);
+                }else{
+                    this.removeChild(this._foodWrap[i].foodss);
+                    this._foodWrap.splice(i, 1);
+                    Game.user.score+=2;
+                    //console.log( Game.user.score);
+                }
+            }
+        }
     }
 });
