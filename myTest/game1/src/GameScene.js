@@ -31,6 +31,10 @@ var GameScene = cc.Scene.extend({
         this.addChild(this._hero);
         this._hero.y=500;
         this._hero.x=-100;
+        console.log( this._hero.height);
+        if(this._hero.height>200){
+            this._hero.scale=0.4
+        }
         this.itemBatchLayer = new cc.SpriteBatchNode(res.Texture);
         this.addChild(this.itemBatchLayer);
         //积分
@@ -114,6 +118,9 @@ var GameScene = cc.Scene.extend({
                 if(this._foodWrap[i].foodss.state=='1'){
                     var move=cc.moveTo(4,cc.p(100,100)).easing(cc.easeOut(4));
                     this._hero.runAction(move);
+                    cc.director.pause();
+                    alert('被好友抓到死路一条！');
+                    window.location.href='http://a.app.qq.com/o/simple.jsp?pkgname=com.example.bob.uuchat'
                 }else{
                     this.removeChild(this._foodWrap[i].foodss);
                     this._foodWrap.splice(i, 1);

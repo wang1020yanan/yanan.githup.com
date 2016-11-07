@@ -44,6 +44,7 @@ var res = {
     //g3:"res/g3.png",
     b1:"res/b1.png"
     //b2:"res/b2.png"
+
 };
 
 var g_resources = [];

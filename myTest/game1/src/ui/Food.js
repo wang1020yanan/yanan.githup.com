@@ -10,8 +10,8 @@ var Food=cc.Sprite.extend({
         this.scheduleUpdate(); //开启每帧调用，对应update
         if(Math.random()<=0.3){
             var fItem=res.g1;
-        }else if(Math.random()>=0.8){
-            var fItem=res.b1;
+        }else if(Math.random()>=0.6){
+            var fItem=fImg;
             this.state=1;
         } else{
             var fItem=res.g2;

@@ -5,12 +5,15 @@
     "showFPS" : false,
     "frameRate" : 60,
     "id" : "gameCanvas",
-    "renderMode" : 0,
+    "renderMode" : 1,
     "engineDir":"frameworks/cocos2d-html5",
 
     "modules" : ["cocos2d"],
 
     "jsList" : [
+        "src/jquery.js",
+        "src/wx.js",
+        "src/mainwx.js",
         "src/Game.js",
         "src/GameScene.js",
         "src/resource.js",

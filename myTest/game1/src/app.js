@@ -93,13 +93,13 @@ var MenuScene = cc.Scene.extend({
         //菜单按钮
         this._playBtn=new cc.MenuItemImage(res.PlayBtn_png,res.PlayBtn_png,this._play);
         this._playBtn.attr({x:winSize.width/2,y:450});
-        this._aboutBtn=new cc.MenuItemImage(res.AboutBtn_png,res.AboutBtn_png,this._play);
-        this._aboutBtn.attr({x:winSize.width/2,y:350});
+        //this._aboutBtn=new cc.MenuItemImage(res.AboutBtn_png,res.AboutBtn_png,this._play);
+        //this._aboutBtn.attr({x:winSize.width/2,y:350});
         //new一个声音按钮
         //var soundButton=new SoundButton();
         //soundButton.attr({x:45,y:winSize.height-45});
         //按钮组
-        var menu= new cc.Menu(this._playBtn,this._aboutBtn);
+        var menu= new cc.Menu(this._playBtn);
         layer.addChild(menu);
         menu.x=menu.y=0;
         //英雄动画
