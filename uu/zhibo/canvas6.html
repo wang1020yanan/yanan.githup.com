@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>canvas</title>
+</head>
+<style>
+    #canvas{
+        margin: 10px;
+        padding: 10px;
+        background: #FFFFFF;
+        border: thin inset #aaaaaa;
+    }
+</style>
+<script>
+    var Sprite=function(name,painter,behaviors){
+        if(name!==undefined) this.name=name;
+        this.painer=painter;
+        this.top=0;
+        this.left=0;
+        this.width=10;
+        this.height=10;
+        this.velocityX=0;
+        this.velocityY=0;
+        this.visible=true;
+        this.animating=false;
+        this.behaviors=behaviors||[];
+        return this;
+    };
+    Sprite.prototype={
+        paint:function(context){
+            if(this.painer!==undefined&&this.visible){
+                this.painer.paint(this,context);
+            }
+        },
+        update:function(context,time){
+            for(var i=0;i<this.behaviors.length;i++){
+                this.behaviors[i].execute(this,context,time);
+            }
+        }
+    };
+    window.onload=function(){
+        var canvas=document.getElementById("canvas"),
+            context=canvas.getContext('2d'),
+            RADIUS=75;
+
+        ball=new Sprite('ball',
+                {
+                    paint:function(sprite,context){
+                        context.beginPath();
+                        context.arc(sprite.left+sprite.width/2,
+                                sprite.top+sprite.height/2+100,
+                                RADIUS,0,Math.PI*2,false);
+                        context.clip();
+                        context.shadowColor='rgb(0,0,0)';
+                        context.shadowOffsetX=-4;
+                        context.shadowOffsetY=-4;
+                        context.shadowBlur=8;
+                        context.lineWidth=2;
+                        context.strokeStyle='rgb(100,100,195)';
+                        context.fillStyle='rgba(30,144,255,0.15)';
+                        context.fill();
+                        context.stroke();
+                    }
+                }
+        );
+        function drawGrid(color,stepx,stepy){
+
+        }
+//        drawGrid('lightgray',100,10);
+        ball.left=320;
+        ball.paint(context);
+    }
+
+</script>
+<body>
+   <canvas id="canvas" width="600" height="300"></canvas>
+</body>
+</html>

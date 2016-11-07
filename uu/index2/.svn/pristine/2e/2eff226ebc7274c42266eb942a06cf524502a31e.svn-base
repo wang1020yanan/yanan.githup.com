@@ -1,0 +1,60 @@
+[ 2016-03-23T09:11:35+08:00 ] ::1 /thinkphp/Public/order/img/tc_home/323.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001156s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-23T09:11:47+08:00 ] ::1 /thinkphp/Public/order/img/tc_home/323.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000083s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001556s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-23T14:36:19+08:00 ] ::1 /thinkphp/Public/order/img/tc_home/323.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001179s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-23T14:36:22+08:00 ] ::1 /thinkphp/Public/order/img/tc_home/323.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000746s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-23T14:36:23+08:00 ] ::1 /thinkphp/Public/order/img/tc_home/323.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000718s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-23T17:25:50+08:00 ] ::1 /thinkphp/Public/order/img/tc_home/323.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001220s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-23T17:27:12+08:00 ] ::1 /thinkphp/Public/order/img/tc_home/323.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001248s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-23T17:49:27+08:00 ] ::1 /thinkphp/Public/order/img/tc_home/323.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001739s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-23T17:50:02+08:00 ] ::1 /thinkphp/Public/order/img/tc_home/323.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001530s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-23T18:24:28+08:00 ] ::1 /thinkphp/Public/order/img/tc_home/323.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000745s ]
+ERR: 无法加载模块:Public
+

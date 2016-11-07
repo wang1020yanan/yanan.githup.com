@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<style>
+    * { padding: 0; margin: 0; }img{border:0;}li{list-style:none;}
+    ul{width: 200px;height: 200px;margin: 100px auto;position: relative;-webkit-transform-style:preserve-3d;
+        font-size: 100px;color: #FFFFFF;text-align: center;line-height: 200px;
+        /*background: #FFFFFF;padding: 200px;*/
+        /*-webkit-perspective:900px;-webkit-perspective-origin:10% 10%;*/
+        /*-webkit-transform: rotateX(40deg);*/
+    }
+    li{width: 200px;height: 200px;background: hotpink;position: absolute}
+    li:nth-child(1){background:rgba(255,0,0,.5);-webkit-transform:rotateX(90deg)   translateZ(100px);}
+    li:nth-child(2){background:rgba(0,255,255,.5);-webkit-transform:rotateX(270deg)  translateZ(100px);}
+    li:nth-child(3){background:rgba(255,0,255,.5);-webkit-transform:rotateY(90deg) translateZ(100px);}
+    li:nth-child(4){background:rgba(0,255,0,.5);-webkit-transform:rotateY(270deg) translateZ(100px);}
+    li:nth-child(5){background:rgba(200,200,0,.5);-webkit-transform:translateZ(-100px);}
+    li:nth-child(6){background:rgba(0,0,255,.5);-webkit-transform: translateZ(100px) ;}
+</style>
+<script>
+    window.onload=function(){
+        var ul=document.getElementsByTagName('ul')[0];
+        var stX=0;
+        var stY=0;
+        setInterval(function(){
+            stX+=.1;
+            stY+=.05;
+            ul.style.webkitTransform = "rotateX("+stX+"deg) rotateY("+stY+"deg)";
+        },1)
+    }
+</script>
+<body style="background: #000">
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+</ul>
+</body>
+</html>

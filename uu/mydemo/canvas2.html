@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!--<script type="text/javascript" src="js/myjs.js"></script>-->
+    <title></title>
+    <style>
+        #c1{
+            background: #FFFFFF;
+        }
+    </style>
+    <script>
+        window.onload=function(){
+            var oC=document.getElementById("c1");
+            var oGC=oC.getContext('2d');
+            var num=0;
+            oGC.fillRect(0,0,100,100);
+            oC.onmousedown=function(){
+//                oGC.clearRect(0,0,oC.width,oC.height);
+                var ev=ev||event;
+                oGC.clearRect(0,0,oC.width,oC.height);
+                oGC.fillRect(ev.offsetX-50,ev.offsetY-50,100,100);
+                document.onmousemove=function(){
+                    var ev=ev||event;
+                    oGC.clearRect(0,0,oC.width,oC.height);
+                    oGC.fillRect(ev.offsetX-50,ev.offsetY-50,100,100);
+                };
+                document.onmouseup=function(){
+                    document.onmousemove=null;
+                    document.onmouseup=null;
+                }
+            };
+        };
+    </script>
+</head>
+<body style="background: #000">
+       <canvas style="padding: 0;margin: 0" id="c1" width="400" height="400"></canvas>
+</body>
+</html>

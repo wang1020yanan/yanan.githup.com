@@ -1,0 +1,159 @@
+body,html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family:"幼圆","华文细黑","Helvetica","Comic Sans MS","黑体",sans-serif;
+}
+/*body{*/
+    /*display: none;*/
+/*}*/
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    outline: none;
+    text-decoration: none;
+    border: none 0;
+}
+a img{
+    border: 0 none;
+}
+li{
+    list-style: none;
+}
+
+/*���*/
+.c1{
+    width: 8.33333%;
+}
+.c2{
+    width:16.666666%;
+}
+.c3{
+    width: 25%;
+}
+.c4{
+    width: 33.333%;
+}
+.c9{
+    width: 75%;
+}
+.c7{
+    width: 58.333333%;
+}
+.c6{
+    width: 50%;
+}
+.c12{
+    width: 100%;
+}
+.c2{
+    width: 16.666%;
+}
+.c8{
+    width: 66.666%;
+}
+.c5{
+    width: 41.666%;
+}
+.c11{
+    width: 91.666%;
+}
+.c10{
+    width: 83.33333%;
+}
+.c3,.c9 ,.c12 ,.c6,.c2,.c4,.c5,.c11,.c1,.c7,.c8,.c10{
+    position: relative;
+    float: left;
+}
+.container{
+    width: 970px;
+    margin: 0 auto;
+}
+.full{
+    width: 100%;
+    min-width: 970px;
+    padding: 0;
+    margin: 0;
+}
+/*背景*/
+body{
+    background-image: url("../img/1.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+}
+.form_wrap{
+    position: fixed;
+    width: 350px;
+    height: 245px;
+    border: 5px solid #ffffff;
+    /*box-shadow: 5px 5px 20px #aaa;*/
+    border-radius: 20px;
+    margin-left: -175px;
+    margin-top: -125px;
+    top:50%;
+    left:50%;
+}
+
+.input_wrap{
+    padding: 15px 0;
+}
+.input_user{
+    margin-top: 20px;
+}
+.input_pass{
+    padding: 5px 0;
+}
+.input_wrap input{
+    background: #2C3033;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    width: 80%;
+    padding: 6px 20px;
+    border-radius: 3px;
+    font-size: 16px;
+}
+.input_wrap .c2{
+    text-align: center;
+}
+.input_wrap img{
+    vertical-align: middle;
+    margin-top: 4px;
+}
+.input_btn .c9{
+    left: -10px;
+}
+.input_btn button{
+    width: 100%;
+    height: 35px;
+    background: #2DCF81;
+    border: none;
+    color: #ffffff;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+.input_btn button:hover{
+    opacity: 0.7;
+}
+.check{
+    left: 25px;
+    top: 3px;
+ }
+ .checktip{
+     color: #ffffff;
+     font-size: 17px;
+ }
+ .input_tip{
+     padding-top: 0;
+ }
+ .forget a{
+     color: #ffffff;
+     font-size: 17px;
+ }

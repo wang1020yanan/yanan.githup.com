@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title></title>
+    <script src="js/lufy.js"></script>
+    <style>
+        *{padding: 0;margin: 0}
+        canvas{
+            width: 100%;
+            height: 100%;
+        }
+        body{
+            /*background: #000000;*/
+            /*overflow: hidden;*/
+        }
+    </style>
+    <script>
+        init(10,'mylegend',320,568,main);
+        var loadingLayer,backLayer,graphicsMsp,nextLayer,background;
+        var STAGE_STEP=1;
+        var stageSpeed=200;
+        var hero;
+        var g=0.08;
+        var imgList=[];
+        var imgData=[
+            {name:"back",path:"img/bg.png"},
+            {name:'bg2',path:'img/bg2.png'},
+            {name:'man',path:'img/man.png'},
+            {name:'floor1',path:'img/floor1.png'},
+            {name:'start',path:'http://7vihod.com2.z0.glb.qiniucdn.com/img/gameRes/bgs/bgsStartButton.png'}
+//          {name:"back",path:"img/bg3.png"}
+        ];
+        if(LGlobal.canTouch){
+            LGlobal.stageScale = LStageScaleMode.EXACT_FIT;
+            LSystem.screen(LStage.FULL_SCREEN);
+        }
+        function main(){
+//            背景层初始化
+            backLayer=new  LSprite();
+            backLayer.graphics.drawRect(1,'#aaa',[0,0,320,568],true,'#000000');
+            addChild(backLayer);
+//            进度条
+            loadingLayer=new LoadingSample3();
+            backLayer.addChild(loadingLayer);
+            LLoadManage.load(
+              imgData,function(progress) {
+                        loadingLayer.setProgress(progress);
+                    },
+                    function(result){
+                        imgList=result;
+                        backLayer.removeChild(loadingLayer);
+                        loadingLayer=null;
+                        gameInit()
+                    }
+            );
+
+        }
+        function gameInit(result){
+//            console.log(imgList);
+//            取图片
+            var bgImg=new LBitmap(new LBitmapData(imgList["back"]));
+            backLayer.addChild(bgImg);
+            var title=new LTextField;
+            title.x=30;
+            title.y=60;
+            title.size=35;
+            title.color='#ffffff';
+            title.font='italic';
+            title.text='下一百层地狱吧！';
+            backLayer.addChild(title);
+//            var startImg=new LBitmap(new LBitmapData(imgList["start"]));
+//            backLayer.addChild(startImg);
+//            startImg.x=65;
+//            startImg.y=300
+          var startBtn= getBtn("start",65,400);
+          startBtn.addEventListener(LMouseEvent.MOUSE_UP,gameStart);
+          backLayer.addChild(startBtn);
+        }
+//        按钮获取
+        function getBtn(v,x,y){
+            var buU=new LBitmap(new LBitmapData(imgList[v]));
+            buU.x=x;
+            buU.y=y;
+            buU.scaleX=1;
+            buU.scaleY=1;
+            var buO=new LBitmap(new LBitmapData(imgList[v]));
+            buO.scaleX=1;
+            buO.scaleY=1;
+            buO.x=x;
+            buO.y=y;
+            var btn=new LButton(buU,buO);
+            btn.cursor=
+                    btn.name=v;
+            return btn;
+        }
+        function gameStart(restart){
+            setTimeout(function(){
+                backLayer.die();
+                backLayer.removeAllChild();
+                background=new BackGround();
+                backLayer.addChild(background);
+                stageInit();
+                backLayer.addEventListener(LEvent.ENTER_FRAME,onframe);
+            },300)
+        }
+        function onframe(){
+            background.run();
+            stageSpeed--;
+            if(stageSpeed-- < 0){
+                stageSpeed=200;
+                addStage();
+            }
+//            让地板加入循环
+            var key=null,found=false;
+           if(!hero){
+               hero=new Chara();
+               hero.x=140;
+               hero.y=100;
+               hero.hp=hero.maxhp;
+               backLayer.addChild(hero);
+               hero.isJump =true;
+           }
+            for(key in  stageLayer.childList){
+                var _child=stageLayer.childList[key];
+                _child.y-=1.3;
+                if(_child.y<-_child.getHeight()){
+                    stageLayer.removeChild(_child);
+                }
+                if(!found&&hero.x+100>=_child.x&&hero.x<=_child.x+90&& hero.y+180>=_child.y+_child.hy&&hero._charaOld+50<=
+                        _child.y+_child.hy+1){
+                    hero.isJump=false;
+//                    hero.changeAction();
+                    _child.child=hero;
+                    hero.speed=0;
+                    hero.y=_child.y-49+_child.hy;
+                    _child.hitrun();
+                    found=true;
+                }else{
+                    _child.child=null;
+                }
+                _child.onframe();
+                if(hero.isJump)hero.anime.setAction(3,0);
+                if(hero){
+                    hero.onframe();
+                    if(hero.hp<=0){
+                        stageLayer.removeChild(hero);
+                        hero=null;
+                        alert("game over");
+                        window.location.reload();
+                    }
+                }
+            }
+
+        }
+//        背景类
+        function BackGround(){
+            base(this,LSprite,[]);
+            var self=this;
+            self.bitmapData=new LBitmapData(imgList["bg2"]);
+            self.bitmap1=new LBitmap(self.bitmapData);
+            self.addChild(self.bitmap1);
+            self.bitmap2=new LBitmap(self.bitmapData);
+            self.bitmap2.y=self.bitmap1.getHeight();
+            self.addChild(self.bitmap2);
+            self.bitmap3=new LBitmap(self.bitmapData);
+            self.bitmap3.y=self.bitmap1.getHeight()*2;
+            self.addChild(self.bitmap3);
+        }
+        BackGround.prototype.run=function(){
+            var self=this;
+            self.bitmap1.y-=STAGE_STEP;
+            self.bitmap2.y-=STAGE_STEP;
+            self.bitmap3.y-=STAGE_STEP;
+            if(self.bitmap1.y<-self.bitmap1.getHeight()){
+                self.bitmap1.y=self.bitmap2.y;
+                self.bitmap2.y=self.bitmap1.y+self.bitmap1.getHeight();
+                self.bitmap3.y=self.bitmap1.y+self.bitmap1.getHeight()*2;
+            }
+        };
+//        地板父类
+        function Floor(){
+            base(this,LSprite,[]);
+            var self=this;
+            self.hy=0;
+            self.setView();
+        }
+        Floor.prototype.setView=function(){};
+        Floor.prototype.onframe=function(){
+            var self=this;
+            self.y-=STAGE_STEP;
+            if(self.child){
+                self.child.y-=STAGE_STEP;
+            }
+        };
+        Floor.prototype.hitrun=function(){};
+        function Floor1(){
+            base(this,Floor,[])
+        }
+        Floor1.prototype.setView=function(){
+            var self=this;
+            self.bitmap=new LBitmap(new LBitmapData(imgList["floor1"]));
+            self.addChild(self.bitmap)
+        };
+        function stageInit(){
+            stageLayer=new LSprite();
+            backLayer.addChild(stageLayer);
+        }
+        function addStage(){
+            var mstage;
+            mstage=new Floor1();
+            mstage.y=568;
+            mstage.x=Math.random()*140;
+            stageLayer.addChild(mstage);
+        }
+//        主角类
+        function Chara(){
+            base(this,LSprite,[]);
+            var self=this;
+            self.moveType=null;
+            self.hp=3;
+            self.maxhp=3;
+            self.hpCtrl=0;
+            self.isJump=true;
+            self.index=0;
+            self.speed=0;
+            self._charaOld=0;
+            var list=LGlobal.divideCoordinate(3200,180,1,25);
+            var data=new LBitmapData(imgList['man'],0,0,128,180);
+            self.anime=new LAnimation(self,data,[
+                    [list[0][15]],
+                    [list[0],[7]],
+                    [list[0][0],list[0][1],list[0][2],list[0][3],list[0][4],list[0][5],list[0][6],list[0][7],list[0][8],list[0][9],list[0][10]],
+                    [list[0][23],list[0][21],list[0][20],list[0][19],list[0][17]]
+            ])
+        }
+        Chara.prototype.onframe=function(){
+            var self=this;
+            self._charaOld=self.y;
+            self.y+=self.speed;
+            self.speed+=g;
+            if(self.speed>10){
+                self.speed=10
+            }
+            if(self.y>LGlobal.height){
+                self.hp=0;
+            }
+            if(self.moveType=="left"){
+                self.x-=MOVE_STEP;
+            }else if(self.moveType=="right"){
+                self.x+=MOVE_STEP;
+            }
+            if(self.x<-10){
+                self.x=-10;
+            }else if(self.x>LGlobal.width-100){
+                self.x=LGlobal.width-100;
+            }
+            if(self.index-->0){
+                return;
+            }
+            self.index=10;
+            self.anime.onframe();
+        };
+        Chara.prototype.changeAction=function(){
+            var self=this;
+            if(self.moveType=="left"){
+                hero.anime.setActive(3)
+            }else if(self.moveType=="right"){
+                hero.anime.setActive(2)
+            }else if(hero.isJump){
+                hero.anime.setAction(1,0)
+            }else{
+                hero.anime.setAction(0,0)
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="mylegend">loading...</div>
+</body>
+</html>

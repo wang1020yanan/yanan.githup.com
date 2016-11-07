@@ -1,0 +1,727 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>优优老师 - 我的地址</title>
+    <link href="http://www.uustudy.com.cn/img/logo.png" rel="shortcut icon" type="image/x-icon"/>
+    <link href="/thinkphp/Public/commen/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="/thinkphp/Public/commen/css/button.css" rel="stylesheet" type="text/css">
+    <link href="/thinkphp/Public/commen/fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="/thinkphp/Public/order/css/address.css" rel="stylesheet" type="text/css">
+    <script src="/thinkphp/Public/commen/js/jquery.min.js"></script>
+    <script src="/thinkphp/Public/order/js/address.js"></script>
+    <script charset="utf-8" src="http://map.qq.com/api/js?v=2.exp"></script>
+    <script language="javascript" src="http://webapi.amap.com/maps?v=1.3&key=c8d499635271ab4f9d449d35911e2cf1"></script>
+</head>
+<body  onLoad="mapInit()">
+<script language="javascript">
+    $(document).ready(function() {
+
+        /* 	1st example	*/
+
+        /// wrap inner content of each anchor with first layer and append background layer
+        $("#menu1 li a").wrapInner( '<span class="out"></span>' ).append( '<span class="bg"></span>' );
+
+        // loop each anchor and add copy of text content
+        $("#menu1 li a").each(function() {
+            $( '<span class="over">' +  $(this).text() + '</span>' ).appendTo( this );
+        });
+
+        $("#menu1 li a").hover(function() {
+            // this function is fired when the mouse is moved over
+            $(".out",	this).stop().animate({'top':	'80px'},	250); // move down - hide
+            $(".over",	this).stop().animate({'top':	'0px'},		250); // move down - show
+            $(".bg",	this).stop().animate({'top':	'0px'},		120); // move down - show
+
+        }, function() {
+            // this function is fired when the mouse is moved off
+            $(".out",	this).stop().animate({'top':	'0px'},		250); // move up - show
+            $(".over",	this).stop().animate({'top':	'-80px'},	250); // move up - hide
+            $(".bg",	this).stop().animate({'top':	'-80px'},	120); // move up - hide
+        });
+
+
+        /*	2nd example	*/
+
+        $("#menu2 li a").wrapInner( '<span class="out"></span>' );
+
+        $("#menu2 li a").each(function() {
+            $( '<span class="over">' +  $(this).text() + '</span>' ).appendTo( this );
+        });
+
+        $("#menu2 li a").hover(function() {
+            $(".out",	this).stop().animate({'top':	'80px'},	300); // move down - hide
+            $(".over",	this).stop().animate({'top':	'0px'},		300); // move down - show
+
+        }, function() {
+            $(".out",	this).stop().animate({'top':	'0px'},		300); // move up - show
+            $(".over",	this).stop().animate({'top':	'-80px'},	300); // move up - hide
+        });
+
+    });
+</script>
+<style>
+    /*头部*/
+    .header{
+        box-shadow: 1px 1px 30px #ccc;
+        /*opacity: 0;*/
+        /*position: relative;*/
+        /*left: -100%;*/
+        width: 100%;
+        height: 80px;
+        min-width: 970px;
+        overflow: hidden;
+        /*fonts-family:"Comic Sans MS","幼圆","黑体",sans-serif;*/
+        background-color:rgba(255,255,255,0.75);
+    }
+    .header_bg{
+        width: 100%;
+        height: 80px;
+        min-width: 970px;
+    }
+    .bg_abs{
+        position: absolute;
+    }
+    .header_wrap .logo .c2 img {
+        padding-top: 20px;
+    }
+    .header_wrap .logo .c2 img:hover{
+        opacity: 0.8;
+    }
+    .header_wrap .logo .c10 img{
+        padding-top: 30px;
+        margin-left: 20px;
+    }
+    .header .call li{
+        display: inline;
+        line-height:80px;
+        font-size: 18px;
+        color: #54C5F5;
+    }
+    .header .call img{
+        position: relative;
+        /*vertical-align:middle;*/
+        top: -2px;
+    }
+    .header a{
+        -webkit-transition:color .3s;
+        -moz-transition: color .3s;
+        -ms-transition:color .3s;
+        -o-transition: color .3s;
+        transition: color .3s;
+    }
+    .header a:hover{
+        color:#077ace ;
+    }
+    .menu {
+        height: 80px;
+        display: block;
+        padding: 0px;
+        width: 800px;
+        margin-top: 0px;
+        margin-right: auto;
+        /*margin-bottom: 40px;*/
+        margin-left: auto;
+    }
+
+    .menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .menu ul li {
+        /* width and height of the menu items */
+        float: left;
+        overflow: hidden;
+        position: relative;
+        line-height: 80px;
+        text-align: center;
+    }
+
+    .menu ul li a {
+        /* must be postioned relative  */
+        position: relative;
+        display: block;
+        width: 120px;
+        height: 80px;
+        font-family: "微软雅黑", "宋体";
+        font-size: 18px;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .menu ul li a span {
+        /* all layers will be absolute positioned */
+        position: absolute;
+        left: 0;
+        width: 120px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+    }
+
+    .menu ul li a span.out {
+        top: 0px;
+    }
+
+    .menu ul li a span.over,
+    .menu ul li a span.bg {
+        /* hide */
+        top: -80px;
+    }
+
+    /** 1st example **/
+
+    /** 2nd example **/
+
+    #menu2 {
+        /*background: #FFFFFF;*/
+    }
+
+    #menu2 ul li a {
+        color: #999999;
+    }
+
+    #menu2 ul li a span.over {
+        color: #FFFFFF;
+        background-color: #088ef0;
+    }
+</style>
+<div class="header">
+    <img class="header_bg" src="/thinkphp/Public/img/tc_home/1.png" style="position: absolute">
+    <div class="header_wrap container">
+        <div class="c12">
+            <div class="c2 logo">
+                <div class="c2">
+                    <a href="/"><img src="/thinkphp/Public/img/tc_home/2.png" alt="优优老师" title="优优老师"/></a>
+                </div>
+                <div class="c10">
+                    <img src="/thinkphp/Public/img/tc_home/3.png"/>
+                </div>
+                <div style="clear: both"></div>
+            </div>
+            <div class="c8 nav">
+                <div id="menu2" class="menu">
+                    <ul>
+                        <li><a href="#">首页</a></li>
+                        <li><a href="<?php echo U('home/index/teacher'); ?>">教员库</a></li>
+                        <li><a href="<?php echo U('home/index/allneed'); ?>">家教需求</a></li>
+                        <li><a href="<?php echo U('home/index/data'); ?>">家长中心</a></li>
+                        <li><a href="<?php echo U('home/index/teacher'); ?>">老师中心</a></li>
+                    </ul>
+                    <div class="cls"></div>
+                </div>
+                <!--<ul class="nav_ul">-->
+                <!--<li class="tipto"><a id="home" style="cursor: pointer">首页</a></li>-->
+                <!--<li class="tipto">-->
+                <!--<a href="<?php echo U('home/index/teacher'); ?>">教员库</a>-->
+                <!--</li>-->
+                <!--<li class="tipto"><a id="func" style="cursor: pointer">家教需求</a></li>-->
+                <!--<li class="tipto"><a id="abou" style="cursor: pointer">家长中心</a></li>-->
+                <!--<li class="tipto"><a href="<?php echo U('home/Index/login'); ?>" target="_blank">老师中心</a></li>-->
+                <!--</ul>-->
+            </div>
+            <div class="c2 call" style="text-align: right">
+                <ul>
+                    <li><i class="fa fa-phone"></i>&nbsp;021-64666013</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="container tc_ch">
+        <div class="c9">
+            <div class="c12 teacher_wrap">
+                <div class="c12 address_wrap add_add">
+                    <h4>我的地址：</h4>
+                    <p>上海市徐汇区虹桥路999号</p>
+                    <p>上海市徐汇区虹桥路999号</p>
+                </div>
+                <div class="c12 add_tip address_wrap">
+                    <h3>添加新地址</h3>
+                </div>
+                 <!--高德地图-->
+                <!--<div class="autoclass">-->
+                    <!--<input type="text" id="keyword" name="keyword" value="" style="width: 95%;"/>-->
+                    <!--<div id="result1" class="autobox" name="result1"></div>-->
+                <!--</div>-->
+                <!--<div id="iCenter" style="width: 200px;height: 200px"></div>-->
+                <!--<div id="result"></div>-->
+
+                <div class="c12 add_win hid">
+                    <div class="c12 add_tit">
+                        <p>请添加新地址</p>
+                    </div>
+                     <div class="c12 map_wrap">
+                         <div class="c12">
+                              <input placeholder="搜索路名/小区/住宅/学校" type='text' value=""  id="keyword"/>
+                              <i class="fa fa-search" onclick="placeSearch1()"></i>
+                             <div id="result1" class="autobox" name="result1" style="position: absolute;z-index: 999;background: #FFFFFF"></div>
+                         </div>
+                         <div class="c8 map_a">
+                             <div id="iCenter" style="width:98%;height: 200px"></div>
+                         </div>
+                         <div class="c4">
+                             <div style='width:100%; height: 200px;margin-top: 20px;overflow-y: scroll' id="result">请输入关键词搜索！</div>
+                         </div>
+                         <div class="c12">
+                             <input class="all_id" placeholder="填写详细住址" type='text'  />
+                         </div>
+                         <div class="c12 add_ok">
+                             <a  class="button button-primary button-rounded button-large">确定</a>
+                         </div>
+                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="c3">
+            <div class="c12 par_tit">
+                <!--个人中心入口-->
+                <div class="c12 pr_new">
+                    <span style="display: none" class="tc_sex">男</span>
+                    <div class="c12 center_rk">
+                        <a href=""><i class="fa fa-power-off"></i>退出</a>
+                    </div>
+                    <div class="c12 pr_im">
+                        <img src="http://139.196.29.70/resource/teacher/verify/1990043_edu.png">
+                    </div>
+                    <div class="c12 pr_name">
+                        <p>王亚楠&nbsp;<i class="fa sex_im"></i></p>
+                        <p>高中八年级</p>
+                    </div>
+                    <div class="c12 pr_order">
+                        <a href=""><span></span>待支付<span>&nbsp;1</span></a>
+                        <a href=""><span></span>待支付<span>&nbsp;5</span></a>
+                        <a href=""><span></span>待支付<span>&nbsp;3</span></a>
+                    </div>
+                    <div class="c12 yuyue">
+                        <a class="button button-primary button-large" id="find"><i class="fa fa-search"></i>找老师</a>
+                        <a class="button button-highlight button-rounded button-large" id="need"><i class="fa fa-paper-plane-o"></i>发需求</a>
+                    </div>
+                </div>
+            </div>
+            <div class="c12 par_cen" style="margin-top: 10px">
+                 <ul>
+                     <li><a href=""><i class="fa fa-file-text-o"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我的订单</a></li>
+                     <li><a href=""><i class="fa fa-paper-plane-o"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我的需求</a></li>
+                     <li><a href=""><i class="fa fa-user"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;个人资料</a></li>
+                     <li><a href=""><i class="fa fa-map"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我的地址</a></li>
+                     <li><a href=""><i class="fa fa-credit-card"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;交易记录</a></li>
+                     <li><a href=""><i class="fa fa-cog"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;修改密码</a></li>
+                 </ul>
+            </div>
+        </div>
+        <div style="clear: both"></div>
+    </div>
+<br><br>
+
+<!--底部-->
+<div class="full footer">
+    <div class="container">
+        <div class="c12 foot_wrap">
+            <div class="c5 foo_logo">
+                <div class="c2">
+                    <img src="/thinkphp/Public/img/tc_home/25.png">
+                </div>
+                <div class="c9">
+                    <p class="co_name">上海优优教育科技有限公司&nbsp版权所有</p>
+                    <p>Copyright @ 2015  All Rights Reserved.</p>
+                </div>
+                <div class="c1">
+                    <img src="/thinkphp/Public/img/tc_home/26.png">
+                </div>
+            </div>
+            <div class="c2 foo_wx">
+                <div class="c6">
+                    <img src="/thinkphp/Public/img/tc_home/wx.png">
+                </div>
+                <div class="c6">
+                    <p>扫描微信公众号</p>
+                </div>
+            </div>
+            <div class="c5 foo_call" >
+                <div class="c1">
+                    <img src="/thinkphp/Public/img/tc_home/26.png">
+                </div>
+                <div class="c11">
+                    <div class="call">
+                        <img src="/thinkphp/Public/img/tc_home/27.png">
+                        <p>021-64666013</p>
+                    </div>
+                    <div class="call add">
+                        <img src="/thinkphp/Public/img/tc_home/28.png">
+                        <p>上海市徐汇区虹桥路333号交大慧谷四楼</p>
+                    </div>
+                </div>
+                <div style="clear: both"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="fix_window">
+</div>
+<!--找老师提示框-->
+<div id="find_wrap" class="fix_wrap_find">
+    <div class="c12 findtit">
+        <div class="c12"><p>找老师</p></div>
+        <div class="find_close"><i class="fa fa-close"></i></div>
+    </div>
+    <div class="c12 findabout">
+        <p>你可在教员库中挑选老师，并对心仪的老师下单，下单后会给您开放教员的电话号</p>
+        <p>你可以主动联系教员或等待教员与您沟通，若24小时内教员未接单订单将会取消</p>
+        <div class="c12 findbutton"><a href="<?php echo U('home/index/teacher'); ?>" class="button button-primary button-rounded button-large">找老师</a></div>
+    </div>
+</div>
+<!--发需求提示框-->
+<div id="need_wrap" class="fix_wrap_need">
+    <div class="c12 needtit">
+        <div class="c12"><p>发需求</p></div>
+        <div class="need_close"><i class="fa fa-close"></i></div>
+    </div>
+    <div class="c12 needabout">
+        <p>所有教员均可见，发布后教员会进行抢单</p>
+        <p>你可在"个人中心-我的订单"中指定抢单教员</p>
+        <div class="c12 needbutton"><a class="button button-highlight button-rounded button-large" href="<?php echo U('home/index/choose'); ?>">发需求</a></div>
+    </div>
+</div>
+<script>
+//    var map = null;
+//    var searchService = null;
+    var init = function () {
+        var center = new qq.maps.LatLng(31.1944886192,121.4367302510);
+        map = new qq.maps.Map(document.getElementById('container3'), {
+            center:center,
+            zoom:10
+        });
+        //调用Poi检索类
+        searchService = new qq.maps.SearchService({
+            panel:document.getElementById('infoDiv'),
+            map : map
+        });
+//        getResult();
+    };
+    function getResult() {
+        //设置searchRequest
+        var poiText = document.getElementById("poiText").value;
+        var regionText = document.getElementById("regionText").value;
+        searchService.setLocation(regionText);
+        searchService.search(poiText);
+    }
+</script>
+</body>
+<script language="javascript">
+    var mapObj;
+    var marker = new Array();
+    var windowsArr = new Array();
+    var cloudDataLayer;
+    var MSearch;
+    //初始化地图对象，加载地图
+    function mapInit(){
+        mapObj = new AMap.Map("iCenter",{
+            center:new AMap.LngLat(121.4367302510,31.1944886192), //地图中心点
+            level:11  //地图显示的比例尺级别
+        });
+        AMap.event.addListener(mapObj,'click',getLnglat); //点击事件
+
+        //加载输入提示插件
+        mapObj.plugin(["AMap.Autocomplete"], function() {
+            //判断是否IE浏览器
+            if (navigator.userAgent.indexOf("MSIE") > 0) {
+                document.getElementById("keyword").onpropertychange = autoSearch;
+            }
+            else {
+                document.getElementById("keyword").oninput = autoSearch;
+            }
+        });
+
+    }
+    //鼠标点击，获取经纬度坐标
+    function getLnglat(e){
+        var x = e.lnglat.getLng();
+        var y = e.lnglat.getLat();
+        document.getElementById("lnglats").innerHTML = x + "," + y;
+    }
+    //清空地图
+    function clearMap(){
+        mapObj.clearMap();
+        document.getElementById("result").innerHTML = '&nbsp;';
+    }
+    function clearCloud(){
+        cloudDataLayer.setMap(null);
+        mapObj.clearMap();
+        document.getElementById("result").innerHTML = '&nbsp;';
+    }
+    //关键词查询
+    function placeSearch1() {
+        clearMap();
+        mapObj.plugin(["AMap.PlaceSearch"], function() {
+            MSearch = new AMap.PlaceSearch({ //构造地点查询类
+                pageSize:10,
+                pageIndex:1,
+                city:"021" //城市
+            });
+            AMap.event.addListener(MSearch, "complete", Search_CallBack);//返回地点查询结果
+            MSearch.search(''); //关键字查询
+        });
+    }
+    //添加marker&infowindow
+    function addmarker(i, d) {
+        var lngX;
+        var latY;
+        var iName;
+        var iAddress;
+        if(d.location){
+            lngX = d.location.getLng();
+            latY = d.location.getLat();
+        }else{
+            lngX = d._location.getLng();
+            latY = d._location.getLat();
+        }
+        if(d.name){
+            iName = d.name;
+        }else{
+            iName = d._name;
+        }
+        if(d.name){
+            iAddress = d.address;
+        }else{
+            iAddress = d._address;
+        }
+        var markerOption = {
+            map:mapObj,
+            icon:"http://webapi.amap.com/images/" + (i + 1) + ".png",
+            position:new AMap.LngLat(lngX, latY)
+        };
+        var mar = new AMap.Marker(markerOption);
+        marker.push(new AMap.LngLat(lngX, latY));
+
+        var infoWindow = new AMap.InfoWindow({
+            content:"<h3><font color=\"#00a6ac\">" + (i + 1) + ". " + iName + "</font></h3>" + TipContents(d.type, iAddress, d.tel),
+            size:new AMap.Size(300, 0),
+            autoMove:true,
+            offset:new AMap.Pixel(0,-30)
+        });
+        windowsArr.push(infoWindow);
+        var aa = function (e) {infoWindow.open(mapObj, mar.getPosition());};
+        AMap.event.addListener(mar, "click", aa);
+    }
+    //回调函数
+    function Search_CallBack(data) {
+        var resultStr = "";
+        var poiArr = data.poiList.pois;
+        var resultCount = poiArr.length;
+        for (var i = 0; i <1; i++) {
+            resultStr += "<div id='divid" + (i + 1) + "' onmouseover='openMarkerTipById1(" + i + ",this)' onmouseout='onmouseout_MarkerStyle(" + (i + 1) + ",this)' style=\"font-size: 12px;cursor:pointer;padding:0px 0 4px 2px; border-bottom:1px solid #C1FFC1;\"><table><tr><td><img src=\"http://webapi.amap.com/images/" + (i + 1) + ".png\"></td>" + "<td><h3><font color=\"#00a6ac\">" + poiArr[i].name+ '-'+ poiArr[i].address+ "</font></h3>";
+            resultStr += TipContents(poiArr[i].type, poiArr[i].address, poiArr[i].tel) + "</td></tr></table></div>";
+            addmarker(i, poiArr[i]);
+        }
+        mapObj.setFitView();
+        document.getElementById("result").innerHTML = resultStr;
+    }
+    function TipContents(type, address, tel) {  //窗体内容
+        if (type == "" || type == "undefined" || type == null || type == " undefined" || typeof type == "undefined") {
+            type = "暂无";
+        }
+        if (address == "" || address == "undefined" || address == null || address == " undefined" || typeof address == "undefined") {
+            address = "暂无";
+        }
+        if (tel == "" || tel == "undefined" || tel == null || tel == " undefined" || typeof address == "tel") {
+            tel = "暂无";
+        }
+        var str = "&nbsp;&nbsp;地址：" + address + "<br />&nbsp;&nbsp;电话：" + tel + " <br />&nbsp;&nbsp;类型：" + type;
+        return str;
+    }
+    function openMarkerTipById1(pointid, thiss) {  //根据id 打开搜索结果点tip
+        thiss.style.background = '#CAE1FF';
+        windowsArr[pointid].open(mapObj, marker[pointid]);
+    }
+    function onmouseout_MarkerStyle(pointid, thiss) { //鼠标移开后点样式恢复
+        thiss.style.background = "";
+    }
+
+    //输入提示
+    function autoSearch() {
+        var keywords = document.getElementById("keyword").value;
+        var auto;
+        var autoOptions = {
+            pageIndex:1,
+            pageSize:10,
+            city: "" //城市，默认全国
+        };
+        auto = new AMap.Autocomplete(autoOptions);
+        //查询成功时返回查询结果
+        AMap.event.addListener(auto, "complete", autocomplete_CallBack);
+        auto.search(keywords);
+    }
+    //输出输入提示结果的回调函数
+    function autocomplete_CallBack(data) {
+        var resultStr = "";
+        var tipArr = [];
+        tipArr = data.tips;
+        if (tipArr.length>0) {
+            for (var i = 0; i < tipArr.length; i++) {
+                resultStr += "<div id='divid" + (i + 1) + "' onmouseover='openMarkerTipById(" + (i + 1)
+                        + ",this)' onclick='selectResult(" + i + ")' onmouseout='onmouseout_MarkerStyle(" + (i + 1)
+                        + ",this)' style=\"font-size: 13px;cursor:pointer;padding:5px 5px 5px 5px;\">" + tipArr[i].name + "<span style='color:#C1C1C1;'>"+ tipArr[i].district + "</span></div>";
+            }
+        }
+        else  {
+            resultStr = " π__π 亲,人家找不到结果!<br />要不试试：<br />1.请确保所有字词拼写正确<br />2.尝试不同的关键字<br />3.尝试更宽泛的关键字";
+        }
+
+        document.getElementById("result1").innerHTML = resultStr;
+        document.getElementById("result1").style.display = "block";
+    }
+
+    //输入提示框鼠标滑过时的样式
+    function openMarkerTipById(pointid, thiss) {  //根据id打开搜索结果点tip
+        thiss.style.background = '#CAE1FF';
+    }
+
+    //输入提示框鼠标移出时的样式
+    function onmouseout_MarkerStyle(pointid, thiss) {  //鼠标移开后点样式恢复
+        thiss.style.background = "";
+    }
+
+    //从输入提示框中选择关键字并查询
+    function selectResult(index) {
+        if (navigator.userAgent.indexOf("MSIE") > 0) {
+            document.getElementById("keyword").onpropertychange = null;
+            document.getElementById("keyword").onfocus = focus_callback;
+        }
+        //截取输入提示的关键字部分
+        var text = document.getElementById("divid" + (index + 1)).innerHTML.replace(/<[^>].*?>.*<\/[^>].*?>/g,"");;
+        document.getElementById("keyword").value = text;
+        document.getElementById("result1").style.display = "none";
+        //根据选择的输入提示关键字查询
+        mapObj.plugin(["AMap.PlaceSearch"], function() {
+            var msearch = new AMap.PlaceSearch();  //构造地点查询类
+            AMap.event.addListener(msearch, "complete", Search_CallBack); //查询成功时的回调函数
+            msearch.search(text);  //关键字查询查询
+        });
+    }
+
+    //定位选择输入提示关键字
+    function focus_callback() {
+        if (navigator.userAgent.indexOf("MSIE") > 0) {
+            document.getElementById("keyword").onpropertychange = autoSearch;
+        }
+    }
+    //道路交叉口
+    function roadCrossSearchByRoadName(){
+        var roadname = '101';
+        var city2 = '北京';
+        var RoadSearchOption = {
+            number:10,//每页数量,默认10
+            batch:1,//请求页数，默认1
+            ext:""//扩展字段
+        };
+        var road = new AMap.RoadSearch(RoadSearchOption);
+        road.roadCrossSearchByRoadName(roadname,city2,roadCrossSearch_CallBack);
+        //清空本次搜索的marker和windowsArr
+        marker=[];
+        windowsArr=[];
+    }
+    function roadCrossSearch_CallBack(data){
+        mapObj.clearMap();
+        var resultStr="";
+        if(data.status =="E0") {
+            var marker = new Array();
+            for (var i = 0; i < data.list.length; i++) {
+                resultStr += "<div id='divid"+(i+1)+"' onmouseover='openMarkerTipById1("+(i)+",this)' onmouseout='onmouseout_MarkerStyle("+(i+1)+",this)' style=\"font-size: 13px;cursor:pointer;padding:2px 0 10px 5px;\"><b>"+(i+1)+"、"+data.list[i].roadname2+"和"+data.list[i].roadname1+"交叉口</b>"+"<br \/></div>";
+                resultStr += "<div>道路交叉口坐标："+data.list[i].x+","+data.list[i].y+"<br></div>";
+                addmarker2(i,data.list[i]);
+            }
+            mapObj.setFitView();
+        }
+        else if(data.status =="E1")
+        {
+            resultStr = "未查找到任何结果!<br />建议：<br />1.请确保所有字词拼写正确。<br />2.尝试不同的关键字。<br />3.尝试更宽泛的关键字。";
+        }
+        else
+        {
+            resultStr= "错误信息："+data.state+"请对照API Server v2.0.0 简明提示码对照表查找错误类型";
+        }
+        document.getElementById("result").innerHTML = resultStr;
+    }
+    function addmarker2(i,d){
+        var markerOption = {
+            map:mapObj,
+            icon:"http://webapi.amap.com/images/point.png",
+            position:new AMap.LngLat(d.x,d.y),
+            offset:{x:-8,y:-9}
+        };
+        var mar =new AMap.Marker(markerOption);
+        marker.push(new AMap.LngLat(d.x,d.y));
+        var infoWindow = new AMap.InfoWindow({
+            content:"&nbsp;&nbsp;"+(i+1) + ". "+ d.roadname2 +"和"+d.roadname1+"交叉口"+"<br />",
+            size:new AMap.Size(300,0),
+            autoMove:true
+        });
+        windowsArr.push(infoWindow);
+
+        var aa=function(e){infoWindow.open(mapObj,mar.getPosition());};
+        AMap.event.addListener(mar,"click",aa);
+    }
+    var yunPoint = new AMap.LngLat(120.169144,30.293164);
+    //叠加云数据图层
+    function addCloudLayer() {
+        mapObj.setZoomAndCenter(14,yunPoint);
+        //加载云图层插件
+        mapObj.plugin('AMap.CloudDataLayer', function () {
+            var layerOptions = {
+                query:{keywords: ''},
+                clickable:true
+            };
+            cloudDataLayer = new AMap.CloudDataLayer('5358f853e4b01214f369d851', layerOptions); //实例化云图层类
+            cloudDataLayer.setMap(mapObj); //叠加云图层到地图
+            AMap.event.addListener(cloudDataLayer, 'click', function (result) {
+                var clouddata = result.data;
+                var infoWindowYun = new AMap.InfoWindow({
+                    content:"<h3><font face=\"微软雅黑\"color=\"#3366FF\">"+ clouddata._name +"</font></h3><hr />地址："+ clouddata._address + "<br />" + "创建时间：" + clouddata._createtime+ "<br />" + "更新时间：" + clouddata._updatetime,
+                    size:new AMap.Size(300, 0),
+                    autoMove:true,
+                    offset:new AMap.Pixel(0,-5)
+                });
+                infoWindowYun.open(mapObj, clouddata._location);
+            });
+        });
+    }
+    function cloudSearch(){
+        var arr = new Array();
+        var search;
+        var searchOptions = {
+            keywords:'酒店',
+            orderBy:'_id:ASC'
+        };
+        //加载CloudDataSearch服务插件
+        mapObj.plugin(["AMap.CloudDataSearch"], function() {
+            search = new AMap.CloudDataSearch('5358f853e4b01214f369d851', searchOptions); //构造云数据检索类
+            AMap.event.addListener(search, "complete", cloudSearch_CallBack); //查询成功时的回调函数
+            AMap.event.addListener(search, "error", errorInfo); //查询失败时的回调函数
+            search.searchNearBy(yunPoint, 10000); //周边检索
+        });
+    }
+    function cloudSearch_CallBack(data) {
+        var resultStr="";
+        var resultArr = data.datas;
+        var resultNum = resultArr.length;
+        for (var i = 0; i < resultNum; i++) {
+            resultStr += "<div id='divid" + (i+1) + "' onmouseover='openMarkerTipById1(" + i + ",this)' onmouseout='onmouseout_MarkerStyle(" + (i+1) + ",this)' style=\"font-size: 12px;cursor:pointer;padding:2px 0 4px 2px; border-bottom:1px solid #C1FFC1;\"><table><tr><td><h3><font face=\"微软雅黑\"color=\"#3366FF\">" + (i+1) + "." + resultArr[i]._name + "</font></h3>";
+            resultStr += '地址：' + resultArr[i]._address + '<br/>类型：' + resultArr[i].type + '<br/>ID：' + resultArr[i]._id + "</td></tr></table></div>";
+            addmarker(i, resultArr[i]);
+        }
+        mapObj.setFitView();
+        document.getElementById("result").innerHTML = resultStr;
+    }
+    //回调函数
+    function errorInfo(data) {
+        resultStr = data.info;
+        document.getElementById("result").innerHTML = resultStr;
+    }
+</script>
+</html>

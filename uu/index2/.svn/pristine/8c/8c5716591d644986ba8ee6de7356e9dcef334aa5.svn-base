@@ -1,0 +1,30 @@
+[ 2016-02-29T16:25:39+08:00 ] 116.228.167.234 /index/Public/js/maps/swiper.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000567s ]
+ERR: 无法加载模块:Public
+
+[ 2016-02-29T16:25:39+08:00 ] 116.228.167.234 /index/Public/js/maps/swiper.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000513s ]
+ERR: 无法加载模块:Public
+
+[ 2016-02-29T16:26:04+08:00 ] 116.228.167.234 /index/Public/js/maps/swiper.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000443s ]
+ERR: 无法加载模块:Public
+
+[ 2016-02-29T19:35:01+08:00 ] 116.228.167.234 /index/Public/js/maps/swiper.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000419s ]
+ERR: 无法加载模块:Public
+
+[ 2016-02-29T19:35:01+08:00 ] 116.228.167.234 /index/Public/js/maps/swiper.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000412s ]
+ERR: 无法加载模块:Public
+

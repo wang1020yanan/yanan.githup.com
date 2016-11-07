@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>管理员资料审核菜单</title>
+    <link href="http://www.uustudy.com.cn/img/logo.png" rel="shortcut icon" type="image/x-icon"/>
+    <link href="__PUBLIC__/admin/css/menu2.css" rel="stylesheet" type="text/css">
+    <script src="__PUBLIC__/admin/js/jquery-2.1.1.min.js"></script>
+    <script src="__PUBLIC__/admin/js/jquery.cookie.js"></script>
+    <script src="__PUBLIC__/admin/js/menu2.js"></script>
+</head>
+<body>
+       <header>
+           <div class="c6 header_wrap1" ><h2>&nbsp&nbsp&nbsp优优老师后台管理操作系统</h2></div>
+           <div class="c6 header_wrap2"><p>用户名：{$_SESSION['admin_name']}&nbsp;&nbsp;<a href="__APP__/admin/login/logout">[退出]</a>&nbsp&nbsp&nbsp</p></div>
+       </header>
+       <div class="menu">
+           <div class="c12 message">
+               <div class="c1 color">
+                   <div class="c6">&nbsp;</div>
+                   <div class="c6">&nbsp;</div>
+               </div>
+               <div class="c11 msg">信息中心</div>
+           </div>
+           <div class="c12 message">
+             &nbsp;
+           </div>
+          <a href="__APP__/admin/Verify/verifyList">
+              <div class="c12 menu_cont ">
+                  <div class="c4"><img src="__PUBLIC__/admin/img/4.png"></div>
+                  <div class="c8">
+                      <p>&nbsp;教师审核<span id="ver"></span></p>
+                  </div>
+              </div>
+          </a>
+          <a href="__APP__/admin/Verify/detailList">
+           <div class="c12 menu_cont active1">
+               <div class="c4"><img src="__PUBLIC__/admin/img/5.png"></div>
+               <div class="c8">
+                   <p>&nbsp;资料审核<span id="det"></span></p>
+               </div>
+           </div>
+          </a>
+       </div>
+       <div class="con">
+           <div class="c1">&nbsp;</div>
+           <div class="c10 con_wrap">
+               <!--搜索与刷新-->
+                <div class="c12 search_wrap">
+                    <div class="c6">
+                        <img src="__PUBLIC__/admin/img/7.png" style="position: absolute;left: 10px;top: 6px;">
+                        <input id="search" type="search" placeholder="搜索">
+                    </div>
+                    <div class="c6 refresh">
+                        <a href=""><img src="__PUBLIC__/admin/img/6.png"></a>
+                    </div>
+                </div>
+               <!--实例-->
+                <div class="c12 user_wrap">
+                    <div class="c12 user_menu">
+                        <div class="c2">姓名</div>
+                        <div class="c4">学校</div>
+                        <div class="c2">联系方式</div>
+                        <div class="c2">状态</div>
+                        <div class="c2">操作</div>
+                    </div>
+                    <!--老师信息-->
+				    <foreach name="list" item="vo" >
+                    <div class="c12 use_information">
+                        <div class="c2"> &nbsp;{$vo.username}</div>
+                       <div class="c4" style="overflow: hidden"> &nbsp;{$vo.degreeschoolname}</div>
+                       <div class="c2"> &nbsp;{$vo.telephone}</div>
+                       <div class="c2">待审核</div>
+                       <div class="c2"><a href="__APP__/Admin/Verify/detail/userID/{$vo.userid}">去审核</a></div>
+                    </div>
+				    </foreach>
+                    <div class="c12">&nbsp;</div>
+                    <div class="c12"> <div class="pagelist">{$page}</div></div>
+                </div>
+           </div>
+           <div class="c1">&nbsp;</div>
+       </div>
+
+</body>
+</html>

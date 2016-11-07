@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>优优老师 - 订单</title>
+    <link href="http://www.uustudy.com.cn/img/logo.png" rel="shortcut icon" type="image/x-icon"/>
+    <link href="__PUBLIC__/commen/fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!--<link href="__PUBLIC__/commen/css/bootstrap.min.css" rel="stylesheet" type="text/css">-->
+    <link href="__PUBLIC__/order/css/p_order.css" rel="stylesheet" type="text/css">
+    <script src="__PUBLIC__/commen/js/jquery.min.js"></script>
+    <!--<script src="__PUBLIC__/commen/js/bootstrap.min.js"></script>-->
+    <script src="__PUBLIC__/order/js/p_order.js"></script>
+</head>
+<body  onload="load()">
+<script language="javascript">
+    $(document).ready(function() {
+
+        /* 	1st example	*/
+
+        /// wrap inner content of each anchor with first layer and append background layer
+        $("#menu1 li a").wrapInner( '<span class="out"></span>' ).append( '<span class="bg"></span>' );
+
+        // loop each anchor and add copy of text content
+        $("#menu1 li a").each(function() {
+            $( '<span class="over">' +  $(this).text() + '</span>' ).appendTo( this );
+        });
+
+        $("#menu1 li a").hover(function() {
+            // this function is fired when the mouse is moved over
+            $(".out",	this).stop().animate({'top':	'80px'},	250); // move down - hide
+            $(".over",	this).stop().animate({'top':	'0px'},		250); // move down - show
+            $(".bg",	this).stop().animate({'top':	'0px'},		120); // move down - show
+
+        }, function() {
+            // this function is fired when the mouse is moved off
+            $(".out",	this).stop().animate({'top':	'0px'},		250); // move up - show
+            $(".over",	this).stop().animate({'top':	'-80px'},	250); // move up - hide
+            $(".bg",	this).stop().animate({'top':	'-80px'},	120); // move up - hide
+        });
+
+
+        /*	2nd example	*/
+
+        $("#menu2 li a").wrapInner( '<span class="out"></span>' );
+
+        $("#menu2 li a").each(function() {
+            $( '<span class="over">' +  $(this).text() + '</span>' ).appendTo( this );
+        });
+
+        $("#menu2 li a").hover(function() {
+            $(".out",	this).stop().animate({'top':	'80px'},	300); // move down - hide
+            $(".over",	this).stop().animate({'top':	'0px'},		300); // move down - show
+
+        }, function() {
+            $(".out",	this).stop().animate({'top':	'0px'},		300); // move up - show
+            $(".over",	this).stop().animate({'top':	'-80px'},	300); // move up - hide
+        });
+
+    });
+</script>
+<style>
+    /*头部*/
+    .header{
+        box-shadow: 1px 1px 30px #ccc;
+        /*opacity: 0;*/
+        /*position: relative;*/
+        /*left: -100%;*/
+        width: 100%;
+        height: 80px;
+        min-width: 970px;
+        overflow: hidden;
+        /*fonts-family:"Comic Sans MS","幼圆","黑体",sans-serif;*/
+        background-color:rgba(255,255,255,0.75);
+    }
+    .header_bg{
+        width: 100%;
+        height: 80px;
+        min-width: 970px;
+    }
+    .bg_abs{
+        position: absolute;
+    }
+    .header_wrap .logo .c2 img {
+        padding-top: 20px;
+    }
+    .header_wrap .logo .c2 img:hover{
+        opacity: 0.8;
+    }
+    .header_wrap .logo .c10 img{
+        padding-top: 30px;
+        margin-left: 20px;
+    }
+    .header .call li{
+        display: inline;
+        line-height:80px;
+        font-size: 18px;
+        color: #54C5F5;
+    }
+    .header .call img{
+        position: relative;
+        /*vertical-align:middle;*/
+        top: -2px;
+    }
+    .header a{
+        -webkit-transition:color .3s;
+        -moz-transition: color .3s;
+        -ms-transition:color .3s;
+        -o-transition: color .3s;
+        transition: color .3s;
+    }
+    .header a:hover{
+        color:#077ace ;
+    }
+    .menu {
+        height: 80px;
+        display: block;
+        padding: 0px;
+        width: 800px;
+        margin-top: 0px;
+        margin-right: auto;
+        /*margin-bottom: 40px;*/
+        margin-left: auto;
+    }
+
+    .menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .menu ul li {
+        /* width and height of the menu items */
+        float: left;
+        overflow: hidden;
+        position: relative;
+        line-height: 80px;
+        text-align: center;
+    }
+
+    .menu ul li a {
+        /* must be postioned relative  */
+        position: relative;
+        display: block;
+        width: 120px;
+        height: 80px;
+        font-family: "微软雅黑", "宋体";
+        font-size: 18px;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .menu ul li a span {
+        /* all layers will be absolute positioned */
+        position: absolute;
+        left: 0;
+        width: 120px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+    }
+
+    .menu ul li a span.out {
+        top: 0px;
+    }
+
+    .menu ul li a span.over,
+    .menu ul li a span.bg {
+        /* hide */
+        top: -80px;
+    }
+
+    /** 1st example **/
+
+    /** 2nd example **/
+
+    #menu2 {
+        /*background: #FFFFFF;*/
+    }
+
+    #menu2 ul li a {
+        color: #999999;
+    }
+
+    #menu2 ul li a span.over {
+        color: #FFFFFF;
+        background-color: #088ef0;
+    }
+</style>
+<div class="header">
+    <img class="header_bg" src="__PUBLIC__/img/tc_home/1.png" style="position: absolute">
+    <div class="header_wrap container">
+        <div class="c12">
+            <div class="c2 logo">
+                <div class="c2">
+                    <a href="/"><img src="__PUBLIC__/img/tc_home/2.png" alt="优优老师" title="优优老师"/></a>
+                </div>
+                <div class="c10">
+                    <img src="__PUBLIC__/img/tc_home/3.png"/>
+                </div>
+                <div style="clear: both"></div>
+            </div>
+            <div class="c8 nav">
+                <div id="menu2" class="menu">
+                    <ul>
+                        <li><a href="#">首页</a></li>
+                        <li><a href="<?php echo U('home/index/teacher'); ?>">教员库</a></li>
+                        <li><a href="<?php echo U('home/index/allneed'); ?>">家教需求</a></li>
+                        <li><a href="<?php echo U('home/index/data'); ?>">家长中心</a></li>
+                        <li><a href="<?php echo U('home/index/teacher'); ?>">老师中心</a></li>
+                    </ul>
+                    <div class="cls"></div>
+                </div>
+                <!--<ul class="nav_ul">-->
+                <!--<li class="tipto"><a id="home" style="cursor: pointer">首页</a></li>-->
+                <!--<li class="tipto">-->
+                <!--<a href="<?php echo U('home/index/teacher'); ?>">教员库</a>-->
+                <!--</li>-->
+                <!--<li class="tipto"><a id="func" style="cursor: pointer">家教需求</a></li>-->
+                <!--<li class="tipto"><a id="abou" style="cursor: pointer">家长中心</a></li>-->
+                <!--<li class="tipto"><a href="<?php echo U('home/Index/login'); ?>" target="_blank">老师中心</a></li>-->
+                <!--</ul>-->
+            </div>
+            <div class="c2 call" style="text-align: right">
+                <ul>
+                    <li><i class="fa fa-phone"></i>&nbsp;021-64666013</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container p_order_wrap">
+    <!--订单实例-->
+     <div class="c12 p_order">
+          <div class="c6 order_a">
+              <div class="c6 order_b">
+                  <ul>
+                      <li><i class="fa  fa-circle"></i>&nbsp;&nbsp;科目&nbsp;&nbsp;&nbsp;&nbsp;<span>语文</span></li>
+                      <li><i class="fa  fa-circle"></i>&nbsp;&nbsp;年级&nbsp;&nbsp;&nbsp;&nbsp;<span>大学一百年级</span></li>
+                      <li><i class="fa  fa-circle"></i>&nbsp;&nbsp;性别&nbsp;&nbsp;&nbsp;&nbsp;<span>你猜</span></li>
+                  </ul>
+              </div>
+              <div class="c6 order_c">
+                  <ul>
+                      <li>75元<span>&nbsp;/课时</span></li>
+                      <li>成交时间&nbsp;<span>2月21日&nbsp;13:40</span></li>
+                  </ul>
+              </div>
+          </div>
+          <div class="c6">
+               <div class="c9 order_d">
+                   <div class="c4 order_e">
+                       <img src="http://139.196.29.70/resource/teacher/verify/1990043_edu.png">
+                   </div>
+                   <div class="c8 order_f">
+                       <p>王亚楠&nbsp;|&nbsp;家里蹲大学</p>
+                       <p class="tc_lev"><span class="tc_star"></span>&nbsp;&nbsp;<span class="tc_core">4.7</span>分&nbsp;<span>3</span>条评价</p>
+                   </div>
+               </div>
+               <div class="c3">
+                       <div class="c10 order_g">
+                           <p>&nbsp;&nbsp;88888888</p>
+                       </div>
+                       <div class="c10 order_h">
+                           <img src="__PUBLIC__/order/img/20.png">
+                       </div>
+               </div>
+              <div class="sanjiao"></div>
+          </div>
+     </div>
+    <!--订单实例-->
+    <div class="c12 p_order">
+        <div class="c6 order_a">
+            <div class="c6 order_b">
+                <ul>
+                    <li><i class="fa  fa-circle"></i>&nbsp;&nbsp;科目&nbsp;&nbsp;&nbsp;&nbsp;<span>语文</span></li>
+                    <li><i class="fa  fa-circle"></i>&nbsp;&nbsp;年级&nbsp;&nbsp;&nbsp;&nbsp;<span>大学一百年级</span></li>
+                    <li><i class="fa  fa-circle"></i>&nbsp;&nbsp;性别&nbsp;&nbsp;&nbsp;&nbsp;<span>你猜</span></li>
+                </ul>
+            </div>
+            <div class="c6 order_c">
+                <ul>
+                    <li>75元<span>&nbsp;/课时</span></li>
+                    <li>成交时间&nbsp;<span>2月21日&nbsp;13:40</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="c6">
+            <div class="c9 order_d">
+                <div class="c4 order_e">
+                    <img src="http://139.196.29.70/resource/teacher/verify/1990043_edu.png">
+                </div>
+                <div class="c8 order_f">
+                    <p>王亚楠&nbsp;|&nbsp;家里蹲大学</p>
+                    <p class="tc_lev"><span class="tc_star"></span>&nbsp;<span class="tc_core">1.2</span>分&nbsp;<span>3</span>条评价</p>
+                </div>
+            </div>
+            <div class="c3">
+                <div class="c10 order_g">
+                    <p>&nbsp;&nbsp;88888888</p>
+                </div>
+                <div class="c10 order_h">
+                    <img src="__PUBLIC__/order/img/20.png">
+                </div>
+            </div>
+            <div class="sanjiao"></div>
+        </div>
+    </div>
+    <!--<div style="clear: both"></div>-->
+</div>
+<br>
+<!--底部-->
+    <div class="full footer">
+        <div class="container">
+             <div class="c12 foot_wrap">
+                  <div class="c5 foo_logo">
+                      <div class="c2">
+                          <img src="__PUBLIC__/img/tc_home/25.png">
+                      </div>
+                      <div class="c9">
+                          <p class="co_name">上海优优教育科技有限公司&nbsp版权所有</p>
+                          <p>Copyright @ 2015  All Rights Reserved.</p>
+                      </div>
+                      <div class="c1">
+                          <img src="__PUBLIC__/img/tc_home/26.png">
+                      </div>
+                  </div>
+                  <div class="c2 foo_wx">
+                       <div class="c6">
+                           <img src="__PUBLIC__/img/tc_home/wx.png">
+                       </div>
+                       <div class="c6">
+                           <p>扫描微信公众号</p>
+                       </div>
+                  </div>
+                  <div class="c5 foo_call" >
+                      <div class="c1">
+                          <img src="__PUBLIC__/img/tc_home/26.png">
+                      </div>
+                      <div class="c11">
+                          <div class="call">
+                              <img src="__PUBLIC__/img/tc_home/27.png">
+                              <p>021-64666013</p>
+                          </div>
+                          <div class="call add">
+                              <img src="__PUBLIC__/img/tc_home/28.png">
+                              <p>上海市徐汇区虹桥路333号交大慧谷四楼</p>
+                          </div>
+                      </div>
+                      <div style="clear: both"></div>
+                  </div>
+             </div>
+        </div>
+    </div>
+</body>
+</html>

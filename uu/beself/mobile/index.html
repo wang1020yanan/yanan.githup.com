@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+     <meta charset="UTF-8">
+     <title></title>
+     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1, user-scalable=no">
+     <title>homepage</title>
+     <link rel="stylesheet" href="css/bootstrap.min.css" />
+     <link rel="stylesheet" href="css/swiper.min.css">
+     <link rel="stylesheet" href="css/shouye1.css">
+     <script src="js/jquery-2.1.4.min.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <script src="js/M-homepage.js"></script>
+     <script src="js/swiper.min.js"></script>
+</head>
+<body>
+    <!--导航栏-->
+    <div class="m-nav">
+        <div class="m-nav-logo">
+            <img src="image/logo.svg">
+        </div>
+        <div class="m-nav-a">
+            <span>BE.SELF</span>
+        </div>
+        <div class="m-nav-b">
+             <span class="glyphicon glyphicon-menu-hamburger hp-menu" data-toggle="modal" data-target="#myModal"></span>
+        </div>
+    </div>
+    <!--轮播-->
+    <div class="m-lb">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="image/s1.jpg" >
+                </div>
+                <div class="swiper-slide">
+                    <img src="image/s2.jpg" >
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <script>
+            var mySwiper = new Swiper('.swiper-container', {
+                autoplay: 5000,
+                pagination : '.swiper-pagination',
+                paginationClickable :true,
+            })
+        </script>
+    </div>
+    <!--热推列表-->
+    <div class="m-rt">
+        <div class="m-rt-a">
+            <img src="image/dp.jpg">
+            <p data-toggle="modal" data-target="#myModal">产品名称<span>799元</span></p>
+        </div>
+        <div class="m-rt-b">
+            <img src="image/dp.jpg">
+            <p>产品名称<span>799元</span></p>
+        </div>
+    </div>
+    <div class="m-rt">
+        <div class="m-rt-a">
+            <img src="image/dp.jpg">
+            <p>产品名称<span>799元</span></p>
+        </div>
+        <div class="m-rt-b">
+            <img src="image/dp.jpg">
+            <p>产品名称<span>799元</span></p>
+        </div>
+    </div>
+    <div class="m-rt">
+        <div class="m-rt-a">
+            <img src="image/dp.jpg">
+            <p>产品名称<span>799元</span></p>
+        </div>
+        <div class="m-rt-b">
+            <img src="image/dp.jpg">
+            <p>产品名称<span>799元</span></p>
+        </div>
+    </div>
+    <div class="m-rt">
+        <div class="m-rt-a">
+            <img src="image/dp.jpg">
+            <p>产品名称<span>799元</span></p>
+        </div>
+        <div class="m-rt-b">
+            <img src="image/dp.jpg">
+            <p>产品名称<span>799元</span></p>
+        </div>
+    </div>
+
+    <div class="m-ft">
+        <p>Copyright © 2015 25to75.com保留所有权利，沪ICP备15005343号-3 </p>
+    </div>
+    <!-- 模态框（Modal） -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="m-qx">
+                        <span class="glyphicon glyphicon-remove" data-dismiss="modal"></span>
+                    </div>
+                    <div class="m-mt-a">
+                        <img src="image/tx.jpg">
+                        <p><a href="#">用户名</a></p>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <a href="#">
+                        <div class="m-cd">
+                            <div class="m-cd-a">
+                                <p>订单</p>
+                            </div>
+                            <div class="m-cd-b">
+                                <p>&gt;</p>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="m-cd">
+                        <div class="m-cd-a">
+                            <p>订单</p>
+                        </div>
+                        <div class="m-cd-b">
+                            <p>&gt;</p>
+                        </div>
+                    </div>
+                    <div class="m-cd">
+                        <div class="m-cd-a">
+                            <p>订单</p>
+                        </div>
+                        <div class="m-cd-b">
+                            <p>&gt;</p>
+                        </div>
+                    </div>
+                    <div class="m-cd">
+                        <div class="m-cd-a">
+                            <p>订单</p>
+                        </div>
+                        <div class="m-cd-b">
+                            <p>&gt;</p>
+                        </div>
+                    </div>
+                    <div class="m-cd">
+                        <div class="m-cd-a">
+                            <p>订单</p>
+                        </div>
+                        <div class="m-cd-b">
+                            <p>&gt;</p>
+                        </div>
+                    </div>
+                    <div class="m-cd">
+                        <div class="m-cd-a">
+                            <p>订单</p>
+                        </div>
+                        <div class="m-cd-b">
+                            <p>&gt;</p>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal -->
+    </div>
+</body>
+</html>

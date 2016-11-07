@@ -1,0 +1,489 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>优优老师 - 指定教员</title>
+    <link href="http://www.uustudy.com.cn/img/logo.png" rel="shortcut icon" type="image/x-icon"/>
+    <link href="/index1/Public/commen/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="/index1/Public/commen/css/button.css" rel="stylesheet" type="text/css">
+    <link href="/index1/Public/commen/fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="/index1/Public/order/css/choose.css" rel="stylesheet" type="text/css">
+    <script src="/index1/Public/commen/js/jquery.min.js"></script>
+    <script src="/index1/Public/order/js/choose.js"></script>
+</head>
+<body  onload="load()">
+<script language="javascript">
+    $(document).ready(function() {
+        $(".city").hover(function(){
+                    $(".city_wrap").fadeToggle(0);
+                    $(".ov_city").addClass("city_active")
+                },function(){
+                    $(".city_wrap").fadeToggle(0);
+                    $(".ov_city").removeClass("city_active")
+                }
+        );
+        /* 	1st example	*/
+        /// wrap inner content of each anchor with first layer and append background layer
+        $("#menu1 li a").wrapInner( '<span class="out"></span>' ).append( '<span class="bg"></span>' );
+
+        // loop each anchor and add copy of text content
+        $("#menu1 li a").each(function() {
+            $( '<span class="over">' +  $(this).text() + '</span>' ).appendTo( this );
+        });
+
+        $("#menu1 li a").hover(function() {
+            // this function is fired when the mouse is moved over
+            $(".out",	this).stop().animate({'top':	'80px'},	250); // move down - hide
+            $(".over",	this).stop().animate({'top':	'0px'},		250); // move down - show
+            $(".bg",	this).stop().animate({'top':	'0px'},		120); // move down - show
+
+        }, function() {
+            // this function is fired when the mouse is moved off
+            $(".out",	this).stop().animate({'top':	'0px'},		250); // move up - show
+            $(".over",	this).stop().animate({'top':	'-80px'},	250); // move up - hide
+            $(".bg",	this).stop().animate({'top':	'-80px'},	120); // move up - hide
+        });
+
+
+        /*	2nd example	*/
+
+        $("#menu2 li a").wrapInner( '<span class="out"></span>' );
+
+        $("#menu2 li a").each(function() {
+            $( '<span class="over">' +  $(this).text() + '</span>' ).appendTo( this );
+        });
+
+        $("#menu2 li a").hover(function() {
+            $(".out",	this).stop().animate({'top':	'80px'},	300); // move down - hide
+            $(".over",	this).stop().animate({'top':	'0px'},		300); // move down - show
+
+        }, function() {
+            $(".out",	this).stop().animate({'top':	'0px'},		300); // move up - show
+            $(".over",	this).stop().animate({'top':	'-80px'},	300); // move up - hide
+        });
+
+    });
+</script>
+<style>
+    /*头部*/
+    .header{
+        box-shadow: 1px 1px 30px #ccc;
+        /*opacity: 0;*/
+        /*position: relative;*/
+        /*left: -100%;*/
+        width: 100%;
+        height: 80px;
+        min-width: 970px;
+        /*overflow: hidden;*/
+        /*fonts-family:"Comic Sans MS","幼圆","黑体",sans-serif;*/
+        background-color:rgba(255,255,255,0.75);
+    }
+    .header_bg{
+        width: 100%;
+        height: 80px;
+        min-width: 970px;
+    }
+    .bg_abs{
+        position: absolute;
+    }
+    .header_wrap .logo .c2 img {
+        padding-top: 20px;
+    }
+    .header_wrap .logo .c2 img:hover{
+        opacity: 0.8;
+    }
+    .header_wrap .logo .c10 img{
+        padding-top: 30px;
+        margin-left: 20px;
+    }
+    .header .call li{
+        display: inline;
+        line-height:80px;
+        font-size: 18px;
+        color: #54C5F5;
+    }
+    .header .call img{
+        position: relative;
+        /*vertical-align:middle;*/
+        top: -2px;
+    }
+    .header a{
+        -webkit-transition:color .3s;
+        -moz-transition: color .3s;
+        -ms-transition:color .3s;
+        -o-transition: color .3s;
+        transition: color .3s;
+    }
+    .header a:hover{
+        color:#077ace ;
+    }
+    .menu {
+        height: 80px;
+        display: block;
+        padding: 0px;
+        /*width: 800px;*/
+        margin-top: 0px;
+        margin-right: auto;
+        /*margin-bottom: 40px;*/
+        margin-left: auto;
+    }
+
+    .menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .menu ul li {
+        /* width and height of the menu items */
+        float: left;
+        overflow: hidden;
+        position: relative;
+        line-height: 80px;
+        text-align: center;
+    }
+
+    .menu ul li a {
+        /* must be postioned relative  */
+        position: relative;
+        display: block;
+        width: 120px;
+        height: 80px;
+        font-family: "微软雅黑", "宋体";
+        font-size: 18px;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .menu ul li a span {
+        /* all layers will be absolute positioned */
+        position: absolute;
+        left: 0;
+        width: 120px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+    }
+
+    .menu ul li a span.out {
+        top: 0px;
+    }
+
+    .menu ul li a span.over,
+    .menu ul li a span.bg {
+        /* hide */
+        top: -80px;
+    }
+
+    /** 1st example **/
+
+    /** 2nd example **/
+
+    #menu2 {
+        /*background: #FFFFFF;*/
+    }
+    .city{
+        height: 80px;
+        text-align: center;
+    }
+    .city p:nth-child(1){
+        font-size: 16px;
+        margin-bottom: 0!important;
+        line-height: 80px;
+    }
+    .ov_city{
+        cursor: pointer;
+    }
+    .city_active{
+        z-index: 999999;
+        border: 4px solid #54C5F5;
+        background: #FFFFFF;
+        border-bottom: none;
+    }
+    .city p a{
+        cursor: pointer;
+    }
+    .city_wrap{
+        background: #FFFFFF;
+        /*height: 300px;*/
+        width: 326px;
+        top: -4px;
+        /*right: 238px;*/
+        z-index: 9999;
+        border: 4px solid #54C5F5;
+        display: none;
+    }
+    #city_change{
+        color: #1B9AF7;
+    }
+    .city_wrap a{
+        padding: 3px 6px;
+        margin-bottom: 10px;
+        display: inline-block;
+        cursor: pointer;
+        font-size: 13px;
+        width: 95%;
+        color: #A1A1A1;
+        border: 1px solid #CCCCCC;
+        border-radius: 5px;
+    }
+    #city_close{
+        cursor: pointer;
+    }
+    .city_wrap a:hover{
+
+    }
+    #menu2 ul li a {
+        color: #999999;
+    }
+
+    #menu2 ul li a span.over {
+        color: #FFFFFF;
+        background-color: #088ef0;
+    }
+</style>
+<div class="header">
+    <img class="header_bg" src="/index1/Public/img/tc_home/1.png" style="position: absolute">
+    <div class="header_wrap container">
+        <div class="c12">
+            <div class="c2 logo">
+                <div class="c2">
+                    <a href="/"><img src="/index1/Public/img/tc_home/2.png" alt="优优老师" title="优优老师"/></a>
+                </div>
+                <div class="c10">
+                    <img src="/index1/Public/img/tc_home/3.png"/>
+                </div>
+                <div style="clear: both"></div>
+            </div>
+            <div class="c6 nav">
+                <div id="menu2" class="menu">
+                    <ul>
+                        <li><a href="#">首页</a></li>
+                        <!--<li class="tipto"><a id="func" style="cursor: pointer">功能</a></li>-->
+                        <!--<li class="tipto"><a id="abou" style="cursor: pointer">关于我们</a></li>-->
+                        <li class="tipto"><a href="<?php echo U('home/Index/login'); ?>" target="_blank">老师中心</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--地点-->
+            <div class="c2 city">
+                <div class="c12 ov_city">
+                    <p><span id="address">上海</span>&nbsp;<i class="fa fa-angle-down"></i></p>
+                </div>
+                <div class="c12 city_wrap">
+                    <div class="c12 city_tit" style="padding:10px;cursor: pointer">
+                        <div class="c3">热门城市</div>
+                        <!--<div class="c3">ABCDEFG</div>-->
+                        <!--<div class="c3">HIJKLMN</div>-->
+                        <!--<div class="c3">OPQRSW...</div>-->
+                    </div>
+                    <div class="c12" style="padding:15px;text-align:center">
+                        <div class="c3"><a>北京</a></div>
+                        <div class="c3"><a>北京</a></div>
+                        <div class="c3"><a>呼和浩特</a></div>
+                        <div class="c3"><a>北京</a></div>
+                        <div class="c3"><a>石家庄</a></div>
+                        <div class="c3"><a>北京</a></div>
+                        <div class="c3"><a>北京</a></div>
+                        <div class="c3"><a>北京</a></div>
+                        <div class="c3"><a>呼和浩特</a></div>
+                        <div class="c3"><a>北京</a></div>
+                        <div class="c3"><a>石家庄</a></div>
+                        <div class="c3"><a>北京</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="c2 call" style="text-align: right">
+                <ul>
+                    <li><i class="fa fa-phone"></i>&nbsp;021-64666013</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+    <!--<div class="container tc_ch">-->
+        <!--<div class="c12">-->
+            <!--<div class="c12 tc_all">-->
+                <!--&lt;!&ndash;教员&ndash;&gt;-->
+                <!--<div class="c12 teacher_wrap">-->
+                    <!--<span style="display: none" class="tc_sex">女</span>-->
+                    <!--<div class="c12 choose_tit">-->
+                       <!--<i class="fa fa-check-circle"></i>&nbsp;<span>指定教员</span>-->
+                    <!--</div>-->
+                    <!--<div class="c10 tc_pj">-->
+                        <!--<p class="tc_sc"><span>教员姓名&nbsp;&nbsp;</span>高亚军&nbsp;<i class="fa  sex_im"></i></p>-->
+                        <!--<p class="tc_slg"><span>教员学历&nbsp;&nbsp;</span>华东师范大学(本科)</p>-->
+                    <!--</div>-->
+                    <!--<div class="c2 tc_img">-->
+                        <!--<img src="http://139.196.29.70/resource/teacher/verify/1990043_edu.png">-->
+                    <!--</div>-->
+                    <!--<div style="clear: both"></div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div style="clear: both"></div>-->
+    <!--</div>-->
+    <div class="container choose_wrap">
+        <div class="c12 choose_order">
+            <div class="c12 choose_tit2">
+                <span class="choose_span">1</span>&nbsp;<span>选择课程</span>
+                <div class="c12 course_wrap">
+                     <div class="c12 price_tit">
+                         <div class="c10">&nbsp;<i class="fa fa-circle"></i>&nbsp;科目&nbsp;</div>
+                         <!--<div class="c2 price_all"><a>查看全部课程 <i class="fa fa-caret-down"></i></a></div>-->
+                     </div>
+                     <div class="c12 course_list course_my">
+                         <li>语文</li>
+                         <li>数学</li>
+                         <li>英语</li>
+                         <li>物理</li>
+                         <li>化学</li>
+                         <li>政治</li>
+                         <li>历史</li>
+                         <li>地理</li>
+                         <li>生物</li>
+                     </div>
+                </div>
+                <div class="c12 course_wrap">
+                    <div class="c8">
+                        <div class="c12 price_tit">
+                            <div class="c10">&nbsp;<i class="fa fa-circle"></i>&nbsp;年级&nbsp;45-90元/小时</div>
+                            <!--<div class="c2 price_all"><a>查看全部课程 <i class="fa fa-caret-down"></i></a></div>-->
+                        </div>
+                        <div class="c12 course_list grade_my">
+                            <li>小学</li><br>
+                            <li id="czybb" class="hid">初中预备班</li>
+                            <li>初中一年级</li>
+                            <li>初中二年级</li>
+                            <li>初中三年级</li>
+                            <li>高中一年级</li>
+                            <li>高中二年级</li>
+                            <li>高中三年级</li>
+                        </div>
+                    </div>
+                    <div class="c4">
+                       <p class="choose_price"><span id="grade_price">65</span>元<span class="price_tit">/课时</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="c12 choose_tit2">
+                <span class="choose_span">2</span>&nbsp;<span>需求详情</span>
+                 <div class="c12 need_detail">
+                     <textarea class="form-control" rows="6" placeholder="详细填写需求可以有效让最适合你的老师联系你"></textarea>
+                     <div class="c12 need_model">
+                         <p>参考示例:</p>
+                         <p>孩子性格淘气，语文成绩需要提高<span>[学生现状]</span></p>
+                         <p>老师能注重教学方法，擅长文言文和作文，最好的中文系<span>[教学要求]</span></p>
+                         <p>每周三、五、六晚上两小时，时间可以再商量<span>[时间安排]</span></p>
+                     </div>
+                 </div>
+            </div>
+            <div class="c12 choose_tit2">
+                <span class="choose_span">3</span>&nbsp;<span>聘请信息</span>
+                <div class="c12 stu_info">
+                    <div class="c12 stu add_wrap">
+                        <div class="c2">学生姓名</div>
+                        <div class="c3 price_add">
+                            <input type="text" class="form-control" placeholder="学生姓名" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+                    <div class="c12 stu add_wrap">
+                        <div class="c2">手机号码</div>
+                        <div class="c3 price_add">
+                            <input type="text" class="form-control" placeholder="手机号码" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+                    <div class="c12 stu teach_time"><p>上课时间&nbsp;&nbsp;<span><i class="fa fa-dot-circle-o"></i>&nbsp;聘请老师后与老师确定上课时间</span></p></div>
+                    <div class="c12 stu add_wrap">
+                            <div class="c2">课时加价</div>
+                            <div class="c3 price_add">
+                                <select class="form-control ">
+                                    <option>0元/小时</option>
+                                    <option>10元/小时</option>
+                                    <option>20元/小时</option>
+                                    <option>30元/小时</option>
+                                    <option>40元/小时</option>
+                                </select>
+                            </div>
+                    </div>
+                    <div class="c12 stu add_wrap">
+                        <div class="c2">上课地点</div>
+                        <div class="c4 price_add">
+                            <input type="text" class="form-control" placeholder="上课地址" aria-describedby="basic-addon1">
+                        </div>
+                        <!--<div class="c3 add_add">-->
+                            <!--<a class="button button-primary"><span class="glyphicon glyphicon-plus"></span>添加新地址</a>-->
+                        <!--</div>-->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="c12 choose_order" style="border-top: 0px ">
+            <div class="c12 choose_tit2" style="padding-bottom: 0">
+                <span class="choose_span">￥</span>&nbsp;<span>价格详情</span>
+                <div class="c12">
+                    <div class="c8 stu_info">
+                        <div class="c12 stu stu_name"><p>课时单价:&nbsp;&nbsp;<span>75元/课时</span></p></div>
+                        <div class="c12 stu stu_grade"><p>课时加价:&nbsp;&nbsp;<span>0元</span></p></div>
+                        <div class="c12 stu stu_grade"><p>课时:&nbsp;&nbsp;<span>2课时</span></p></div>
+                        <div class="c12 stu stu_grade"><p>支付方式:&nbsp;&nbsp;<span>线下支付</span></p></div>
+                    </div>
+                    <div class="c4 all_price">
+                       <p>总价：<span>14999.00元</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container order_sub">
+        <a href="<?php echo U('home/index/wait_pay'); ?>" class="button button-primary">发布需求</a>
+    </div>
+<br><br>
+
+<!--底部-->
+<div class="full footer">
+    <div class="container">
+        <div class="c12 foot_wrap">
+            <div class="c5 foo_logo">
+                <div class="c2">
+                    <img src="/index1/Public/img/tc_home/25.png">
+                </div>
+                <div class="c9">
+                    <p class="co_name">上海优优教育科技有限公司&nbsp版权所有</p>
+                    <p>Copyright @ 2015  All Rights Reserved.</p>
+                </div>
+                <div class="c1">
+                    <img src="/index1/Public/img/tc_home/26.png">
+                </div>
+            </div>
+            <div class="c2 foo_wx">
+                <div class="c6">
+                    <img src="/index1/Public/img/tc_home/wx.png">
+                </div>
+                <div class="c6">
+                    <p>扫描微信公众号</p>
+                </div>
+            </div>
+            <div class="c5 foo_call" >
+                <div class="c1">
+                    <img src="/index1/Public/img/tc_home/26.png">
+                </div>
+                <div class="c11">
+                    <div class="call">
+                        <img src="/index1/Public/img/tc_home/27.png">
+                        <p>021-64666013</p>
+                    </div>
+                    <div class="call add">
+                        <img src="/index1/Public/img/tc_home/28.png">
+                        <p>上海市徐汇区虹桥路333号交大慧谷四楼</p>
+                    </div>
+                </div>
+                <div style="clear: both"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

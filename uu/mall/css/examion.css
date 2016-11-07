@@ -1,0 +1,253 @@
+body,html{
+    background:#EFF7FF;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family:"幼圆","Comic Sans MS","黑体",sans-serif;
+}
+/*body{*/
+    /*display: none;*/
+/*}*/
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    outline: none;
+    text-decoration: none;
+    border: none 0;
+}
+a img{
+    border: 0 none;
+}
+li{
+    list-style: none;
+}
+
+/*���*/
+.c1{
+    width: 8.33333%;
+}
+.c2{
+    width:16.666666%;
+}
+.c3{
+    width: 25%;
+}
+.c4{
+    width: 33.333%;
+}
+.c9{
+    width: 75%;
+}
+.c7{
+    width: 58.333333%;
+}
+.c6{
+    width: 50%;
+}
+.c12{
+    width: 100%;
+}
+.c2{
+    width: 16.666%;
+}
+.c8{
+    width: 66.666%;
+}
+.c5{
+    width: 41.666%;
+}
+.c11{
+    width: 91.666%;
+}
+.c10{
+    width: 83.33333%;
+}
+.c3,.c9 ,.c12 ,.c6,.c2,.c4,.c5,.c11,.c1,.c7,.c8,.c10{
+    position: relative;
+    float: left;
+}
+.container{
+    width: 970px;
+    margin: 0 auto;
+}
+.full{
+    width: 100%;
+    min-width: 970px;
+    padding: 0;
+    margin: 0;
+}
+/*ͷ��*/
+.header img{
+    width: 50px;
+    vertical-align: middle;
+}
+.header{
+    border-bottom: 1px solid #0a74f6;
+}
+.tit{
+    line-height: 70px;
+    text-align:center;
+    font-size: 20px;
+    font-weight: 600;
+}
+.logo span{
+    display: inline-block;
+    line-height: 70px;
+    font-size: 20px;
+    font-weight: 600;
+}
+/*内容*/
+/*菜单*/
+.cont{
+
+}
+.menu, .con{
+    text-align: center;
+    /*height: 450px;*/
+}
+.con{
+    left: 40px;
+}
+.menu{
+    border: 1px solid #0a74f6;
+    height: 480px;
+    background: #F1F1F1;
+}
+.menu small{
+    display: inline-block;
+    width: 35px;height: 20px;
+    line-height: 20px;
+    color: #0a74f6;
+    border: 1px solid #0a74f6;
+    border-radius: 50px;
+    position: relative;
+    top: -1px;
+}
+.menu li{
+    font-size: 20px;
+    line-height: 30px;
+    border-bottom: 1px solid #0a74f6;
+}
+.menu li a{
+    color: #000;
+    font-size: 16px;
+}
+.menu li:nth-child(2){
+    background: #ffffff;
+}
+/*.menu li:nth-child(2) a{*/
+    /*color: #ffffff;*/
+/*}*/
+/*底部*/
+.footer{
+    position: fixed;
+    left: 50%;
+    margin-left: -485px;
+    bottom: 0;
+    border-top: 1px solid #A6C8E0;
+    text-align: center;
+    line-height: 20px;
+    color:#787C80;
+    background:#EFF7FF;
+}
+
+
+/*表格*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background:#fff
+}
+/* Zebra striping*/
+tr:nth-of-type(odd) {
+    background: #eee;
+}
+th {
+    background: #0a74f6;
+    color: white;
+    font-weight: bold;
+}
+td, th {
+    padding: 6px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+/*@media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {*/
+    /*/!* Force table to not be like tables anymore*!/*/
+    /*table, thead, tbody, th, td, tr {*/
+        /*display: block;*/
+    /*}*/
+    /*/!* Hide table headers (but not display: none;*/
+        /*, for accessibility)*!/*/
+    /*thead tr {*/
+        /*position: absolute;*/
+        /*top: -9999px;*/
+        /*left: -9999px;*/
+    /*}*/
+    /*tr {*/
+        /*border: 1px solid #ccc;*/
+    /*}*/
+    /*td {*/
+        /*/!* Behave like a "row"*!/*/
+        /*border: none;*/
+        /*border-bottom: 1px solid #eee;*/
+        /*position: relative;*/
+        /*padding-left: 50%;*/
+    /*}*/
+    /*td:before {*/
+        /*/!* Now like a table header*!/*/
+        /*position: absolute;*/
+        /*/!* Top/left values mimic padding*!/*/
+        /*top: 6px;*/
+        /*left: 6px;*/
+        /*width: 45%;*/
+        /*padding-right: 10px;*/
+        /*white-space: nowrap;*/
+    /*}*/
+    /*/!* Label the data*!/*/
+    /*td:nth-of-type(1):before {*/
+        /*content: "姓名";*/
+    /*}*/
+    /*td:nth-of-type(2):before {*/
+        /*content: "性别";*/
+    /*}*/
+    /*td:nth-of-type(3):before {*/
+        /*content: "出生年月";*/
+    /*}*/
+    /*td:nth-of-type(4):before {*/
+        /*content: "班级";*/
+    /*}*/
+    /*td:nth-of-type(5):before {*/
+        /*content: "语文";*/
+    /*}*/
+    /*td:nth-of-type(6):before {*/
+        /*content: "数学";*/
+    /*}*/
+    /*td:nth-of-type(7):before {*/
+        /*content: "外语";*/
+    /*}*/
+    /*td:nth-of-type(8):before {*/
+        /*content: "综合";*/
+    /*}*/
+    /*td:nth-of-type(9):before {*/
+        /*content: "总分";*/
+    /*}*/
+    /*td:nth-of-type(10):before {*/
+        /*content: "名次";*/
+    /*}*/
+/*}*/
+/* Smartphones (portrait and landscape) -----------*/
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    body {
+        padding: 0;
+        margin: 0;
+    }
+}
+/* iPads (portrait and landscape) -----------*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    body {
+        width: 100%;
+    }
+}

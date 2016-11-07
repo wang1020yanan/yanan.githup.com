@@ -1,0 +1,2748 @@
+[ 2016-03-02T09:28:14+08:00 ] 116.228.167.234 /other/uustudy/frontend/web/site/entrance.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000436s ]
+ERR: 无法加载模块:Other
+
+[ 2016-03-02T09:28:15+08:00 ] 116.228.167.234 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000367s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-03-02T09:28:19+08:00 ] 116.228.167.234 /img/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000389s ]
+ERR: 无法加载模块:Img
+
+[ 2016-03-02T09:28:23+08:00 ] 116.228.167.234 /other/uustudy/frontend/web/site/entrance.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+ERR: 无法加载模块:Other
+
+[ 2016-03-02T09:28:23+08:00 ] 116.228.167.234 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000397s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-03-02T09:29:55+08:00 ] 116.228.167.234 /img/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000358s ]
+ERR: 无法加载模块:Img
+
+[ 2016-03-02T09:30:05+08:00 ] 116.228.167.234 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000359s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-03-02T09:33:19+08:00 ] 101.226.66.174 /index/Public/js/jquery-2.1.1.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000397s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-02T09:33:19+08:00 ] 101.226.66.174 /readme.htm
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000407s ]
+ERR: 无法加载模块:Readme
+
+[ 2016-03-02T09:33:19+08:00 ] 101.226.66.174 /index/Public/js/login.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000407s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-02T09:33:19+08:00 ] 101.226.66.174 /index/Public/js/base64.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000385s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-02T09:35:17+08:00 ] 101.226.33.221 /index/Public/js/jquery-2.1.1.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000525s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-02T09:35:17+08:00 ] 101.226.33.221 /index/Public/js/about.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000347s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-02T09:35:39+08:00 ] 180.153.205.254 /index/Public/js/jquery-2.1.1.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000392s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-02T09:35:39+08:00 ] 180.153.205.254 /index/Public/js/function.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000386s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-02T09:36:26+08:00 ] 116.228.167.234 /other/uustudy/frontend/web/site/entrance.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+ERR: 无法加载模块:Other
+
+[ 2016-03-02T09:36:30+08:00 ] 116.228.167.234 /img/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000374s ]
+ERR: 无法加载模块:Img
+
+[ 2016-03-02T09:36:30+08:00 ] 116.228.167.234 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000419s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-03-02T09:41:49+08:00 ] 116.228.167.234 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000369s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-03-02T09:51:08+08:00 ] 116.228.167.234 /img/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000405s ]
+ERR: 无法加载模块:Img
+
+[ 2016-03-02T09:57:02+08:00 ] 117.64.39.188 /banner/banner2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000449s ]
+ERR: 无法加载模块:Banner
+
+[ 2016-03-02T09:57:05+08:00 ] 117.64.39.188 /banner/banner1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000400s ]
+ERR: 无法加载模块:Banner
+
+[ 2016-03-02T09:57:10+08:00 ] 117.64.39.188 /banner/banner1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+ERR: 无法加载模块:Banner
+
+[ 2016-03-02T10:28:40+08:00 ] 116.228.167.234 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000416s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-03-02T10:55:32+08:00 ] 116.228.167.234 /indextest/home/mall/mall/userID/270718626245
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+ERR: 无法加载模块:Indextest
+
+[ 2016-03-02T10:55:43+08:00 ] 116.228.167.234 /indextest/home/mall/mall/userID/270718626245
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000442s ]
+ERR: 无法加载模块:Indextest
+
+[ 2016-03-02T10:56:05+08:00 ] 116.228.167.234 /indextest/home/mall/mall/userID/270718626245
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000449s ]
+ERR: 无法加载模块:Indextest
+
+[ 2016-03-02T10:56:15+08:00 ] 116.228.167.234 /indextest/home/mall/mall/userID/270718626245
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000441s ]
+ERR: 无法加载模块:Indextest
+
+[ 2016-03-02T10:56:29+08:00 ] 116.228.167.234 /indextest/home/mall/mall/userID/270718626245
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000416s ]
+ERR: 无法加载模块:Indextest
+
+[ 2016-03-02T10:57:52+08:00 ] 116.228.167.234 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000403s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-03-02T10:58:13+08:00 ] 116.228.167.234 /indextest/home/mall/mall/userID/333
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000424s ]
+ERR: 无法加载模块:Indextest
+
+[ 2016-03-02T10:58:13+08:00 ] 116.228.167.234 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000421s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-03-02T11:01:21+08:00 ] 116.228.167.234 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000456s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-03-02T11:01:35+08:00 ] 116.228.167.234 /indextest/home/mall/mall/userID/270718626245
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000438s ]
+ERR: 无法加载模块:Indextest
+
+[ 2016-03-02T11:02:50+08:00 ] 116.228.167.234 /uuuutest/thinkphp/index.php/admin/Verify/detailList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000448s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T11:02:56+08:00 ] 116.228.167.234 /uuuutest/thinkphp/index.php/admin/Verify/detailList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000476s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T11:03:20+08:00 ] 116.228.167.234 /mall/mall
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000425s ]
+ERR: 无法加载模块:Mall
+
+[ 2016-03-02T11:03:48+08:00 ] 116.228.167.234 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-03-02T11:03:50+08:00 ] 116.228.167.234 /uuuutest/thinkphp/index.php/admin/Verify/detailList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000410s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T11:03:50+08:00 ] 116.228.167.234 /uuuutest/thinkphp/index.php/admin/Verify/detailList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000403s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T11:03:50+08:00 ] 116.228.167.234 /uuuutest/thinkphp/index.php/admin/Verify/detailList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000403s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T11:04:10+08:00 ] 116.228.167.234 /index.php/mall/mall
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000397s ]
+ERR: 无法加载模块:Mall
+
+[ 2016-03-02T11:06:27+08:00 ] 116.228.167.234 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000420s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-03-02T11:06:29+08:00 ] 116.228.167.234 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000395s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-03-02T11:06:34+08:00 ] 116.228.167.234 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000393s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-03-02T11:06:34+08:00 ] 116.228.167.234 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000441s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-03-02T11:06:34+08:00 ] 116.228.167.234 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000593s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-03-02T11:06:34+08:00 ] 116.228.167.234 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000448s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-03-02T11:06:34+08:00 ] 116.228.167.234 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000415s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-03-02T11:06:34+08:00 ] 116.228.167.234 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000412s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-03-02T11:06:35+08:00 ] 116.228.167.234 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000438s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-03-02T11:06:35+08:00 ] 116.228.167.234 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000430s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-03-02T11:06:35+08:00 ] 116.228.167.234 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000437s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-03-02T11:06:35+08:00 ] 116.228.167.234 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000421s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-03-02T11:06:35+08:00 ] 116.228.167.234 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-03-02T11:06:35+08:00 ] 116.228.167.234 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000425s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-03-02T11:06:35+08:00 ] 116.228.167.234 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000404s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-03-02T11:06:35+08:00 ] 116.228.167.234 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000412s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-03-02T11:06:35+08:00 ] 116.228.167.234 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000408s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-03-02T11:06:35+08:00 ] 116.228.167.234 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000432s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-03-02T11:06:35+08:00 ] 116.228.167.234 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000393s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-03-02T11:06:35+08:00 ] 116.228.167.234 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000432s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-03-02T11:06:35+08:00 ] 116.228.167.234 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000492s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-03-02T11:07:17+08:00 ] 116.228.167.234 /img/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000356s ]
+ERR: 无法加载模块:Img
+
+[ 2016-03-02T11:07:56+08:00 ] 116.228.167.234 /img/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+ERR: 无法加载模块:Img
+
+[ 2016-03-02T11:08:12+08:00 ] 116.228.167.234 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-03-02T11:08:13+08:00 ] 116.228.167.234 /indextest/home/mall/mall/userID/333
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000399s ]
+ERR: 无法加载模块:Indextest
+
+[ 2016-03-02T11:13:31+08:00 ] 116.228.167.234 /Public/js/maps/swiper.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000435s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-02T11:13:38+08:00 ] 116.228.167.234 /Public/js/maps/swiper.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000469s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-02T11:13:38+08:00 ] 116.228.167.234 /Public/js/maps/swiper.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000421s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-02T11:16:34+08:00 ] 116.228.167.234 /Mall/mall.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000402s ]
+ERR: 无法加载模块:Mall
+
+[ 2016-03-02T11:17:04+08:00 ] 116.228.167.234 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000405s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-03-02T11:17:05+08:00 ] 116.228.167.234 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000552s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-03-02T11:17:05+08:00 ] 116.228.167.234 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000414s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-03-02T11:17:05+08:00 ] 116.228.167.234 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000430s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-03-02T11:17:05+08:00 ] 116.228.167.234 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000422s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-03-02T11:17:05+08:00 ] 116.228.167.234 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000457s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-03-02T11:17:05+08:00 ] 116.228.167.234 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000446s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-03-02T11:17:05+08:00 ] 116.228.167.234 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000471s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-03-02T11:17:05+08:00 ] 116.228.167.234 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000410s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-03-02T11:17:05+08:00 ] 116.228.167.234 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000418s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-03-02T11:17:05+08:00 ] 116.228.167.234 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000428s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-03-02T11:17:05+08:00 ] 116.228.167.234 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000389s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-03-02T11:17:06+08:00 ] 116.228.167.234 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000439s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-03-02T11:17:06+08:00 ] 116.228.167.234 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000441s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-03-02T11:17:06+08:00 ] 116.228.167.234 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000457s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-03-02T11:17:06+08:00 ] 116.228.167.234 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000450s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-03-02T11:17:06+08:00 ] 116.228.167.234 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000460s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-03-02T11:17:06+08:00 ] 116.228.167.234 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000425s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-03-02T11:17:06+08:00 ] 116.228.167.234 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000409s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-03-02T11:17:06+08:00 ] 116.228.167.234 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000420s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-03-02T11:17:06+08:00 ] 116.228.167.234 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000405s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-03-02T11:17:06+08:00 ] 116.228.167.234 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000496s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-03-02T11:17:06+08:00 ] 116.228.167.234 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000445s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-03-02T11:17:06+08:00 ] 116.228.167.234 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000402s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-03-02T11:17:06+08:00 ] 116.228.167.234 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000443s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-03-02T11:17:06+08:00 ] 116.228.167.234 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000417s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-03-02T11:17:06+08:00 ] 116.228.167.234 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000409s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-03-02T11:17:06+08:00 ] 116.228.167.234 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000475s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-03-02T11:17:06+08:00 ] 116.228.167.234 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000498s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-03-02T11:17:07+08:00 ] 116.228.167.234 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000427s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-03-02T11:17:07+08:00 ] 116.228.167.234 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000450s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-03-02T11:17:07+08:00 ] 116.228.167.234 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000422s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-03-02T11:17:14+08:00 ] 116.228.167.234 /img/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000434s ]
+ERR: 无法加载模块:Img
+
+[ 2016-03-02T11:17:21+08:00 ] 116.228.167.234 /img/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000422s ]
+ERR: 无法加载模块:Img
+
+[ 2016-03-02T11:17:21+08:00 ] 116.228.167.234 /img/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000454s ]
+ERR: 无法加载模块:Img
+
+[ 2016-03-02T11:17:21+08:00 ] 116.228.167.234 /img/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000445s ]
+ERR: 无法加载模块:Img
+
+[ 2016-03-02T11:17:21+08:00 ] 116.228.167.234 /img/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000436s ]
+ERR: 无法加载模块:Img
+
+[ 2016-03-02T11:17:21+08:00 ] 116.228.167.234 /img/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000417s ]
+ERR: 无法加载模块:Img
+
+[ 2016-03-02T11:18:20+08:00 ] 112.64.235.86 /readme.htm
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000505s ]
+ERR: 无法加载模块:Readme
+
+[ 2016-03-02T11:18:23+08:00 ] 116.228.167.234 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000397s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-03-02T11:19:50+08:00 ] 116.228.167.234 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000393s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-03-02T11:23:01+08:00 ] 180.153.160.62 /readme.htm
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+ERR: 无法加载模块:Readme
+
+[ 2016-03-02T11:30:57+08:00 ] 116.228.167.234 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000359s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-03-02T11:35:36+08:00 ] 116.228.167.234 /uuuutest/thinkphp/index.php/admin/Verify/detailList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000388s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T11:37:57+08:00 ] 116.228.167.234 /uuuutest/thinkphp/index.php/admin/Verify/detailList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000367s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T11:38:07+08:00 ] 116.228.167.234 /uuuutest/thinkphp//admin/Verify/detailList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000393s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T11:38:22+08:00 ] 116.228.167.234 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000400s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-03-02T11:48:31+08:00 ] 116.228.167.234 /uuuutest/thinkphp/admin/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000401s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T11:48:32+08:00 ] 116.228.167.234 /uuuutest/thinkphp/admin/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000384s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T11:48:33+08:00 ] 116.228.167.234 /uuuutest/thinkphp/admin/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000357s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T11:48:34+08:00 ] 116.228.167.234 /uuuutest/thinkphp/admin/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000370s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T11:55:31+08:00 ] 118.212.192.18 /other/uustudy/frontend/web/site/entrance.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000395s ]
+ERR: 无法加载模块:Other
+
+[ 2016-03-02T12:27:50+08:00 ] 116.226.135.164 /index/Public/img/tc_home/5.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000372s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-02T12:30:32+08:00 ] 14.17.37.143 /other/uustudy/frontend/web/site/entrance.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000486s ]
+ERR: 无法加载模块:Other
+
+[ 2016-03-02T12:49:40+08:00 ] 101.226.61.184 /wap/teacherscan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000425s ]
+ERR: 无法加载模块:Wap
+
+[ 2016-03-02T12:51:50+08:00 ] 101.226.125.14 /wap/teacherscan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000424s ]
+ERR: 无法加载模块:Wap
+
+[ 2016-03-02T12:52:12+08:00 ] 101.226.125.14 /wap/teacherscan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000425s ]
+ERR: 无法加载模块:Wap
+
+[ 2016-03-02T12:52:26+08:00 ] 180.153.236.62 /index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000364s ]
+ERR: 无法加载模块:Index
+
+[ 2016-03-02T13:01:07+08:00 ] 101.226.125.14 /wap/teacherscan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000397s ]
+ERR: 无法加载模块:Wap
+
+[ 2016-03-02T13:02:20+08:00 ] 101.226.125.14 /wap/teacherscan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000416s ]
+ERR: 无法加载模块:Wap
+
+[ 2016-03-02T13:11:17+08:00 ] 116.228.167.234 /uuuutest/thinkphp/admin/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000356s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T13:11:19+08:00 ] 116.228.167.234 /uuuutest/thinkphp/admin/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000361s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T13:11:24+08:00 ] 116.228.167.234 /uuuutest/thinkphp/admin/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000356s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T13:11:44+08:00 ] 116.228.167.234 /uuuutest/thinkphp/admin/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000452s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T13:11:48+08:00 ] 116.228.167.234 /uuuutest/thinkphp/admin/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000460s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T13:11:49+08:00 ] 116.228.167.234 /uuuutest/thinkphp/admin/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000530s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T13:11:51+08:00 ] 116.228.167.234 /img/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+ERR: 无法加载模块:Img
+
+[ 2016-03-02T13:11:52+08:00 ] 116.228.167.234 /uuuutest/thinkphp/admin/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000465s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T13:11:56+08:00 ] 116.228.167.234 /uuuutest/thinkphp/admin/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000394s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T13:16:08+08:00 ] 116.228.167.234 /uuuutest/thinkphp/admin/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000401s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T13:19:20+08:00 ] 14.17.34.189 /wap/teacherscan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000359s ]
+ERR: 无法加载模块:Wap
+
+[ 2016-03-02T13:19:21+08:00 ] 180.160.185.234 /wap/teacherscan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000361s ]
+ERR: 无法加载模块:Wap
+
+[ 2016-03-02T13:20:08+08:00 ] 180.160.185.234 /wap/teacherscan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000371s ]
+ERR: 无法加载模块:Wap
+
+[ 2016-03-02T13:24:48+08:00 ] 101.81.56.122 /img/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000503s ]
+ERR: 无法加载模块:Img
+
+[ 2016-03-02T13:24:51+08:00 ] 61.135.189.105 /robots.txt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000518s ]
+ERR: 无法加载模块:Robots
+
+[ 2016-03-02T13:24:51+08:00 ] 61.135.189.105 /readme.htm
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000506s ]
+ERR: 无法加载模块:Readme
+
+[ 2016-03-02T13:35:21+08:00 ] 116.228.167.234 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000400s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-03-02T13:36:08+08:00 ] 116.228.167.234 /alipay
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000365s ]
+ERR: 无法加载模块:Alipay
+
+[ 2016-03-02T13:42:23+08:00 ] 110.75.248.203 /alipay/notify_url.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
+ERR: 无法加载模块:Alipay
+
+[ 2016-03-02T13:44:38+08:00 ] 116.228.167.234 /agreement.pdf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000422s ]
+ERR: 无法加载模块:Agreement
+
+[ 2016-03-02T13:44:51+08:00 ] 116.228.167.234 /agreement.pdf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000418s ]
+ERR: 无法加载模块:Agreement
+
+[ 2016-03-02T13:45:42+08:00 ] 116.228.167.234 /agreement.pdf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000440s ]
+ERR: 无法加载模块:Agreement
+
+[ 2016-03-02T13:45:42+08:00 ] 116.228.167.234 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000422s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-03-02T13:46:04+08:00 ] 110.75.248.192 /alipay/notify_url.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000409s ]
+ERR: 无法加载模块:Alipay
+
+[ 2016-03-02T13:47:00+08:00 ] 116.228.167.234 /agreement.pdf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000397s ]
+ERR: 无法加载模块:Agreement
+
+[ 2016-03-02T13:47:31+08:00 ] 116.228.167.234 /agreement.pdf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000415s ]
+ERR: 无法加载模块:Agreement
+
+[ 2016-03-02T13:47:32+08:00 ] 116.228.167.234 /agreement.pdf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000399s ]
+ERR: 无法加载模块:Agreement
+
+[ 2016-03-02T13:47:41+08:00 ] 116.228.167.234 /agreement.pdf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000421s ]
+ERR: 无法加载模块:Agreement
+
+[ 2016-03-02T13:47:42+08:00 ] 116.228.167.234 /agreement.pdf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000475s ]
+ERR: 无法加载模块:Agreement
+
+[ 2016-03-02T13:48:04+08:00 ] 116.228.167.234 /agreement.pdf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000483s ]
+ERR: 无法加载模块:Agreement
+
+[ 2016-03-02T13:48:29+08:00 ] 116.228.167.234 /agreement.pdf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000471s ]
+ERR: 无法加载模块:Agreement
+
+[ 2016-03-02T13:48:47+08:00 ] 116.228.167.234 /uustudy_student_readme.pdf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000365s ]
+ERR: 无法加载模块:Uustudy_student_readme
+
+[ 2016-03-02T13:48:49+08:00 ] 116.228.167.234 /uustudy_student_readme.pdf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000362s ]
+ERR: 无法加载模块:Uustudy_student_readme
+
+[ 2016-03-02T13:50:43+08:00 ] 116.231.36.6 /download/uustudent_otherChannel_signed_aligned.apk
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000408s ]
+ERR: 无法加载模块:Download
+
+[ 2016-03-02T13:50:43+08:00 ] 116.231.36.6 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000358s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-03-02T13:50:45+08:00 ] 116.231.36.6 /download/uustudent_otherChannel_signed_aligned.apk
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000375s ]
+ERR: 无法加载模块:Download
+
+[ 2016-03-02T13:54:24+08:00 ] 116.228.167.234 /uustudy_teacher_readme.pdf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000453s ]
+ERR: 无法加载模块:Uustudy_teacher_readme
+
+[ 2016-03-02T13:55:35+08:00 ] 110.75.248.162 /alipay/notify_url.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000361s ]
+ERR: 无法加载模块:Alipay
+
+[ 2016-03-02T13:59:11+08:00 ] 116.228.167.234 /img/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000450s ]
+ERR: 无法加载模块:Img
+
+[ 2016-03-02T13:59:29+08:00 ] 116.228.167.234 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000413s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-03-02T14:06:20+08:00 ] 110.75.248.128 /alipay/notify_url.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
+ERR: 无法加载模块:Alipay
+
+[ 2016-03-02T14:06:35+08:00 ] 101.226.64.175 /uuuutest/thinkphp/index.php/home/Index/p-index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000380s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:08:34+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/5.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000441s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:08:39+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/12.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000506s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:08:39+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/5.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000469s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:08:39+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/13.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000422s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:08:43+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/5.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000368s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:08:43+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/12.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000422s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:08:43+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/13.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000429s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:08:44+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/5.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000395s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:08:44+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/12.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000445s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:08:44+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/13.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000354s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:08:44+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/5.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000392s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:08:44+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/13.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000395s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:08:44+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/12.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000673s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:08:45+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/5.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000385s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:08:45+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/12.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000389s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:08:45+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/13.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000414s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:08:51+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/5.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000413s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:08:51+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/13.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000384s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:08:51+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/18.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000438s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:08:51+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/12.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000464s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:08:51+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/20.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000405s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:08:51+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/19.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000401s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:10:56+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/19.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000413s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:10:56+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/13.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000765s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:10:56+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/12.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000431s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:10:56+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/20.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000443s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:10:56+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/18.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000417s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:10:56+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/5.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000395s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:10:58+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/20.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:10:58+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/5.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000421s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:10:58+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/12.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000391s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:10:58+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/19.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000408s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:10:58+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/13.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000425s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:10:58+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/18.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000349s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:04+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/12.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000411s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:04+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/5.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000439s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:04+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/18.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000393s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:04+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/13.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000453s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:04+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/19.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000433s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:04+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/20.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000349s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:04+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/23.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000429s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:04+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/24.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000443s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:04+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/21.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000430s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:04+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/22.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000352s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:09+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/5.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000369s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:09+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/20.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000425s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:09+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/13.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000431s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:09+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/12.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000400s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:09+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/19.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:09+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/18.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000421s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:09+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/22.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000373s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:09+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/23.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000382s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:09+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/21.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:09+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/24.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000356s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:11+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/3.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000526s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:11+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/4.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000386s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:11+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/25.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000380s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:11+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/5.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000462s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:11+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/12.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000416s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:11+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/13.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000350s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:11+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/18.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:11+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/19.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000413s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:11+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/20.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000437s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:11+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/21.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000382s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:11+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/23.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000394s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:11+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/22.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:11+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/24.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000345s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:12+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/3.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000389s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:12+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/5.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000414s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:13+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/12.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:13+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/13.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000404s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:13+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/18.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000453s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:13+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/23.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000400s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:13+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/24.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000401s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:13+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/20.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000409s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:13+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/21.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000482s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:13+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/25.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000397s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:13+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/19.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000427s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:13+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/22.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000361s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:13+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/4.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:15+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/4.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000427s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:15+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/3.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000577s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:15+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/5.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000378s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:15+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/13.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000430s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:15+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/12.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000397s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:15+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/18.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000453s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:15+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/20.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000389s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:15+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/19.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000386s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:15+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/21.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000398s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:15+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/23.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000409s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:15+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/22.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000417s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:15+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/25.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000391s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:15+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/24.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000389s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:16+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/4.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000402s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:16+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/13.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000490s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:16+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/3.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000464s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:16+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/12.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000407s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:16+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/5.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000384s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:16+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/18.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000601s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:16+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/23.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000389s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:16+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/20.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000398s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:16+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/24.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000449s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:16+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/21.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000390s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:16+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/25.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000399s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:16+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/19.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000414s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:16+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/22.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000351s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:17+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/5.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000389s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:17+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/18.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000378s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:17+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/4.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000377s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:17+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/3.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000447s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:17+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/13.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000432s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:17+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/12.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000374s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:17+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/23.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000403s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:17+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/19.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000413s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:17+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/22.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000383s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:17+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/20.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000382s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:17+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/25.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000428s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:17+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/24.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000419s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:17+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/21.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000385s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:18+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/5.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000416s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:18+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/4.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000422s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:18+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/3.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000434s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:18+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/18.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:18+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/12.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:18+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/13.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000376s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:18+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/19.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000421s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:18+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/21.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000575s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:18+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/20.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000424s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:18+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/24.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000408s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:18+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/23.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000397s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:18+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/22.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000505s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:18+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/25.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000386s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:19+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/3.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000411s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:19+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/4.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000753s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:19+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/13.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000452s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:19+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/5.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000394s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:19+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/18.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000408s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:19+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/12.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000390s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:19+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/21.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000419s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:19+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/19.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000453s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:19+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/25.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000768s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:19+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/24.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000425s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:19+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/22.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000395s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:19+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/20.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000427s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:19+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/23.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000377s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:20+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/3.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000429s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:20+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/4.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000419s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:20+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/5.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000398s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:20+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/13.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000442s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:20+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/12.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000432s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:20+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/18.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000394s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:20+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/19.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000404s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:20+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/20.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000438s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:20+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/21.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000428s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:20+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/22.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000404s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:20+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/23.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:20+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/24.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:20+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/25.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000349s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:25+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/4.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000398s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:25+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/5.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000382s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:25+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/19.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000399s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:25+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/7.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000416s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:25+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/22.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:25+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/8.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000395s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:25+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/18.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000407s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:25+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/10.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000495s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:25+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/24.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000460s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:25+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/9.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000431s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:25+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/3.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000394s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:25+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/21.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000407s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:25+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/13.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000449s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:25+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/25.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000575s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:25+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/12.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000393s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:25+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/23.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000427s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:25+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/20.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000361s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:29+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/3.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000415s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:29+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/4.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000655s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:29+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/8.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000414s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:29+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/9.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000411s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:29+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/7.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000392s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:29+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/5.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000469s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:29+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/10.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000501s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:29+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/12.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000392s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:29+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/20.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000407s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:29+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/13.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000568s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:29+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/18.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000456s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:29+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/21.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000460s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:29+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/22.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000403s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:29+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/23.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000375s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:29+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/24.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000387s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:29+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/25.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000347s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:34+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/4.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000375s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:34+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/3.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000486s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:34+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/8.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000454s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:34+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/7.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000419s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:34+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/5.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000390s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:34+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/10.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000475s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:34+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/9.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000583s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:34+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/12.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000468s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:34+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/19.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000528s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:34+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/18.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000383s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:34+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/13.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000370s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:34+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/23.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000417s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:34+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/22.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000391s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:34+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/20.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000421s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:34+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/24.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000407s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:34+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/21.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000442s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:55+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/21.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000376s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:11:57+08:00 ] 116.228.167.234 /uuuutest/thinkphp/Public/img/certification/card/21.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000369s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:13:41+08:00 ] 116.228.167.234 /index/Public/img/about/5-1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000408s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-02T14:14:46+08:00 ] 116.228.167.234 /index/Public/img/about/4-2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000416s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-02T14:14:46+08:00 ] 116.228.167.234 /index/Public/img/about/4-1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000376s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-02T14:33:08+08:00 ] 116.228.167.234 /other/uustudy/frontend/web/site/entrance.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000530s ]
+ERR: 无法加载模块:Other
+
+[ 2016-03-02T14:34:39+08:00 ] 116.228.167.234 /agreement.pdf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000397s ]
+ERR: 无法加载模块:Agreement
+
+[ 2016-03-02T14:35:32+08:00 ] 114.88.34.242 /img/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000398s ]
+ERR: 无法加载模块:Img
+
+[ 2016-03-02T14:36:07+08:00 ] 114.88.34.242 /index/Public/img/about/5-2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000421s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-02T14:36:07+08:00 ] 114.88.34.242 /index/Public/img/about/5-1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000425s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-02T14:36:08+08:00 ] 114.88.34.242 /index/Public/img/about/4-2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000431s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-02T14:36:08+08:00 ] 114.88.34.242 /index/Public/img/about/4-1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000426s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-02T14:36:14+08:00 ] 114.88.34.242 /index/Public/img/about/4-2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000420s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-02T14:36:14+08:00 ] 114.88.34.242 /index/Public/img/about/4-1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000383s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-02T14:36:15+08:00 ] 114.88.34.242 /index/Public/img/about/4-2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000363s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-02T14:36:15+08:00 ] 114.88.34.242 /index/Public/img/about/4-1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000430s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-02T14:36:15+08:00 ] 114.88.34.242 /index/Public/img/about/4-1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000374s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-02T14:36:15+08:00 ] 114.88.34.242 /index/Public/img/about/4-2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000422s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-02T14:36:15+08:00 ] 114.88.34.242 /index/Public/img/about/4-2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000440s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-02T14:38:33+08:00 ] 116.234.222.196 /index/Public/img/about/4-1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000404s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-02T14:38:34+08:00 ] 116.234.222.196 /index/Public/img/about/5-2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-02T14:38:34+08:00 ] 114.88.34.242 /index/Public/img/about/5-1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-02T14:38:34+08:00 ] 114.88.34.242 /index/Public/img/about/5-2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000443s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-02T14:38:34+08:00 ] 116.234.222.196 /index/Public/img/about/5-1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000380s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-02T14:38:34+08:00 ] 116.234.222.196 /index/Public/img/about/5-2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000361s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-02T14:40:59+08:00 ] 116.228.167.234 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000399s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-03-02T14:41:28+08:00 ] 116.228.167.234 /index/Public/img/about/4-2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000431s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-02T14:41:28+08:00 ] 116.228.167.234 /index/Public/img/about/4-1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000416s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-02T14:41:29+08:00 ] 116.228.167.234 /index/Public/img/about/5-2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000421s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-02T14:41:29+08:00 ] 116.228.167.234 /index/Public/img/about/5-1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000408s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-02T14:41:31+08:00 ] 116.228.167.234 /index/Public/img/about/5-2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000423s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-02T14:41:31+08:00 ] 116.228.167.234 /index/Public/img/about/5-1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000404s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-02T14:44:59+08:00 ] 116.228.167.234 /img/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000424s ]
+ERR: 无法加载模块:Img
+
+[ 2016-03-02T14:44:59+08:00 ] 116.228.167.234 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000409s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-03-02T14:45:06+08:00 ] 116.228.167.234 /img/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000421s ]
+ERR: 无法加载模块:Img
+
+[ 2016-03-02T14:45:07+08:00 ] 116.228.167.234 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000426s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-03-02T14:45:11+08:00 ] 116.228.167.234 /img/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000369s ]
+ERR: 无法加载模块:Img
+
+[ 2016-03-02T14:45:12+08:00 ] 116.228.167.234 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000409s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-03-02T14:45:56+08:00 ] 101.226.125.118 /wap/teacherscan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000464s ]
+ERR: 无法加载模块:Wap
+
+[ 2016-03-02T14:46:54+08:00 ] 101.226.125.118 /wap/teacherscan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000400s ]
+ERR: 无法加载模块:Wap
+
+[ 2016-03-02T14:46:59+08:00 ] 101.226.125.118 /wap/teacherscan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000404s ]
+ERR: 无法加载模块:Wap
+
+[ 2016-03-02T14:47:05+08:00 ] 101.226.125.118 /wap/teacherscan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000401s ]
+ERR: 无法加载模块:Wap
+
+[ 2016-03-02T14:47:11+08:00 ] 180.153.206.24 /wap/teacherscan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000407s ]
+ERR: 无法加载模块:Wap
+
+[ 2016-03-02T14:47:12+08:00 ] 223.167.0.229 /wap/teacherscan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000367s ]
+ERR: 无法加载模块:Wap
+
+[ 2016-03-02T14:47:13+08:00 ] 223.167.0.229 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000368s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-03-02T14:51:53+08:00 ] 101.226.125.118 /wap/teacherscan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000407s ]
+ERR: 无法加载模块:Wap
+
+[ 2016-03-02T14:53:35+08:00 ] 116.228.167.234 /uuuutest/thinkphp/index.php/home/TeacherCenter/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000395s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:53:35+08:00 ] 180.153.214.192 /uuuutest/thinkphp/index.php/home/TeacherCenter/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000380s ]
+ERR: 无法加载模块:Uuuutest
+
+[ 2016-03-02T14:54:28+08:00 ] 101.226.125.118 /wap/teacherscan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000366s ]
+ERR: 无法加载模块:Wap
+
+[ 2016-03-02T14:54:58+08:00 ] 101.226.125.115 /wap/teacherscan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000398s ]
+ERR: 无法加载模块:Wap
+
+[ 2016-03-02T14:55:17+08:00 ] 116.228.167.234 /wap/teacherscan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000364s ]
+ERR: 无法加载模块:Wap
+
+[ 2016-03-02T14:55:17+08:00 ] 116.228.167.234 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-03-02T14:55:40+08:00 ] 101.226.125.115 /wap/teacherscan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000585s ]
+ERR: 无法加载模块:Wap
+
+[ 2016-03-02T14:55:57+08:00 ] 101.226.125.115 /wap/teacherscan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000425s ]
+ERR: 无法加载模块:Wap
+
+[ 2016-03-02T14:56:19+08:00 ] 116.228.167.234 /download/uustudent_otherChannel_signed_aligned.apk
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000423s ]
+ERR: 无法加载模块:Download
+
+[ 2016-03-02T14:56:19+08:00 ] 180.153.206.22 /download/uustudent_otherchannel_signed_aligned.apk
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000394s ]
+ERR: 无法加载模块:Download
+
+[ 2016-03-02T14:57:44+08:00 ] 101.226.125.118 /wap/teacherscan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+ERR: 无法加载模块:Wap
+
+[ 2016-03-02T15:29:38+08:00 ] 116.228.167.234 /index/w
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000447s ]
+ERR: 无法加载模块:W
+
+[ 2016-03-02T16:16:13+08:00 ] 116.228.167.234 /index/Public/js/maps/swiper.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000365s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-02T16:16:13+08:00 ] 116.228.167.234 /index/Public/js/maps/swiper.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000398s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-02T16:16:42+08:00 ] 116.228.167.234 /index/Public/js/maps/swiper.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000398s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-02T16:16:43+08:00 ] 116.228.167.234 /index/Public/js/maps/swiper.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000370s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-02T16:17:25+08:00 ] 116.228.167.234 /index/Public/js/maps/swiper.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000419s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-02T16:17:25+08:00 ] 116.228.167.234 /index/Public/js/maps/swiper.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000421s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-02T16:18:12+08:00 ] 116.228.167.234 /index/Public/js/maps/swiper.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000407s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-02T16:18:12+08:00 ] 116.228.167.234 /index/Public/js/maps/swiper.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000401s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-02T16:18:28+08:00 ] 116.228.167.234 /index/Public/js/maps/swiper.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000408s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-02T16:18:28+08:00 ] 116.228.167.234 /index/Public/js/maps/swiper.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-02T16:19:43+08:00 ] 116.228.167.234 /index/Public/js/maps/swiper.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000559s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-02T16:19:43+08:00 ] 116.228.167.234 /index/Public/js/maps/swiper.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000351s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-02T16:19:56+08:00 ] 116.228.167.234 /index/Public/js/maps/swiper.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000430s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-02T16:19:56+08:00 ] 116.228.167.234 /index/Public/js/maps/swiper.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000422s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-02T17:41:21+08:00 ] 116.228.167.234 /index/Public/js/maps/swiper.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000430s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-02T17:41:21+08:00 ] 116.228.167.234 /index/Public/js/maps/swiper.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000459s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-02T17:41:43+08:00 ] 116.228.167.234 /index/Public/js/maps/swiper.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000357s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-02T17:41:43+08:00 ] 116.228.167.234 /index/Public/js/maps/swiper.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-02T17:58:58+08:00 ] 116.228.167.234 /index/Public/js/maps/swiper.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000371s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-02T17:58:58+08:00 ] 116.228.167.234 /index/Public/js/maps/swiper.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000355s ]
+ERR: 无法加载模块:Public
+

@@ -1,0 +1,37 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>积分记录</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link href="http://www.uustudy.com.cn/img/logo.png" rel="shortcut icon" type="image/x-icon"/>
+    <link href="/index/Public/css/record.css" rel="stylesheet" type="text/css">
+    <script src="/index/Public/js/jquery-2.1.1.min.js"></script>
+    <script src="/index/Public/js/record.js"></script>
+</head>
+<body style="overflow: scroll;overflow-x:hidden;">
+    <div class="full nav">
+        <div class="container" >
+            <div class="c12">
+                <div class="c9" style="text-align: left"><p>积分记录<span class="nav_con">（最近10次积分记录）</span></p></div>
+                <div class="c3 right"><p>积分</p></div>
+            </div>
+            <div style="clear: both"></div>
+        </div>
+    </div>
+    <div class="full msg">
+        <div class="container">
+            <!--积分明细-->
+            <?php if(is_array($scoreList)): foreach($scoreList as $key=>$vo): ?><div class="c12 msg_wrap">
+                <div class="c3">
+                    <div class="c12 tit"><?php echo ($vo["reason"]); ?></div>
+                    <div class="c12 time"><?php echo ($vo["createtime"]); ?></div>
+                </div>
+                <div class="c6 add"><p class="add_count"><?php echo ($vo["addscore"]); ?></p></div>
+                <div class="c3 count"><p><?php echo ($vo["totalscore"]); ?></p></div>
+            </div><?php endforeach; endif; ?>
+        </div>
+        <div style="clear: both"></div>
+    </div>
+</body>
+</html>

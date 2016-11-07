@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试</title>
+    <script src="__PUBLIC__/js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript">
+       $(document).ready(function(){
+           $.getScript('http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js', function(_result) {
+               if (remote_ip_info.ret == '1') {
+//                 alert(  '省：' + remote_ip_info.province + '市：' + remote_ip_info.city );
+                 alert(remote_ip_info.province);
+//                 alert(remote_ip_info.city);
+                     $("#shi").text(remote_ip_info.city);
+               } else {
+                   alert('没有找到匹配的IP地址信息！');
+               }
+           });
+       })
+    </script>
+</head>
+<body>
+      <div id="shi"></div>
+</body>
+</html>

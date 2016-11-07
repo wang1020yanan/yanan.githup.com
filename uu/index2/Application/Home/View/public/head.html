@@ -1,0 +1,51 @@
+<!--首页头部-->
+<div class="header">
+    <img class="header_bg" src="__PUBLIC__/img/tc_home/1.png" style="position: absolute">
+    <div class="header_wrap container">
+        <div class="c12">
+            <div class="c2 logo">
+                <div class="c2">
+                    <a href="/"><img src="__PUBLIC__/img/tc_home/2.png" alt="优优老师" title="优优老师"/></a>
+                </div>
+                <div class="c10">
+                    <img src="__PUBLIC__/img/tc_home/3.png"/>
+                </div>
+                <div style="clear: both"></div>
+            </div>
+            <div class="c6 nav">
+                <div id="menu2" class="menu">
+                    <ul>
+                        <li><a href="#">首页</a></li>
+                        <li class="tipto"><a id="func" style="cursor: pointer">功能</a></li>
+                        <li class="tipto"><a id="abou" style="cursor: pointer">关于我们</a></li>
+                        <li class="tipto"><a href="<?php echo U('home/Index/login'); ?>" target="_blank">老师中心</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--地点-->
+            <div class="c2 city">
+                <div class="c12 ov_city">
+                    <p><span id="address"></span>&nbsp;<i class="fa fa-angle-down"></i></p>
+                </div>
+                <div class="c12 city_wrap" style="min-height: 400px">
+                    <div class="c12 city_tit" style="padding:10px;cursor: pointer">
+                        <div class="c3">切换城市</div>
+                        <!--<div class="c3">ABCDEFG</div>-->
+                        <!--<div class="c3">HIJKLMN</div>-->
+                        <!--<div class="c3">OPQRSW...</div>-->
+                    </div>
+                    <div class="c12" style="padding:15px;text-align:center">
+                        <foreach name="city" item="vo">
+                            <div class="c3"><a>{$vo.cityname}</a></div>
+                        </foreach>
+                    </div>
+                </div>
+            </div>
+            <div class="c2 call" style="text-align: right">
+                <ul>
+                    <li><i class="fa fa-phone"></i>&nbsp;021-64666013</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

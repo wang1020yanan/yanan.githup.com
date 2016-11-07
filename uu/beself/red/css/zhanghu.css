@@ -1,0 +1,179 @@
+body{
+    background: #F4F4F4;
+    padding: 0;
+    margin: 0;
+    font-family: Microsoft Yahei;
+}
+/*头部*/
+nav{
+    background: #000;opacity: 0.8;position:absolute;z-index:999;width:100%;margin:0
+}
+.nav-logo{
+    width: 16%;
+}
+.nav-a{
+    width: 12%;
+    text-align: right;
+
+}
+nav a:hover{
+    color:#FF6600;
+    text-decoration: none;
+}
+a{
+    color:#E8E8E8;
+    text-decoration: none;
+}
+.nav-logo,.nav-a{
+    float: left;
+    line-height: 50px;
+    font-size: 1.1em;
+    height: 50px;
+    color: #FFF;
+}
+.nav-b{
+    width: 84%;
+    display: none;
+    float: left;
+    height: 50px;
+    color: #FFF;
+    font-size: 1.1em;
+}
+.nav-b .col-md-10{
+    height: 50px;
+    margin: 0;
+    padding-top: 10px;
+}
+.nav-b .col-md-2{
+    height: 50px;
+    line-height: 50px;
+}
+.nav-b input{
+    height: 30px;
+    width: 88%;
+    background: #000;
+    border: none;
+    outline: none;
+}
+#nav-m .col-xs-4{
+    height: 50px;
+    line-height: 50px;
+}
+#collapseOne .col-md-2,.col-md-10{
+    margin-top: 1.5em;
+}
+#collapseOne{
+    background:#686868;
+    width: 110px;
+    height:180px;
+    margin-left: 38px;
+    color: darkblue;
+    text-align:left;
+    z-index: 999;
+    padding-top: 25px;
+    opacity: 0.9;
+}
+#collapseOne .col-md-12{
+    border-bottom: 1px solid #858585;
+    line-height: 30px;
+}
+/*账户*/
+.zhanghu-x{
+    width: 100%;
+    min-width: 1230px;
+}
+.zhanghu-a{
+    width: 1230px;
+    height:48px;
+}
+.zhanghu-b{
+    width: 1230px;
+    height:48px;
+    margin-top: 20px;
+    line-height: 48px;
+}
+.zhanghu-b a{
+    color:#A8A8A8;
+    text-decoration: none;
+}
+.zhanghu-b a:hover{
+    color: #000000;
+}
+
+.zhanghu-c{
+    width: 1230px;
+}
+/*账户菜单*/
+.zhanghu-cd{
+    width: 240px;
+    height:500px;
+    float: left;
+    background: #ffffff;
+}
+.zhanghu-xx{
+    width: 960px;
+    height:500px;
+    background: #ffffff;
+    float:left;
+    margin-left: 30px;
+}
+.zhanghu-cd1{
+    width: 240px;
+    height: 83.33px;
+    line-height: 83.33px;
+    text-align: center;
+    font-size: 20px;
+}
+.zhanghu-cd1:hover{
+    background:#ff9801;
+}
+.zhanghu-cd1 a{
+    text-decoration: none;
+    color: #909090;
+}
+.zhanghu-cd1 a:hover{
+    color: #000000;
+}
+/*账户图片*/
+.zhanghu-tp{
+    width: 900px;
+    height: 249px;
+    margin-left: 30px;
+    border-bottom: 1px solid#B0B0B0;
+}
+.zhanghu-tp-tp{
+    width: 450px;
+    height: 249px;
+    float: left;
+    text-align: center;
+
+}
+.zhanghu-tp-zh{
+    width: 450px;
+    height: 249px;
+    float: left;
+    text-align: center;
+}
+.zhanghu-tp-tp a{
+    color:#ff9801 ;
+    text-decoration: none;
+}
+/*账户订单*/
+.zhanghu-dd{
+    width: 900px;
+    height: 249px;
+    margin-left: 30px;
+}
+.zhanghu-dd-dd{
+    float: left;
+    width: 33.3%;
+    margin-top: 40px;
+    text-align: center;
+}
+.zhanghu-dd a{
+    color:#909090;
+    text-decoration: none;
+}
+.zhanghu-dd a:hover{
+    color: #ff9801;
+}

@@ -1,0 +1,17 @@
+html,body{
+    background: #F8F8F8;
+    font-family: Microsoft Yahei;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+#hb{
+    padding: 80px 1em 1em 1em
+}
+.col-md-7{
+    padding: 0 0 0 20px
+}
+.col-sm-7 img{
+    width: 90%;
+    margin-left: 15px;
+}

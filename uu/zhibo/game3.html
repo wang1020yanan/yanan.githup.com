@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="js/lufy.js"></script>
+    <style>
+        *{padding: 0;margin: 0}
+        canvas{
+            width: 100%;
+            height: 100%;
+        }
+        body{
+            /*background: #000000;*/
+            /*overflow: hidden;*/
+        }
+    </style>
+    <script>
+//        var h=document.documentElement.clientHeight;
+//        var w=document.documentElement.clientWidth;
+//        alert(h);
+//        if(h<640){
+//            h=640
+//        }
+//        if(w<1000){
+//            w=1000;
+//        }
+        init(40,'mylegend',1000,640,main);
+        var win= 0,
+            lose= 0,
+            selfTextAll,
+            selfTextWin,
+            selfTextLose,
+            selfTextDraw,
+            draw=0;
+        var loadingLayer,backLayer,backLayer2,resultLayer,clickLayer,selfBitmap,enemyBitmap;
+        var imgList={};
+        var imgData=[
+            {name:'bg',path:'img/1.png'},
+            {name:'jd',path:'img/2.jpg'},
+            {name:'jiandao',path:'img/4.png'},
+            {name:'shitou',path:'img/5.png'},
+            {name:'bu',path:'img/6.png'},
+            {name:'test',path:'http://photo.tp88.net/upfile/201210/13/201210132526-14746367.jpg'}
+        ];
+        var showList=[];
+        function main(){
+            backLayer=new LSprite();
+            addChild(backLayer);
+//            loading块
+            loadingLayer=new LoadingSample1();
+            backLayer.addChild(loadingLayer);
+            LLoadManage.load(
+                    imgData,function(progress){
+                        LSystem.screen(LStage.FULL_SCREEN);
+                        loadingLayer.setProgress(progress);
+                    },function(result){
+                        imgList=result;
+                        setTimeout(function(){
+                            backLayer.removeChild(loadingLayer);
+                            loadingLayer=null;
+                            gameInit();
+                        },1000)
+                    }
+            )
+        }
+//        加载背景
+        function gameInit(){
+            showList.push(new LBitmapData(imgList['jiandao']));
+            showList.push(new LBitmapData(imgList['shitou']));
+            showList.push(new LBitmapData(imgList['bu']));
+            backLayer.graphics.drawRect(0,'',[0,0,LGlobal.width,LGlobal.height],true,"#ffffff");
+//          玩家图片
+            selfBitmap=new LBitmap(showList[0]);
+            selfBitmap.x=250;
+            selfBitmap.y=200;
+            backLayer.addChild(selfBitmap);
+//          电脑图片
+            enemyBitmap=new LBitmap(showList[0]);
+            enemyBitmap.x=550;
+            enemyBitmap.y=200;
+            backLayer.addChild( enemyBitmap);
+//            玩家电脑名称
+            var nameText;
+            nameText=new LTextField();
+            nameText.text='玩家';
+            nameText.weight='bolder';
+            nameText.color='#ffffff';
+            nameText.size=24;
+            nameText.x=310;
+            nameText.y=380;
+            backLayer.addChild(nameText);
+            nameText=new LTextField();
+            nameText.text='电脑';
+            nameText.weight='bolder';
+            nameText.color='#ffffff';
+            nameText.size=24;
+            nameText.x=610;
+            nameText.y=380;
+            backLayer.addChild(nameText);
+//            结果和操作
+            initResultLayer();
+            initClickLayer();
+        }
+        function initResultLayer(){
+            resultLayer=new LSprite();
+            resultLayer.graphics.drawRect(2,'#ff8800',[0,0,150,110],true,'#ffffff');
+            resultLayer.x=10;
+            resultLayer.y=100;
+            backLayer.addChild(resultLayer);
+            selfTextAll=new LTextField();
+            selfTextAll.text="猜拳次数：0";
+            selfTextAll.x=10;
+            selfTextAll.y=20;
+            resultLayer.addChild(selfTextAll);
+            selfTextWin=new LTextField();
+            selfTextWin.text="胜利次数：0";
+            selfTextWin.x=10;
+            selfTextWin.y=40;
+            resultLayer.addChild(selfTextWin);
+            selfTextLose=new LTextField();
+            selfTextLose.text="失败次数：0";
+            selfTextLose.x=10;
+            selfTextLose.y=60;
+            resultLayer.addChild(selfTextLose);
+            selfTextDraw=new LTextField();
+            selfTextDraw.text="平局次数：0";
+            selfTextDraw.x=10;
+            selfTextDraw.y=80;
+            resultLayer.addChild(selfTextDraw);
+        }
+        function initClickLayer(){
+            clickLayer=new LSprite();
+            clickLayer.graphics.drawRect(2,'',[0,0,600,180],true,'#ffffff');
+            clickLayer.x=200;
+            clickLayer.y=440;
+            backLayer.addChild(clickLayer);
+            var  tit=new LTextField();
+            tit.text="请出拳：";
+            tit.x=10;
+            tit.y=10;
+            clickLayer.addChild(tit);
+            var shitou=getBtn('shitou','20','25');
+            shitou.addEventListener(LMouseEvent.MOUSE_UP,onclick1);
+            clickLayer.addChild(shitou);
+
+            var jiandao=getBtn('jiandao','200','25');
+            clickLayer.addChild(jiandao);
+            jiandao.addEventListener(LMouseEvent.MOUSE_UP,onclick1);
+            var bu=getBtn('bu','380','25');
+            bu.addEventListener(LMouseEvent.MOUSE_UP,onclick1);
+            clickLayer.addChild(bu);
+        }
+        function getBtn(v,x,y){
+            var buU=new LBitmap(new LBitmapData(imgList[v]));
+            buU.x=x;
+            buU.y=y;
+            buU.scaleX=0.9;
+            buU.scaleY=0.9;
+            var buO=new LBitmap(new LBitmapData(imgList[v]));
+            buO.scaleX=0.9;
+            buO.scaleY=0.9;
+            buO.x=x;
+            buO.y=y;
+            var btn=new LButton(buU,buO);
+            btn.cursor=
+            btn.name=v;
+            return btn;
+        }
+        function onclick1(event,display){
+                        var selfV,enemyV;
+                        if(display.name=="shitou"){
+                            selfV=1
+                        }else if(display.name=="jiandao"){
+                            selfV=0
+                        }else if(display.name=="bu"){
+                            selfV=2
+                        }
+            console.log(selfV);
+                        enemyV=Math.floor(Math.random()*3);
+                       selfBitmap.bitmapData=showList[selfV];
+                       enemyBitmap.bitmapData=showList[enemyV];
+                       if(selfV==enemyV){
+                           draw+=1;
+                       }else if(selfV==2&&enemyV==0){
+                           lose+=1;
+                       }else if(selfV==0&&enemyV==2){
+                           win+=1;
+                       } else if(selfV>enemyV){
+                           win+=1;
+                       }else{
+                           lose+=1;
+                       }
+            selfTextWin.text="胜利次数："+win;
+            selfTextAll.text="猜拳次数："+(win+lose+draw);
+            selfTextLose.text="失败次数："+lose;
+            selfTextDraw.text="平局次数："+draw;
+        }
+
+    </script>
+</head>
+<body>
+    <div id="mylegend">loading...</div>
+</body>
+</html>

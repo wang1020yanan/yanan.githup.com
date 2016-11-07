@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>优优老师 - 需求列表</title>
+    <link href="http://www.uustudy.com.cn/img/logo.png" rel="shortcut icon" type="image/x-icon"/>
+    <link href="__PUBLIC__/commen/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="__PUBLIC__/commen/css/button.css" rel="stylesheet" type="text/css">
+    <link href="__PUBLIC__/commen/fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="__PUBLIC__/order/css/allneed.css" rel="stylesheet" type="text/css">
+    <script src="__PUBLIC__/commen/js/jquery.min.js"></script>
+    <script src="__PUBLIC__/order/js/allneed.js"></script>
+
+</head>
+<body  onload="load()">
+
+    <div class="container tc_ch">
+        <div class="c12">
+
+            <div class="c12 tc_all">
+                <!--订单实例-->
+                <div class="c12 teacher_wrap">
+                    <div class="c12 order_tit">
+                        <div class="c2 order_status"><span>家教需求</span></div>
+                        <div class="c7">&nbsp;</div>
+                        <div class="c3 order_num"><p>需求编号：3535353535</p></div>
+                    </div>
+                    <div class="c12 order_a2">
+                        <div class="c12 order_a3">
+                            <div class="c10">
+                                <p>辅导科目：大学语文</p>
+                                <p>上课地址：未指定</p>
+                                <p>详细需求：已付款，教员抢单中</p>
+                            </div>
+                            <div class="c2 order_pri">
+                                <p>￥150</p>
+                                <p><a href="">申请此需求</a></p>
+                            </div>
+                        </div>
+                        <!--<div class="c12 order_a3 order_a4">-->
+                            <!-- -->
+                        <!--</div>-->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div style="clear: both"></div>
+    </div>
+<br><br>
+
+
+
+</body>
+</html>

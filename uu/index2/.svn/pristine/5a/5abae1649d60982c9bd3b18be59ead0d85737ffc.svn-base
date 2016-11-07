@@ -1,0 +1,368 @@
+[ 2016-01-24T13:14:33+08:00 ] 116.228.167.234 /uuuutest/thinkphp/index.php/Mobile/Course/setCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000403s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000810s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000883s ]
+SQL: SHOW COLUMNS FROM `mycourseinformation` [ RunTime:0.0011s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\AppServ_ONE\www\uuuutest\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 511 行.
+SQL: DELETE FROM `mycourseinformation` WHERE ( userID=13330458 ) [ RunTime:0.0007s ]
+NOTIC: [8] Use of undefined constant courseType - assumed 'courseType' D:\AppServ_ONE\www\uuuutest\thinkphp\Application\Mobile\Controller\CourseController.class.php 第 25 行.
+SQL: REPLACE INTO `mycourseinformation` (`courseMoney`,`courseGrade`,`courseType`,`userID`,`createTime`) VALUES ('55','20','4','13330458','1453612473'),('90','33','4','13330458','1453612473') [ RunTime:0.0003s ]
+
+[ 2016-01-24T13:42:56+08:00 ] 116.228.167.234 /uuuutest/thinkphp/index.php/Mobile/Course/setCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000636s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000701s ]
+SQL: SHOW COLUMNS FROM `mycourseinformation` [ RunTime:0.0013s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\AppServ_ONE\www\uuuutest\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 511 行.
+SQL: DELETE FROM `mycourseinformation` WHERE ( userID=13330458 ) [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant courseType - assumed 'courseType' D:\AppServ_ONE\www\uuuutest\thinkphp\Application\Mobile\Controller\CourseController.class.php 第 25 行.
+SQL: REPLACE INTO `mycourseinformation` (`courseMoney`,`courseGrade`,`courseType`,`userID`,`createTime`) VALUES ('55','20','4','13330458','1453614176'),('90','33','4','13330458','1453614176') [ RunTime:0.0002s ]
+
+[ 2016-01-24T13:48:49+08:00 ] 116.228.167.234 /uuuutest/thinkphp/index.php/Mobile/Course/setCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000399s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000708s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000775s ]
+SQL: SHOW COLUMNS FROM `mycourseinformation` [ RunTime:0.0011s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\AppServ_ONE\www\uuuutest\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 511 行.
+SQL: DELETE FROM `mycourseinformation` WHERE ( userID=13330458 ) [ RunTime:0.0005s ]
+NOTIC: [8] Use of undefined constant courseType - assumed 'courseType' D:\AppServ_ONE\www\uuuutest\thinkphp\Application\Mobile\Controller\CourseController.class.php 第 25 行.
+SQL: REPLACE INTO `mycourseinformation` (`courseMoney`,`courseGrade`,`courseType`,`userID`,`createTime`) VALUES ('55','20','4','13330458','1453614529'),('90','33','4','13330458','1453614529') [ RunTime:0.0002s ]
+
+[ 2016-01-24T13:49:29+08:00 ] 116.228.167.234 /uuuutest/thinkphp/index.php/Mobile/Course/setCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000401s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000682s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000750s ]
+SQL: SHOW COLUMNS FROM `mycourseinformation` [ RunTime:0.0011s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\AppServ_ONE\www\uuuutest\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 511 行.
+SQL: DELETE FROM `mycourseinformation` WHERE ( userID=17930468 ) [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant courseType - assumed 'courseType' D:\AppServ_ONE\www\uuuutest\thinkphp\Application\Mobile\Controller\CourseController.class.php 第 25 行.
+
+[ 2016-01-24T13:49:56+08:00 ] 116.228.167.234 /uuuutest/thinkphp/index.php/Mobile/Course/setCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000399s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000697s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000764s ]
+SQL: SHOW COLUMNS FROM `mycourseinformation` [ RunTime:0.0011s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\AppServ_ONE\www\uuuutest\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 511 行.
+SQL: DELETE FROM `mycourseinformation` WHERE ( userID=17930468 ) [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant courseType - assumed 'courseType' D:\AppServ_ONE\www\uuuutest\thinkphp\Application\Mobile\Controller\CourseController.class.php 第 25 行.
+
+[ 2016-01-24T13:54:03+08:00 ] 116.228.167.234 /uuuutest/thinkphp/index.php/Mobile/Course/setCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000571s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000736s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000803s ]
+SQL: SHOW COLUMNS FROM `mycourseinformation` [ RunTime:0.0011s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\AppServ_ONE\www\uuuutest\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 511 行.
+SQL: DELETE FROM `mycourseinformation` WHERE ( userID=17930468 ) [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant courseType - assumed 'courseType' D:\AppServ_ONE\www\uuuutest\thinkphp\Application\Mobile\Controller\CourseController.class.php 第 25 行.
+
+[ 2016-01-24T14:00:05+08:00 ] 116.228.167.234 /uuuutest/thinkphp/index.php/Mobile/Course/setCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000635s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000702s ]
+SQL: SHOW COLUMNS FROM `mycourseinformation` [ RunTime:0.0011s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\AppServ_ONE\www\uuuutest\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 511 行.
+SQL: DELETE FROM `mycourseinformation` WHERE ( userID=17930468 ) [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant courseType - assumed 'courseType' D:\AppServ_ONE\www\uuuutest\thinkphp\Application\Mobile\Controller\CourseController.class.php 第 25 行.
+
+[ 2016-01-24T14:00:11+08:00 ] 116.228.167.234 /uuuutest/thinkphp/index.php/Mobile/Course/setCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000636s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000702s ]
+SQL: SHOW COLUMNS FROM `mycourseinformation` [ RunTime:0.0011s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\AppServ_ONE\www\uuuutest\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 511 行.
+SQL: DELETE FROM `mycourseinformation` WHERE ( userID=17930468 ) [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant courseType - assumed 'courseType' D:\AppServ_ONE\www\uuuutest\thinkphp\Application\Mobile\Controller\CourseController.class.php 第 25 行.
+SQL: REPLACE INTO `mycourseinformation` (`courseType`,`courseMoney`,`courseGrade`,`userID`,`createTime`) VALUES ('1','45','1','17930468','1453615211'),('1','75','30','17930468','1453615211') [ RunTime:0.0002s ]
+
+[ 2016-01-24T14:00:18+08:00 ] 116.228.167.234 /uuuutest/thinkphp/index.php/Mobile/Course/setCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000390s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000610s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000677s ]
+SQL: SHOW COLUMNS FROM `mycourseinformation` [ RunTime:0.0011s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\AppServ_ONE\www\uuuutest\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 511 行.
+SQL: DELETE FROM `mycourseinformation` WHERE ( userID=17930468 ) [ RunTime:0.0006s ]
+NOTIC: [8] Use of undefined constant courseType - assumed 'courseType' D:\AppServ_ONE\www\uuuutest\thinkphp\Application\Mobile\Controller\CourseController.class.php 第 25 行.
+
+[ 2016-01-24T14:00:22+08:00 ] 116.228.167.234 /uuuutest/thinkphp/index.php/Mobile/Course/setCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000394s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000608s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000675s ]
+SQL: SHOW COLUMNS FROM `mycourseinformation` [ RunTime:0.0011s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\AppServ_ONE\www\uuuutest\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 511 行.
+SQL: DELETE FROM `mycourseinformation` WHERE ( userID=17930468 ) [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant courseType - assumed 'courseType' D:\AppServ_ONE\www\uuuutest\thinkphp\Application\Mobile\Controller\CourseController.class.php 第 25 行.
+
+[ 2016-01-24T14:00:29+08:00 ] 116.228.167.234 /uuuutest/thinkphp/index.php/Mobile/Course/setCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000611s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000676s ]
+SQL: SHOW COLUMNS FROM `mycourseinformation` [ RunTime:0.0012s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\AppServ_ONE\www\uuuutest\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 511 行.
+SQL: DELETE FROM `mycourseinformation` WHERE ( userID=17930468 ) [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant courseType - assumed 'courseType' D:\AppServ_ONE\www\uuuutest\thinkphp\Application\Mobile\Controller\CourseController.class.php 第 25 行.
+SQL: REPLACE INTO `mycourseinformation` (`courseType`,`courseMoney`,`courseGrade`,`userID`,`createTime`) VALUES ('1','45','1','17930468','1453615229'),('1','75','30','17930468','1453615229') [ RunTime:0.0003s ]
+
+[ 2016-01-24T14:00:31+08:00 ] 116.228.167.234 /uuuutest/thinkphp/index.php/Mobile/Course/setCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000393s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000612s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000676s ]
+SQL: SHOW COLUMNS FROM `mycourseinformation` [ RunTime:0.0012s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\AppServ_ONE\www\uuuutest\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 511 行.
+SQL: DELETE FROM `mycourseinformation` WHERE ( userID=17930468 ) [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant courseType - assumed 'courseType' D:\AppServ_ONE\www\uuuutest\thinkphp\Application\Mobile\Controller\CourseController.class.php 第 25 行.
+SQL: REPLACE INTO `mycourseinformation` (`courseType`,`courseMoney`,`courseGrade`,`userID`,`createTime`) VALUES ('1','45','1','17930468','1453615231'),('1','75','30','17930468','1453615231') [ RunTime:0.0002s ]
+
+[ 2016-01-24T14:00:34+08:00 ] 116.228.167.234 /uuuutest/thinkphp/index.php/Mobile/Course/setCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000484s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000698s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000764s ]
+SQL: SHOW COLUMNS FROM `mycourseinformation` [ RunTime:0.0011s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\AppServ_ONE\www\uuuutest\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 511 行.
+SQL: DELETE FROM `mycourseinformation` WHERE ( userID=17930468 ) [ RunTime:0.0005s ]
+NOTIC: [8] Use of undefined constant courseType - assumed 'courseType' D:\AppServ_ONE\www\uuuutest\thinkphp\Application\Mobile\Controller\CourseController.class.php 第 25 行.
+SQL: REPLACE INTO `mycourseinformation` (`courseMoney`,`courseGrade`,`courseType`,`userID`,`createTime`) VALUES ('45','1','1','17930468','1453615234'),('75','30','1','17930468','1453615234') [ RunTime:0.0002s ]
+
+[ 2016-01-24T14:00:40+08:00 ] 116.228.167.234 /uuuutest/thinkphp/index.php/Mobile/Course/setCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000691s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000756s ]
+SQL: SHOW COLUMNS FROM `mycourseinformation` [ RunTime:0.0012s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\AppServ_ONE\www\uuuutest\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 511 行.
+SQL: DELETE FROM `mycourseinformation` WHERE ( userID=17930468 ) [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant courseType - assumed 'courseType' D:\AppServ_ONE\www\uuuutest\thinkphp\Application\Mobile\Controller\CourseController.class.php 第 25 行.
+SQL: REPLACE INTO `mycourseinformation` (`courseMoney`,`courseGrade`,`courseType`,`userID`,`createTime`) VALUES ('45','1','1','17930468','1453615240'),('75','30','1','17930468','1453615240') [ RunTime:0.0002s ]
+
+[ 2016-01-24T14:01:33+08:00 ] 116.228.167.234 /uuuutest/thinkphp/index.php/Mobile/Course/setCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000482s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000688s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000753s ]
+SQL: SHOW COLUMNS FROM `mycourseinformation` [ RunTime:0.0011s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\AppServ_ONE\www\uuuutest\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 511 行.
+SQL: DELETE FROM `mycourseinformation` WHERE ( userID=17930468 ) [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant courseType - assumed 'courseType' D:\AppServ_ONE\www\uuuutest\thinkphp\Application\Mobile\Controller\CourseController.class.php 第 25 行.
+SQL: REPLACE INTO `mycourseinformation` (`courseMoney`,`courseGrade`,`courseType`,`userID`,`createTime`) VALUES ('65','23','3','17930468','1453615293'),('90','33','3','17930468','1453615293'),('45','1','1','17930468','1453615293'),('75','30','1','17930468','1453615293') [ RunTime:0.0003s ]
+
+[ 2016-01-24T14:01:39+08:00 ] 116.228.167.234 /uuuutest/thinkphp/index.php/Mobile/Course/setCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000399s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000791s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000858s ]
+SQL: SHOW COLUMNS FROM `mycourseinformation` [ RunTime:0.0011s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\AppServ_ONE\www\uuuutest\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 511 行.
+SQL: DELETE FROM `mycourseinformation` WHERE ( userID=17930468 ) [ RunTime:0.0005s ]
+NOTIC: [8] Use of undefined constant courseType - assumed 'courseType' D:\AppServ_ONE\www\uuuutest\thinkphp\Application\Mobile\Controller\CourseController.class.php 第 25 行.
+SQL: REPLACE INTO `mycourseinformation` (`courseMoney`,`courseGrade`,`courseType`,`userID`,`createTime`) VALUES ('65','23','3','17930468','1453615299'),('90','33','3','17930468','1453615299'),('45','1','1','17930468','1453615299'),('75','30','1','17930468','1453615299') [ RunTime:0.0003s ]
+
+[ 2016-01-24T14:01:44+08:00 ] 116.228.167.234 /uuuutest/thinkphp/index.php/Mobile/Course/setCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000394s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000706s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000777s ]
+SQL: SHOW COLUMNS FROM `mycourseinformation` [ RunTime:0.0011s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\AppServ_ONE\www\uuuutest\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 511 行.
+SQL: DELETE FROM `mycourseinformation` WHERE ( userID=17930468 ) [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant courseType - assumed 'courseType' D:\AppServ_ONE\www\uuuutest\thinkphp\Application\Mobile\Controller\CourseController.class.php 第 25 行.
+
+[ 2016-01-24T14:01:49+08:00 ] 116.228.167.234 /uuuutest/thinkphp/index.php/Mobile/Course/setCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000502s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000688s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000753s ]
+SQL: SHOW COLUMNS FROM `mycourseinformation` [ RunTime:0.0012s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\AppServ_ONE\www\uuuutest\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 511 行.
+SQL: DELETE FROM `mycourseinformation` WHERE ( userID=17930468 ) [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant courseType - assumed 'courseType' D:\AppServ_ONE\www\uuuutest\thinkphp\Application\Mobile\Controller\CourseController.class.php 第 25 行.
+SQL: REPLACE INTO `mycourseinformation` (`courseMoney`,`courseGrade`,`courseType`,`userID`,`createTime`) VALUES ('45','1','1','17930468','1453615309'),('90','33','1','17930468','1453615309') [ RunTime:0.0003s ]
+
+[ 2016-01-24T14:01:52+08:00 ] 116.228.167.234 /uuuutest/thinkphp/index.php/Mobile/Course/setCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000418s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000707s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000774s ]
+SQL: SHOW COLUMNS FROM `mycourseinformation` [ RunTime:0.0012s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\AppServ_ONE\www\uuuutest\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 511 行.
+SQL: DELETE FROM `mycourseinformation` WHERE ( userID=17930468 ) [ RunTime:0.0005s ]
+NOTIC: [8] Use of undefined constant courseType - assumed 'courseType' D:\AppServ_ONE\www\uuuutest\thinkphp\Application\Mobile\Controller\CourseController.class.php 第 25 行.
+SQL: REPLACE INTO `mycourseinformation` (`courseMoney`,`courseGrade`,`courseType`,`userID`,`createTime`) VALUES ('45','1','1','17930468','1453615312'),('90','33','1','17930468','1453615312') [ RunTime:0.0005s ]
+
+[ 2016-01-24T14:58:05+08:00 ] 116.228.167.234 /uuuutest/thinkphp/index.php/Mobile/Course/setCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000397s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001120s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001210s ]
+SQL: SHOW COLUMNS FROM `mycourseinformation` [ RunTime:0.0011s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\AppServ_ONE\www\uuuutest\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 511 行.
+SQL: DELETE FROM `mycourseinformation` WHERE ( userID=17930468 ) [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant courseType - assumed 'courseType' D:\AppServ_ONE\www\uuuutest\thinkphp\Application\Mobile\Controller\CourseController.class.php 第 25 行.
+SQL: REPLACE INTO `mycourseinformation` (`courseMoney`,`courseGrade`,`courseType`,`userID`,`createTime`) VALUES ('45','1','1','17930468','1453618685'),('90','33','1','17930468','1453618685') [ RunTime:0.0002s ]
+
+[ 2016-01-24T14:58:10+08:00 ] 116.228.167.234 /uuuutest/thinkphp/index.php/Mobile/Course/setCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000478s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000690s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000756s ]
+SQL: SHOW COLUMNS FROM `mycourseinformation` [ RunTime:0.0011s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\AppServ_ONE\www\uuuutest\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 511 行.
+SQL: DELETE FROM `mycourseinformation` WHERE ( userID=17930468 ) [ RunTime:0.0005s ]
+NOTIC: [8] Use of undefined constant courseType - assumed 'courseType' D:\AppServ_ONE\www\uuuutest\thinkphp\Application\Mobile\Controller\CourseController.class.php 第 25 行.
+SQL: REPLACE INTO `mycourseinformation` (`courseMoney`,`courseGrade`,`courseType`,`userID`,`createTime`) VALUES ('45','1','1','17930468','1453618690'),('90','33','1','17930468','1453618690') [ RunTime:0.0002s ]
+
+[ 2016-01-24T15:20:46+08:00 ] 116.228.167.234 /uuuutest/thinkphp/index.php/Mobile/Course/setCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000402s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000744s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000811s ]
+SQL: SHOW COLUMNS FROM `mycourseinformation` [ RunTime:0.0012s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\AppServ_ONE\www\uuuutest\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 511 行.
+SQL: DELETE FROM `mycourseinformation` WHERE ( userID=17930468 ) [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant courseType - assumed 'courseType' D:\AppServ_ONE\www\uuuutest\thinkphp\Application\Mobile\Controller\CourseController.class.php 第 25 行.
+
+[ 2016-01-24T15:20:57+08:00 ] 116.228.167.234 /uuuutest/thinkphp/index.php/Mobile/Course/setCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000398s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000761s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000848s ]
+SQL: SHOW COLUMNS FROM `mycourseinformation` [ RunTime:0.0011s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\AppServ_ONE\www\uuuutest\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 511 行.
+SQL: DELETE FROM `mycourseinformation` WHERE ( userID=17930468 ) [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant courseType - assumed 'courseType' D:\AppServ_ONE\www\uuuutest\thinkphp\Application\Mobile\Controller\CourseController.class.php 第 25 行.
+
+[ 2016-01-24T15:21:15+08:00 ] 116.228.167.234 /uuuutest/thinkphp/index.php/Mobile/Course/setCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000393s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000737s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000812s ]
+SQL: SHOW COLUMNS FROM `mycourseinformation` [ RunTime:0.0011s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\AppServ_ONE\www\uuuutest\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 511 行.
+SQL: DELETE FROM `mycourseinformation` WHERE ( userID=17930468 ) [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant courseType - assumed 'courseType' D:\AppServ_ONE\www\uuuutest\thinkphp\Application\Mobile\Controller\CourseController.class.php 第 25 行.
+SQL: REPLACE INTO `mycourseinformation` (`courseMoney`,`courseGrade`,`courseType`,`userID`,`createTime`) VALUES ('45','1','2','17930468','1453620075'),('55','20','2','17930468','1453620075'),('65','23','2','17930468','1453620075'),('45','1','3','17930468','1453620075'),('55','20','3','17930468','1453620075'),('65','23','3','17930468','1453620075'),('45','1','1','17930468','1453620075') [ RunTime:0.0003s ]
+
+[ 2016-01-24T15:21:32+08:00 ] 116.228.167.234 /uuuutest/thinkphp/index.php/Mobile/Course/setCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000400s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000695s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000764s ]
+SQL: SHOW COLUMNS FROM `mycourseinformation` [ RunTime:0.0012s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\AppServ_ONE\www\uuuutest\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 511 行.
+SQL: DELETE FROM `mycourseinformation` WHERE ( userID=17930468 ) [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant courseType - assumed 'courseType' D:\AppServ_ONE\www\uuuutest\thinkphp\Application\Mobile\Controller\CourseController.class.php 第 25 行.
+SQL: REPLACE INTO `mycourseinformation` (`courseMoney`,`courseGrade`,`courseType`,`userID`,`createTime`) VALUES ('45','1','2','17930468','1453620092'),('45','1','1','17930468','1453620092') [ RunTime:0.0002s ]
+
+[ 2016-01-24T15:21:39+08:00 ] 116.228.167.234 /uuuutest/thinkphp/index.php/Mobile/Course/setCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000685s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000751s ]
+SQL: SHOW COLUMNS FROM `mycourseinformation` [ RunTime:0.0011s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\AppServ_ONE\www\uuuutest\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 511 行.
+SQL: DELETE FROM `mycourseinformation` WHERE ( userID=17930468 ) [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant courseType - assumed 'courseType' D:\AppServ_ONE\www\uuuutest\thinkphp\Application\Mobile\Controller\CourseController.class.php 第 25 行.
+SQL: REPLACE INTO `mycourseinformation` (`courseMoney`,`courseGrade`,`courseType`,`userID`,`createTime`) VALUES ('45','1','1','17930468','1453620099') [ RunTime:0.0002s ]
+
+[ 2016-01-24T15:24:24+08:00 ] 116.228.167.234 /uuuutest/thinkphp/index.php/Mobile/Course/setCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000405s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000722s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000789s ]
+SQL: SHOW COLUMNS FROM `mycourseinformation` [ RunTime:0.0011s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\AppServ_ONE\www\uuuutest\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 511 行.
+SQL: DELETE FROM `mycourseinformation` WHERE ( userID=17930468 ) [ RunTime:0.0005s ]
+NOTIC: [8] Use of undefined constant courseType - assumed 'courseType' D:\AppServ_ONE\www\uuuutest\thinkphp\Application\Mobile\Controller\CourseController.class.php 第 25 行.
+SQL: REPLACE INTO `mycourseinformation` (`courseMoney`,`courseGrade`,`courseType`,`userID`,`createTime`) VALUES ('45','1','1','17930468','1453620264'),('55','20','1','17930468','1453620264'),('90','33','1','17930468','1453620264') [ RunTime:0.0002s ]
+
+[ 2016-01-24T15:24:34+08:00 ] 116.228.167.234 /uuuutest/thinkphp/index.php/Mobile/Course/setCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000383s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000669s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000736s ]
+SQL: SHOW COLUMNS FROM `mycourseinformation` [ RunTime:0.0011s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\AppServ_ONE\www\uuuutest\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 511 行.
+SQL: DELETE FROM `mycourseinformation` WHERE ( userID=17930468 ) [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant courseType - assumed 'courseType' D:\AppServ_ONE\www\uuuutest\thinkphp\Application\Mobile\Controller\CourseController.class.php 第 25 行.
+SQL: REPLACE INTO `mycourseinformation` (`courseMoney`,`courseGrade`,`courseType`,`userID`,`createTime`) VALUES ('45','1','1','17930468','1453620274'),('55','20','1','17930468','1453620274'),('90','33','1','17930468','1453620274') [ RunTime:0.0002s ]
+
+[ 2016-01-24T15:24:37+08:00 ] 116.228.167.234 /uuuutest/thinkphp/index.php/Mobile/Course/setCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000663s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000729s ]
+SQL: SHOW COLUMNS FROM `mycourseinformation` [ RunTime:0.0011s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\AppServ_ONE\www\uuuutest\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 511 行.
+SQL: DELETE FROM `mycourseinformation` WHERE ( userID=17930468 ) [ RunTime:0.0005s ]
+NOTIC: [8] Use of undefined constant courseType - assumed 'courseType' D:\AppServ_ONE\www\uuuutest\thinkphp\Application\Mobile\Controller\CourseController.class.php 第 25 行.
+SQL: REPLACE INTO `mycourseinformation` (`courseMoney`,`courseGrade`,`courseType`,`userID`,`createTime`) VALUES ('45','1','1','17930468','1453620277'),('55','20','1','17930468','1453620277'),('90','33','1','17930468','1453620277') [ RunTime:0.0002s ]
+

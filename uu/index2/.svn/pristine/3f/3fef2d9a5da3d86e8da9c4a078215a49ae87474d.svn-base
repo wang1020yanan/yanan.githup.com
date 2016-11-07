@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>优优老师 - 用心的名校大学生家教平台</title>
+    <meta id="metaKeywords" name="keywords" content="优优老师,优优家教,在线教育,老师,家教,优思家教,疯狂老师,跟谁学,轻轻家教,老师好,优优学,家教部,交通大学,交大,华东师范大学,华师大,财大,上外,华东理工">
+    <meta name="description" content="优优老师，是用心为中小学学生和家长提供优质家教咨询内容的O2O初创服务应用。优优老师涵盖上海各重点高校优秀在校生以及上海中小学优秀教师资源，以独有的数据匹配引擎为学生和家教推荐精确切且适合的教师资源。
+优优家教覆盖上海复旦、交大、同济、财大等各高校的优秀在校学生对需要家教服务的学生提供优质的家教课程。包括K12领域语文、数学、英语、物理、化学、政治、历史、生物、地理科目的家教课程。优优老师致力于为每一个学生提供最全面和最优质的定制化服务。" />
+
+    <meta name="baidu-site-verification" content="rMSEcIr0LO" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="http://www.uustudy.com.cn/img/logo.png" rel="shortcut icon" type="image/x-icon"/>
+    <link href="__PUBLIC__/css/ihover.css" rel="stylesheet" type="text/css">
+    <link href="__PUBLIC__/css/index1.css" rel="stylesheet" type="text/css">
+    <link href="__PUBLIC__/css/swiper.min.css" rel="stylesheet" type="text/css">
+    <script src="__PUBLIC__/js/jquery-2.1.1.min.js"></script>
+    <script src="__PUBLIC__/js/index1.js"></script>
+    <script src="__PUBLIC__/js/swiper.min.js"></script>
+    <!--[if IE 8]>
+         <link href="__PUBLIC__/css/index1_ie8.css" rel="stylesheet" type="text/css">
+    <![endif]-->
+</head>
+<body onload="load()">
+<img style="display: none" src="__PUBLIC__/img/tc_home/2.png" alt="优优老师" title="优优老师"/>
+    <h1 style="position: absolute;opacity: 0">优优老师，用心为中小学学生和家长提供优质家教咨询内容的O2O初创服务应用。优优老师涵盖上海各重点高校优秀在校生以及上海中小学优秀教师资源，以独有的数据匹配引擎为学生和家教推荐精确切且适合的教师资源。
+        优优家教覆盖上海复旦、交大、同济、财大等各高校的优秀在校学生对需要家教服务的学生提供优质的家教课程。包括K12领域语文、数学、英语、物理、化学、政治、历史、生物、地理科目的家教课程。优优老师致力于为每一个学生提供最全面和最优质的定制化服务。</h1>
+   <style>
+       /*头部*/
+       .header{
+           width: 100%;
+		   box-shadow: 1px 1px 30px #ccc;
+           height: 70px;
+           min-width: 970px;
+           overflow: hidden;
+           /*font-family:"Comic Sans MS","幼圆","黑体",sans-serif;*/
+           background-color:rgba(255,255,255,0.75);
+       }
+       .header_bg{
+           width: 100%;
+           height: 71px;
+           min-width: 970px;
+
+       }
+       .bg_abs{
+           position: absolute;
+       }
+       .header_wrap .logo .c2 img {
+           padding-top: 15px;
+       }
+       .header_wrap .logo .c2 img:hover{
+           opacity: 0.8;
+       }
+       .header_wrap .logo .c10 img{
+           padding-top: 26px;
+           margin-left: 20px;
+       }
+       .nav_ul li a{
+           font-size: 20px;
+           font-weight: 900;
+       }
+       .nav_ul li:nth-child(1) a{
+           font-size: 20px;
+           color: #070707;
+
+       }
+       .nav_ul li:nth-child(2) a{
+           font-size: 20px;
+           color: #929292;
+
+       }
+       .nav_ul li:nth-child(3) a,.nav_ul li:nth-child(4) a{
+           font-size: 20px;
+           color: #929292;
+       }
+       .nav_ul li:nth-child(5) a{
+           font-size: 20px;
+           color: #0a74f6;
+       }
+       .header .nav_ul li a:hover{
+           color:#0a74f6 ;
+       }
+       .header .nav_ul li{
+           display: inline;
+           line-height: 70px;
+           padding: 0 20px;
+       }
+       .header .call li{
+           display: inline;
+           line-height: 70px;
+           font-size: 18px;
+           color: #5c5c5c;
+       }
+       .header .call img{
+           position: relative;
+           /*vertical-align:middle;*/
+           top: 6px;
+       }
+       .header a:hover{
+           color:#0a74f6 ;
+       }
+       @-webkit-keyframes fadein
+       {
+           0%   {left: 9px;top: 22px}
+           /*20%  {left: 9px;top: 27px}*/
+           30%  {left: 9px;top: 38px;opacity: 0.5}
+           /*60%  {left: 9px;top: 36px}*/
+           /*80%  {left: 9px;top: 42px}*/
+           100% {left: 9px;top: 58px;opacity: 1}
+       }
+       .tipdo{
+           animation:fadein .8s 1;
+           /*-moz-animation:shut 0.5s; /!* Firefox *!/*/
+           /*-webkit-animation:shut 0.5s; /!* Safari and Chrome *!/*/
+           /*-o-animation:shut 0.5s; /!* Opera *!/*/
+       }
+   </style>
+    <div class="header">
+        <img class="header_bg" src="__PUBLIC__/img/tc_home/1.png" style="position: absolute">
+         <div class="header_wrap container">
+             <div class="c12">
+                 <div class="c3 logo">
+                     <div class="c2">
+                         <a href="/"><img src="__PUBLIC__/img/tc_home/2.png" alt="优优老师" title="优优老师"/></a>
+                     </div>
+                     <div class="c10">
+                         <img src="__PUBLIC__/img/tc_home/3.png"/>
+                     </div>
+                     <div style="clear: both"></div>
+                 </div>
+                 <div class="c7 nav">
+                     <ul class="nav_ul">
+                         <li class="tipto"><a id="home" style="cursor: pointer">首页</a></li>
+						 <li class="tipto">
+                             <a>教员库</a>
+                         </li>
+                         <li class="tipto"><a id="func" style="cursor: pointer">功能</a></li>
+                         <li class="tipto"><a id="abou" style="cursor: pointer">关于我们</a></li>
+                         <li class="tipto"><a href="<?php echo U('home/Index/login'); ?>" target="_blank">老师中心</a></li>
+                     </ul>
+                 </div>
+                 <div class="c2 call">
+                     <ul>
+                         <li><img src="__PUBLIC__/img/tc_home/4.png" /></li>
+                         <li>021-64666013</li>
+                     </ul>
+                 </div>
+             </div>
+         </div>
+    </div>
+    <div class="full body_content1">
+        <div class="swiper-container" style="width: 100%">
+            <div class="swiper-wrapper">
+		     	<div class="swiper-slide"><a href="<?php echo U('home/Index/recruit'); ?>"><img src="__PUBLIC__/img/tc_home/30.png"/></a></div>  
+			    <div class="swiper-slide"><a href="<?php echo U('home/Index/jx_uu'); ?>"><img src="__PUBLIC__/img/tc_home/banner3.png"/></a></div>
+                <div class="swiper-slide"><img src="__PUBLIC__/img/tc_home/5.png"/></div>
+            </div>
+            <style>
+                .swiper-pagination-bullet {
+                    width: 12px;
+                    height: 12px;
+                }
+            </style>
+            <div class="swiper-button-prev swiper-button-black" style="top: 37%"></div>
+            <div class="swiper-button-next swiper-button-black" style="top: 37%"></div>
+            <div class="swiper-pagination" style="top:60%"></div>
+        </div>
+        <!--<img src="__PUBLIC__/img/tc_home/5.png"/>-->
+    </div>
+    <div class="full body_content2">
+        <div class="c12" style="overflow: hidden">
+            <img class="con2_bg" src="__PUBLIC__/img/tc_home/6.png"/>
+            <div class=" container yy_btn">
+                <div class="c8">
+                    <h1 class="yy_tit">名校优秀大学生家教，轻松预约上门教学</h1>
+                </div>
+                <div class="c4" style="text-align: right">
+                    <a id="now_yy" class="set hoverable">
+                        <img src="__PUBLIC__/img/tc_home/7.png"/>
+                        <div class="anim"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div style="clear: both"></div>
+    </div>
+    <div class="full body_content3">
+         <div class="container">
+             <div class="c12 con_wrap">
+                 <div class="c4">
+                     <!--<img src="__PUBLIC__/img/tc_home/8.png"/>-->
+                     <!--<h1>高效匹配</h1>-->
+                     <!--<p>0.3&nbsp秒帮你推荐家教老师</p>-->
+
+                     <!-- colored -->
+                     <div class="ih-item circle colored effect6 scale_up"><a >
+                         <div class="img"><img src="__PUBLIC__/img/tc_home/8.png" alt="img"></div>
+                         <div class="info" style=" background: #0a74f6">
+                             <h3 style="font-size: 26px">高效匹配</h3>
+                             <p style="font-size: 14px;color: #FFFFFF">0.3秒帮你推荐家教老师</p>
+                         </div></a></div>
+                     <!-- end colored-->
+                 </div>
+                 <div class="c4">
+                     <!--<img src="__PUBLIC__/img/tc_home/9.png" />-->
+                     <!--<h1>托管安全</h1>-->
+                     <!--<p>没有现金交易，省心安心</p>-->
+                     <!-- colored -->
+                     <div class="ih-item circle colored effect6 scale_up"><a>
+                         <div class="img"><img src="__PUBLIC__/img/tc_home/9.png" alt="img"></div>
+                         <div class="info" style=" background: #0a74f6">
+                             <h3 style="font-size: 26px">托管安全</h3>
+                             <p style="font-size: 14px;color: #FFFFFF">没有现金交易，省心安心</p>
+                         </div></a></div>
+                     <!-- end colored-->
+                 </div>
+                 <div class="c4">
+                     <!--<img src="__PUBLIC__/img/tc_home/10.png" />-->
+                     <!--<h1>师资雄厚</h1>-->
+                     <!--<p>有步骤引导，针对性教学</p>-->
+                     <!-- colored -->
+                     <div class="ih-item circle colored effect6 scale_up"><a>
+                         <div class="img"><img src="__PUBLIC__/img/tc_home/10.png" alt="img"></div>
+                         <div class="info" style=" background: #0a74f6">
+                             <h3 style="font-size: 26px">师资雄厚</h3>
+                             <p style="font-size: 14px;color: #FFFFFF">有步骤引导，针对性教学</p>
+                         </div></a></div>
+                     <!-- end colored-->
+                 </div>
+             </div>
+             <div style="clear: both"></div>
+         </div>
+    </div>
+    <!--功能-->
+    <div class="full body_content4">
+            <img style="width: 100%;min-width: 970px" src="__PUBLIC__/img/function/1.png" alt=""/>
+        <div class="full">
+            <div class="container con8_wrap">
+                <div class="bg_wrap">
+                    <img src="__PUBLIC__/img/function/3.png">
+                </div>
+                <div class="c12 liu_nav">
+                    <div class="c1"><img src="__PUBLIC__/img/function/2.png"></div>
+                    <div class="c11">
+                        <p>用户操作流程图</p>
+                    </div>
+                    <div style="clear: both"></div>
+                </div>
+                <div style="clear: both"></div>
+                <div class="server">
+                    <div class="c12 li_nav">
+                        <div class="c3">&nbsp</div>
+                        <div class="c6"><span></span><p>&nbsp足不出户</p><p>&nbsp&nbsp&nbsp千万名师任你挑选</p></div>
+                        <div class="c3">&nbsp;</div>
+                    </div>
+                    <div class="c12 li_nav">
+                        <div class="c3">&nbsp</div>
+                        <div class="c6"><span></span><p>&nbsp安心省心</p><p>&nbsp&nbsp&nbsp有第三方平台保证</p></div>
+                        <div class="c3">&nbsp;</div>
+                    </div>
+                    <div class="c12 li_nav">
+                        <div class="c3">&nbsp</div>
+                        <div class="c6"><span></span><p>&nbsp贴心服务</p><p>&nbsp&nbsp&nbsp官方陪同家教上门</p></div>
+                        <div class="c3">&nbsp;</div>
+                    </div>
+                </div>
+                <div class="c12 ser_path">
+                    <img src="__PUBLIC__/img/function/4.png">
+                </div>
+                <div style="clear: both"></div>
+            </div>
+            <div style="clear: both"></div>
+        </div>
+        <div style="clear: both"></div>
+    </div>
+<!--<hr style="background-color: #2C3033">-->
+
+<!--关于我们-->
+<div class="full con1">
+    <div class="container con1_wrap">
+        <div class="c12 gy">
+            <div class="c1"><img src="__PUBLIC__/img/about/1.png"></div>
+            <div class="c2"><p>关于我们</p></div>
+            <div class="c9"><img src="__PUBLIC__/img/about/2.png"><span>ABOUT US</span></div>
+        </div>
+        <div class="c12 about_us">
+            <p>一片树林里分出两条路，而我选择了人迹更少的一条</p>
+            <p><span>「未来」</span>是不会主动到来的，那就让<span>「我们」</span>一起走向它</p>
+            <p>世界上总是要有一些梦想派的</p>
+            <p>而我们，就是希望重新定义家教的梦想派</p>
+            <p>生活不只有眼前的苟且，还有诗歌和远方</p>
+            <p>远方，教育的<span>「未来」</span>正逐步明朗</p>
+            <p>我们为你准备的一切，从这一点一滴开始</p>
+            <p>你愿意选择我们，去一探未来的风景吗？</p>
+        </div>
+        <div class="c12 gy join">
+            <div class="c1"><img src="__PUBLIC__/img/about/1.png"></div>
+            <div class="c2"><p>加入我们</p></div>
+            <div class="c9"><img src="__PUBLIC__/img/about/2.png"><span>JOIN US</span></div>
+        </div>
+        <div style="clear: both"></div>
+        <div class="12 join_us">
+            <p>加入优优，许诺你一个可见的未来</p>
+            <div class="c12">
+                <div class="c6 zp_tp1">
+                    <a target="_blank" href="http://sou.zhaopin.com/jobs/searchresult.ashx?jl=%E4%B8%8A%E6%B5%B7&kw=%E4%B8%8A%E6%B5%B7%E4%BC%98%E4%BC%98%E6%95%99%E8%82%B2%E7%A7%91%E6%8A%80%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8&p=1&kt=2&isadv=0"><img src="__PUBLIC__/img/about/4-1.png"></a>
+                </div>
+                <div class="c6 zp_tp2">
+                    <a target="_blank" href="http://jobs.51job.com/shanghai-xhq/co3770623.html"> <img src="__PUBLIC__/img/about/5-1.png"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="full body_content5" id="body_content5">
+    <div class="container down_wrap">
+        <div class="c12 con5_wrap">
+            <h1>根据您的手机选择下载</h1>
+            <div class="c6">
+                <div class="sca_img">
+                    <img  src="__PUBLIC__/img/tc_home/111.png"/>
+                </div>
+                <h2>扫描下载&nbsp&nbspIOS&nbsp&nbsp客户端</h2>
+                <a target="_blank" style="position: relative;left: 5px;" href="https://itunes.apple.com/cn/app/you-you-jia-jiao/id1044036646?mt=8"><img  src="__PUBLIC__/img/tc_home/23.png"/></a>
+            </div>
+            <div class="c6">
+                <div class="sca_img">
+                    <img src="__PUBLIC__/img/tc_home/111.png" />
+                </div>
+                <h2>扫描下载&nbsp&nbspAndroid&nbsp&nbsp客户端</h2>
+                <a target="_blank" style="position: relative;left: 5px;" href="http://www.uustudy.com.cn/download/uustudent_otherChannel_signed_aligned.apk"><img  src="__PUBLIC__/img/tc_home/24.png"/></a>
+            </div>
+        </div>
+        <div style="clear: both"></div>
+    </div>
+</div>
+    <div class="full footer">
+        <div class="container">
+             <div class="c12 foot_wrap">
+                  <div class="c5 foo_logo">
+                      <div class="c2">
+                          <img src="__PUBLIC__/img/tc_home/25.png">
+                      </div>
+                      <div class="c9">
+                          <p class="co_name">上海优优教育科技有限公司&nbsp版权所有</p>
+                          <p>Copyright @ 2015  All Rights Reserved.</p>
+                      </div>
+                      <div class="c1">
+                          <img src="__PUBLIC__/img/tc_home/26.png">
+                      </div>
+                  </div>
+                  <div class="c2 foo_wx">
+                       <div class="c6">
+                           <img src="__PUBLIC__/img/tc_home/wx.png">
+                       </div>
+                       <div class="c6">
+                           <p>扫描微信公众号</p>
+                       </div>
+                  </div>
+                  <div class="c5 foo_call" >
+                      <div class="c1">
+                          <img src="__PUBLIC__/img/tc_home/26.png">
+                      </div>
+                      <div class="c11">
+                          <div class="call">
+                              <img src="__PUBLIC__/img/tc_home/27.png">
+                              <p>021-64666013</p>
+                          </div>
+                          <div class="call add">
+                              <img src="__PUBLIC__/img/tc_home/28.png">
+                              <p>上海市徐汇区虹桥路333号交大慧谷四楼</p>
+                          </div>
+                      </div>
+                      <div style="clear: both"></div>
+                  </div>
+             </div>
+        </div>
+    </div>
+    <div class="fix_window">
+    </div>
+    <div class="fix_wrap">
+        <!--loader-->
+        <div id="loader" class="loader loader--style3" title="2" style="position: fixed;left: 49%;top: 42%;z-index:999999;display: none">
+            <style>
+                svg path,
+                svg rect{
+                    fill: #0066cc ;
+                }
+            </style>
+            <svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     width="40px" height="40px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+  <path fill="#000" d="M43.935,25.145c0-10.318-8.364-18.683-18.683-18.683c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615c8.072,0,14.615,6.543,14.615,14.615H43.935z">
+    <animateTransform attributeType="xml"
+      attributeName="transform"
+      type="rotate"
+      from="0 25 25"
+      to="360 25 25"
+      dur="0.6s"
+      repeatCount="indefinite"/>
+    </path>
+  </svg>
+        </div>
+         <div class="12 fix_title_wrap">
+             <div class="c1">&nbsp;</div>
+             <div class="c10">
+                 <p>立即预约老师</p>
+             </div>
+             <div class="c1"><img id="qx_btn" src="__PUBLIC__/img/tc_home/qx.png"></div>
+         </div>
+         <div class="12 fix_form">
+               <div class="c10">
+                   <div class="c3">科&nbsp&nbsp&nbsp&nbsp目</div>
+                   <div class="c9">
+                       <select name="subjects" id="subjects">
+                           <option>语文</option>
+                           <option>数学</option>
+                           <option>英语</option>
+                           <option>物理</option>
+                           <option>化学</option>
+                           <option>政治</option>
+                           <option>历史</option>
+                           <option>生物</option>
+                           <option>地理</option>
+                       </select>
+                   </div>
+                   <div style="clear: both"></div>
+               </div>
+             <div class="c10">
+                 <div class="c3">年&nbsp&nbsp&nbsp&nbsp级</div>
+                 <div class="c9">
+                     <select id="class">
+                         <option>小学</option>
+                         <option>初中</option>
+                         <option>高中</option>
+                     </select>
+                 </div>
+                 <div style="clear: both"></div>
+             </div>
+             <div class="c10">
+                 <div class="c3">电&nbsp&nbsp&nbsp&nbsp话</div>
+                 <div class="c9">
+                     <input id="tel" type="tel" style="position: relative">
+                 </div>
+                 <div style="clear: both"></div>
+             </div>
+             <div class="c10">
+                 <div class="c3">上课地址</div>
+                 <div class="c9">
+                     <input id="add" type="text">
+                     <small>（如你希望教师提供场所，请填写范围）</small>
+                 </div>
+                 <div style="clear: both"></div>
+             </div>
+             <div class="c10">
+                 <div class="c3">详细需求</div>
+                 <div class="c9">
+                     <input id="need" type="text">
+                     <small>（如你教师性别，授课语言）</small>
+                 </div>
+                 <div style="clear: both"></div>
+             </div>
+             <div class="c10">
+                 <button id="yy_sub">确认</button>
+             </div>
+             <div class="c12 ok_wrap">
+                 <div class="c9 yy_ok">
+                     <p>优优老师已经收到了你的预约。</p>
+                     <p style="word-break: break-all">我们将尽快与你取得联系，向你推荐适合你的好老师，请耐心和放心等待
+                         你也可以下载”优优老师”手机客户端挑选名校老师 。优优老师感谢您的信任，你的需求是我们的使命。</p>
+                     <p style="word-break: break-all">如果还有任何疑问请拨打我们的客服电话021-64666013</p>
+                 </div>
+                 <a id="yy_ok" href="">返回</a>
+             </div>
+         </div>
+    </div>
+    <!--提示框-->
+    <div class="tip_box">信息错误</div>
+<!--回到顶部-->
+    <a style="display: none" href="javascript:;" class="btnb" title="回到顶端" id="btnb"><img style="border-radius: 5px" src="__PUBLIC__/img/72.png"></a>
+    <script src="__PUBLIC__/js/jquery-2.1.1.min.js"></script>
+    <script src="__PUBLIC__/js/index1.js"></script>
+    <script src="__PUBLIC__/js/swiper.min.js"></script>
+    <!--<script src="__PUBLIC__/js/app.js"></script>-->
+    <!--<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1256616987'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1256616987' type='text/javascript'%3E%3C/script%3E"));</script>-->
+</body>
+</html>

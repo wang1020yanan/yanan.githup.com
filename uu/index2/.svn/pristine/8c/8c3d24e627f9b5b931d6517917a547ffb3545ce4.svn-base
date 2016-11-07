@@ -1,0 +1,277 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>优优老师教师中心 - 你的家教智能管家</title>
+    <meta id="metaKeywords" name="keywords" content="优优老师,优优家教,在线教育,老师,家教,优思家教,疯狂老师,跟谁学,轻轻家教,老师好,优优学,家教部,交通大学,交大,华东师范大学,华师大,财大,上外,华东理工">
+    <meta name="description" content="优优老师，一个用心为中小学学生和家长提供优质家教咨询内容的O2O初创服务应用。优优老师涵盖上海各重点高校优秀在校生以及上海中小学优秀教师资源，以独有的数据匹配引擎为学生和家教推荐精确切且适合的教师资源。
+优优家教覆盖上海复旦、交大、同济、财大等各高校的优秀在校学生对需要家教服务的学生提供优质的家教课程。目前包括K12领域语文、数学、英语、物理、化学、政治、历史、生物、地理科目的家教课程。优优老师致力于为每一个学生提供最全面和最优质的定制化服务。" />
+
+    <meta name="baidu-site-verification" content="rMSEcIr0LO" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="http://www.uustudy.com.cn/img/logo.png" rel="shortcut icon" type="image/x-icon"/>
+    <link href="/thinkphp/Public/css/login.css" rel="stylesheet" type="text/css">
+    <script src="/thinkphp/Public/js/jquery-2.1.1.min.js"></script>
+    <script src="/thinkphp/Public/js/login.js"></script>
+	<script src="/thinkphp/Public/js/base64.js"></script>
+	
+</head>
+<body onload="load()">
+    <div class="full body_con">
+        <div class="container body_wrap">
+            <div class="c12 login_head">
+                <div class="c6">
+                    <a href="#"><img  src="/thinkphp/Public/img/center/2.png"></a>
+                    <img src="/thinkphp/Public/img/login/3.png"><small class="logo_tip" style="position:relative">教师端</small>
+                </div>
+                <div class="c6 head_stu">
+                    <a href="/"><img src="/thinkphp/Public/img/login/4.png"></a>
+                </div>
+            </div>
+            <div class="c12 login_wrap">
+                 <div class="c8"><img src="/thinkphp/Public/img/login/5.png"></div>
+                 <div class="c4">
+                      <!--登录标题-->
+                      <div class="c9 login_title">
+                           <div class="c6 login"><span>登录</span></div>
+                           <div class="c6 down"><span>下载APP</span></div>
+                      </div>
+                      <div class="con_wrap">
+                           <div class="c12 input">
+                               <input id="l_tel" type="tel" placeholder="请输入手机号">
+                               <img src="/thinkphp/Public/img/login/6.png">
+                           </div>
+                           <div class="c12 input">
+                               <input id="l_pass" type="password" placeholder="请输入密码">
+                               <img src="/thinkphp/Public/img/login/7.png">
+                           </div>
+                           <div class="c12 forget"><p>忘记密码？</p><small class="error" style="color: red;display: block;margin-top: 5px"></small></div>
+                           <div class="c12 log_btn log">
+                               <button id="log_btn">登&nbsp&nbsp录</button>
+                               <!--<a href="#"><img id="log_btn" src="/thinkphp/Public/img/login/8.png"></a>-->
+                           </div>
+                           <div class="c12 log_btn res">
+                               <button id="res_btn">注&nbsp&nbsp册</button>
+                               <!--<a href="#"><img id="res_btn" src="/thinkphp/Public/img/login/9.png"></a>-->
+                           </div>
+                      </div>
+                      <div class="c12 down_wrap  hid">
+                          <div class="c9 tc_er">
+                              <img style="width: 170px" src="/thinkphp/Public/img/login/er.png">
+                          </div>
+                          <div class="c9 tc_er_title">
+                              <p>扫码下载老师客户端</p>
+                          </div>
+                      </div>
+                 </div>
+            </div>
+        </div>
+        <div style="clear: both"></div>
+        <div class="container spe_bg">
+            <div class="c12 special">
+                <div class="c3">
+                    <div class="c12">
+                        <img src="/thinkphp/Public/img/login/10.png">
+                    </div>
+                    <div class="c12">
+                        <br/>
+                        <h3>免费中介</h3>
+                        <p>免中介费全部到账</p>
+                    </div>
+                </div>
+                <div class="c3">
+                    <div class="c12">
+                        <img src="/thinkphp/Public/img/login/11.png">
+                    </div>
+                    <div class="c12">
+                        <br/>
+                        <h3>快速到账</h3>
+                        <p>即时收到当节课酬</p>
+                    </div>
+                </div>
+                <div class="c3">
+                    <div class="c12">
+                        <img src="/thinkphp/Public/img/login/12.png">
+                    </div>
+                    <div class="c12">
+                        <br/>
+                        <h3>安全贴心</h3>
+                        <p>首次课程官方陪护</p>
+                    </div>
+                </div>
+                <div class="c3">
+                    <div class="c12">
+                        <img src="/thinkphp/Public/img/login/13.png">
+                    </div>
+                    <div class="c12">
+                        <br/>
+                        <h3>海量用户</h3>
+                        <p>20000名家长用户</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="full footer">
+        <div class="container">
+             <div class="c12 foot_wrap">
+                  <div class="c5 foo_logo">
+                      <div class="c2">
+                          <img src="/thinkphp/Public/img/tc_home/25.png">
+                      </div>
+                      <div class="c9">
+                          <p class="co_name">上海优优教育科技有限公司&nbsp版权所有</p>
+                          <p>Copyright @ 2015  All Rights Reserved.</p>
+                      </div>
+                      <div class="c1">
+                          <img src="/thinkphp/Public/img/tc_home/26.png">
+                      </div>
+                  </div>
+                  <div class="c2 foo_wx">
+                       <div class="c6">
+                           <img src="/thinkphp/Public/img/tc_home/wx.png">
+                       </div>
+                       <div class="c6">
+                           <p>扫描微信公众号</p>
+                       </div>
+                  </div>
+                  <div class="c5 foo_call" >
+                      <div class="c1">
+                          <img src="/thinkphp/Public/img/tc_home/26.png">
+                      </div>
+                      <div class="c11">
+                          <div class="call">
+                              <img src="/thinkphp/Public/img/tc_home/27.png">
+                              <p>021-64666013</p>
+                          </div>
+                          <div class="call add">
+                              <img src="/thinkphp/Public/img/tc_home/28.png">
+                              <p>上海市徐汇区虹桥路333号交大慧谷四楼</p>
+                          </div>
+                      </div>
+                      <div style="clear: both"></div>
+                  </div>
+             </div>
+        </div>
+    </div>
+    <div class="fix_window"></div>
+    <div class="fix_wrap" style="height: 452px">
+         <div class="12 fix_title_wrap">
+             <div class="c1">&nbsp;</div>
+             <div class="c10">
+                 <p>注册</p>
+             </div>
+             <div class="c1"><a href="#"><img id="qx_btn" src="/thinkphp/Public/img/tc_home/qx.png"></a></div>
+         </div>
+         <div class="12 fix_form" style="height: 400px">
+               <div class="c10">
+                   <div class="c3">手&nbsp&nbsp&nbsp&nbsp机</div>
+                   <div class="c9">
+                       <input id="r_tel" type="tel">
+                   </div>
+                   <div style="clear: both"></div>
+               </div>
+             <div class="c10">
+                 <div class="c3">验&nbsp证&nbsp码</div>
+                 <div class="c9 valid">
+                     <input id="y_num" type="text" style="width:47%"><button class="get_num" style="width: 106px;font-size: 16px;height: 30px;">获取验证码</button>
+                     <!--验证码容器-->
+                     <span id="num_wrap" style="display: none"></span>
+                 </div>
+                 <div style="clear: both"></div>
+             </div>
+             <div class="c10">
+                 <div class="c3">姓&nbsp&nbsp&nbsp&nbsp名</div>
+                 <div class="c9">
+                     <input id="r_name" type="text">
+                 </div>
+                 <div style="clear: both"></div>
+             </div>
+             <div class="c10">
+                 <div class="c3">性&nbsp&nbsp&nbsp&nbsp别</div>
+                 <div class="c9 sex" style="margin-top: 5px">
+                     &nbsp<span id="man" class="man isman"></span><span>&nbsp男</span>
+                     &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                      <span class="woman"></span><span>&nbsp女</span>
+                 </div>
+                 <div style="clear: both"></div>
+             </div>
+             <div class="c10">
+                 <div class="c3">密&nbsp&nbsp&nbsp&nbsp码</div>
+                 <div class="c9">
+                     <input  id="r_pass" type="password">
+                 </div>
+                 <div style="clear: both"></div>
+             </div>
+
+             <div class="c10">
+                 <button id="yy_sub">确认注册</button>
+             </div>
+             <div class="c10">
+                 <!--<div class="c3">-->
+                 <!--&lt;!&ndash;<img src="/thinkphp/Public/img/res/11.png" style="margin-left: -48px">&ndash;&gt;-->
+
+                 <!--</div>-->
+                 <div class="c12 pass" >
+                     <p>点击确认注册代表您已阅读并同意<a target="_blank" href="http://www.uustudy.com.cn/readme.htm">《优优老师教师版》用户协议</a></p>
+                 </div>
+                 <div style="clear: both"></div>
+             </div>
+             <div class="c12 ok_wrap">
+                 <div class="c9 yy_ok">
+                     <img src="/thinkphp/Public/img/res/15.png" style="width: 100%">
+                 </div>
+             </div>
+         </div>
+    </div>
+    <div class="fix_wrap2">
+        <div class="12 fix_title_wrap">
+            <div class="c1">&nbsp;</div>
+            <div class="c10">
+                <p>忘记密码</p>
+            </div>
+            <div class="c1"><img class="qx_btn" src="/thinkphp/Public/img/tc_home/qx.png"></div>
+        </div>
+        <div class="12 fix_form">
+            <div class="c10">
+                <div class="c3">手&nbsp&nbsp&nbsp&nbsp机</div>
+                <div class="c9">
+                    <input id="f_tel" type="tel" placeholder="请输入注册时的手机号码">
+                </div>
+                <div style="clear: both"></div>
+            </div>
+            <div class="c10">
+                <div class="c3">验&nbsp证&nbsp码</div>
+                <div class="c9 valid">
+                    <input id="f_yzm" type="text" style="width:47%"><button class="get_num2" style="width: 106px;font-size: 16px;height: 30px;" >获取验证码</button>
+                </div>
+                <div style="clear: both"></div>
+            </div>
+            <div class="c10">
+                <div class="c3">密&nbsp&nbsp&nbsp&nbsp码</div>
+                <div class="c9">
+                    <input id="f_pass"  type="password" placeholder="请输入密码">
+                </div>
+                <div style="clear: both"></div>
+            </div>
+            <div class="c10">
+                <div class="c3">确认密码</div>
+                <div class="c9">
+                    <input id="f_pass2"  type="password" placeholder="请再次输入密码">
+                </div>
+                <div style="clear: both"></div>
+            </div>
+            <div class="c10">
+                <button class="qr" id="f_ok" >确认</button>
+            </div>
+            <div class="c12 ok_wrap">
+                <div class="c9 yy_ok">
+                    <img src="/thinkphp/Public/img/res/15.png" style="width: 100%">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--提示框-->
+    <div class="tip_box">信息错误</div>
+</body>
+</html>

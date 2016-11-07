@@ -1,0 +1,400 @@
+[ 2016-05-09T11:14:18+08:00 ] ::1 /thinkphp/home/index/mm
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006613s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006704s ]
+NOTIC: [2] session_start() [<a href='function.session-start'>function.session-start</a>]: open(C:\win\temp\sess_32dc5c66c325b293f918c17fd948a17c, O_RDWR) failed: No such file or directory (2) D:\wamp\www\thinkphp\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000142s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035301s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035406s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.008750s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008809s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004730s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004829s ]
+
+[ 2016-05-09T11:14:24+08:00 ] ::1 /thinkphp/home/index/mm
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002746s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003496s ]
+NOTIC: [2] session_start() [<a href='function.session-start'>function.session-start</a>]: open(C:\win\temp\sess_32dc5c66c325b293f918c17fd948a17c, O_RDWR) failed: No such file or directory (2) D:\wamp\www\thinkphp\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] session_start() [<a href='function.session-start'>function.session-start</a>]: ps_files_cleanup_dir: opendir(C:\win\temp) failed: No such file or directory (2) D:\wamp\www\thinkphp\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011626s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011738s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001087s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001154s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001216s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001274s ]
+
+[ 2016-05-09T11:14:36+08:00 ] ::1 /thinkphp/home/index/mm
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001167s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001366s ]
+NOTIC: [2] session_start() [<a href='function.session-start'>function.session-start</a>]: open(C:\win\temp\sess_32dc5c66c325b293f918c17fd948a17c, O_RDWR) failed: No such file or directory (2) D:\wamp\www\thinkphp\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000351s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000653s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020442s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020542s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001083s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001151s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001536s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001600s ]
+
+[ 2016-05-09T11:14:37+08:00 ] ::1 /thinkphp/home/index/mm
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000984s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001064s ]
+NOTIC: [2] session_start() [<a href='function.session-start'>function.session-start</a>]: open(C:\win\temp\sess_32dc5c66c325b293f918c17fd948a17c, O_RDWR) failed: No such file or directory (2) D:\wamp\www\thinkphp\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000200s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018936s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019043s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000997s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001075s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001047s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001130s ]
+
+[ 2016-05-09T11:15:49+08:00 ] ::1 /thinkphp/home/index/mm
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001080s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001398s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001503s ]
+NOTIC: [2] session_start() [<a href='function.session-start'>function.session-start</a>]: open(C:\win\temp\sess_32dc5c66c325b293f918c17fd948a17c, O_RDWR) failed: No such file or directory (2) D:\wamp\www\thinkphp\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011876s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011986s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000703s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000754s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000937s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000993s ]
+
+[ 2016-05-09T11:15:50+08:00 ] ::1 /thinkphp/home/index/mm
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001196s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002201s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002316s ]
+NOTIC: [2] session_start() [<a href='function.session-start'>function.session-start</a>]: open(C:\win\temp\sess_32dc5c66c325b293f918c17fd948a17c, O_RDWR) failed: No such file or directory (2) D:\wamp\www\thinkphp\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010253s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010337s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001002s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001061s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001384s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001449s ]
+
+[ 2016-05-09T11:16:42+08:00 ] ::1 /thinkphp/home/index/mm
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006036s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001396s ]
+NOTIC: [2] session_start() [<a href='function.session-start'>function.session-start</a>]: open(C:\win\temp\sess_32dc5c66c325b293f918c17fd948a17c, O_RDWR) failed: No such file or directory (2) D:\wamp\www\thinkphp\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011738s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011816s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000878s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000932s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001108s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001165s ]
+
+[ 2016-05-09T11:16:43+08:00 ] ::1 /thinkphp/home/index/mm
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002590s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002724s ]
+NOTIC: [2] session_start() [<a href='function.session-start'>function.session-start</a>]: open(C:\win\temp\sess_32dc5c66c325b293f918c17fd948a17c, O_RDWR) failed: No such file or directory (2) D:\wamp\www\thinkphp\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008918s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009010s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000993s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001063s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004849s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004940s ]
+
+[ 2016-05-09T11:16:57+08:00 ] ::1 /thinkphp/home/index/mm
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000776s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000875s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000959s ]
+NOTIC: [2] session_start() [<a href='function.session-start'>function.session-start</a>]: open(C:\win\temp\sess_32dc5c66c325b293f918c17fd948a17c, O_RDWR) failed: No such file or directory (2) D:\wamp\www\thinkphp\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010624s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010704s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000842s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001616s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001717s ]
+
+[ 2016-05-09T11:16:58+08:00 ] ::1 /thinkphp/home/index/mm
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000970s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001225s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001313s ]
+NOTIC: [2] session_start() [<a href='function.session-start'>function.session-start</a>]: open(C:\win\temp\sess_32dc5c66c325b293f918c17fd948a17c, O_RDWR) failed: No such file or directory (2) D:\wamp\www\thinkphp\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015413s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015531s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000997s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001048s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001309s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001364s ]
+
+[ 2016-05-09T11:18:04+08:00 ] ::1 /thinkphp/home/index/mm
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000852s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000949s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001014s ]
+NOTIC: [2] session_start() [<a href='function.session-start'>function.session-start</a>]: open(C:\win\temp\sess_32dc5c66c325b293f918c17fd948a17c, O_RDWR) failed: No such file or directory (2) D:\wamp\www\thinkphp\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000181s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014300s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014385s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000980s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001057s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001082s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001150s ]
+
+[ 2016-05-09T11:18:05+08:00 ] ::1 /thinkphp/home/index/mm
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000901s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001260s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001336s ]
+NOTIC: [2] session_start() [<a href='function.session-start'>function.session-start</a>]: open(C:\win\temp\sess_32dc5c66c325b293f918c17fd948a17c, O_RDWR) failed: No such file or directory (2) D:\wamp\www\thinkphp\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000315s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014588s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014704s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001799s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001863s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001158s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001212s ]
+
+[ 2016-05-09T11:19:42+08:00 ] ::1 /thinkphp/home/index/mm
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000901s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000847s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000908s ]
+NOTIC: [2] session_start() [<a href='function.session-start'>function.session-start</a>]: open(C:\win\temp\sess_32dc5c66c325b293f918c17fd948a17c, O_RDWR) failed: No such file or directory (2) D:\wamp\www\thinkphp\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008521s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008602s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000881s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000954s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001615s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001839s ]
+
+[ 2016-05-09T11:19:43+08:00 ] ::1 /thinkphp/home/index/mm
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000931s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001550s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001638s ]
+NOTIC: [2] session_start() [<a href='function.session-start'>function.session-start</a>]: open(C:\win\temp\sess_32dc5c66c325b293f918c17fd948a17c, O_RDWR) failed: No such file or directory (2) D:\wamp\www\thinkphp\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010672s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010767s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001965s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002068s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001762s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001870s ]
+
+[ 2016-05-09T11:20:58+08:00 ] ::1 /thinkphp/home/index/mm
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.014469s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003470s ]
+NOTIC: [2] session_start() [<a href='function.session-start'>function.session-start</a>]: open(C:\win\temp\sess_32dc5c66c325b293f918c17fd948a17c, O_RDWR) failed: No such file or directory (2) D:\wamp\www\thinkphp\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000212s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.082940s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.083108s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001477s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001566s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009010s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009369s ]
+
+[ 2016-05-09T11:21:08+08:00 ] ::1 /thinkphp/home/index/mm
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000961s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001831s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001922s ]
+NOTIC: [2] session_start() [<a href='function.session-start'>function.session-start</a>]: open(C:\win\temp\sess_32dc5c66c325b293f918c17fd948a17c, O_RDWR) failed: No such file or directory (2) D:\wamp\www\thinkphp\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013451s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013573s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000965s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001133s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001204s ]
+
+[ 2016-05-09T11:22:06+08:00 ] ::1 /thinkphp/home/index/mm
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001029s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003258s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003371s ]
+NOTIC: [2] session_start() [<a href='function.session-start'>function.session-start</a>]: open(C:\win\temp\sess_32dc5c66c325b293f918c17fd948a17c, O_RDWR) failed: No such file or directory (2) D:\wamp\www\thinkphp\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010296s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010387s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000931s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000987s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001466s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001556s ]
+
+[ 2016-05-09T11:22:30+08:00 ] ::1 /thinkphp/home/index/mm
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001252s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001776s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001947s ]
+NOTIC: [2] session_start() [<a href='function.session-start'>function.session-start</a>]: open(C:\win\temp\sess_32dc5c66c325b293f918c17fd948a17c, O_RDWR) failed: No such file or directory (2) D:\wamp\www\thinkphp\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000211s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023270s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023434s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001479s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001596s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001469s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001568s ]
+
+[ 2016-05-09T11:23:26+08:00 ] ::1 /thinkphp/home/index/mm
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000730s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001178s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001248s ]
+NOTIC: [2] session_start() [<a href='function.session-start'>function.session-start</a>]: open(C:\win\temp\sess_32dc5c66c325b293f918c17fd948a17c, O_RDWR) failed: No such file or directory (2) D:\wamp\www\thinkphp\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000142s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009326s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009424s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001491s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001587s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002375s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002565s ]
+

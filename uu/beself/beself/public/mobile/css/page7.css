@@ -1,0 +1,192 @@
+body{
+    background: #F8F8F8;
+    font-family: Microsoft Yahei;
+    width: 100%
+}
+/*购物车详情*/
+.m-xq{
+    width: 100%;
+    padding-top:4em;
+    color: #ffffff
+}
+.m-xq-a{
+    width: 100%;
+    height: 8em;
+    background:#FF6666
+}
+.m-xq-b{
+    width: 90%;
+    margin-left: 10%;
+    height: 4em;
+    font-size: 1.2em;
+    text-align: center;
+    line-height: 4em
+}
+.m-xq-c{
+    width:90%;
+    margin-left: 10%;
+    height: 4em
+}
+.glyphicon-list-alt{
+    font-size:1.3em
+}
+.dfk{
+    border: 1px solid #ffffff;
+    float: right;
+    margin-right: 40px
+}
+/*订单内容*/
+.m-dd{
+    width: 100%;
+    height:8em;
+    border-top: 1px solid #E8E8E8;
+    border-bottom: 1px solid #E8E8E8;
+    background:#ffffff;
+    font-size:1em;
+    margin-top:0.3em
+}
+.m-dd-a{
+    width: 40%;
+    height: 8em;
+    text-align: center;
+    float: left
+}
+.m-dd-a img{
+    height: 7.8em;
+}
+.m-dd-b{
+    width: 50%;
+    height:8em;
+    float: left
+}
+.m-dd-c{
+    width: 100%;
+    height: 3em;
+    margin-top: 0.5em
+}
+.m-dd-d{
+    width: 100%
+}
+.m-dd-e{
+    color:#D0D0D0
+}
+.m-dd-f{
+    color:#ff9801
+}
+.m-dd-g{
+    width: 100%;
+    margin-top: 0.5em
+}
+/*收货信息*/
+.m-tc{
+    width: 100%;
+    height: 13px
+}
+.m-sh-a{
+    width:90%;
+    margin-left:5%;
+    height: 2em;
+    text-align: left;
+    float: left;
+    color:#B8B8B8;
+}
+.sh-a{
+    width: 100%;
+    height: 3.1em;
+    background: #ffffff;
+    margin-top: 2em;
+    border-top:1px solid #E8E8E8;
+    border-bottom:1px solid #E8E8E8
+}
+.sh-a input{
+    border: none;
+    height: 2.8em;
+    margin-left: 5%;
+    width: 90%;
+    margin-top: 0.1em
+}
+.sh-b{
+    width: 100%;
+    height: 3.1em;
+    background: #ffffff;
+    margin-top:0.5em;
+    border-top:1px solid #E8E8E8;
+    border-bottom:1px solid #E8E8E8
+}
+.sh-b input{
+    border: none;
+    height: 2.8em;
+    margin-left: 5%;
+    width: 90%;
+    line-height: 2.8em;
+    margin-top: 0.1em
+}
+.sh-c{
+    width: 100%;
+    height: 6em;
+    background: #ffffff;
+    margin-top:0.5em;
+    border-top:1px solid #E8E8E8;
+    border-bottom:1px solid #E8E8E8
+}
+.sh-c textarea{
+    height: 5.7em;
+    margin-left: 6%;
+    border: none;
+    width: 90%
+}
+.sh-d{
+    width:90%;
+    margin-left:5%;
+    height: 2em;
+    text-align: left;
+    float: left;
+    color:#B8B8B8;
+    padding: 10px 0
+}
+.sh-e{
+    width:90%;
+    height: 4em;
+    margin:40px auto 0 auto;
+    text-align: center;
+    background: #ffffff;
+
+}
+.sh-f{
+    text-align: center;
+    padding-bottom: 3em
+}
+.sh-f button{
+    width: 90%;
+    height:3em;
+    margin-top: 1em;
+    color: #ffffff;
+    border: none;
+    border-radius: 50px;
+    background:#ff9801;
+    font-size: 1.2em
+}
+.sh-g{
+    width: 25%;
+    height: 4em;
+    float: left
+}
+.sh-g img{
+    height:2.5em;
+    margin-top: 0.6em
+}
+.sh-h{
+    width: 75%;
+    height: 4em;
+    float: left;
+    line-height: 1em;
+    margin-top: 0.6em;
+    text-align: left
+}
+.sh-h-a{
+    font-size: 1.1em
+}
+.sh-h-b{
+    font-size:0.8em;
+    color: #888888
+}

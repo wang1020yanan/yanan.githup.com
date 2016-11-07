@@ -1,0 +1,18 @@
+.banner-caption h2 {
+	font-weight: 100;
+}
+
+#search-button {
+    height: 29px;
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	ul#root-menu {
+		padding: 13px 5px;
+	}
+	
+	ul#root-menu li ul {
+		top: 40px;
+	}
+}

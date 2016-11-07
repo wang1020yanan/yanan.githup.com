@@ -1,0 +1,12 @@
+[ 2016-01-08T17:30:25+08:00 ] 116.228.167.234 /thinkphp/index/thinkphp/public/css/index1.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000412s ]
+ERR: 无法加载模块:Thinkphp
+
+[ 2016-01-08T17:30:46+08:00 ] 116.228.167.234 /thinkphp/index/public/css/index1.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000525s ]
+ERR: 无法加载模块:Public
+

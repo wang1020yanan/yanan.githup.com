@@ -1,0 +1,64 @@
+*{
+    font-family: "Helvetica", "Microsoft YaHei", sans-serif;
+}
+.bg{
+    background: #F8F8F8;
+    width: 100%;
+}
+.content{
+    width: 1230px;
+}
+.xxa{
+    height: 80px;
+    line-height: 80px;
+    font-size: 18px;
+    text-align: center;
+    background: #FFF;
+    margin: 38px 0 20px 0;
+}
+.xxb{
+    background: #FFF;
+    font-size: 14px;
+    padding-left: 0;
+}
+.cd-left,.cd-right{
+    margin-left: 0;
+    padding-left: 0;
+    margin-top: 20px;
+}
+.cd-image{
+    margin-left: 0;
+    padding-left: 0;
+}
+.cd-left .col-md-5,.col-md-2{
+    height: 80px;
+    line-height: 80px;
+    margin-bottom: 10px;
+}
+.cd-left img{
+    width: 80px;
+    height: 80px;
+}
+
+.cd-right .col-md-3{
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+}
+.cd-right .col-md-6{
+    height: 80px;
+}
+
+
+/*底部*/
+.ddlb-dbtc{
+    width: 100% ;
+    min-width: 1230px ;
+    height:80px;
+    border-bottom: 1px solid #D8D8D8
+}
+.ddlb-db{
+    text-align: center;
+    height:100px;
+    line-height: 100px
+}

@@ -1,0 +1,197 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>开设课程</title>
+    <link href="http://www.uustudy.com.cn/img/logo.png" rel="shortcut icon" type="image/x-icon"/>
+    <link href="/index/Public/css/course.css" rel="stylesheet" type="text/css">
+    <script src="/index/Public/js/jquery-2.1.1.min.js"></script>
+    <script src="/index/Public/js/course.js"></script>
+    <!--<script src="js/imgfile.js"></script>-->
+    <script>
+        $(document).ready(function(){
+        //图片显示
+            $.imageFileVisible({wrapSelector: "#image-wrap",
+                fileSelector: "#file",
+                width:444,
+            });
+            $.imageFileVisible({wrapSelector: "#image-wrap2",
+                fileSelector: "#file2",
+                width:444,
+            });
+        });
+    </script>
+</head>
+<body onload="load()">
+<div class="header">
+    <div class="header_wrap container">
+        <div class="c12">
+            <div class="c7">
+                <a><img  src="/index/Public/img/center/2.png"></a>
+                <img src="/index/Public/img/center/3.png"></div>
+            <div class="c5">
+                 <div class="c9"><p>用户名：<?php echo ($_SESSION['userName']); ?></p></div>
+
+                <div class="c3"><a href='/index/home/Login/logout'><img src="/index/Public/img/center/4.png"></a></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--内容-->
+<div class="container">
+    <div class="c2 menu">
+        <div class="wrap1">
+            <div class="c12">
+                <div class="c4"><img src="/index/Public/img/certification/5.png"></div>
+                <div class="c8"><a href="/index/home/TeacherCenter/teacherCenter"><p>个人资料</p></a></div>
+            </div>
+            <div class="c12">
+                <div class="c4"><img src="/index/Public/img/center/111.png"></div>
+                <div class="c8"><a href="/index/home/TeacherCenter/course"><p>开设课程</p></a></div>
+            </div>
+            <div class="c12">
+                <div class="c4"><img src="/index/Public/img/certification/7.png"></div>
+                <div class="c8"><a href="/index/home/TeacherCenter/verify"><p>老师认证</p></a></div>
+            </div>
+        </div>
+    </div>
+    <div class="c9 con" >
+        <div class="c12 con_pro">
+            <div class="c12 tip">
+                <br/><br/>
+                <p>开设课程后，家长和学生才可以根据课程搜索到你。</p>
+                <br/>
+            </div>
+            <div class="c12 course" id="add">
+                <img src="/index/Public/img/certification/add.png" style="margin-left:220px;width: 250px">
+            </div>
+        </div>
+        <div class="c12 con_pro con_prook" style="overflow: hidden">
+
+        </div>
+        <!--<div class="c12 tip">-->
+            <!--<p>请完善您的个人资料和老师认证，这样学生才能看到您开设的课程</p>-->
+        <!--</div>-->
+        <div class="c10 input" style="text-align: center">
+            <!--<a id="submit" href="#"><img src="/index/Public/img/center/17.png"></a>-->
+            <p id="courseTip" style="display: none;position: relative;top: -15px;color: #0EB621">暂无课程！</p>
+        </div>
+    </div>
+    <div style="clear: both"></div>
+</div>
+<!--底部-->
+<div class="full footer">
+    <div class="container">
+        <div class="c12 foot_wrap">
+            <div class="c5 foo_logo">
+                <div class="c2">
+                    <img src="/index/Public/img/tc_home/25.png">
+                </div>
+                <div class="c9">
+                    <p class="co_name">上海优优教育科技有限公司&nbsp版权所有</p>
+                    <p>Copyright @ 2015  All Rights Reserved.</p>
+                </div>
+                <div class="c1">
+                    <img src="/index/Public/img/tc_home/26.png">
+                </div>
+            </div>
+            <div class="c2 foo_wx">
+                <div class="c6">
+                    <img src="/index/Public/img/tc_home/wx.png">
+                </div>
+                <div class="c6">
+                    <p>扫描微信公众号</p>
+                </div>
+            </div>
+            <div class="c5 foo_call" >
+                <div class="c1">
+                    <img src="/index/Public/img/tc_home/26.png">
+                </div>
+                <div class="c11">
+                    <div class="call">
+                        <img src="/index/Public/img/tc_home/27.png">
+                        <p>021-64666013</p>
+                    </div>
+                    <div class="call add">
+                        <img src="/index/Public/img/tc_home/28.png">
+                        <p>上海市徐汇区虹桥路333号交大慧谷四楼</p>
+                    </div>
+                </div>
+                <div style="clear: both"></div>
+            </div>
+        </div>
+    </div>
+    <div class="fix_window"></div>
+    <div class="fix_wrap">
+        <div class="12 fix_title_wrap">
+            <div class="c1">&nbsp;</div>
+            <div class="c10">
+                <p>开设课程</p>
+            </div>
+            <div class="c1"><a href="#"><img id="qx_btn" src="/index/Public/img/tc_home/qx.png"></a></div>
+        </div>
+        <div class="12 fix_form">
+            <div class="c4 cu_menu">
+                <ul>
+                    <li><img src="/index/Public/img/certification/chinese.png">语文</li>
+                    <li><img src="/index/Public/img/certification/19.png">数学</li>
+                    <li><img src="/index/Public/img/certification/20.png">英语</li>
+                    <li><img src="/index/Public/img/certification/21.png">物理</li>
+                    <li><img src="/index/Public/img/certification/22.png">化学</li>
+                </ul>
+            </div>
+            <div class="c8 cu_con">
+                <form>
+                    <ul>
+                        <li><input type="checkbox"  value="1|01|45" id="y11"><span>小学</span><small>45元/小时</small></li>
+                        <li><input type="checkbox"  value="1|20|55" id="y22"><span>初中预备班-初二</span><small>55元/小时</small></li>
+                        <li><input type="checkbox"  value="1|23|65" id="y33"><span>初三</span><small>65元/小时</small></li>
+                        <li><input type="checkbox"  value="1|30|75" id="y44"><span>高一 - 高二</span><small>75元/小时</small></li>
+                        <li><input type="checkbox"  value="1|33|95" id="y55"><span>高三</span><small>95元/小时</small></li>
+                    </ul>
+                </form>
+                <form>
+                    <ul>
+                        <li><input type="checkbox"  value="2|01|45" id="s11"><span>小学</span><small>45元/小时</small></li>
+                        <li><input type="checkbox"  value="2|20|55" id="s22"><span>初中预备班-初二</span><small>55元/小时</small></li>
+                        <li><input type="checkbox"  value="2|23|65" id="s33"><span>初三</span><small>65元/小时</small></li>
+                        <li><input type="checkbox"  value="2|30|75" id="s44"><span>高一 - 高二</span><small>75元/小时</small></li>
+                        <li><input type="checkbox"  value="2|33|95" id="s55"><span>高三</span><small>95元/小时</small></li>
+                    </ul>
+                </form>
+                <form>
+                    <ul>
+                        <li><input type="checkbox"  value="3|01|45" id="e11"><span>小学</span><small>45元/小时</small></li>
+                        <li><input type="checkbox"  value="3|20|55" id="e22"><span>初中预备班-初二</span><small>55元/小时</small></li>
+                        <li><input type="checkbox"  value="3|23|65" id="e33"><span>初三</span><small>65元/小时</small></li>
+                        <li><input type="checkbox"  value="3|30|75" id="e44"><span>高一 - 高二</span><small>75元/小时</small></li>
+                        <li><input type="checkbox"  value="3|33|95" id="e55"><span>高三</span><small>95元/小时</small></li>
+                    </ul>
+                </form>
+                <form>
+                    <ul>
+                        <li><input type="checkbox"  value="4|01|45" id="w11"><span>小学</span><small>45元/小时</small></li>
+                        <li><input type="checkbox"  value="4|20|55" id="w22"><span>初中预备班-初二</span><small>55元/小时</small></li>
+                        <li><input type="checkbox"  value="4|23|65" id="w33"><span>初三</span><small>65元/小时</small></li>
+                        <li><input type="checkbox"  value="4|30|75" id="w44"><span>高一 - 高二</span><small>75元/小时</small></li>
+                        <li><input type="checkbox"  value="4|33|95" id="w55"><span>高三</span><small>95元/小时</small></li>
+                    </ul>
+                </form>
+                <form>
+                    <ul>
+                        <li><input type="checkbox"  value="5|01|45" id="h11"><span>小学</span><small>45元/小时</small></li>
+                        <li><input type="checkbox"  value="5|20|55" id="h22"><span>初中预备班-初二</span><small>55元/小时</small></li>
+                        <li><input type="checkbox"  value="5|23|65" id="h33"><span>初三</span><small>65元/小时</small></li>
+                        <li><input type="checkbox"  value="5|30|75" id="h44"><span>高一 - 高二</span><small>75元/小时</small></li>
+                        <li><input type="checkbox" name="over"  value="5|33|95" id="h55"><span>高三</span><small>95元/小时</small></li>
+                    </ul>
+                </form>
+            </div>
+            <div class="c12 cu_sub">
+                <button id="su_sub">确定</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

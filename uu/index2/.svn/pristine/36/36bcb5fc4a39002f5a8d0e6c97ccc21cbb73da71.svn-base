@@ -1,0 +1,490 @@
+[ 2016-03-29T18:02:01+08:00 ] 116.228.167.234 /index/admin/Verify/getCount
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000423s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000632s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000694s ]
+SQL: SHOW COLUMNS FROM `basicteacherinformation` [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='2' ) LIMIT 1   [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='1' AND ifUploadProfile='2' ) LIMIT 1   [ RunTime:0.0042s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000749s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000810s ]
+
+[ 2016-03-29T18:02:07+08:00 ] 116.228.167.234 /index/admin/Verify/getCount
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000424s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000698s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000761s ]
+SQL: SHOW COLUMNS FROM `basicteacherinformation` [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='2' ) LIMIT 1   [ RunTime:0.0042s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='1' AND ifUploadProfile='2' ) LIMIT 1   [ RunTime:0.0040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000841s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000898s ]
+
+[ 2016-03-29T18:02:13+08:00 ] 116.228.167.234 /index/admin/Verify/getCount
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000468s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000723s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000785s ]
+SQL: SHOW COLUMNS FROM `basicteacherinformation` [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='2' ) LIMIT 1   [ RunTime:0.0041s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='1' AND ifUploadProfile='2' ) LIMIT 1   [ RunTime:0.0040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000779s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000841s ]
+
+[ 2016-03-29T18:02:19+08:00 ] 116.228.167.234 /index/admin/Verify/getCount
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000555s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001125s ]
+SQL: SHOW COLUMNS FROM `basicteacherinformation` [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='2' ) LIMIT 1   [ RunTime:0.0049s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='1' AND ifUploadProfile='2' ) LIMIT 1   [ RunTime:0.0043s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000897s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000957s ]
+
+[ 2016-03-29T18:02:25+08:00 ] 116.228.167.234 /index/admin/Verify/getCount
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000412s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000735s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000796s ]
+SQL: SHOW COLUMNS FROM `basicteacherinformation` [ RunTime:0.0017s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='2' ) LIMIT 1   [ RunTime:0.0041s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='1' AND ifUploadProfile='2' ) LIMIT 1   [ RunTime:0.0040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001249s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001339s ]
+
+[ 2016-03-29T18:02:31+08:00 ] 116.228.167.234 /index/admin/Verify/getCount
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000419s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000685s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000746s ]
+SQL: SHOW COLUMNS FROM `basicteacherinformation` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='2' ) LIMIT 1   [ RunTime:0.0046s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='1' AND ifUploadProfile='2' ) LIMIT 1   [ RunTime:0.0040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000782s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000839s ]
+
+[ 2016-03-29T18:02:37+08:00 ] 116.228.167.234 /index/admin/Verify/getCount
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000445s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000704s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000766s ]
+SQL: SHOW COLUMNS FROM `basicteacherinformation` [ RunTime:0.0017s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='2' ) LIMIT 1   [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='1' AND ifUploadProfile='2' ) LIMIT 1   [ RunTime:0.0040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000808s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000866s ]
+
+[ 2016-03-29T18:02:43+08:00 ] 116.228.167.234 /index/admin/Verify/getCount
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000417s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000710s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000774s ]
+SQL: SHOW COLUMNS FROM `basicteacherinformation` [ RunTime:0.0017s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='2' ) LIMIT 1   [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='1' AND ifUploadProfile='2' ) LIMIT 1   [ RunTime:0.0047s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000779s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000852s ]
+
+[ 2016-03-29T18:02:49+08:00 ] 116.228.167.234 /index/admin/Verify/getCount
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000414s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000743s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000804s ]
+SQL: SHOW COLUMNS FROM `basicteacherinformation` [ RunTime:0.0017s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='2' ) LIMIT 1   [ RunTime:0.0041s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='1' AND ifUploadProfile='2' ) LIMIT 1   [ RunTime:0.0041s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000894s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000953s ]
+
+[ 2016-03-29T18:02:55+08:00 ] 116.228.167.234 /index/admin/Verify/getCount
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000425s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000628s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000690s ]
+SQL: SHOW COLUMNS FROM `basicteacherinformation` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='2' ) LIMIT 1   [ RunTime:0.0042s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='1' AND ifUploadProfile='2' ) LIMIT 1   [ RunTime:0.0041s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001045s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001124s ]
+
+[ 2016-03-29T18:03:01+08:00 ] 116.228.167.234 /index/admin/Verify/getCount
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000368s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000522s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000583s ]
+SQL: SHOW COLUMNS FROM `basicteacherinformation` [ RunTime:0.0017s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='2' ) LIMIT 1   [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='1' AND ifUploadProfile='2' ) LIMIT 1   [ RunTime:0.0040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000554s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000611s ]
+
+[ 2016-03-29T18:03:07+08:00 ] 116.228.167.234 /index/admin/Verify/getCount
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000395s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000778s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000840s ]
+SQL: SHOW COLUMNS FROM `basicteacherinformation` [ RunTime:0.0017s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='2' ) LIMIT 1   [ RunTime:0.0047s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='1' AND ifUploadProfile='2' ) LIMIT 1   [ RunTime:0.0042s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000796s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000853s ]
+
+[ 2016-03-29T18:03:13+08:00 ] 116.228.167.234 /index/admin/Verify/getCount
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000797s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000859s ]
+SQL: SHOW COLUMNS FROM `basicteacherinformation` [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='2' ) LIMIT 1   [ RunTime:0.0044s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='1' AND ifUploadProfile='2' ) LIMIT 1   [ RunTime:0.0041s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000818s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000876s ]
+
+[ 2016-03-29T18:03:19+08:00 ] 116.228.167.234 /index/admin/Verify/getCount
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000605s ]
+SQL: SHOW COLUMNS FROM `basicteacherinformation` [ RunTime:0.0017s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='2' ) LIMIT 1   [ RunTime:0.0041s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='1' AND ifUploadProfile='2' ) LIMIT 1   [ RunTime:0.0040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000721s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000782s ]
+
+[ 2016-03-29T18:03:25+08:00 ] 116.228.167.234 /index/admin/Verify/getCount
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000367s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000532s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000594s ]
+SQL: SHOW COLUMNS FROM `basicteacherinformation` [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='2' ) LIMIT 1   [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='1' AND ifUploadProfile='2' ) LIMIT 1   [ RunTime:0.0040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000573s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000632s ]
+
+[ 2016-03-29T18:03:31+08:00 ] 116.228.167.234 /index/admin/Verify/getCount
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000437s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000697s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000759s ]
+SQL: SHOW COLUMNS FROM `basicteacherinformation` [ RunTime:0.0017s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='2' ) LIMIT 1   [ RunTime:0.0042s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='1' AND ifUploadProfile='2' ) LIMIT 1   [ RunTime:0.0041s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000797s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000856s ]
+
+[ 2016-03-29T18:03:37+08:00 ] 116.228.167.234 /index/admin/Verify/getCount
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000556s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000693s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000756s ]
+SQL: SHOW COLUMNS FROM `basicteacherinformation` [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='2' ) LIMIT 1   [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='1' AND ifUploadProfile='2' ) LIMIT 1   [ RunTime:0.0041s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000739s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000797s ]
+
+[ 2016-03-29T18:03:43+08:00 ] 116.228.167.234 /index/admin/Verify/getCount
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000431s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000922s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001027s ]
+SQL: SHOW COLUMNS FROM `basicteacherinformation` [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='2' ) LIMIT 1   [ RunTime:0.0042s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='1' AND ifUploadProfile='2' ) LIMIT 1   [ RunTime:0.0042s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001261s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001364s ]
+
+[ 2016-03-29T18:03:49+08:00 ] 116.228.167.234 /index/admin/Verify/getCount
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000476s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000719s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000782s ]
+SQL: SHOW COLUMNS FROM `basicteacherinformation` [ RunTime:0.0022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='2' ) LIMIT 1   [ RunTime:0.0046s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='1' AND ifUploadProfile='2' ) LIMIT 1   [ RunTime:0.0041s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000752s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000811s ]
+
+[ 2016-03-29T18:03:55+08:00 ] 116.228.167.234 /index/admin/Verify/getCount
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000414s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000860s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000941s ]
+SQL: SHOW COLUMNS FROM `basicteacherinformation` [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='2' ) LIMIT 1   [ RunTime:0.0041s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='1' AND ifUploadProfile='2' ) LIMIT 1   [ RunTime:0.0040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000781s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000839s ]
+
+[ 2016-03-29T18:04:01+08:00 ] 116.228.167.234 /index/admin/Verify/getCount
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000364s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000516s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000575s ]
+SQL: SHOW COLUMNS FROM `basicteacherinformation` [ RunTime:0.0021s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='2' ) LIMIT 1   [ RunTime:0.0045s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='1' AND ifUploadProfile='2' ) LIMIT 1   [ RunTime:0.0040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000595s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000655s ]
+
+[ 2016-03-29T18:04:07+08:00 ] 116.228.167.234 /index/admin/Verify/getCount
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000408s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000726s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000792s ]
+SQL: SHOW COLUMNS FROM `basicteacherinformation` [ RunTime:0.0017s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='2' ) LIMIT 1   [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='1' AND ifUploadProfile='2' ) LIMIT 1   [ RunTime:0.0041s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000812s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000871s ]
+
+[ 2016-03-29T18:04:13+08:00 ] 116.228.167.234 /index/admin/Verify/getCount
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000413s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000939s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001017s ]
+SQL: SHOW COLUMNS FROM `basicteacherinformation` [ RunTime:0.0028s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='2' ) LIMIT 1   [ RunTime:0.0042s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='1' AND ifUploadProfile='2' ) LIMIT 1   [ RunTime:0.0043s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000982s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001044s ]
+
+[ 2016-03-29T18:04:19+08:00 ] 116.228.167.234 /index/admin/Verify/getCount
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000380s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000549s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000624s ]
+SQL: SHOW COLUMNS FROM `basicteacherinformation` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='2' ) LIMIT 1   [ RunTime:0.0048s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='1' AND ifUploadProfile='2' ) LIMIT 1   [ RunTime:0.0055s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000937s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001021s ]
+
+[ 2016-03-29T18:04:25+08:00 ] 116.228.167.234 /index/admin/Verify/getCount
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000363s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000519s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000578s ]
+SQL: SHOW COLUMNS FROM `basicteacherinformation` [ RunTime:0.0023s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='2' ) LIMIT 1   [ RunTime:0.0063s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='1' AND ifUploadProfile='2' ) LIMIT 1   [ RunTime:0.0040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000716s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000798s ]
+
+[ 2016-03-29T18:04:31+08:00 ] 116.228.167.234 /index/admin/Verify/getCount
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000394s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000650s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000712s ]
+SQL: SHOW COLUMNS FROM `basicteacherinformation` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='2' ) LIMIT 1   [ RunTime:0.0049s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='1' AND ifUploadProfile='2' ) LIMIT 1   [ RunTime:0.0040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000791s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000852s ]
+
+[ 2016-03-29T18:04:37+08:00 ] 116.228.167.234 /index/admin/Verify/getCount
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000433s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000647s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000709s ]
+SQL: SHOW COLUMNS FROM `basicteacherinformation` [ RunTime:0.0022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='2' ) LIMIT 1   [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='1' AND ifUploadProfile='2' ) LIMIT 1   [ RunTime:0.0043s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000829s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000889s ]
+
+[ 2016-03-29T18:04:43+08:00 ] 116.228.167.234 /index/admin/Verify/getCount
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000403s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000715s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000777s ]
+SQL: SHOW COLUMNS FROM `basicteacherinformation` [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='2' ) LIMIT 1   [ RunTime:0.0042s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='1' AND ifUploadProfile='2' ) LIMIT 1   [ RunTime:0.0041s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000814s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000872s ]
+
+[ 2016-03-29T18:04:49+08:00 ] 116.228.167.234 /index/admin/Verify/getCount
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000404s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000701s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000762s ]
+SQL: SHOW COLUMNS FROM `basicteacherinformation` [ RunTime:0.0022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='2' ) LIMIT 1   [ RunTime:0.0056s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='1' AND ifUploadProfile='2' ) LIMIT 1   [ RunTime:0.0040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000766s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000824s ]
+
+[ 2016-03-29T18:04:55+08:00 ] 116.228.167.234 /index/admin/Verify/getCount
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000429s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000742s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000820s ]
+SQL: SHOW COLUMNS FROM `basicteacherinformation` [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='2' ) LIMIT 1   [ RunTime:0.0045s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='1' AND ifUploadProfile='2' ) LIMIT 1   [ RunTime:0.0042s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000841s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000900s ]
+
+[ 2016-03-29T18:05:01+08:00 ] 116.228.167.234 /index/admin/Verify/getCount
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000417s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000624s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000685s ]
+SQL: SHOW COLUMNS FROM `basicteacherinformation` [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='2' ) LIMIT 1   [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='1' AND ifUploadProfile='2' ) LIMIT 1   [ RunTime:0.0040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000750s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000809s ]
+
+[ 2016-03-29T18:05:07+08:00 ] 116.228.167.234 /index/admin/Verify/getCount
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000411s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000698s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000758s ]
+SQL: SHOW COLUMNS FROM `basicteacherinformation` [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='2' ) LIMIT 1   [ RunTime:0.0046s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='1' AND ifUploadProfile='2' ) LIMIT 1   [ RunTime:0.0041s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000886s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000948s ]
+
+[ 2016-03-29T18:05:13+08:00 ] 116.228.167.234 /index/admin/Verify/getCount
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000409s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000792s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000864s ]
+SQL: SHOW COLUMNS FROM `basicteacherinformation` [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='2' ) LIMIT 1   [ RunTime:0.0041s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='1' AND ifUploadProfile='2' ) LIMIT 1   [ RunTime:0.0041s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000894s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000953s ]
+
+[ 2016-03-29T18:05:19+08:00 ] 116.228.167.234 /index/admin/Verify/getCount
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000422s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000642s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000704s ]
+SQL: SHOW COLUMNS FROM `basicteacherinformation` [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='2' ) LIMIT 1   [ RunTime:0.0057s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='1' AND ifUploadProfile='2' ) LIMIT 1   [ RunTime:0.0049s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001231s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001427s ]
+
+[ 2016-03-29T18:05:25+08:00 ] 116.228.167.234 /index/admin/Verify/getCount
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000562s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000867s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000948s ]
+SQL: SHOW COLUMNS FROM `basicteacherinformation` [ RunTime:0.0022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='2' ) LIMIT 1   [ RunTime:0.0045s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='1' AND ifUploadProfile='2' ) LIMIT 1   [ RunTime:0.0060s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001072s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001161s ]
+

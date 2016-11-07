@@ -1,0 +1,166 @@
+body,html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family:"幼圆","华文细黑","Helvetica","Comic Sans MS","黑体",sans-serif;
+}
+/*body{*/
+    /*display: none;*/
+/*}*/
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    outline: none;
+    text-decoration: none;
+    border: none 0;
+}
+a img{
+    border: 0 none;
+}
+li{
+    list-style: none;
+}
+
+/*���*/
+.c1{
+    width: 8.33333%;
+}
+.c2{
+    width:16.666666%;
+}
+.c3{
+    width: 25%;
+}
+.c4{
+    width: 33.333%;
+}
+.c9{
+    width: 75%;
+}
+.c7{
+    width: 58.333333%;
+}
+.c6{
+    width: 50%;
+}
+.c12{
+    width: 100%;
+}
+.c2{
+    width: 16.666%;
+}
+.c8{
+    width: 66.666%;
+}
+.c5{
+    width: 41.666%;
+}
+.c11{
+    width: 91.666%;
+}
+.c10{
+    width: 83.33333%;
+}
+.c3,.c9 ,.c12 ,.c6,.c2,.c4,.c5,.c11,.c1,.c7,.c8,.c10{
+    position: relative;
+    float: left;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+.full{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+/*头部*/
+.header{
+    text-align: center;
+    line-height: 60px;
+    background-image: url("../img/tc_home/1.png");
+}
+.logo img,.menu_btn{
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+}
+.con{
+    overflow: hidden;
+}
+.con img{
+   width: 100%;
+}
+.con2{
+    text-align: center;
+    background-image: url("../img/tc_home/6.png");
+    line-height: 50px;
+    margin-top: -5px;
+}
+.con3{
+    text-align: center;
+    margin-top: 30px;
+}
+.con3 img{
+    width: 100%;
+    padding-top: 30px;
+}
+.con3 h3, .con3 p{
+    margin-top: 5px;
+}
+.footer{
+    margin-top: 30px;
+    padding-bottom:50px;
+}
+.footer p{
+    text-align: center;
+    font-size: 13px;
+    line-height: 20px;
+}
+.yy{
+    width: 100%;
+    position: fixed;
+    bottom: 30px;
+}
+.yy img{
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+/*菜单*/
+.menu{
+    height: 240px;
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    text-align: center;
+    display: none;
+}
+.menu h2{
+    line-height: 60px;
+    color: #ffffff;
+}
+.menu_btn:hover{
+    opacity: 0.8;
+}
+.menu_btn {
+    height: 27px;
+}
+
+/*内容*/
+.con1 img{
+    width: 100%;
+}
+.con2 {
+    line-height: 100px;
+}
+.con2 img{
+    vertical-align: middle;
+}
+.con3{
+    background-image: url("../img/function/3.png");
+    background-size: 100%;
+    margin-top: 100px;
+    line-height: 33px;
+}

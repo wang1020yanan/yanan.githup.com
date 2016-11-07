@@ -1,0 +1,66 @@
+﻿body{
+    width: 100%;
+    background: #F8F8F8;
+    font-family: Microsoft Yahei;
+}
+
+/*轮播*/
+.m-lb{
+    padding-top: 56px;
+}
+.m-lb img{
+    width: 100%;
+}
+/*热推列表*/
+.m-rt{
+    width: 100%;
+    margin-top: 6px
+}
+.m-rt-a{
+    width: 49.5%;
+    float: left;
+    text-align: center;
+    margin-top: 4px;
+}
+.m-rt-a img{
+    width:100%;
+    border: 1px solid #E8E8E8
+}
+.m-rt-a p{
+    color: #C0C0C0
+}
+.m-rt-b{
+    width: 49.5%;
+    float: left;
+    text-align: center;
+    margin-left: 1%;
+    margin-top: 4px;
+}
+.m-rt-b img{
+    width: 100%;
+    border: 1px solid #E8E8E8
+}
+.m-rt-b p{
+    color: #C0C0C0
+}
+/*底部*/
+.m-ft{
+    text-align: center;
+    font-size:1em;
+    line-height: 3em;
+}
+.m-ft p{
+    color: #888888;
+}
+#fl a{
+    color: #888888;
+    text-decoration: none;
+}
+#fl .m-rt-a{
+    text-align: left;
+    padding-left: 1em;
+}
+#fl .m-rt-b{
+    text-align: right;
+    padding-right: 1em;
+}

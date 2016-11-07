@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!--<script type="text/javascript" src="js/myjs.js"></script>-->
+    <title></title>
+    <style>
+        #c1{
+            background: #FFFFFF;
+        }
+    </style>
+    <script>
+        window.onload=function(){
+            var oC=document.getElementById("c1");
+            var oGC=oC.getContext('2d');
+//            oGC.fillStyle='#000';
+//            oGC.lineJoin ='bevel';
+//            oGC.strokeStyle='red';
+//            oGC.fillRect(50,50,100,100);
+//            oGC.strokeRect(50.5,50.5,100,100)
+//            oGC.beginPath();
+//            oGC.lineWidth='6';
+//            oGC.moveTo(100,100);
+//            oGC.lineTo(200,200);
+////            oGC.lineTo(300,200);
+//            oGC.stroke();
+            oC.onmousedown=function(){
+                var ev=ev||window.event;
+                oGC.moveTo(ev.clientX-oC.offsetLeft,ev.clientY-oC.offsetTop);
+                document.onmousemove=function(){
+                    var ev=ev||window.event;
+                    oGC.lineTo(ev.clientX-oC.offsetLeft,ev.clientY-oC.offsetTop);
+                    oGC.stroke();
+                };
+                document.onmouseup=function(){
+                     document.onmousemove=null;
+                     document.onmouseup=null;
+                }
+            }
+
+        }
+    </script>
+</head>
+<body style="background: #000">
+       <canvas style="padding: 0;margin: 0" id="c1" width="400" height="400"></canvas>
+</body>
+</html>

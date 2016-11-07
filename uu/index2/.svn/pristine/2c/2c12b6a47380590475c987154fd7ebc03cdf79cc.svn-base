@@ -1,0 +1,24 @@
+[ 2016-04-28T17:22:01+08:00 ] ::1 /thinkphp/Public/js/maps/swiper.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000845s ]
+ERR: 无法加载模块:Public
+
+[ 2016-04-28T17:22:25+08:00 ] ::1 /thinkphp/Public/order/img/tc_home/323.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000952s ]
+ERR: 无法加载模块:Public
+
+[ 2016-04-28T17:27:12+08:00 ] ::1 /thinkphp/Public/order/img/tc_home/323.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001466s ]
+ERR: 无法加载模块:Public
+
+[ 2016-04-28T17:28:47+08:00 ] ::1 /thinkphp/Public/order/img/tc_home/323.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001303s ]
+ERR: 无法加载模块:Public
+

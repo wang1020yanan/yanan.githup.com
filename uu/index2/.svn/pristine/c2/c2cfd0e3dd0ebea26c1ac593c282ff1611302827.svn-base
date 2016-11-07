@@ -1,0 +1,87 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>订单详情</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta name="format-detection" content="telephone=no" />
+    <link href="http://www.uustudy.com.cn/img/logo.png" rel="shortcut icon" type="image/x-icon"/>
+    <link href="/index/Public/css/order.css" rel="stylesheet" type="text/css">
+    <script src="/index/Public/js/jquery-2.1.1.min.js"></script>
+    <script src="/index/Public/js/order.js"></script>
+</head>
+<body>
+    <div class="full nav">
+        <div class="container">
+            <div class="c12 nav_con">
+                <div class="c6 pro_pic">
+                    <img src="/index/Public/img/mall_img/08.png">
+                </div>
+                <!--产品信息-->
+                <div class="c6 desc">
+                    <p class="tit">希捷1T2.5英寸USB3.0移动硬盘</p>
+                    <p>“薄”“彩”众生，只为更好的你~12.1mm至薄金属机身，轻薄便携谁敢争锋！</p>
+                    <p>建议零售价600&nbsp; <span class="bao">包邮</span></p>
+                    <p><span id="price">8000</span>&nbsp;积分</p>
+                </div>
+            </div>
+            <div style="clear: both"></div>
+        </div>
+    </div>
+    <div class="full msg">
+        <div class="container">
+            <!--收货信息-->
+            <form action="/index/home/mall/buy" method="post" name="receivingInformation" id="receivingInformation">
+                <!--隐藏产品名和用户id 加载页面时填入-->
+                <input name="goods_name" id="product" type="hidden" value="">
+                <input name="userId" id="userId" type="hidden" value="">
+                <input name="price" id="price2" type="hidden" value="">
+
+                <div class="c12 msg_wrap">
+                <div class="c3 msg_name">收货地址</div>
+                <div class="c9 input">
+                    <input name="address" id="address" type="text">
+                </div>
+            </div>
+            <div class="c12 msg_wrap">
+                <div class="c3 msg_name">姓&nbsp;&nbsp;&nbsp;&nbsp;名</div>
+                <div class="c9 input">
+                    <input name="student_name" id="name" type="text">
+                </div>
+            </div>
+            <div class="c12 msg_wrap">
+                <div class="c3 msg_name">联系电话</div>
+                <div class="c9 input">
+                    <input name="telephone" id="telephone" type="tel">
+                </div>
+            </div>
+            <div class="c12 msg_wrap">
+                <div class="c3 msg_name">邮政编码</div>
+                <div class="c9 input">
+                    <input name="postcode" id="zip" type="text">
+                    <p class="tips">请完善收货信息</p>
+                </div>
+            </div>
+            </form>
+        </div>
+        <div style="clear: both"></div>
+    </div>
+    <div class="full msg">
+        <div class="container">
+            <div class="c12 tip_wrap">
+                <p class="tip">&nbsp;&nbsp;兑换须知</p>
+                <p class="con">1.商品兑换后，不可退还商品以及积分</p>
+                <p class="con">2.商品兑换后，会在1-5个工作日内发货，请耐心等待</p>
+                <p class="con">3.如有疑问，请联系客服021-64666013</p>
+            </div>
+        </div>
+        <div style="clear: both"></div>
+    </div>
+    <div class="full msg footer">
+        <div class="container">
+           <button class="btn">确认兑换</button>
+        </div>
+        <div style="clear: both"></div>
+    </div>
+</body>
+</html>

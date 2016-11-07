@@ -1,0 +1,51 @@
+﻿*{
+    font-family: "Helvetica", "Microsoft YaHei", sans-serif;
+}
+body{
+    background: #f0f0f0;
+}
+/*填充*/
+.tctc{
+    width: 100%;
+    height:50px;
+    min-width: 1230px;
+    background:#000000
+}
+/*内容*/
+.neir-a{
+    width: 100%;
+    min-width: 1230px;
+    margin-top: 20px;
+}
+.neir-a-aa{
+    width: 1230px;
+}
+.neir-sp{
+    width:1230px;
+    margin-top: 20px;
+}
+.neir-sp-a{
+    float: left;
+    width: 294px;
+    height: 420px;
+    margin-top:10px;
+    margin-left:10px;
+    background: #ffffff;
+
+}
+.neir-sp-a img{
+    width: 294px;
+    height:340px
+}
+.neir-sp-a:hover{
+    box-shadow: 0 20px 60px #C8C8C8;
+}
+.fl-db{
+    width: 100%;
+    min-width: 1230px;
+    height: 100px;
+    line-height: 100px;
+    margin-top:20px;
+    border-top: 1px solid #808080;
+    text-align: center
+}

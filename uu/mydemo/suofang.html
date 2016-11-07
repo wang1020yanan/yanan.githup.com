@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!--<script type="text/javascript" src="js/myjs.js"></script>-->
+    <title></title>
+    <style>
+        *{  margin: 0;padding: 0;}
+        #div1{  width: 200px;  height: 200px;  background: hotpink;
+            position: absolute;cursor: pointer  }
+        #div2{width: 30px;height: 30px;background: aqua;
+            position: absolute;bottom: 0;right: 0;
+        }
+    </style>
+    <script>
+//        拖拽
+         $(function(){
+             var oDiv=document.getElementById('div1');
+             var disX=0;
+             var disY=0;
+             oDiv.onmousedown=function(ev){
+                 var ev=ev||window.event;
+                 disX=ev.clientX-oDiv.offsetLeft;
+                 disY=ev.clientY-oDiv.offsetTop;
+                 if(oDiv.setCapture){
+                     oDiv.setCapture();
+                 }
+                 document.onmousemove=function(ev){
+                     var ev=ev||window.event;
+                     oDiv.style.left=ev.clientX-disX+'px';
+                     oDiv.style.top=ev.clientY-disY+'px';
+                 };
+                 document.onmouseup=function(){
+                     document.onmousemove=null;
+                     document.onmouseup=null;
+                     if(oDiv.releaseCapture){
+                         oDiv.releaseCapture();
+                     }
+                 };
+                 return false;
+             };
+         });
+//缩放
+        $(function(){
+            var oDiv1=document.getElementById('div1');
+            var oDiv2=document.getElementById('div2');
+
+            var disX=0;
+            var disY=0;
+            var disW=0;
+            var disH=0;
+            oDiv2.onmousedown=function(ev){
+                var ev=ev||window.event;
+                disX=ev.clientX;
+                disY=ev.clientY;
+                disW=oDiv1.offsetWidth;
+                disH=oDiv1.offsetHeight;
+                document.onmousemove=function(ev){
+                    var ev=ev||window.event;
+                    var W=ev.clientX-disX+disW;
+                    var H=ev.clientY-disY+disH;
+                    if(W<100){
+                        W=100
+                    }
+                    if(H<100){
+                        H=100
+                    }
+                    oDiv1.style.width=W+'px';
+                    oDiv1.style.height=H+'px';
+                };
+                document.onmouseup=function(){
+                    document.onmousemove=null;
+                    document.onmouseup=null;
+                };
+                event.stopPropagation();
+            }
+        });
+    //运动碰撞
+    $(function(){
+        startMove();
+        var oDiv1=document.getElementById('div1');
+        var iSpeedX=1;
+        var iSpeedY=1;
+        function startMove(){
+            setInterval(function(){
+                var L=oDiv1.offsetLeft+iSpeedX;
+                var T=oDiv1.offsetTop+iSpeedY;
+                if(T>=document.documentElement.clientHeight-oDiv1.offsetHeight){
+                     iSpeedY*=-1;
+                }else if(T<=0){
+                     iSpeedY*=-1;
+                }
+                if(L>=document.documentElement.clientWidth-oDiv1.offsetWidth){
+                     iSpeedX*=-1;
+                }else if(L<=0){
+                     iSpeedX*=-1;
+                }
+                oDiv1.style.top=T+'px';
+                oDiv1.style.left=L+'px';
+            },10)
+        }
+    });
+
+    </script>
+</head>
+<body>
+       <div id="div1">
+             <div id="div2"></div>
+       </div>
+</body>
+</html>

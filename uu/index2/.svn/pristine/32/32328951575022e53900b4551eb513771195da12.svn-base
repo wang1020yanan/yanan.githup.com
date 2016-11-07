@@ -1,0 +1,43 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>订单详情</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta name="format-detection" content="telephone=no" />
+    <link href="http://www.uustudy.com.cn/img/logo.png" rel="shortcut icon" type="image/x-icon"/>
+    <link href="/index/Public/css/wait.css" rel="stylesheet" type="text/css">
+    <script src="/index/Public/js/jquery-2.1.1.min.js"></script>
+    <script src="/index/Public/js/wait.js"></script>
+</head>
+<body>
+    <div class="full nav">
+        <div class="container">
+            <div class="c12 nav_con">
+                <div class="c12 pro_pic">
+                    <img src="/index/Public/img/7.png">
+                    <p>恭喜您de宝贝</p>
+                    <p>兑换成功!</p>
+                    <p style="font-size: .8rem"><span class="time"></span><a href="/index/home/mall/mall" style="color:#0a74f6;">返回积分商城>></a></p>
+                </div>
+            </div>
+            <div style="clear: both"></div>
+        </div>
+    </div>
+    <div class="full msg">
+        <div class="container">
+            <div class="c12 tip_wrap">
+                <p class="con">1.商品兑换后，会在1-5个工作日内发货，请耐心等待</p>
+                <p class="con">2.如有疑问，请联系客服021-64666013</p>
+            </div>
+        </div>
+        <div style="clear: both"></div>
+    </div>
+    <!--<div class="full msg footer">-->
+        <!--<div class="container">-->
+           <!--<a  class="btn">确认兑换</a>-->
+        <!--</div>-->
+        <!--<div style="clear: both"></div>-->
+    <!--</div>-->
+</body>
+</html>

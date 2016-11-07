@@ -1,0 +1,573 @@
+[ 2016-03-27T18:18:07+08:00 ] 114.94.87.113 /index/index.php/admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000400s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000651s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000716s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006393s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006454s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000391s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000623s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000676s ]
+
+[ 2016-03-27T18:18:22+08:00 ] 114.94.87.113 /index/admin/Verify/verifyList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000424s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000726s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000791s ]
+SQL: SHOW COLUMNS FROM `basicteacherinformation` [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='2' ) LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT * FROM `basicteacherinformation` WHERE ( ifVerify='2' ) ORDER BY createTime LIMIT 0,10   [ RunTime:0.0031s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000181s ]
+NOTIC: [8] Undefined index: degreeschoolname D:\AppServ_ONE\www\index\Application\Runtime\Cache\Admin\969b749f52d9098a38702ac8f434ca91.php 第 71 行.
+NOTIC: [8] Undefined index: degreeschoolname D:\AppServ_ONE\www\index\Application\Runtime\Cache\Admin\969b749f52d9098a38702ac8f434ca91.php 第 71 行.
+NOTIC: [8] Undefined index: degreeschoolname D:\AppServ_ONE\www\index\Application\Runtime\Cache\Admin\969b749f52d9098a38702ac8f434ca91.php 第 71 行.
+NOTIC: [8] Undefined index: degreeschoolname D:\AppServ_ONE\www\index\Application\Runtime\Cache\Admin\969b749f52d9098a38702ac8f434ca91.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010107s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010181s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000400s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000451s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000742s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000799s ]
+
+[ 2016-03-27T18:18:22+08:00 ] 114.94.87.113 /index/admin/Verify/getCount
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000402s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000687s ]
+SQL: SHOW COLUMNS FROM `basicteacherinformation` [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='2' ) LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='1' AND ifUploadProfile='2' ) LIMIT 1   [ RunTime:0.0028s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000748s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000806s ]
+
+[ 2016-03-27T18:18:28+08:00 ] 114.94.87.113 /index/admin/Verify/getCount
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000413s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000756s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000818s ]
+SQL: SHOW COLUMNS FROM `basicteacherinformation` [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='2' ) LIMIT 1   [ RunTime:0.0032s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='1' AND ifUploadProfile='2' ) LIMIT 1   [ RunTime:0.0039s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001139s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001220s ]
+
+[ 2016-03-27T18:18:29+08:00 ] 114.94.87.113 /index/index.php/Admin/Verify/verify/userID/15720755
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000474s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000872s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000958s ]
+SQL: SHOW COLUMNS FROM `basicteacherinformation` [ RunTime:0.0023s ]
+SQL: SELECT `telephone`,`usersex` FROM `basicteacherinformation` WHERE ( userID=15720755 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `teacherdetailinformation` [ RunTime:0.0014s ]
+SQL: SELECT `mostbachelor`,`degreeschoolname`,`major` FROM `teacherdetailinformation` WHERE ( userID=15720755 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `teacherverify` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `teacherverify` WHERE ( userID=15720755 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `uploadteachermypictable` [ RunTime:0.0009s ]
+SQL: SELECT `imageurl` FROM `uploadteachermypictable` WHERE ( userID=15720755 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000170s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009622s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009701s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000414s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000477s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000709s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000769s ]
+
+[ 2016-03-27T18:18:44+08:00 ] 114.94.87.113 /index/Admin/verify/verifyDetermine
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000424s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000683s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000744s ]
+SQL: SHOW COLUMNS FROM `basicteacherinformation` [ RunTime:0.0017s ]
+SQL: SELECT `ifVerify` FROM `basicteacherinformation` WHERE ( userID=15720755 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `basicteacherinformation` SET `ifVerify`='1',`ifUploadProfile`='1' WHERE ( userID=15720755 ) [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `teacherverify` [ RunTime:0.0011s ]
+SQL: UPDATE `teacherverify` SET `identityVerifyResult`='1',`eduVerifyResult`='1',`verifyDesciption`='' WHERE ( userID=15720755 ) [ RunTime:0.0002s ]
+SQL: SELECT * FROM `teacherverify` WHERE ( userID=15720755 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `teacherdetailinformation` [ RunTime:0.0011s ]
+SQL: UPDATE `teacherdetailinformation` SET `signiture`='努力很重要，但是方法更重要。',`achivement`='我现在是同济大学的学生，作为一个刚刚从高中走出来的学生，我更知道如何用快速高效的学习方法提高成绩和学习效率，加上有过一些家教经验，我相信一定能使家长和学员们满意，各位家长和学员们，拭目以待吧！',`honor`='',`teachingAge`='2',`teachingPoint`='教给学生系统的学习方法。',`otherWork`='主要教过几个初中生。' WHERE ( userID=15720755 ) [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000741s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000795s ]
+
+[ 2016-03-27T18:18:44+08:00 ] 114.94.87.113 /index/admin/Verify/verifyList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000408s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000693s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000757s ]
+SQL: SHOW COLUMNS FROM `basicteacherinformation` [ RunTime:0.0015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='2' ) LIMIT 1   [ RunTime:0.0028s ]
+SQL: SELECT * FROM `basicteacherinformation` WHERE ( ifVerify='2' ) ORDER BY createTime LIMIT 0,10   [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+NOTIC: [8] Undefined index: degreeschoolname D:\AppServ_ONE\www\index\Application\Runtime\Cache\Admin\969b749f52d9098a38702ac8f434ca91.php 第 71 行.
+NOTIC: [8] Undefined index: degreeschoolname D:\AppServ_ONE\www\index\Application\Runtime\Cache\Admin\969b749f52d9098a38702ac8f434ca91.php 第 71 行.
+NOTIC: [8] Undefined index: degreeschoolname D:\AppServ_ONE\www\index\Application\Runtime\Cache\Admin\969b749f52d9098a38702ac8f434ca91.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008112s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008173s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000393s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000686s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000752s ]
+
+[ 2016-03-27T18:18:44+08:00 ] 114.94.87.113 /index/admin/Verify/getCount
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000417s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000791s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000870s ]
+SQL: SHOW COLUMNS FROM `basicteacherinformation` [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='2' ) LIMIT 1   [ RunTime:0.0028s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='1' AND ifUploadProfile='2' ) LIMIT 1   [ RunTime:0.0028s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000753s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000810s ]
+
+[ 2016-03-27T18:18:46+08:00 ] 114.94.87.113 /index/index.php/Admin/Verify/verify/userID/107003194
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000416s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000684s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000752s ]
+SQL: SHOW COLUMNS FROM `basicteacherinformation` [ RunTime:0.0016s ]
+SQL: SELECT `telephone`,`usersex` FROM `basicteacherinformation` WHERE ( userID=107003194 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `teacherdetailinformation` [ RunTime:0.0015s ]
+SQL: SELECT `mostbachelor`,`degreeschoolname`,`major` FROM `teacherdetailinformation` WHERE ( userID=107003194 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `teacherverify` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `teacherverify` WHERE ( userID=107003194 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `uploadteachermypictable` [ RunTime:0.0009s ]
+SQL: SELECT `imageurl` FROM `uploadteachermypictable` WHERE ( userID=107003194 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000199s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009411s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009478s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000391s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000726s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000785s ]
+
+[ 2016-03-27T18:19:00+08:00 ] 114.94.87.113 /index/Admin/verify/verifyDetermine
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000416s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000659s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000735s ]
+SQL: SHOW COLUMNS FROM `basicteacherinformation` [ RunTime:0.0016s ]
+SQL: SELECT `ifVerify` FROM `basicteacherinformation` WHERE ( userID=107003194 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `basicteacherinformation` SET `ifVerify`='1',`ifUploadProfile`='1' WHERE ( userID=107003194 ) [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `teacherverify` [ RunTime:0.0012s ]
+SQL: UPDATE `teacherverify` SET `identityVerifyResult`='1',`eduVerifyResult`='1',`verifyDesciption`='' WHERE ( userID=107003194 ) [ RunTime:0.0002s ]
+SQL: SELECT * FROM `teacherverify` WHERE ( userID=107003194 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `teacherdetailinformation` [ RunTime:0.0011s ]
+SQL: UPDATE `teacherdetailinformation` SET `signiture`='',`achivement`='现为同济大学在校学生，学习勤奋努力 ，做事一丝不苟，对于身边的每一个人都以诚相待。',`honor`='',`teachingAge`='1',`teachingPoint`='认真负责，耐心细致 ，用心去教每一个孩子，把提高孩子的学习成绩当做自己的责任。',`otherWork`='' WHERE ( userID=107003194 ) [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000677s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000731s ]
+
+[ 2016-03-27T18:19:00+08:00 ] 114.94.87.113 /index/admin/Verify/verifyList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000377s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000626s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000701s ]
+SQL: SHOW COLUMNS FROM `basicteacherinformation` [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='2' ) LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT * FROM `basicteacherinformation` WHERE ( ifVerify='2' ) ORDER BY createTime LIMIT 0,10   [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+NOTIC: [8] Undefined index: degreeschoolname D:\AppServ_ONE\www\index\Application\Runtime\Cache\Admin\969b749f52d9098a38702ac8f434ca91.php 第 71 行.
+NOTIC: [8] Undefined index: degreeschoolname D:\AppServ_ONE\www\index\Application\Runtime\Cache\Admin\969b749f52d9098a38702ac8f434ca91.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007729s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007788s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000323s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000373s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000620s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000676s ]
+
+[ 2016-03-27T18:19:01+08:00 ] 114.94.87.113 /index/admin/Verify/getCount
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000764s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000557s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000622s ]
+SQL: SHOW COLUMNS FROM `basicteacherinformation` [ RunTime:0.0015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='2' ) LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='1' AND ifUploadProfile='2' ) LIMIT 1   [ RunTime:0.0028s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000707s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000769s ]
+
+[ 2016-03-27T18:19:03+08:00 ] 114.94.87.113 /index/index.php/Admin/Verify/verify/userID/197503221
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000413s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000517s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000581s ]
+SQL: SHOW COLUMNS FROM `basicteacherinformation` [ RunTime:0.0017s ]
+SQL: SELECT `telephone`,`usersex` FROM `basicteacherinformation` WHERE ( userID=197503221 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `teacherdetailinformation` [ RunTime:0.0011s ]
+SQL: SELECT `mostbachelor`,`degreeschoolname`,`major` FROM `teacherdetailinformation` WHERE ( userID=197503221 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `teacherverify` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `teacherverify` WHERE ( userID=197503221 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `uploadteachermypictable` [ RunTime:0.0008s ]
+SQL: SELECT `imageurl` FROM `uploadteachermypictable` WHERE ( userID=197503221 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000194s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009014s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009085s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000385s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000452s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000994s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001114s ]
+
+[ 2016-03-27T18:19:47+08:00 ] 114.94.87.113 /index/Admin/verify/verifyDetermine
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000490s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000703s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000764s ]
+SQL: SHOW COLUMNS FROM `basicteacherinformation` [ RunTime:0.0016s ]
+SQL: SELECT `ifVerify` FROM `basicteacherinformation` WHERE ( userID=197503221 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `basicteacherinformation` SET `ifVerify`='3',`ifUploadProfile`='1' WHERE ( userID=197503221 ) [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `teacherverify` [ RunTime:0.0011s ]
+SQL: UPDATE `teacherverify` SET `identityVerifyResult`='3',`eduVerifyResult`='1',`verifyDesciption`='身份认证是手持身份证上半身照片' WHERE ( userID=197503221 ) [ RunTime:0.0002s ]
+SQL: SELECT * FROM `teacherverify` WHERE ( userID=197503221 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `teacherdetailinformation` [ RunTime:0.0011s ]
+SQL: UPDATE `teacherdetailinformation` SET `signiture`='',`achivement`='上海外国语大学学生  擅长英语  主要长项是英语口语  可带中小学生英语家教',`honor`='',`teachingAge`='1',`teachingPoint`='熟悉应试技巧  答题方法  擅长英语阅读与口语',`otherWork`='' WHERE ( userID=197503221 ) [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000728s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000781s ]
+
+[ 2016-03-27T18:19:47+08:00 ] 114.94.87.113 /index/admin/Verify/verifyList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000439s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000733s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000800s ]
+SQL: SHOW COLUMNS FROM `basicteacherinformation` [ RunTime:0.0015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='2' ) LIMIT 1   [ RunTime:0.0028s ]
+SQL: SELECT * FROM `basicteacherinformation` WHERE ( ifVerify='2' ) ORDER BY createTime LIMIT 0,10   [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000156s ]
+NOTIC: [8] Undefined index: degreeschoolname D:\AppServ_ONE\www\index\Application\Runtime\Cache\Admin\969b749f52d9098a38702ac8f434ca91.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008081s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008141s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000374s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000440s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000716s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000773s ]
+
+[ 2016-03-27T18:19:48+08:00 ] 114.94.87.113 /index/admin/Verify/getCount
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000422s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000689s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000751s ]
+SQL: SHOW COLUMNS FROM `basicteacherinformation` [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='2' ) LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='1' AND ifUploadProfile='2' ) LIMIT 1   [ RunTime:0.0030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000740s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000797s ]
+
+[ 2016-03-27T18:19:50+08:00 ] 114.94.87.113 /index/index.php/Admin/Verify/verify/userID/157603222
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000458s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000762s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000846s ]
+SQL: SHOW COLUMNS FROM `basicteacherinformation` [ RunTime:0.0016s ]
+SQL: SELECT `telephone`,`usersex` FROM `basicteacherinformation` WHERE ( userID=157603222 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `teacherdetailinformation` [ RunTime:0.0012s ]
+SQL: SELECT `mostbachelor`,`degreeschoolname`,`major` FROM `teacherdetailinformation` WHERE ( userID=157603222 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `teacherverify` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `teacherverify` WHERE ( userID=157603222 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `uploadteachermypictable` [ RunTime:0.0016s ]
+SQL: SELECT `imageurl` FROM `uploadteachermypictable` WHERE ( userID=157603222 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000149s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000262s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011802s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011888s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000564s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000648s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000858s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000936s ]
+
+[ 2016-03-27T18:20:29+08:00 ] 114.94.87.113 /index/Admin/verify/verifyDetermine
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000461s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000727s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000789s ]
+SQL: SHOW COLUMNS FROM `basicteacherinformation` [ RunTime:0.0016s ]
+SQL: SELECT `ifVerify` FROM `basicteacherinformation` WHERE ( userID=157603222 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `basicteacherinformation` SET `ifVerify`='3',`ifUploadProfile`='1' WHERE ( userID=157603222 ) [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `teacherverify` [ RunTime:0.0011s ]
+SQL: UPDATE `teacherverify` SET `identityVerifyResult`='3',`eduVerifyResult`='1',`verifyDesciption`='身份认证是手持身份证上半身照片' WHERE ( userID=157603222 ) [ RunTime:0.0002s ]
+SQL: SELECT * FROM `teacherverify` WHERE ( userID=157603222 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `teacherdetailinformation` [ RunTime:0.0011s ]
+SQL: UPDATE `teacherdetailinformation` SET `signiture`='好好学习，天天向上',`achivement`='当我是学生的时候，我会好好学习。当我是老师的时候，我更会好好学习。',`honor`='',`teachingAge`='2',`teachingPoint`='对每一个学生都用心，用心，用心。重要的事说三遍。',`otherWork`='曾经教过小学三年级四年级五年级语文和英语，曾经辅导过初三中考英语' WHERE ( userID=157603222 ) [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000874s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000928s ]
+
+[ 2016-03-27T18:20:29+08:00 ] 114.94.87.113 /index/admin/Verify/verifyList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000421s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000733s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000797s ]
+SQL: SHOW COLUMNS FROM `basicteacherinformation` [ RunTime:0.0015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='2' ) LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT * FROM `basicteacherinformation` WHERE ( ifVerify='2' ) ORDER BY createTime LIMIT 0,10   [ RunTime:0.0029s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007931s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007997s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000379s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000431s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000667s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000723s ]
+
+[ 2016-03-27T18:20:30+08:00 ] 114.94.87.113 /index/admin/Verify/getCount
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000432s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000722s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000784s ]
+SQL: SHOW COLUMNS FROM `basicteacherinformation` [ RunTime:0.0017s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='2' ) LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='1' AND ifUploadProfile='2' ) LIMIT 1   [ RunTime:0.0029s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000968s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001040s ]
+
+[ 2016-03-27T18:20:32+08:00 ] 114.94.87.113 /index/index.php/admin/Verify/detailList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000419s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000689s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000755s ]
+SQL: SHOW COLUMNS FROM `basicteacherinformation` [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='1' AND ifUploadProfile='2' ) LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT * FROM `basicteacherinformation` WHERE ( ifVerify='1' AND ifUploadProfile='2' ) ORDER BY createTime LIMIT 0,10   [ RunTime:0.0032s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000129s ]
+NOTIC: [8] Undefined index: degreeschoolname D:\AppServ_ONE\www\index\Application\Runtime\Cache\Admin\b1a7905dbc05f1ccb349129aae1659ac.php 第 70 行.
+NOTIC: [8] Undefined index: degreeschoolname D:\AppServ_ONE\www\index\Application\Runtime\Cache\Admin\b1a7905dbc05f1ccb349129aae1659ac.php 第 70 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008027s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008088s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000446s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000668s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000725s ]
+
+[ 2016-03-27T18:20:32+08:00 ] 114.94.87.113 /index/index.php/admin/Verify/getCount
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000722s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000784s ]
+SQL: SHOW COLUMNS FROM `basicteacherinformation` [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='2' ) LIMIT 1   [ RunTime:0.0028s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='1' AND ifUploadProfile='2' ) LIMIT 1   [ RunTime:0.0028s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000725s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000780s ]
+
+[ 2016-03-27T18:20:35+08:00 ] 114.94.87.113 /index/index.php/Admin/Verify/detail/userID/11750356
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000398s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000695s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000761s ]
+SQL: SHOW COLUMNS FROM `basicteacherinformation` [ RunTime:0.0018s ]
+SQL: SELECT `telephone`,`usersex` FROM `basicteacherinformation` WHERE ( userID=11750356 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `teacherdetailinformation` [ RunTime:0.0011s ]
+SQL: SELECT `mostbachelor`,`degreeschoolname`,`major` FROM `teacherdetailinformation` WHERE ( userID=11750356 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `teacherverify` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `teacherverify` WHERE ( userID=11750356 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `uploadteachermypictable` [ RunTime:0.0009s ]
+SQL: SELECT `imageurl` FROM `uploadteachermypictable` WHERE ( userID=11750356 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000156s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009296s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009376s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000446s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000693s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000754s ]
+
+[ 2016-03-27T18:20:46+08:00 ] 114.94.87.113 /index/Admin/verify/detailDetermine
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000450s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000842s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000905s ]
+SQL: SHOW COLUMNS FROM `basicteacherinformation` [ RunTime:0.0016s ]
+SQL: SELECT `ifUploadProfile` FROM `basicteacherinformation` WHERE ( userID=11750356 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `basicteacherinformation` SET `ifUploadProfile`='1' WHERE ( userID=11750356 ) [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `teacherverify` [ RunTime:0.0011s ]
+SQL: UPDATE `teacherverify` SET `verifyDesciption`='' WHERE ( userID=11750356 ) [ RunTime:0.0002s ]
+SQL: SELECT * FROM `teacherverify` WHERE ( userID=11750356 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `teacherdetailinformation` [ RunTime:0.0011s ]
+SQL: UPDATE `teacherdetailinformation` SET `signiture`='红尘千匝皆尘埃,笑看浮华数百年。',`achivement`='本人就读于同济大学飞行器制造工程专业  擅长数理化 有半年教学经验 为人认真 讲解详细',`honor`='曾获河北省高中数学竞赛(高二组)邢台市一等奖',`teachingAge`='1',`teachingPoint`='特别擅长数理化  有半年家教经验 讲解详细耐心 擅长化难为易',`otherWork`='高中暑假教过学生 大一上教过三个月学生' WHERE ( userID=11750356 ) [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000745s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000800s ]
+
+[ 2016-03-27T18:20:46+08:00 ] 114.94.87.113 /index/admin/Verify/detailList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000439s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000718s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000785s ]
+SQL: SHOW COLUMNS FROM `basicteacherinformation` [ RunTime:0.0015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='1' AND ifUploadProfile='2' ) LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT * FROM `basicteacherinformation` WHERE ( ifVerify='1' AND ifUploadProfile='2' ) ORDER BY createTime LIMIT 0,10   [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+NOTIC: [8] Undefined index: degreeschoolname D:\AppServ_ONE\www\index\Application\Runtime\Cache\Admin\b1a7905dbc05f1ccb349129aae1659ac.php 第 70 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007947s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000410s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000462s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000682s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000737s ]
+
+[ 2016-03-27T18:20:46+08:00 ] 114.94.87.113 /index/admin/Verify/getCount
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000419s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000818s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000905s ]
+SQL: SHOW COLUMNS FROM `basicteacherinformation` [ RunTime:0.0015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='2' ) LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `basicteacherinformation` WHERE ( ifVerify='1' AND ifUploadProfile='2' ) LIMIT 1   [ RunTime:0.0029s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000723s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000782s ]
+
+[ 2016-03-27T18:20:47+08:00 ] 114.94.87.113 /index/index.php/Admin/Verify/detail/userID/18860367
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000460s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000716s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000786s ]
+SQL: SHOW COLUMNS FROM `basicteacherinformation` [ RunTime:0.0016s ]
+SQL: SELECT `telephone`,`usersex` FROM `basicteacherinformation` WHERE ( userID=18860367 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `teacherdetailinformation` [ RunTime:0.0011s ]
+SQL: SELECT `mostbachelor`,`degreeschoolname`,`major` FROM `teacherdetailinformation` WHERE ( userID=18860367 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `teacherverify` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `teacherverify` WHERE ( userID=18860367 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `uploadteachermypictable` [ RunTime:0.0009s ]
+SQL: SELECT `imageurl` FROM `uploadteachermypictable` WHERE ( userID=18860367 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+NOTIC: [8] Undefined variable: imageurl D:\AppServ_ONE\www\index\Application\Runtime\Cache\Admin\8d4d067f6cc7e04c6e048a98a6b2af17.php 第 26 行.
+NOTIC: [8] Undefined variable: mostbachelor D:\AppServ_ONE\www\index\Application\Runtime\Cache\Admin\8d4d067f6cc7e04c6e048a98a6b2af17.php 第 141 行.
+NOTIC: [8] Undefined variable: degreeschoolname D:\AppServ_ONE\www\index\Application\Runtime\Cache\Admin\8d4d067f6cc7e04c6e048a98a6b2af17.php 第 142 行.
+NOTIC: [8] Undefined variable: major D:\AppServ_ONE\www\index\Application\Runtime\Cache\Admin\8d4d067f6cc7e04c6e048a98a6b2af17.php 第 143 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009041s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009102s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000401s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000452s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000682s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000738s ]
+

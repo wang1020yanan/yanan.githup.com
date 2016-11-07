@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1, user-scalable=no">
+    <title>移动端单品</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/danpin-MB.css" />
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/danpin-MB.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+<div data-role="page" id="pageone">
+    <!--导航栏-->
+    <div data-role="header">
+        <div  class="header-a" style="text-align: left">
+            <span class="glyphicon glyphicon-home" style="height:2em;margin-left:10%"></span>
+        </div>
+        <div class="header-a">
+            <span style="font-size: 1em">某某单品</span>
+        </div>
+        <div class="header-a" style="text-align: right">
+        </div>
+    </div>
+        <!--轮播-->
+    <div class="swiper-container" style="width:100%">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide blue-slide"><img src="image/p1.jpg" style="width: 100%;height:20em"></div>
+                    <div class="swiper-slide red-slide"><img src="image/p2.jpg"style="width: 100%;height: 20em"></div>
+                    <div class="swiper-slide orange-slide"><img src="image/p3.jpg"style="width: 100%;height:20em"></div>
+                </div>
+    </div>
+        <!--关键词-->
+        <div class="slg" style="margin-top: 0.5em;background: #ffffff">
+            <span style="font-size: 1.5em;margin-left:5%">24K钻戒<span style="color:#ff9801">799</span><span>元</span></span>
+        </div>
+        <div style="width: 90%;margin-left: 5%">
+                <select>
+                    <option>A尺寸</option>
+                    <option>B尺寸</option>
+                    <option>C尺寸</option>
+                    <option>D尺寸</option>
+                </select>
+        </div>
+     <!--购买按钮-->
+        <div style="margin-left: 5%;width: 90%">
+            <button style="width:100%;background:#ff9801;color: #ffffff">立即购买</button>
+        </div>
+        <div style="width: 100%;height:2em;margin-top:1em;margin-bottom:1em;border-bottom: 1px solid #E0E0E0;border-top: 1px solid #E0E0E0">
+            <div id="dpxqan" style="width:40%;text-align:center;font-size: 1em;float:left;line-height: 2em;color:#ff9801 ">详情</div>
+            <div style="width:20%;text-align:center;font-size: 1em;float:left;line-height: 2em;color: #E0E0E0">|</div>
+            <div id="dpcsan" style="width:40%;text-align:center;font-size: 1em;float:left;line-height: 2em">参数</div>
+        </div>
+        <div id="dpxq">
+            <!--商品图片-->
+            <div class="slg" style="margin-top: 0.5em;background:#0088bb;width:100%;height:10em">
+                <!--此处单品图片-->
+            </div>
+            <div class="slg" style="background:hotpink;width:100%;height:10em">
+                <!--此处单品图片-->
+            </div>
+            <div class="slg" style="background:greenyellow;width:100%;height:10em">
+                <!--此处单品图片-->
+            </div>
+        </div>
+        <div id="dpcs" style="width:100%;text-align: center;display: none">
+             24K纯金
+       </div>
+    <div data-role="footer" style="margin-top: 2em;font-size: 1em;text-align: center">
+        <p style="margin-top: 1em">©mi.com 京ICP证110507号 京ICP备10046444号 京公网安备1101080212535号 京网文[2014]0059-0009号</p>
+    </div>
+</div>
+</body>
+</html>

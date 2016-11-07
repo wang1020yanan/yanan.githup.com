@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!--<script type="text/javascript" src="js/myjs.js"></script>-->
+    <title></title>
+    <style>
+        #c1{
+            background: #FFFFFF;
+        }
+    </style>
+    <script>
+        window.onload=function(){
+            var oC=document.getElementById("c1");
+            var oGC=oC.getContext('2d');
+            var yImg=new Image();
+            yImg.src='img/it2.jpg';
+            yImg.onload=function(){
+                draw(this)
+            };
+//            画反色
+            function draw(obj){
+                oC.width=obj.width;
+                oGC.drawImage(obj,0,0);
+                var oImg=oGC.getImageData(0,0,obj.width,obj.height);
+                var w=oImg.width;
+                var h=oImg.height;
+                var newImg=oGC.createImageData(obj.width,obj.height);
+                for(var i=0;i<h;i++){
+                     for(var j= 0;j<w;j++){
+                         var result=[];
+                         var color=getXY(oImg,j,i);
+                         result[0]=255-color[0];
+                         result[1]=255-color[1];
+                         result[2]=255-color[2];
+                         result[3]=255*i/h;
+                         setXY(oImg,j,i,result);
+                     }
+                }
+                oGC.putImageData(oImg,0,obj.height)
+            }
+//            设置坐标
+            function setXY(obj,x,y,color){
+                var w =obj.width;
+                var h=obj.height;
+                var d =obj.data;
+                d[4*(y*w+x)]=color[0];
+                d[4*(y*w+x)+1]=color[1];
+                d[4*(y*w+x)+2]=color[2];
+                d[4*(y*w+x)+1]=color[3];
+            }
+//            获取坐标
+            function getXY(obj,x,y){
+                var w =obj.width;
+                var h=obj.height;
+                var d =obj.data;
+                var color=[];
+                color[0]=d[4*(y*w+x)];
+                color[1]=d[4*(y*w+x)+1];
+                color[2]=d[4*(y*w+x)+2];
+                color[3]=d[4*(y*w+x)+3];
+                return color;
+            }
+        };
+    </script>
+</head>
+<body style="background: #000">
+       <canvas style="padding: 0;margin: 0" id="c1" width="400" height="400"></canvas>
+</body>
+</html>

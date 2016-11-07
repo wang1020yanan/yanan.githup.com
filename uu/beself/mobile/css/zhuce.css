@@ -1,0 +1,147 @@
+body{
+    background: #F4F4F4;
+    padding: 0;
+    margin: 0;
+    font-family: Microsoft Yahei;
+}
+/*logo*/
+.logo{
+    width:960px;
+    height:131px;
+}
+.logo-logo{
+    background:#FF7700;
+    height:31px;
+    width:130px;
+    margin-top: 50px;
+    border-radius: 10px
+}
+.logo-logo h5{
+    line-height: 31px
+}
+/*标题和表单*/
+.tit{
+    width: 960px;
+    height: 461px;
+    background:white;
+    border: 1px solid#e6e6e6;
+    border-radius:10px
+}
+.tit-a{
+    width:900px;
+    height: 102px;
+    text-align: center;
+    border-bottom:1px solid#e6e6e6;
+    margin:auto
+}
+.tit-a-a{
+    margin-top:36px
+}
+.tit-a-a span{
+    line-height:30px;
+    font-size:20px
+}
+.fm{
+    width:900px;
+    height:356px;
+    background:white;
+    text-align: center
+}
+.fm-tel{
+    text-align: center;
+    background: white;
+    width: 330px;
+    height: 40px;
+    text-align: center;
+    margin:25px auto;
+    border: 1px solid#e6e6e6;
+    border-radius:5px
+}
+.fm-tel input{
+    line-height:20px;
+    height:20px;
+    width: 310px;
+    margin-top:10px;
+    border: none;
+    outline: none
+}
+.fm-yz{
+    text-align: center;
+    background: white;
+    width: 330px;
+    height: 40px;
+    text-align: center;
+    margin:25px auto;
+    border: 1px solid#e6e6e6;
+    border-radius:5px
+}
+.fm-yz-yz{
+    line-height:20px;
+    height:20px;
+    width:250px;
+    margin-top:10px;
+    border: none;
+    outline: none;
+    float: left;
+    margin-left: 10px
+}
+.fm-yz-fs{
+    float: right;
+    height:40px;
+    width:60px;
+    border: 1px solid#e6e6e6;
+    outline:none;
+    background:#FF7700
+}
+.pw{
+    text-align: center;
+    background: white;
+    width: 330px;
+    height: 40px;
+    text-align: center;
+    margin:25px auto;
+    border: 1px solid#e6e6e6;
+    border-radius:5px
+}
+.pw input{
+    line-height:20px;
+    height:20px;
+    width: 310px;
+    margin-top:10px;
+    border: none;
+    outline: none
+}
+.pw2{
+    text-align: center;
+    background: white;
+    width: 330px;
+    height: 40px;
+    text-align: center;
+    margin:25px auto;
+    border: 1px solid#e6e6e6;
+    border-radius:5px
+}
+.pw2 input{
+    line-height:20px;
+    height:20px;
+    width: 310px;
+    margin-top:10px;
+    border: none;
+    outline: none
+}
+.lz input{
+    width:330px;
+    height: 40px;
+    border: 1px solid#e6e6e6;
+    outline: none;
+    background:#FF7700
+}
+.db{
+    width:960px;
+    height:131px;
+}
+.db-a{
+    height:31px;
+    margin-top: 70px;
+    text-align:center
+}

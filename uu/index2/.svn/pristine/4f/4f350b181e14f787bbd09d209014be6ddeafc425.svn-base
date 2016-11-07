@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>优优老师-功能</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <link href="http://www.uustudy.com.cn/img/logo.png" rel="shortcut icon" type="image/x-icon"/>
+    <link href="__PUBLIC__/css/m_function.css" rel="stylesheet" type="text/css">
+    <script src="__PUBLIC__/js/jquery-2.1.1.min.js"></script>
+    <script src="__PUBLIC__/js/m_function.js"></script>
+</head>
+<body>
+     <div class="header full">
+          <div class="c3 logo"><a href="p-index.html"><img src="__PUBLIC__/img/tc_home/2.png" alt="优优教育"></a></div>
+          <div class="c6"><h1>优优老师</h1></div>
+          <div class="c3"><img class="menu_btn" src="__PUBLIC__/img/tc_home/99.png"></div>
+          <div style="clear: both"></div>
+     </div>
+     <div class="full menu">
+         <div class="c12">
+             <a href="m_index.html"> <h2>首页</h2></a>
+         </div>
+              <div class="c12">
+                  <a href=""> <h2>功能</h2></a>
+              </div>
+             <div class="c12">
+                <a href="m_about.html"> <h2 class="about">关于我们</h2></a>
+             </div>
+             <div class="c12">
+                 <a href="login.html"><h2 style="color: #0a74f6">老师中心</h2></a>
+             </div>
+     </div>
+     <div class="full con1">
+         <img src="__PUBLIC__/img/function/34.png">
+     </div>
+     <div class="container con2">
+          <div class="c1"><img src="__PUBLIC__/img/function/2.png"></div>
+          <div class="c11"><h2>用户操作流程图</h2></div>
+     </div>
+     <div class="container con3">
+           <h3>足不出户&nbsp;千万名师任你挑选</h3>
+           <h3>安心省心&nbsp;&nbsp;&nbsp;&nbsp;第三方平台保证</h3>
+           <h3>贴心服务&nbsp;官方陪同家教上门</h3>
+           <img src="__PUBLIC__/img/function/4.png">
+     </div>
+     <div class="container footer">
+         <p>Copyright @ 2015 UUStudy Education & Technology. All Rights Reserved.</p>
+     </div>
+</body>
+</html>

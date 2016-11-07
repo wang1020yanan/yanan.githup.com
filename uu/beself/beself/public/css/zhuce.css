@@ -1,0 +1,154 @@
+*{
+    font-family: "Helvetica", "Microsoft YaHei", sans-serif;
+}
+body{
+    background: white;
+    padding: 0;
+    margin: 0;
+    font-family: Microsoft Yahei;
+}
+/*logo*/
+.logo{
+    width: 350px;;
+    height:131px;
+}
+.logo-logo{
+    background:#ff9801;
+    height:31px;
+    width:130px;
+    margin-top: 50px;
+    border-radius: 10px
+}
+.logo-logo h5{
+    line-height: 31px
+}
+/*标题和表单*/
+.tit{
+    width: 350px;
+    height: 481px;
+    background:white;
+    border-radius:10px
+}
+.tit-a{
+    width: 350px;;
+    height: 102px;
+    text-align: center;
+    border-bottom:1px solid #e6e6e6;
+    margin:auto
+}
+.tit-a-a{
+    margin-top:36px
+}
+.tit-a-a span{
+    line-height:30px;
+    font-size:20px
+}
+.fm{
+    width: 350px;;
+    height:356px;
+    background:white;
+    text-align: center
+}
+.fm-tel{
+    text-align: center;
+    background: white;
+    width: 330px;
+    height: 40px;
+    text-align: center;
+    margin:30px auto;
+    border: 1px solid #e6e6e6;
+    border-radius:5px
+}
+.fm-tel input{
+    line-height:20px;
+    height:20px;
+    width: 310px;
+    margin-top:10px;
+    border: none;
+    outline: none
+}
+.fm-yz{
+    text-align: center;
+    background: white;
+    width: 330px;
+    height: 42px;
+    text-align: center;
+    margin:30px auto;
+    border: 1px solid #e6e6e6;
+    border-radius:5px
+}
+.fm-yz-yz{
+    height:40px;
+    width:250px;
+    border: none;
+    outline: none;
+    margin-left: 10px
+}
+.fm-yz-fs{
+    float: right;
+    height:42px;
+    width:60px;
+    border: 0;
+    outline:none;
+    background:#ff9801;
+    color: #FFF;
+}
+.pw{
+    text-align: center;
+    background: white;
+    width: 330px;
+    height: 40px;
+    text-align: center;
+    margin:30px auto;
+    border: 1px solid #e6e6e6;
+    border-radius:5px
+}
+.pw input{
+    line-height:20px;
+    height:20px;
+    width: 310px;
+    margin-top:10px;
+    border: none;
+    outline: none
+}
+.pw2{
+    text-align: center;
+    background: white;
+    width: 330px;
+    height: 40px;
+    text-align: center;
+    margin:30px auto;
+    border: 1px solid #e6e6e6;
+    border-radius:5px
+}
+.pw2 input{
+    line-height:20px;
+    height:20px;
+    width: 310px;
+    margin-top:10px;
+    border: none;
+    outline: none
+}
+.lz input{
+    width:330px;
+    height: 40px;
+    border: 1px solid #e6e6e6;
+    outline: none;
+    background:#ff9801;
+    color: #FFF;
+}
+.db{
+    width: 350px;;
+    height:131px;
+}
+.db-a{
+    height:31px;
+    margin-top: 150px;
+    text-align:center
+}
+.ck{
+    margin-top: 10px;text-align: left;color: red;
+}
+.none{
+    display: none;
+}

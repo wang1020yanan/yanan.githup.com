@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="jwplayer.js"></script>
+	<script type="text/javascript" src="jwplayer.html5.js"></script>
+</head>
+<body>
+<div id='myplayer'></div>
+<!--<input type="button" class="player-play" value="Play" />-->
+<!--<input type="button" class="player-stop" value="Stop" />-->
+<!--<input type="button" class="player-status" value="Status" />-->
+<!--<input type="button" class="player-position" value="TimeStamp" />-->
+<!--<input type="button" class="player-seek" value="Seek_15s" />-->
+<!--<input type="button" class="player-duration" value="Duration" />-->
+<script type='text/javascript'>
+	function getWidth(){
+		var widthC=document.documentElement.clientWidth;
+		return widthC;
+	}
+	function getH(){
+		var H=document.documentElement.clientHeight;
+		return H;
+	}
+	var thePlayer;
+	thePlayer = jwplayer('myplayer').setup({
+		file: 'rtmp://pull.a8.com/live/1462348986957546',
+		width: getWidth(),
+		height:getH(),
+		image:'http://img.meelive.cn/MzU2NDkxNDYxOTMzNDQ4.jpg',
+		dock: false,
+		stretching:"fill",
+		repeat: true,
+//		autostart:true
+	});
+
+	//Play Pause
+	$('.player-play').click(function(){
+		if(thePlayer.getState() != 'PLAYING'){
+			thePlayer.play(true);
+			this.value = 'Pause';
+		}else {
+			thePlayer.play(false);
+			this.value = 'Play';
+		}
+	});
+
+	//Stop
+	$('.player-stop').click(function(){thePlayer.stop();});
+
+	//Status
+	$('.player-status').click(function(){
+		var state = thePlayer.getState();
+		var msg;
+		switch(state){
+			case 'BUFFRING':
+				msg = 'Buffering';
+				break;
+			case 'PLAYING':
+				msg = 'Playing';
+				break;
+			case 'PAUSED':
+				msg = 'Pause';
+				break;
+			case 'IDLE':
+				msg = 'Stop';
+				break;
+		}
+		alert(msg);
+	});
+
+	//get current position
+	$('.player-position').click(function() { alert(thePlayer.getPosition()); });
+
+	//Seek
+	$('.player-seek').click(function(){
+		if(thePlayer.getState()!= 'PLAYING'){
+			thePlayer.play();
+		}
+		thePlayer.seek(15);
+	});
+
+	//get duration
+	$('.player-duration').click(function() {alert(thePlayer.getDuration());});
+
+</script>
+<!--<h1 style="position: absolute;top: 0;color: #ffffff;left: 40%">小富直播</h1>-->
+</body>
+</html>

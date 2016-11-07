@@ -1,0 +1,32 @@
+h1, h2, h3, h4, a, span.footer {
+	color: #3c1212;
+}
+
+ul#root-menu {
+	background: #3c1212 url('../../images/red-menu-bg.png') bottom repeat-x !important;
+}
+
+ul#root-menu li ul {
+	background: rgb(60, 18, 18);
+	background: rgba(60, 18, 18, .9);
+}
+
+#footer, span.footer {
+	background: #f9ecec;
+}
+
+#copyright {
+	background: #3c1212;
+}
+
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {
+	#menu {
+		background: #3c1212 url('../../images/red-menu-bg.png') repeat-x;
+	}
+	
+	ul#root-menu {
+		background: none !important;
+	}
+}
+

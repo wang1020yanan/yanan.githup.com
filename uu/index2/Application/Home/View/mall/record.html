@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>积分记录</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link href="http://www.uustudy.com.cn/img/logo.png" rel="shortcut icon" type="image/x-icon"/>
+    <link href="__PUBLIC__/css/record.css" rel="stylesheet" type="text/css">
+    <script src="__PUBLIC__/js/jquery-2.1.1.min.js"></script>
+    <script src="__PUBLIC__/js/record.js"></script>
+</head>
+<body style="overflow: scroll;overflow-x:hidden;">
+    <div class="full nav">
+        <div class="container" >
+            <div class="c12">
+                <div class="c9" style="text-align: left"><p>积分记录<span class="nav_con">（最近10次积分记录）</span></p></div>
+                <div class="c3 right"><p>积分</p></div>
+            </div>
+            <div style="clear: both"></div>
+        </div>
+    </div>
+    <div class="full msg">
+        <div class="container">
+            <!--积分明细-->
+            <foreach name="scoreList" item="vo">
+            <div class="c12 msg_wrap">
+                <div class="c3">
+                    <div class="c12 tit">{$vo.reason}</div>
+                    <div class="c12 time">{$vo.createtime}</div>
+                </div>
+                <div class="c6 add"><p class="add_count">{$vo.addscore}</p></div>
+                <div class="c3 count"><p>{$vo.totalscore}</p></div>
+            </div>
+			</foreach>
+        </div>
+        <div style="clear: both"></div>
+    </div>
+</body>
+</html>

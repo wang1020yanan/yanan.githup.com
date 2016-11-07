@@ -1,0 +1,529 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>优优老师 - 教员库</title>
+    <link href="http://www.uustudy.com.cn/img/logo.png" rel="shortcut icon" type="image/x-icon"/>
+    <link href="/thinkphp/Public/commen/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="/thinkphp/Public/commen/css/button.css" rel="stylesheet" type="text/css">
+    <link href="/thinkphp/Public/commen/fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="/thinkphp/Public/order/css/teacher.css" rel="stylesheet" type="text/css">
+    <script src="/thinkphp/Public/commen/js/jquery.min.js"></script>
+    <script src="/thinkphp/Public/order/js/teacher.js"></script>
+</head>
+<body  onload="load()">
+<script language="javascript">
+    $(document).ready(function() {
+
+        /* 	1st example	*/
+
+        /// wrap inner content of each anchor with first layer and append background layer
+        $("#menu1 li a").wrapInner( '<span class="out"></span>' ).append( '<span class="bg"></span>' );
+
+        // loop each anchor and add copy of text content
+        $("#menu1 li a").each(function() {
+            $( '<span class="over">' +  $(this).text() + '</span>' ).appendTo( this );
+        });
+
+        $("#menu1 li a").hover(function() {
+            // this function is fired when the mouse is moved over
+            $(".out",	this).stop().animate({'top':	'80px'},	250); // move down - hide
+            $(".over",	this).stop().animate({'top':	'0px'},		250); // move down - show
+            $(".bg",	this).stop().animate({'top':	'0px'},		120); // move down - show
+
+        }, function() {
+            // this function is fired when the mouse is moved off
+            $(".out",	this).stop().animate({'top':	'0px'},		250); // move up - show
+            $(".over",	this).stop().animate({'top':	'-80px'},	250); // move up - hide
+            $(".bg",	this).stop().animate({'top':	'-80px'},	120); // move up - hide
+        });
+
+
+        /*	2nd example	*/
+
+        $("#menu2 li a").wrapInner( '<span class="out"></span>' );
+
+        $("#menu2 li a").each(function() {
+            $( '<span class="over">' +  $(this).text() + '</span>' ).appendTo( this );
+        });
+
+        $("#menu2 li a").hover(function() {
+            $(".out",	this).stop().animate({'top':	'80px'},	300); // move down - hide
+            $(".over",	this).stop().animate({'top':	'0px'},		300); // move down - show
+
+        }, function() {
+            $(".out",	this).stop().animate({'top':	'0px'},		300); // move up - show
+            $(".over",	this).stop().animate({'top':	'-80px'},	300); // move up - hide
+        });
+
+    });
+</script>
+<style>
+    /*头部*/
+    .header{
+        box-shadow: 1px 1px 30px #ccc;
+        /*opacity: 0;*/
+        /*position: relative;*/
+        /*left: -100%;*/
+        width: 100%;
+        height: 80px;
+        min-width: 970px;
+        overflow: hidden;
+        /*fonts-family:"Comic Sans MS","幼圆","黑体",sans-serif;*/
+        background-color:rgba(255,255,255,0.75);
+    }
+    .header_bg{
+        width: 100%;
+        height: 80px;
+        min-width: 970px;
+    }
+    .bg_abs{
+        position: absolute;
+    }
+    .header_wrap .logo .c2 img {
+        padding-top: 20px;
+    }
+    .header_wrap .logo .c2 img:hover{
+        opacity: 0.8;
+    }
+    .header_wrap .logo .c10 img{
+        padding-top: 30px;
+        margin-left: 20px;
+    }
+    .header .call li{
+        display: inline;
+        line-height:80px;
+        font-size: 18px;
+        color: #54C5F5;
+    }
+    .header .call img{
+        position: relative;
+        /*vertical-align:middle;*/
+        top: -2px;
+    }
+    .header a{
+        -webkit-transition:color .3s;
+        -moz-transition: color .3s;
+        -ms-transition:color .3s;
+        -o-transition: color .3s;
+        transition: color .3s;
+    }
+    .header a:hover{
+        color:#077ace ;
+    }
+    .menu {
+        height: 80px;
+        display: block;
+        padding: 0px;
+        width: 800px;
+        margin-top: 0px;
+        margin-right: auto;
+        /*margin-bottom: 40px;*/
+        margin-left: auto;
+    }
+
+    .menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .menu ul li {
+        /* width and height of the menu items */
+        float: left;
+        overflow: hidden;
+        position: relative;
+        line-height: 80px;
+        text-align: center;
+    }
+
+    .menu ul li a {
+        /* must be postioned relative  */
+        position: relative;
+        display: block;
+        width: 120px;
+        height: 80px;
+        font-family: "微软雅黑", "宋体";
+        font-size: 18px;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .menu ul li a span {
+        /* all layers will be absolute positioned */
+        position: absolute;
+        left: 0;
+        width: 120px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+    }
+
+    .menu ul li a span.out {
+        top: 0px;
+    }
+
+    .menu ul li a span.over,
+    .menu ul li a span.bg {
+        /* hide */
+        top: -80px;
+    }
+
+    /** 1st example **/
+
+    /** 2nd example **/
+
+    #menu2 {
+        /*background: #FFFFFF;*/
+    }
+
+    #menu2 ul li a {
+        color: #999999;
+    }
+
+    #menu2 ul li a span.over {
+        color: #FFFFFF;
+        background-color: #088ef0;
+    }
+</style>
+<div class="header">
+    <img class="header_bg" src="/thinkphp/Public/img/tc_home/1.png" style="position: absolute">
+    <div class="header_wrap container">
+        <div class="c12">
+            <div class="c2 logo">
+                <div class="c2">
+                    <a href="/"><img src="/thinkphp/Public/img/tc_home/2.png" alt="优优老师" title="优优老师"/></a>
+                </div>
+                <div class="c10">
+                    <img src="/thinkphp/Public/img/tc_home/3.png"/>
+                </div>
+                <div style="clear: both"></div>
+            </div>
+            <div class="c8 nav">
+                <div id="menu2" class="menu">
+                    <ul>
+                        <li><a href="#">首页</a></li>
+                        <li><a href="<?php echo U('home/index/teacher'); ?>">教员库</a></li>
+                        <li><a href="<?php echo U('home/index/allneed'); ?>">家教需求</a></li>
+                        <li><a href="<?php echo U('home/index/data'); ?>">家长中心</a></li>
+                        <li><a href="<?php echo U('home/index/teacher'); ?>">老师中心</a></li>
+                    </ul>
+                    <div class="cls"></div>
+                </div>
+                <!--<ul class="nav_ul">-->
+                <!--<li class="tipto"><a id="home" style="cursor: pointer">首页</a></li>-->
+                <!--<li class="tipto">-->
+                <!--<a href="<?php echo U('home/index/teacher'); ?>">教员库</a>-->
+                <!--</li>-->
+                <!--<li class="tipto"><a id="func" style="cursor: pointer">家教需求</a></li>-->
+                <!--<li class="tipto"><a id="abou" style="cursor: pointer">家长中心</a></li>-->
+                <!--<li class="tipto"><a href="<?php echo U('home/Index/login'); ?>" target="_blank">老师中心</a></li>-->
+                <!--</ul>-->
+            </div>
+            <div class="c2 call" style="text-align: right">
+                <ul>
+                    <li><i class="fa fa-phone"></i>&nbsp;021-64666013</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="container tc_ch">
+        <div class="c12">
+            <div class="choice_wrap">
+                <div class="choice1 choice">
+                    <p>教员筛选：</p>
+                    <ul>
+                        <span>科目筛选：</span>
+                        <li><a href="#">不限</a></li>
+                        <li><a href="#">语文</a></li>
+                        <li><a href="#">数学</a></li>
+                        <li><a href="#">英语</a></li>
+                        <li><a href="#">物理</a></li>
+                        <li><a href="#">化学</a></li>
+                        <li><a href="#">政治</a></li>
+                        <li><a href="#">历史</a></li>
+                        <li><a href="#">生物</a></li>
+                        <li><a href="#">地理</a></li>
+
+                    </ul>
+                </div>
+                <div class="choice2 choice">
+                    <ul>
+                        <span>年级筛选：</span>
+                        <li><a href="#">不限</a></li>
+                        <li><a href="#">小学</a></li>
+                        <li><a href="#">初中预备班</a></li>
+                        <li><a href="#">初一</a></li>
+                        <li><a href="#">初二</a></li>
+                        <li><a href="#">初三</a></li>
+                        <li><a href="#">高一</a></li>
+                        <li><a href="#">高二</a></li>
+                        <li><a href="#">高三</a></li>
+                    </ul>
+                </div>
+                <div class="choice3 choice">
+                    <ul>
+                        <span>授课方式：</span>
+                        <li><a href="#">不限</a></li>
+                        <li><a href="#">学生上门</a></li>
+                        <li><a href="#">老师上门</a></li>
+                    </ul>
+                </div>
+                <div class="choice4 choice">
+                    <ul>
+                        <span>教员性别：</span>
+                        <li><a href="#">不限</a></li>
+                        <li><a href="#">男</a></li>
+                        <li><a href="#">女</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="c12 sort_wrap">
+                <div class="c8 sort">
+                    <ul>
+                        <li><a href="#">智能排序</a></li>
+                        <li><a href="#">距离排序</a></li>
+                        <li><a href="#">评分排序</a></li>
+                        <li><a href="#">课时排序</a></li>
+                    </ul>
+                </div>
+                <!--<div class="c4 search">-->
+                     <!--<a href=""><i class="fa  fa-search"></i>搜索</a>-->
+                     <!--<input type="search">-->
+                <!--</div>-->
+            </div>
+            <div class="c12 tc_all">
+                <!--教员实例-->
+                <div class="c12 teacher_wrap">
+                    <span style="display: none" class="tc_sex">女</span>
+                    <div class="c3 tc_img">
+                        <div class="tc_name">
+                            <p>高亚军&nbsp;<i class="fa  sex_im"></i></p>
+                        </div>
+                        <img src="http://139.196.29.70/resource/teacher/verify/1990043_edu.png">
+                    </div>
+                    <div class="c5 tc_pj">
+                        <p class="tc_sc">牛逼大学土木系</p>
+                        <p class="tc_tip"><span>三年教龄</span>&nbsp;<span>身份认证</span></p>
+                        <p class="tc_slg">有100年教龄的我是你的不二之选</p>
+                        <p class="tc_lev"><span class="tc_star"></span>&nbsp;<span class="tc_core">3.8</span>分&nbsp;<span>3</span>条评价</p>
+                    </div>
+                    <div class="c4 tc_price">
+                        <p>￥66</p>
+                        <p>时起</p>
+                        <p class="tc_choice">&nbsp;<a class="ac_a" href="<?php echo U('home/index/teacher_detail'); ?>">查看详情</a></p>
+                    </div>
+                    <div style="clear: both"></div>
+                </div>
+                <!--教员实例-->
+                <div class="c12 teacher_wrap">
+                    <span style="display: none" class="tc_sex">女</span>
+                    <div class="c3 tc_img">
+                        <div class="tc_name">
+                            <p>高亚军&nbsp;<i class="fa  sex_im"></i></p>
+                        </div>
+                        <img src="http://139.196.29.70/resource/teacher/verify/1990043_edu.png">
+                    </div>
+                    <div class="c5 tc_pj">
+                        <p class="tc_sc">牛逼大学土木系</p>
+                        <p class="tc_tip"><span>三年教龄</span>&nbsp;<span>身份认证</span></p>
+                        <p class="tc_slg">有100年教龄的我是你的不二之选</p>
+                        <p class="tc_lev"><span class="tc_star"></span>&nbsp;<span class="tc_core">3.8</span>分&nbsp;<span>3</span>条评价</p>
+                    </div>
+                    <div class="c4 tc_price">
+                        <p>￥66</p>
+                        <p>时起</p>
+                        <p class="tc_choice">&nbsp;<a class="ac_a" href="<?php echo U('home/index/teacher_detail'); ?>">查看详情</a></p>
+                    </div>
+                    <div style="clear: both"></div>
+                </div>
+                <!--教员实例-->
+                <div class="c12 teacher_wrap">
+                    <span style="display: none" class="tc_sex">女</span>
+                    <div class="c3 tc_img">
+                        <div class="tc_name">
+                            <p>高亚军&nbsp;<i class="fa  sex_im"></i></p>
+                        </div>
+                        <img src="http://139.196.29.70/resource/teacher/verify/1990043_edu.png">
+                    </div>
+                    <div class="c5 tc_pj">
+                        <p class="tc_sc">牛逼大学土木系</p>
+                        <p class="tc_tip"><span>三年教龄</span>&nbsp;<span>身份认证</span></p>
+                        <p class="tc_slg">有100年教龄的我是你的不二之选</p>
+                        <p class="tc_lev"><span class="tc_star"></span>&nbsp;<span class="tc_core">3.8</span>分&nbsp;<span>3</span>条评价</p>
+                    </div>
+                    <div class="c4 tc_price">
+                        <p>￥66</p>
+                        <p>时起</p>
+                        <p class="tc_choice">&nbsp;<a class="ac_a" href="<?php echo U('home/index/teacher_detail'); ?>">查看详情</a></p>
+                    </div>
+                    <div style="clear: both"></div>
+                </div>
+                <!--教员实例-->
+                <div class="c12 teacher_wrap">
+                    <span style="display: none" class="tc_sex">女</span>
+                    <div class="c3 tc_img">
+                        <div class="tc_name">
+                            <p>高亚军&nbsp;<i class="fa  sex_im"></i></p>
+                        </div>
+                        <img src="http://139.196.29.70/resource/teacher/verify/1990043_edu.png">
+                    </div>
+                    <div class="c5 tc_pj">
+                        <p class="tc_sc">牛逼大学土木系</p>
+                        <p class="tc_tip"><span>三年教龄</span>&nbsp;<span>身份认证</span></p>
+                        <p class="tc_slg">有100年教龄的我是你的不二之选</p>
+                        <p class="tc_lev"><span class="tc_star"></span>&nbsp;<span class="tc_core">3.8</span>分&nbsp;<span>3</span>条评价</p>
+                    </div>
+                    <div class="c4 tc_price">
+                        <p>￥66</p>
+                        <p>时起</p>
+                        <p class="tc_choice">&nbsp;<a class="ac_a" href="<?php echo U('home/index/teacher_detail'); ?>">查看详情</a></p>
+                    </div>
+                    <div style="clear: both"></div>
+                </div>
+            </div>
+        </div>
+
+        <!--<div class="c3 par_tit">-->
+            <!--&lt;!&ndash;登录注册&ndash;&gt;-->
+            <!--<div class="hid log_wrap">-->
+                <!--<div class="c10 login_title">-->
+                    <!--<div class="c6 login"><span>登录</span></div>-->
+                    <!--<div class="c6 down"><span>下载APP</span></div>-->
+                <!--</div>-->
+                <!--<div class="con_wrap_l c10">-->
+                    <!--<div class="c12 input">-->
+                        <!--<i class="fa fa-user"></i>-->
+                        <!--<input  id="l_tel" type="tel" placeholder="请输入手机号">-->
+                        <!--&lt;!&ndash;<img src="/thinkphp/Public/img/login/6.png">&ndash;&gt;-->
+                    <!--</div>-->
+                    <!--<div class="c12 input">-->
+                        <!--<i class="fa fa-lock"></i>-->
+                        <!--<input id="l_pass" type="password" placeholder="请输入密码">-->
+                    <!--</div>-->
+                    <!--<div class="c12 forget"><p>忘记密码？</p><small class="error" style="color: red;display: block;margin-top: 5px"></small></div>-->
+                    <!--<div class="c12 log_btn log">-->
+                        <!--&lt;!&ndash;<button id="log_btn">登&nbsp&nbsp录</button>&ndash;&gt;-->
+                        <!--<button   id="log_btn" class="button button-glow button-rounded button-raised button-primary">登录</button>-->
+                        <!--&lt;!&ndash;<a href="#"><img id="log_btn" src="/thinkphp/Public/img/login/8.png"></a>&ndash;&gt;-->
+                    <!--</div>-->
+                    <!--<div class="c12 login_tip">-->
+                        <!--<img class="line_b" src="/thinkphp/Public/img/login/line.png">-->
+                        <!--<p>没有注册？立即注册优优老师，名校大学生约到家</p>-->
+                    <!--</div>-->
+                    <!--<div class="c12 log_btn res">-->
+                        <!--&lt;!&ndash;<button id="res_btn">注&nbsp&nbsp册</button>&ndash;&gt;-->
+                        <!--<button    id="res_btn" class="button button-glow button-rounded button-highlight">注册</button>-->
+                        <!--&lt;!&ndash;<a href="#"><img id="res_btn" src="/thinkphp/Public/img/login/9.png"></a>&ndash;&gt;-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="c12 down_wrap  hid">-->
+                    <!--<div class="c9 tc_er">-->
+                        <!--<img style="width: 170px;padding: 2px;border: 4px solid #A1A1A1;" src="/thinkphp/Public/img/login/er.png">-->
+                    <!--</div>-->
+                    <!--<div class="c9 tc_er_title">-->
+                        <!--<p>扫码下载学生客户端</p>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--&lt;!&ndash;个人中心入口&ndash;&gt;-->
+            <!--<div class="c12 pr_new">-->
+                <!--<span style="display: none" class="tc_sex">男</span>-->
+                <!--<div class="c12 center_rk">-->
+                    <!--<a href=""><i class="fa fa-power-off"></i>退出</a>-->
+                <!--</div>-->
+                <!--<div class="c12 pr_im">-->
+                    <!--<img src="http://139.196.29.70/resource/teacher/verify/1990043_edu.png">-->
+                <!--</div>-->
+                <!--<div class="c12 pr_name">-->
+                    <!--<p>王亚楠&nbsp;<i class="fa sex_im"></i></p>-->
+                    <!--<p>高中八年级</p>-->
+                <!--</div>-->
+                <!--<div class="c12 pr_order">-->
+                    <!--<a href=""><span></span>待支付<span>&nbsp;1</span></a>-->
+                    <!--<a href=""><span></span>待支付<span>&nbsp;5</span></a>-->
+                    <!--<a href=""><span></span>待支付<span>&nbsp;3</span></a>-->
+                <!--</div>-->
+                <!--<div class="c12 yuyue">-->
+                    <!--<a class="button button-primary button-large" id="find"><i class="fa fa-search"></i>找老师</a>-->
+                    <!--<a class="button button-highlight button-rounded button-large" id="need"><i class="fa fa-paper-plane-o"></i>发需求</a>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+        <div style="clear: both"></div>
+    </div>
+<br><br>
+
+<!--底部-->
+<div class="full footer">
+    <div class="container">
+        <div class="c12 foot_wrap">
+            <div class="c5 foo_logo">
+                <div class="c2">
+                    <img src="/thinkphp/Public/img/tc_home/25.png">
+                </div>
+                <div class="c9">
+                    <p class="co_name">上海优优教育科技有限公司&nbsp版权所有</p>
+                    <p>Copyright @ 2015  All Rights Reserved.</p>
+                </div>
+                <div class="c1">
+                    <img src="/thinkphp/Public/img/tc_home/26.png">
+                </div>
+            </div>
+            <div class="c2 foo_wx">
+                <div class="c6">
+                    <img src="/thinkphp/Public/img/tc_home/wx.png">
+                </div>
+                <div class="c6">
+                    <p>扫描微信公众号</p>
+                </div>
+            </div>
+            <div class="c5 foo_call" >
+                <div class="c1">
+                    <img src="/thinkphp/Public/img/tc_home/26.png">
+                </div>
+                <div class="c11">
+                    <div class="call">
+                        <img src="/thinkphp/Public/img/tc_home/27.png">
+                        <p>021-64666013</p>
+                    </div>
+                    <div class="call add">
+                        <img src="/thinkphp/Public/img/tc_home/28.png">
+                        <p>上海市徐汇区虹桥路333号交大慧谷四楼</p>
+                    </div>
+                </div>
+                <div style="clear: both"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="fix_window">
+</div>
+<!--找老师提示框-->
+<div id="find_wrap" class="fix_wrap_find">
+    <div class="c12 findtit">
+        <div class="c12"><p>找老师</p></div>
+        <div class="find_close"><i class="fa fa-close"></i></div>
+    </div>
+    <div class="c12 findabout">
+        <p>你可在教员库中挑选老师，并对心仪的老师下单，下单后会给您开放教员的电话号</p>
+        <p>你可以主动联系教员或等待教员与您沟通，若24小时内教员未接单订单将会取消</p>
+        <div class="c12 findbutton"><a href="<?php echo U('home/index/teacher'); ?>" class="button button-primary button-rounded button-large">找老师</a></div>
+    </div>
+</div>
+<!--发需求提示框-->
+<div id="need_wrap" class="fix_wrap_need">
+    <div class="c12 needtit">
+        <div class="c12"><p>发需求</p></div>
+        <div class="need_close"><i class="fa fa-close"></i></div>
+    </div>
+    <div class="c12 needabout">
+        <p>所有教员均可见，发布后教员会进行抢单</p>
+        <p>你可在"个人中心-我的订单"中指定抢单教员</p>
+        <div class="c12 needbutton"><a class="button button-highlight button-rounded button-large" href="<?php echo U('home/index/choose'); ?>">发需求</a></div>
+    </div>
+</div>
+</body>
+</html>
