@@ -13,6 +13,7 @@ var Food=cc.Sprite.extend({
         }else if(Math.random()>=0.6){
             var fItem=fImg;
             this.state=1;
+            
         } else{
             var fItem=res.g2;
         }
