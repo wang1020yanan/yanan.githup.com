@@ -1,6 +1,0 @@
-[ 2016-01-22T14:52:34+08:00 ] 116.228.167.234 /uuuutest/thinkphp/index.php/app/Course/setCourse
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
-ERR: 无法加载模块:App
-

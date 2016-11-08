@@ -1,6 +1,0 @@
-[ 2016-05-09T11:20:58+08:00 ] ::1 /thinkphp/Public/js/FFS.js
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001996s ]
-ERR: 无法加载模块:Public
-
