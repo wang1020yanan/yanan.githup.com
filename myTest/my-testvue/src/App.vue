@@ -12,7 +12,7 @@
           <div class="col-xs-6 time"><span class="times">10月18日 13:00</span></div>
         </div>
         <div class="row content-wrap">
-          <div class="col-xs-8 content"><div class="content-item"><a href="http://36kr.com/p/5054699.html">本文来源于晨星资本，作为晨星资本创始合伙人、董事总经理刘芹。36克经授权发布。在过去的几年里晨星资本创始合......</a></div></div>
+          <div class="col-xs-8 content"><div class="content-item"><a href="http://36kr.com/p/5054699.html">本文来源于晨星资本作为晨星资本创始合伙人、董事总经理刘芹。36克经授权发布。在过去的几年里晨星资本创始合......</a></div></div>
           <div class="col-xs-4 img-wrap"><img class="logo-img" src="./assets/logo.png"></div>
           <div class="my-border"></div>
         </div>
