@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>我</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-mobile.css" rel="stylesheet">
+    <link href="css/responsive-nav.css" rel="stylesheet">
+    <script src="js/responsive-nav.min.js"></script>
+     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!--[if IE 7]>
+    <link rel="stylesheet" href="css/font-awesome-ie7.min.css">
+    <![endif]-->
+    <!-- Owl Stylesheets -->
+    <script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://libs.baidu.com/jquery/2.1.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <div class="wapper">
+
+      <div class="container container_body usermag_body">
+        <div class="usermag_tx_con">
+          <img class="user_tx" src="images/touxiang.png">
+          <div class="user_in">
+           <h3 class="user_name">李思思</h3>
+            <p class="user_no">学鸟号：1234567890</p>
+          </div>
+          <button class="user_code_btn" onClick="location.href='usermag_hb.html'"><img src="images/ico_cod.png"></button>
+        </div>
+      </div>
+
+      <div class="container container_body usermag_body">
+        <ul class="usermag_list">
+          <li>
+            <a href="usermag_gl.html">
+              <span class="c_pc_b c_gl_con"><img src="images/ico_tag.png"></span><span class="u_txt_con">抢课攻略</span><span class="u_l_ico"><img src="images/a_r.png"></span>
+            </a>
+          </li>
+
+          <li>
+            <a href="usermag_com.html">
+              <span class="c_pc_b c_sq_con"><img src="images/ico_com.png"></span><span class="u_txt_con">学鸟社区</span><span class="u_l_ico"><img src="images/a_r.png"></span>
+            </a>
+          </li>
+
+          <li>
+            <a href="usermag_frd.html">
+              <span class="c_pc_b c_frd_con"><img src="images/ico_frd.png"></span><span class="u_txt_con">我的好友</span><span class="u_l_ico"><img src="images/a_r.png"></span>
+            </a>
+          </li>
+
+          <li>
+            <a href="usermag_sc.html">
+              <span class="c_pc_b c_sc_con"><img src="images/ico_sc.png"></span><span class="u_txt_con">我的收藏</span><span class="u_l_ico"><img src="images/a_r.png"></span>
+            </a>
+          </li>
+
+          <li>
+            <a href="usermag_quan.html">
+              <span class="c_pc_b c_q_con">券</span><span class="u_txt_con">我的学鸟券</span><span class="u_l_ico"><img src="images/a_r.png"></span>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+  </body>
+</html>

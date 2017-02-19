@@ -1,0 +1,199 @@
+/*header*/
+.header{
+    background: #000;
+    border-bottom: 1px solid #e7e7e7;
+}
+.header .logo{
+    margin: 7px 35px;
+    width: 91px;
+}
+.header a sup {
+    background: #FF69B4;
+    font-size: 11px;
+    line-height: 13px;
+    padding: 0px 6px;
+    border-radius: 4px;
+    color: #fff;
+    vertical-align: top;
+    display: inline-block;
+    margin-top: 16px;
+    position: absolute;
+}
+.search input {
+    border: 0;
+    width: 120px;
+    height: 30px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    padding: 0 30px 0 13px;
+    font-size: 14px;
+    line-height: 28px;
+    color: #888;
+    background: #615D5D;
+    box-sizing: border-box;
+    margin: 3px 0;
+    -webkit-transition: width .3s;
+    -moz-transition:  width .3s;
+    -ms-transition: width .3s;
+    -o-transition:  width .3s;
+    transition: width .3s;
+}
+.search input:focus{
+    width: 260px;
+}
+.search button {
+    position: absolute;
+    right: 0px;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    background: transparent;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+    color: #CCC;
+    cursor: pointer;
+    margin: 3px 0 3px -30px;
+    -webkit-transition: color .3s;
+    -moz-transition: color .3s;
+    -ms-transition:  color .3s;
+    -o-transition: color .3s;
+    transition:  color .3s;
+}
+.search button:hover{
+    color: #a1a1a1;
+}
+.tougao{
+    line-height: 36px;
+}
+.tougao a{
+    color: #999;
+}
+.tougao img{
+    vertical-align: middle;
+}
+.log a{
+    line-height: 36px;
+    color: #999;
+}
+.user-action{
+    margin: 12px 0;
+}
+/*banner*/
+.my_banner{
+    height: 260px;
+    background-color: #000;
+    background-image: url("../img/about.png");
+    background-repeat: no-repeat;
+    margin-top: 10px;
+}
+.about_des{
+    position: absolute!important;
+    top: 140px;
+    left:0;
+    min-width: 1200px;
+}
+.about_des p {
+    margin-top: 30px;
+    color: #fff;
+    font-size: 18px;
+}
+.about_tabs li{
+    padding: 20px 5px;
+    margin: 0 30px;
+    font-size: 16px;
+    cursor: pointer;
+    -webkit-transition: color .3s,border.3s;
+    -moz-transition: color .3s,border .3s;
+    -ms-transition: color .3s,border .3s;
+    -o-transition: color .3s,border.3s;
+    transition:color .3s,border .3s;
+}
+.about_tabs li:hover{
+    color:#FF69B4!important;
+    border-bottom: 1px solid #FF69B4!important;
+}
+.about_tabs li:nth-child(1){
+    color:#FF69B4;
+    border-bottom: 1px solid #FF69B4;
+}
+.about_tabs{
+    border-bottom: 1px solid #ECEEF1;
+    background: #FFFFFF;
+    border-radius: 3px;
+    height: 58px;
+}
+.tab_index{
+    padding: 30px 50px;
+    background: #FFFFFF;
+}
+.tab_index>div{
+    padding: 20px 30px;
+}
+.tab_index h4{
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #434343;
+    text-align: left;
+}
+.tab_index p{
+    line-height: 26px;
+    font-size: 16px;
+    text-indent: 3em;
+}
+.tab_index{
+    height: 350px;
+}
+/*footer*/
+.footer{
+    background: #FFFFFF;
+    margin-top: 10px;
+    border-top: 1px solid #e7e7e7;
+    color: #77808c;
+}
+.footer .foot_link li{
+    padding-right: 40px;
+    line-height: 60px;
+}
+.foot_share li{
+    padding: 0 10px;
+    line-height: 60px;
+}
+.footer .foot_link li a,.footer .foot_share li a{
+    color: #77808c;
+    -webkit-transition: color .3s;
+    -moz-transition:color .3s;
+    -ms-transition: color .3s;
+    -o-transition: color .3s;
+    transition:color .3s;
+}
+.footer .foot_link li a:hover{
+    color:#FF69B4;
+}
+.foot_share img{
+    vertical-align: middle;
+    opacity: .8;
+}
+.foot_share img:hover{
+    opacity: 1;
+}
+.foot_share li>img{
+    opacity: 1!important;
+    width: 80px;
+    position: absolute;
+    top: -66px;
+    right:4%;
+    padding: .5px;
+    border: 1px solid#ccc;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow:  1px 1px 5px #ccc;
+    -moz-box-shadow:  1px 1px 5px #ccc;
+    box-shadow: 1px 1px 5px #ccc;
+    z-index: 999;
+}
+#weixin{
+    cursor: pointer;
+}

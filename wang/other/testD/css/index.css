@@ -1,0 +1,39 @@
+.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+    width: 100%;
+    /*margin: 5%;*/
+}
+.my-title{
+    text-align: center;
+}
+.inputs{
+    width: 100%;
+    padding: 0!important;
+    height: 40px;
+    line-height: 40px;
+}
+.class-list{display: none}
+.class-list li{background: #e5e5e5;list-style: none;border-bottom: 1px solid #CCCCCC;height: 30px;padding-left: 10px;line-height: 30px}
+.class-list li:hover{background: #00d5ff;color: #ffffff}
+.ready{position: absolute;margin-bottom: 40px;line-height: 40px;padding-left: 10px}
+.ready span{padding: 5px;background: #e9e9e9;margin: 5px;border-radius: 5px}
+ul{padding: 0}
+.selected{background: #00d5ff !important;color: #ffffff }
+a{cursor: pointer}
+
+body {
+    margin: 0;
+    text-align: center;
+}
+#clipArea {
+    margin: 20px;
+    height: 300px;
+}
+#file,
+#clipBtn {
+    margin: 20px;
+}
+#view {
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+}

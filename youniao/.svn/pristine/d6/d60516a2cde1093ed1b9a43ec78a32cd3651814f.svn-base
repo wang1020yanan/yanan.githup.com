@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>周边列表</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-mobile.css" rel="stylesheet">
+    <link href="css/responsive-nav.css" rel="stylesheet">
+    <script src="js/responsive-nav.min.js"></script>
+     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!--[if IE 7]>
+    <link rel="stylesheet" href="css/font-awesome-ie7.min.css">
+    <![endif]-->
+    <script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://libs.baidu.com/jquery/2.1.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <div class="wapper">
+      <div class="container">
+        <div class="map_con">
+          <div class="map_btns">
+            <a><img src="images/map_a.png"></a>
+            <a><img src="images/map_b.png"></a>
+          </div>
+          <div class="map_ch">
+            <a href="#" data-toggle="modal" data-target=".mod_cds">更改地址</a>
+          </div>
+          <img src="images/map_bg.png">
+        </div>
+      </div>
+      <div class="container">
+        <div class="top_select">
+          <div class="t_s_c">年级<span><img src="images/a_b.png"></span></div>
+          <div class="t_s_s">科目<span><img src="images/a_b.png"></span></div>
+          <div class="t_s_p">品牌<span><img src="images/a_b.png"></span></div>
+        </div>
+      </div>
+      
+      <div class="container">
+        <ul class="school_list_con">
+          <li class="school_li">
+              <div class="map_loc"><span>1</span><img src="images/lb-sz.png"></div>
+              <div class="school_li_ti">
+                <div class="sl_ti_logo"><img src="images/jg-logo.png"></div>
+                <span class="sl_gz">230人已关注</span>
+                <span class="sl_loc">12.9km</span>
+              </div>
+              <div class="c_pas map_pas">
+                <span>初高中</span>
+                <span>学科辅导</span>
+                <span>一对三 小班</span>
+                <a herf="#" onClick="location.href='schooldetail.html'" class="school_mor">详请 ></a>
+              </div>
+              <div class="sl_class_con">
+                <div class="sl_class">
+                  <a herf="#" onClick="location.href='classdetail.html'" >
+                    <img class="clis_v_p" src="images/v_p.png">
+                    <img class="clis_pic_con" src="images/c_pic.png">
+                    <span class="sl_class_name">初中一年级数学小班</span>
+                  </a>
+                </div>
+                <div class="sl_class">
+                  <a herf="#" onClick="location.href='classdetail.html'" >
+                    <img class="clis_v_p" src="images/v_p.png">
+                    <img class="clis_pic_con" src="images/c_pic.png">
+                    <span class="sl_class_name">初中一年级数学小班</span>
+                  </a>
+                </div>
+              </div>
+          </li>
+          <li class="school_li">
+              <div class="map_loc"><span>2</span><img src="images/lb-sz.png"></div>
+              <div class="school_li_ti">
+                <div class="sl_ti_logo"><img src="images/jg-logo.png"></div>
+                <span class="sl_gz">230人已关注</span>
+                <span class="sl_loc">12.9km</span>
+              </div>
+              <div class="c_pas map_pas">
+                <span>初高中</span>
+                <span>学科辅导</span>
+                <span>一对三 小班</span>
+                <a herf="#" onClick="location.href='schooldetail.html'" class="school_mor">详请 ></a>
+              </div>
+              <div class="sl_class_con">
+                <div class="sl_class">
+                  <a herf="#" onClick="location.href='classdetail.html'" >
+                    <img class="clis_v_p" src="images/v_p.png">
+                    <img class="clis_pic_con" src="images/c_pic.png">
+                    <span class="sl_class_name">初中一年级数学小班</span>
+                  </a>
+                </div>
+                <div class="sl_class">
+                  <a herf="#" onClick="location.href='classdetail.html'" >
+                    <img class="clis_v_p" src="images/v_p.png">
+                    <img class="clis_pic_con" src="images/c_pic.png">
+                    <span class="sl_class_name">初中一年级数学小班</span>
+                  </a>
+                </div>
+              </div>
+          </li>
+          <li class="school_li">
+              <div class="map_loc"><span>3</span><img src="images/lb-sz.png"></div>
+              <div class="school_li_ti">
+                <div class="sl_ti_logo"><img src="images/jg-logo.png"></div>
+                <span class="sl_gz">230人已关注</span>
+                <span class="sl_loc">12.9km</span>
+              </div>
+              <div class="c_pas map_pas">
+                <span>初高中</span>
+                <span>学科辅导</span>
+                <span>一对三 小班</span>
+                <a herf="#" onClick="location.href='schooldetail.html'" class="school_mor">详请 ></a>
+              </div>
+              <div class="sl_class_con">
+                <div class="sl_class">
+                  <a herf="#" onClick="location.href='classdetail.html'" >
+                    <img class="clis_v_p" src="images/v_p.png">
+                    <img class="clis_pic_con" src="images/c_pic.png">
+                    <span class="sl_class_name">初中一年级数学小班</span>
+                  </a>
+                </div>
+                <div class="sl_class">
+                  <a herf="#" onClick="location.href='classdetail.html'" >
+                    <img class="clis_v_p" src="images/v_p.png">
+                    <img class="clis_pic_con" src="images/c_pic.png">
+                    <span class="sl_class_name">初中一年级数学小班</span>
+                  </a>
+                </div>
+              </div>
+          </li>
+          <li class="school_li">
+              <div class="map_loc"><span>4</span><img src="images/lb-sz.png"></div>
+              <div class="school_li_ti">
+                <div class="sl_ti_logo"><img src="images/jg-logo.png"></div>
+                <span class="sl_gz">230人已关注</span>
+                <span class="sl_loc">12.9km</span>
+              </div>
+              <div class="c_pas map_pas">
+                <span>初高中</span>
+                <span>学科辅导</span>
+                <span>一对三 小班</span>
+                <a herf="#" onClick="location.href='schooldetail.html'" class="school_mor">详请 ></a>
+              </div>
+              <div class="sl_class_con">
+                <div class="sl_class">
+                  <a herf="#" onClick="location.href='classdetail.html'" >
+                    <img class="clis_v_p" src="images/v_p.png">
+                    <img class="clis_pic_con" src="images/c_pic.png">
+                    <span class="sl_class_name">初中一年级数学小班</span>
+                  </a>
+                </div>
+                <div class="sl_class">
+                  <a herf="#" onClick="location.href='classdetail.html'" >
+                    <img class="clis_v_p" src="images/v_p.png">
+                    <img class="clis_pic_con" src="images/c_pic.png">
+                    <span class="sl_class_name">初中一年级数学小班</span>
+                  </a>
+                </div>
+              </div>
+          </li>
+          <li class="school_li">
+              <div class="map_loc"><span>5</span><img src="images/lb-sz.png"></div>
+              <div class="school_li_ti">
+                <div class="sl_ti_logo"><img src="images/jg-logo.png"></div>
+                <span class="sl_gz">230人已关注</span>
+                <span class="sl_loc">12.9km</span>
+              </div>
+              <div class="c_pas map_pas">
+                <span>初高中</span>
+                <span>学科辅导</span>
+                <span>一对三 小班</span>
+                <a herf="#" onClick="location.href='schooldetail.html'" class="school_mor">详请 ></a>
+              </div>
+              <div class="sl_class_con">
+                <div class="sl_class">
+                  <a herf="#" onClick="location.href='classdetail.html'" >
+                    <img class="clis_v_p" src="images/v_p.png">
+                    <img class="clis_pic_con" src="images/c_pic.png">
+                    <span class="sl_class_name">初中一年级数学小班</span>
+                  </a>
+                </div>
+                <div class="sl_class">
+                  <a herf="#" onClick="location.href='classdetail.html'" >
+                    <img class="clis_v_p" src="images/v_p.png">
+                    <img class="clis_pic_con" src="images/c_pic.png">
+                    <span class="sl_class_name">初中一年级数学小班</span>
+                  </a>
+                </div>
+              </div>
+          </li>
+          <li class="school_li">
+              <div class="map_loc"><span>6</span><img src="images/lb-sz.png"></div>
+              <div class="school_li_ti">
+                <div class="sl_ti_logo"><img src="images/jg-logo.png"></div>
+                <span class="sl_gz">230人已关注</span>
+                <span class="sl_loc">12.9km</span>
+              </div>
+              <div class="c_pas map_pas">
+                <span>初高中</span>
+                <span>学科辅导</span>
+                <span>一对三 小班</span>
+                <a herf="#" onClick="location.href='schooldetail.html'" class="school_mor">详请 ></a>
+              </div>
+              <div class="sl_class_con">
+                <div class="sl_class">
+                  <a herf="#" onClick="location.href='classdetail.html'" >
+                    <img class="clis_v_p" src="images/v_p.png">
+                    <img class="clis_pic_con" src="images/c_pic.png">
+                    <span class="sl_class_name">初中一年级数学小班</span>
+                  </a>
+                </div>
+                <div class="sl_class">
+                  <a herf="#" onClick="location.href='classdetail.html'" >
+                    <img class="clis_v_p" src="images/v_p.png">
+                    <img class="clis_pic_con" src="images/c_pic.png">
+                    <span class="sl_class_name">初中一年级数学小班</span>
+                  </a>
+                </div>
+              </div>
+          </li>
+        </ul>
+      </div>
+      <div class="container page_con">
+        <button class="but_dis">上一页</button>
+        <button class="but_on">下一页</button>
+
+      </div>
+      <div class="class_abt container container_body">
+        <div class="sub_ti"><span class="sub_ti_con">热门机构</span></div>
+        <div class="school_abt_con">
+          <ul>
+            <li><a href="#" onClick="location.href='schooldetail.html'">昂立教育</a></li>
+            <li><a href="#" onClick="location.href='schooldetail.html'">昂立教育</a></li>
+            <li><a href="#" onClick="location.href='schooldetail.html'">昂立教育</a></li>
+            <li><a href="#" onClick="location.href='schooldetail.html'">昂立教育</a></li>
+            <li><a href="#" onClick="location.href='schooldetail.html'">昂立教育</a></li>
+            <li><a href="#" onClick="location.href='schooldetail.html'">昂立教育</a></li>
+            <li><a href="#" onClick="location.href='schooldetail.html'">昂立教育</a></li>
+            <li><a href="#" onClick="location.href='schooldetail.html'">昂立教育</a></li>
+            <li><a href="#" onClick="location.href='schooldetail.html'">昂立教育</a></li>
+            <li><a href="#" onClick="location.href='schooldetail.html'">昂立教育</a></li>
+
+          </ul>
+        </div>
+      </div>
+      <div class="class_abt container container_body">
+        <div class="sub_ti"><span class="sub_ti_con">最新上线</span></div>
+        <div class="school_abt_con">
+          <ul>
+            <li><a href="#" onClick="location.href='schooldetail.html'">昂立教育</a></li>
+            <li><a href="#" onClick="location.href='schooldetail.html'">昂立教育</a></li>
+            <li><a href="#" onClick="location.href='schooldetail.html'">昂立教育</a></li>
+            <li><a href="#" onClick="location.href='schooldetail.html'">昂立教育</a></li>
+            <li><a href="#" onClick="location.href='schooldetail.html'">昂立教育</a></li>
+            <li><a href="#" onClick="location.href='schooldetail.html'">昂立教育</a></li>
+            <li><a href="#" onClick="location.href='schooldetail.html'">昂立教育</a></li>
+            <li><a href="#" onClick="location.href='schooldetail.html'">昂立教育</a></li>
+            <li><a href="#" onClick="location.href='schooldetail.html'">昂立教育</a></li>
+            <li><a href="#" onClick="location.href='schooldetail.html'">昂立教育</a></li>
+            
+          </ul>
+        </div>
+      </div>
+      <!-- footer -->
+      <div class="copyright"><p>Copyright ©2016 上海优鸟教育科技有限公司 沪ICP备17002711号</p></div>
+      <!--end footer -->
+    </div>
+    <!-- 更换地址 -->
+    <div class="modal mod_con mod_cds" tabindex="-1" role="dialog">
+          <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="images/tk-close.png"></span></button>
+                  <img class="modal-header-axn" src="images/tk-tn.png">
+                </div>
+                <div class="modal-body-con">
+                  <div class="modal-body-con-b">
+                    <div class="mod_cds_con">
+                      <div class="mod_cds_ti"><p>请选择地址类型</p></div>
+                      <div class="mod_cds_c mod_cds_hq"><img src="images/m_hqdz.png"><span>当前位置</span></div>
+                      <div class="mod_cds_c mod_cds_zdy"><img src="images/m_zdydz.png"><span>自定义地址</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+    </div>
+    <!-- END-更换地址 -->
+    
+
+  </body>
+</html>

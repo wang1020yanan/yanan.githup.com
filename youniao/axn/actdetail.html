@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>抢课大转盘</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-mobile.css" rel="stylesheet">
+    <link href="css/responsive-nav.css" rel="stylesheet">
+    <script src="js/responsive-nav.min.js"></script>
+     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!--[if IE 7]>
+    <link rel="stylesheet" href="css/font-awesome-ie7.min.css">
+    <![endif]-->
+    <script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://libs.baidu.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+
+      <style>
+        @keyframes myfirst
+        {
+            from {transform: rotate(0deg)}
+            to {transform: rotate(1200deg)}
+        }
+
+        @-moz-keyframes myfirst /* Firefox */
+        {
+            from {transform: rotate(0deg)}
+            to {transform: rotate(1200deg)}
+        }
+
+        @-webkit-keyframes myfirst /* Safari 和 Chrome */
+        {
+            from {transform: rotate(0deg)}
+            to {transform: rotate(1200deg)}
+        }
+
+        @-o-keyframes myfirst /* Opera */
+        {
+            from {transform: rotate(0deg)}
+            to {transform: rotate(1200deg)}
+        }
+        .do-ban-do{
+            animation: myfirst 3s forwards;
+            -moz-animation: myfirst 3s forwards;	/* Firefox */
+            -webkit-animation: myfirst 3s forwards;	/* Safari 和 Chrome */
+            -o-animation: myfirst 3s forwards;
+        }
+    </style>
+  </head>
+
+  <body onload="loads()">
+    <div class="act_wapper">
+      <div class="actdetail_con">
+        <button data-toggle="modal" style="border: none;outline: none">
+            <img class="do-ban" src="images/act_pic.png">
+            <img class="do-act" src="images/do.png" style="width: 60%;vertical-align: middle;margin-top: -105%">
+        </button>
+      </div>
+      
+      <div class="actdetail_t">
+        <div class="actdetail_t_top">
+          <h3>奖项设置</h3>
+            <img src="images/act_t_bg.png">
+        </div>
+        <div class="actdetail_t_con">
+          <ul>
+            <li class="actdetail_t_1"><span class="actdetail_t_j">一等奖<span class="actdetail_t_s">(1名)</span></span><span class="actdetail_t_c">价值3000元免费课程券</span></li>
+            <li class="actdetail_t_2"><span class="actdetail_t_j">二等奖<span class="actdetail_t_s">(3名)</span></span><span class="actdetail_t_c">500元学鸟券</span></li>
+            <li class="actdetail_t_3"><span class="actdetail_t_j">三等奖<span class="actdetail_t_s">(10名)</span></span><span class="actdetail_t_c">200元学鸟券</span></li>
+            <li class="actdetail_t_4"><span class="actdetail_t_j">四等奖<span class="actdetail_t_s">(30名)</span></span><span class="actdetail_t_c">100元学鸟券</span></li>
+            <li class="actdetail_t_5"><span class="actdetail_t_j">五等奖<span class="actdetail_t_s">(50名)</span></span><span class="actdetail_t_c">50元学鸟券</span></li>
+            <li class="actdetail_t_6"><span class="actdetail_t_j">特别奖<span class="actdetail_t_s">(5名)</span></span><span class="actdetail_t_c">获得双份奖励，可送好友</span></li>
+          </ul>
+        </div>
+        <div class="actdetail_t_in">
+          <button data-toggle="modal" data-target=".mod_quan">什么是学鸟券?</button>
+          <button data-toggle="modal" data-target=".mod_masg">发送短信消息</button>
+        </div>
+      </div>
+      <!-- footer -->
+      <div class="copyright"><p>Copyright ©2016 上海优鸟教育科技有限公司<br> 沪ICP备17002711号</p></div>
+      <!--end footer -->
+    </div>
+
+
+    <!-- 爱学鸟弹框 -->
+    <div class="modal mod_con mod_quan" tabindex="-1" role="dialog">
+          <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="images/tk-close.png"></span></button>
+                  <img class="modal-header-axn" src="images/tk-tn.png">
+
+                </div>
+                <div class="modal-body-con">
+                  <div class="mod_header_con mod_header_quan">
+                      <img class="mod_header_yun" src="images/tk-yun.png">
+                  </div>
+                  <div class="modal-body-con-b">
+                      <div class="mod_tea_con">
+                        <div class="mod_bhead_con">
+                          <span class="mod_tea_head_con ">学鸟券</span>
+                        </div>
+                        <div class="mod_tea_body_con">
+                          <div class="mod_body_text mod_body_text1">
+                            <p>
+                              <span>如何获得</span>
+点击点部“0元抢课”或“必须抢”，参加全民抢课抽奖活动，就能获得学鸟券。据说中奖率100%哦!
+                            </p>
+                          </div>
+
+                          <div class="mod_body_text mod_body_text2">
+                            <p>
+                              <span>券的价值</span>
+点击点部“0元抢课”或“必须抢”，参加全民抢课抽奖活动，就能获得学鸟券。据说中奖率100%哦!
+                            </p>
+                          </div>
+
+                          <div class="mod_body_text mod_body_text3">
+                            <p>
+                              <span>使用范围</span>
+点击点部“0元抢课”或“必须抢”，参加全民抢课抽奖活动，就能获得学鸟券。据说中奖率100%哦!
+                            </p>
+                          </div>
+
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+    </div>
+    <!-- end 爱学鸟弹框 -->
+    <!-- 立即领取弹框 -->
+    <div class="modal mod_con mod_lingqu" tabindex="-1" role="dialog">
+          <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                 <button type="button" class="close close-ling" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="images/tk-close.png"></span></button>
+                  <img class="modal-header-axn" src="images/tk-tn.png">
+                </div>
+                <div class="modal-body-con mod_lingqu_con">
+                  <div class="modal-body-con-b">
+                  <div class="mod_lingqu_ti">
+                    <h3>恭喜您！</h3>
+                    <p>您已是培养学霸路上的老司机！<br>成功抢到200元学鸟券 </p>
+                  </div>
+                  <div class="mod_qkyy_q_con">
+                      <div class="mod_qkyy_t_con">
+                        <div class="quan_t_l">
+                          <span class="q_prs_con">200</span>
+                          <span class="q_ts_con"><img src="images/q_ico_tx.png">还有3天过期</span>
+                        </div>
+                        <div class="quan_t_r">
+                          <div class="q_no_con">
+                            <span class="q_no_t">NO.</span><span class="q_no_s">161231000001</span><span class="q_no_bss">可使用</span>
+                          </div>
+                          <div class="q_morec_con">
+                            <span>12门课程均可使用</span>
+                          </div>
+                          <div class="q_time_con">
+                            <span>有效期截止2016年12月25日</span>
+                          </div>
+                        </div>
+                      </div>
+                      <img class="q_bg" src="images/q_b_bg.png">
+                  </div>
+                  <div class="mod_btn_con">
+                    <button class="btn mod_btn ling-btn" data-dismiss="modal" aria-label="Close">立即领取</button>
+                  </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+    </div>
+    <!-- end 立即领取弹框 -->
+    <!-- 手机验证 -->
+    <div class="modal mod_con mod_masg" tabindex="-1" role="dialog">
+          <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                 <button type="button" class="close close-mb" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="images/tk-close.png"></span></button>
+                  <img class="modal-header-axn" src="images/tk-tn.png">
+                </div>
+                <div class="modal-body-con mod_masg_con">
+                  <div class="modal-body-con-b">
+                    <div class="mod_masg_ti">
+                      <span class="mesg_pic"><img src="images/mesg_pic.png"></span>
+                    </div>
+                    <div class="mod_masg_input">
+                       <div class="input-group">
+                        <span class="input-group-addon"><img src="images/mesg_phone.png"></span>
+                        <input type="text" class="form-control" placeholder="输入手机号" aria-describedby="basic-addon1">
+                      </div>
+                      <div class="input-group">
+                        <span class="input-group-addon"><img src="images/mesg_password.png"></span>
+                        <input type="text" class="form-control" placeholder="6位数验证码" aria-describedby="basic-addon1">
+                        <span class="input-group-btn">
+                          <button class="btn" type="button">获取验证码</button>
+                        </span>
+                      </div>
+                    </div>
+                    <!-- 
+                    <div class="mod_btn_con">
+                      <button class="btn mod_btn" data-dismiss="modal" aria-label="Close">立即领取</button>
+                    </div> -->
+                  </div>
+                </div>
+              </div>
+          </div>
+    </div>
+    <!-- end 手机验证 -->
+  <script>
+      $(".do-act").click(function(){
+          $(this).addClass("do-ban-do");
+          setTimeout(function(){
+              $(".mod_lingqu").fadeIn();
+          },3000);
+          $(".close-ling").click(function(){
+              $(".mod_lingqu").fadeOut();
+          });
+          $(".ling-btn").click(function(){
+//             需要领券接口
+              $(".ling-btn").text("领取中...");
+              setTimeout(function(){
+                  window.location.href='actsuc.html?vouchersNum='+'11212121212'
+              },1000)
+          })
+      })
+  </script>
+  </body>
+</html>

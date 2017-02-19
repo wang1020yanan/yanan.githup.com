@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>机构详细</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-mobile.css" rel="stylesheet">
+    <link href="css/responsive-nav.css" rel="stylesheet">
+    <script src="js/responsive-nav.min.js"></script>
+     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!--[if IE 7]>
+    <link rel="stylesheet" href="css/font-awesome-ie7.min.css">
+    <![endif]-->
+    <script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://libs.baidu.com/jquery/2.1.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <div class="wapper">
+      <div class="nav_bot container">
+        <div class="nav_bot_l nav_bot_lx"><a><img src="images/nav_b_l.png"><span>路线</span></a></div>
+        <div class="nav_bot_l nav_bot_sc"><a><img src="images/nav_b_s.png"><span>收藏</span></a></div>
+        <div class="nav_bot_l nav_bot_fx"><a href="#" data-toggle="modal" data-target=".mod_sha"><img src="images/nav_b_f.png"><span>分享</span></a></div>
+        <div class="nav_bot_r nav_bot_qkyy">
+          <a class="nb_qkyy_btn" data-toggle="modal" data-target=".bs-example-modal-lg">去抢课</a>
+        </div>
+      </div>
+      <!-- banner -->
+      <div id="banner" class="carousel slide" data-ride="carousel">
+      <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active"><a href="#">
+            <div class="banner_item_1"><img src="images/jg-fm.png"></div></a>
+          </div>
+          <div class="item"><a href="#">
+            <div class="banner_item_2"><img src="images/jg-fm.png"></div></a>
+          </div>
+          <div class="item"><a href="#">
+            <div class="banner_item_3"><img src="images/jg-fm.png"></div></a>
+          </div>
+        </div>
+      </div>
+    <!--End banner -->
+
+      
+      <div class="container container_body">
+        <div class="sd_inf">
+          <div class="sd_loc_con">
+              <a href="#">
+                <img src="images/icon-xl.png">
+                <span class="sd_loc_con_xl">线路</span>
+              </a>
+              <span class="sl_loc">12.9km</span>
+          </div>
+          <div class="school_detail_ti">
+            <div class="sl_ti_logo">
+              <img src="images/jg-logo.png">
+            </div>
+              <span class="sl_gz">230人已关注</span>
+          </div>
+          <div class="c_pas map_pas">
+            <span>初高中</span>
+            <span>学科辅导</span>
+            <span>一对三 小班</span>
+          </div>
+          <div class="sd_inf_con">
+            <div><span class="c_pc_b c_bx_con"><img src="images/ico_tim.png"></span><span class="cdetail_inf_b_r"><b>办学时间：</b>19年</span></div>
+            <div><span class="c_pc_b c_tea_con"><img src="images/ico_tea.png"></span><span class="cdetail_inf_b_r"><b>老师数量：</b>1234名</span></div>
+            <div><span class="c_pc_b c_q_con">券</span><span class="cdetail_inf_b_r">本机构可使用学鸟券，预约课程报名即享优惠。</span></div>
+          </div>
+          <div class="sd_class_con">
+            <div class="sub_ti">
+              <span class="sub_ti_con">所有课程</span>
+              <span class="sub_ti_selcon">
+                <button>年级<span><img src="images/a_b.png"></span></button>
+                <button>科目<span><img src="images/a_b.png"></span></button>
+              </span>
+            </div>
+            <div class="class_abt_con">
+              <ul>
+                <li>
+                  <a href="#" onClick="location.href='classdetail.html'">
+                    <div class="abt_pic_con">
+                      <img class="abt_v_p" src="images/v_p.png">
+                      <img class="abt_c_pic" src="images/c_pic.png">
+                    </div>
+                    <div class="abt_inf">
+                      <p class="abt_inf_ti">初中二年级英语一对一</p>
+                      <p class="abt_inf_time">开班：2017-2-20</p>
+                      <p class="abt_inf_tea"><span>授课：张老师</span><span>教龄：5年</span></p>
+                      <p><span class="c_loc">100人已试听</span><span class="c_pc c_q_con">券</span><span class="c_pc c_t_con">荐</span></p>
+                    </div>
+                  </a>
+                </li>
+                <li class="abt_gapl">
+                  <a href="#" onClick="location.href='classdetail.html'">
+                    <div class="abt_pic_con">
+                      <img class="abt_v_p" src="images/v_p.png">
+                      <img class="abt_c_pic" src="images/c_pic.png">
+                    </div>
+                    <div class="abt_inf">
+                      <p class="abt_inf_ti">初中二年级英语一对一</p>
+                      <p class="abt_inf_time">开班：2017-2-20</p>
+                      <p class="abt_inf_tea"><span>授课：张老师</span><span>教龄：5年</span></p>
+                      <p><span class="c_loc">100人已试听</span><span class="c_pc c_q_con">券</span><span class="c_pc c_t_con">荐</span></p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" onClick="location.href='classdetail.html'">
+                    <div class="abt_pic_con">
+                      <img class="abt_v_p" src="images/v_p.png">
+                      <img class="abt_c_pic" src="images/c_pic.png">
+                    </div>
+                    <div class="abt_inf">
+                      <p class="abt_inf_ti">初中二年级英语一对一</p>
+                      <p class="abt_inf_time">开班：2017-2-20</p>
+                      <p class="abt_inf_tea"><span>授课：张老师</span><span>教龄：5年</span></p>
+                      <p><span class="c_loc">100人已试听</span><span class="c_pc c_q_con">券</span><span class="c_pc c_t_con">荐</span></p>
+                    </div>
+                  </a>
+                </li>
+                <li class="abt_gapl">
+                  <a href="#" onClick="location.href='classdetail.html'">
+                    <div class="abt_pic_con">
+                      <img class="abt_v_p" src="images/v_p.png">
+                      <img class="abt_c_pic" src="images/c_pic.png">
+                    </div>
+                    <div class="abt_inf">
+                      <p class="abt_inf_ti">初中二年级英语一对一</p>
+                      <p class="abt_inf_time">开班：2017-2-20</p>
+                      <p class="abt_inf_tea"><span>授课：张老师</span><span>教龄：5年</span></p>
+                      <p><span class="c_loc">100人已试听</span><span class="c_pc c_q_con">券</span><span class="c_pc c_t_con">荐</span></p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="sd_inf_con2">
+            <div><span class="c_pc_b c_bx_con"><img src="images/ico_tim.png"></span><span class="cdetail_inf_b_r">口译、新概念系列课程均享有较高知名度，沪上英语培训一线品牌。口译、新概念系列课程均享有较高知名度，沪上英语培训一线品牌。</span></div>
+            <div><span class="c_pc_b c_tea_con"><img src="images/ico_tea.png"></span><span class="cdetail_inf_b_r"><b>学校地址：</b>上海市黄浦区人民广场学习中心</span></div>
+            <div><span class="c_pc_b c_tel_con"><img src="images/ico_tel.png"></span><span class="cdetail_inf_b_r"><b>咨询热线：</b>15250081888</span></div>
+          </div>
+
+
+
+        </div>
+      </div>
+      <div class="class_abt container container_body">
+        <div class="sub_ti"><span class="sub_ti_con">热门机构</span></div>
+        <div class="school_abt_con">
+          <ul>
+            <li><a href="#" onClick="location.href='schooldetail.html'">昂立教育</a></li>
+            <li><a href="#" onClick="location.href='schooldetail.html'">昂立教育</a></li>
+            <li><a href="#" onClick="location.href='schooldetail.html'">昂立教育</a></li>
+            <li><a href="#" onClick="location.href='schooldetail.html'">昂立教育</a></li>
+            <li><a href="#" onClick="location.href='schooldetail.html'">昂立教育</a></li>
+            <li><a href="#" onClick="location.href='schooldetail.html'">昂立教育</a></li>
+            <li><a href="#" onClick="location.href='schooldetail.html'">昂立教育</a></li>
+            <li><a href="#" onClick="location.href='schooldetail.html'">昂立教育</a></li>
+            <li><a href="#" onClick="location.href='schooldetail.html'">昂立教育</a></li>
+            <li><a href="#" onClick="location.href='schooldetail.html'">昂立教育</a></li>
+            
+          </ul>
+        </div>
+      </div>
+      <div class="class_abt container container_body">
+        <div class="sub_ti"><span class="sub_ti_con">最新上线</span></div>
+        <div class="school_abt_con">
+          <ul>
+            <li><a href="#" onClick="location.href='schooldetail.html'">昂立教育</a></li>
+            <li><a href="#" onClick="location.href='schooldetail.html'">昂立教育</a></li>
+            <li><a href="#" onClick="location.href='schooldetail.html'">昂立教育</a></li>
+            <li><a href="#" onClick="location.href='schooldetail.html'">昂立教育</a></li>
+            <li><a href="#" onClick="location.href='schooldetail.html'">昂立教育</a></li>
+            <li><a href="#" onClick="location.href='schooldetail.html'">昂立教育</a></li>
+            <li><a href="#" onClick="location.href='schooldetail.html'">昂立教育</a></li>
+            <li><a href="#" onClick="location.href='schooldetail.html'">昂立教育</a></li>
+            <li><a href="#" onClick="location.href='schooldetail.html'">昂立教育</a></li>
+            <li><a href="#" onClick="location.href='schooldetail.html'">昂立教育</a></li>
+            
+          </ul>
+        </div>
+      </div>
+      <!-- footer -->
+      <div class="copyright"><p>Copyright ©2016 上海优鸟教育科技有限公司 沪ICP备17002711号</p></div>
+      <!--end footer -->
+    </div>
+      <div class="modal mod_sha_c mod_sha" tabindex="-1" role="dialog">
+          <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+
+                <div class="modal-body-con">
+                  <div class="mod_sha_c_btn"><a href="#" data-dismiss="modal"><img src="images/sha_pic.png"></a></div>
+                </div>
+              </div>
+          </div>
+      </div>
+  </body>
+</html>

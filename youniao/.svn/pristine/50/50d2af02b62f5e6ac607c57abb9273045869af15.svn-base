@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0;">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>抢课列表</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-mobile.css" rel="stylesheet">
+    <link href="css/responsive-nav.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+
+    <script src="js/responsive-nav.min.js"></script>
+     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!--[if IE 7]>
+    <link rel="stylesheet" href="css/font-awesome-ie7.min.css">
+    <![endif]-->
+    <script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://libs.baidu.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/layui.js"></script>
+    <script src="js/main.js"></script>
+  </head>
+
+  <body>
+    <div class="wapper">
+      <div class="speaker_con">
+        <div class="speaker_con_img">
+          <img src="images/ico_speaker.png">
+        </div>
+        <div id="speaker_con_i" class="carousel slide" data-ride="carousel">
+          <ul class="carousel-inner" role="listbox">
+            <li class="item active">张三抢到200元优惠券</li>
+            <li class="item">李四抢到200元优惠券</li>
+            <li class="item">王二抢到200元优惠券</li>
+          </ul>
+        </div>
+      </div>
+      <!-- banner -->
+      <div id="banner" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#banner" data-slide-to="0" class="active"></li>
+          <li data-target="#banner" data-slide-to="1"></li>
+          <li data-target="#banner" data-slide-to="2"></li>
+        </ol>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active"><a href="#">
+            <div class="banner_item_1"><img src="images/banner1.png"></div></a>
+          </div>
+          <div class="item"><a href="#">
+            <div class="banner_item_2"><img src="images/banner2.png"></div></a>
+          </div>
+          <div class="item"><a href="#">
+            <div class="banner_item_3"><img src="images/banner3.png"></div></a>
+          </div>
+        </div>
+        <!-- Controls -->
+        <a class="left carousel-control" href="#banner" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#banner" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <!--End banner -->
+      <div class="container">
+        <div class="top_select actlist_select">
+          <style>
+            .sele-t{width: 4rem!important;}
+            .sele-t span{padding: .5rem}
+            .sele-t span:hover{color: #8c8c8c}
+            .sele-t li:hover{color: #8c8c8c}
+            .sele-c{position: absolute;top: 2.5rem;z-index: 999;background: #ffffff;width: 80%;display: none}
+          </style>
+          <div class="col-xs-6 sele-t">
+            <span>选择年级<i class="fa fa-chevron-down"></i></span>
+            <ul class="sele-c">
+              <li value="1" class="grades">一年级</li>
+              <li value="2" class="grades">二年级</li>
+              <li value="3" class="grades">三年级</li>
+            </ul>
+          </div>
+          <div class="col-xs-6 sele-t">
+            <span>选择科目<i class="fa fa-chevron-down"></i></span>
+            <ul class="sele-c">
+              <li value="1" class="subj">语文</li>
+              <li value="2" class="subj">数学</li>
+              <li value="3" class="subj">英语</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <ul class="actclass_list_con">
+          <li class="actclass_li">
+              <div class="actlis_top">
+                <a class="actclass_li_a">
+                  <div class="actlis_top_con">
+                    <div class="actlis_top_shengyu">
+                      <span><img src="images/ico_lou.png">剩余37</span>
+                    </div>
+                    <div class="actlis_top_btn">
+                      <div class="actlis_top_btn_t"><span><b>1500</b>元课程<b>0</b>元抢</span><button class="actlis_btn" onClick="location.href='actdetail.html'"><img src="images/ico_hand.png">立即抢</button></div>
+                    </div>
+                  </div>
+                  <img class="clis_pic_con" src="images/c_pic.png">
+                </a>
+              </div>
+              <div class="actlis_bottom">
+                <div class="actlis_bottom_t"><a href="#" onClick="location.href='schooldetail.html'"><img src="images/jg-logo.png"></a><button class="actlis_sha_btn c_btn" data-toggle="modal" data-target=".mod_sha">告诉朋友</button><button class="actlis_detail_btn c_btn" onClick="location.href='classdetail.html'">课程详情</button></div>
+                <div class="actlis_bottom_b">
+                  <p>上课时间：2016-12-25</p>
+                  <p>上课地址：上海市宝山区三门路复旦软件园高竞123号</p>
+                </div>
+
+              </div>
+          </li>
+        </ul>
+      </div>
+      <!-- footer -->
+      <div class="copyright"><p>Copyright ©2016 上海优鸟教育科技有限公司<br> 沪ICP备17002711号</p></div>
+      <!--end footer -->
+    </div>
+
+    <!-- 分享好友弹框 -->
+    <div class="modal mod_sha_c mod_sha" tabindex="-1" role="dialog">
+          <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-body-con">
+                  <div class="mod_sha_c_btn"><a href="#"  data-dismiss="modal"><img src="images/sha_pic.png"></a></div>
+                </div>
+              </div>
+          </div>
+    </div>
+    <!--  end 分享好友弹框 -->
+  <script>
+    $(function(){
+      var grades=0;
+      var subject=0;
+//      列表改变
+      function changeList(){
+
+      }
+      $(".sele-t span").click(function(){
+        if($(this).parent().find('ul').hasClass('isI')){
+          $(this).parent().find('ul').fadeOut(100).removeClass("isI")
+        }else{
+          $(this).parent().find('ul').fadeIn(100).addClass("isI")
+        }
+      });
+      $(".sele-t li").click(function(){
+        $(this).parent().fadeOut(100).removeClass('isI');
+        if($(this).hasClass('grades')){
+          grades=$(this).text();
+          console.log(grades);
+          changeList();
+        }else{
+          subject=$(this).text();
+          console.log(subject);
+          changeList();
+        }
+        $(this).parent().prev().html($(this).text()+'<i class="fa fa-chevron-down"></i>')
+
+      })
+    })
+  </script>
+  </body>
+</html>

@@ -1,0 +1,1198 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!--<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1" />-->
+    <title>聊聊啊</title>
+    <link rel="stylesheet" href="/style.css" type="text/css" media="all" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <style>
+        html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+
+        article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+            display: block;
+        }
+
+        body {
+            line-height: 1;
+        }
+
+        ol, ul {
+            list-style: none;
+        }
+
+        blockquote, q {
+            quotes: none;
+        }
+
+        blockquote:before, blockquote:after, q:before, q:after {
+            content: '';
+            content: none;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        :focus {
+            outline: 0;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: normal;
+        }
+
+        .clearfix:before, .section:before, .nav ul:before {
+            content: "";
+            display: table;
+        }
+
+        .clearfix:after, .section:after, .nav ul:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        input {
+            -webkit-appearance: none;
+            border-radius: 0;
+        }
+
+        a {
+            color: #2094c4;
+            text-decoration: none;
+            outline: none;
+        }
+
+        a:hover {
+            color: #3498db;
+        }
+
+        p {
+            padding: 0 0 20px;
+        }
+
+        strong {
+            font-weight: bold;
+        }
+
+        body {
+            color: #000;
+            font: normal 14px/1.4 "helvetica neue",tahoma,"hiragino sans gb",stheiti,"wenquanyi micro hei",\5FAE\8F6F\96C5\9ED1,\5B8B\4F53,sans-serif;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .left {
+            float: left;
+        }
+
+        .right {
+            float: right;
+        }
+
+        .section-wrap {
+            position: relative;
+            z-index: 2;
+        }
+
+        .section {
+            width: 960px;
+            margin: 0 auto;
+        }
+
+        .section h1 {
+            margin-bottom: 40px;
+            font-size: 36px;
+        }
+
+        .overlay {
+            background: #ecf0f1;
+            position: absolute;
+            display: none;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 2;
+            opacity: 1;
+            -webkit-transition: opacity 0.4s ease-in;
+            -moz-transition: opacity 0.4s ease-in;
+            -ms-transition: opacity 0.4s ease-in;
+            -o-transition: opacity 0.4s ease-in;
+            transition: opacity 0.4s ease-in;
+        }
+
+        .loading-process .overlay {
+            display: block;
+        }
+
+        .finish-loading .overlay {
+            opacity: 0;
+        }
+
+        .finish-loading .loading-info, .finish-loading .loading-circle {
+            opacity: 0;
+        }
+
+        .finish-loading .loading-avatar {
+            border: 4px solid #fff;
+        }
+
+        .fade {
+            opacity: 0;
+            position: relative;
+            top: 10px;
+            -webkit-transition: all 0.2s ease-in;
+            -moz-transition: all 0.2s ease-in;
+            -ms-transition: all 0.2s ease-in;
+            -o-transition: all 0.2s ease-in;
+            transition: all 0.2s ease-in;
+        }
+
+        .fade.fade-in {
+            opacity: 1;
+            top: 0;
+        }
+
+        .section-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 20;
+        }
+
+        .finish-loading .nav {
+            opacity: .6;
+        }
+
+        .nav {
+            width: 960px;
+            position: absolute;
+            z-index: 5;
+        }
+
+        .nav li {
+            float: left;
+            text-align: center;
+            position: relative;
+            width: 20%;
+        }
+
+        .nav li a {
+            color: #c9c7c7;
+            font-size: 30px;
+            display: block;
+            padding: 60px 0;
+            width: 100%;
+            -webkit-transition: all 0.6s ease-in;
+            -moz-transition: all 0.6s ease-in;
+            -ms-transition: all 0.6s ease-in;
+            -o-transition: all 0.6s ease-in;
+            transition: all 0.6s ease-in;
+        }
+
+        .nav .fade1 a:hover, .nav .fade1.hover a {
+            color: #95a5a6;
+        }
+
+        .nav .fade2 a:hover, .nav .fade2.hover a {
+            color: #2980b9;
+        }
+
+        .nav .fade3 a:hover, .nav .fade3.hover a {
+            color: #c0392b;
+        }
+
+        .nav .fade4 a:hover, .nav .fade4.hover a {
+            color: #27ae60;
+        }
+
+        .nav .back-home {
+            height: 1px;
+            -webkit-transition: none;
+            -moz-transition: none;
+            -ms-transition: none;
+            -o-transition: none;
+            transition: none;
+        }
+
+        .nav .back-home a {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            left: 50%;
+            margin-left: -50px;
+            border-radius: 50%;
+            border: 4px solid #fff;
+            overflow: hidden;
+            text-indent: -9999px;
+            background: url(imgs/icon.jpg);
+            -webkit-background-size: 100px 100px;
+            background-size: 100px 100px;
+            padding: 0 !important;
+            top: 30px;
+        }
+
+        .nav .back-home a:hover {
+            border-bottom: 4px solid #fff;
+        }
+
+        .nav-bg {
+            background: #fff;
+            position: relative;
+            z-index: 1;
+            height: 80px;
+            margin: 0 auto;
+            width: 0;
+            -webkit-transition: width 0.6s ease-in;
+            -moz-transition: width 0.6s ease-in;
+            -ms-transition: width 0.6s ease-in;
+            -o-transition: width 0.6s ease-in;
+            transition: width 0.6s ease-in;
+        }
+
+        .shrink .nav li a {
+            padding: 20px 0;
+            font-size: 24px;
+        }
+
+        .shrink .nav .back-home a {
+            top: 0;
+        }
+
+        .shrink .nav-bg {
+            width: 100%;
+        }
+
+        .home-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+        }
+
+        .home-bg img {
+            max-width: none;
+        }
+
+        .loading {
+            margin: auto;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 120px;
+            height: 120px;
+            z-index: 10;
+        }
+
+        .loading-circle {
+            background-color: rgba(0,0,0,0);
+            opacity: .9;
+            border-top: 10px solid #27ae60;
+            border-right: 10px solid #d35400;
+            border-bottom: 10px solid #2980b9;
+            border-left: 10px solid #c0392b;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+            -webkit-transition: all 0.4s ease-in;
+            -moz-transition: all 0.4s ease-in;
+            -ms-transition: all 0.4s ease-in;
+            -o-transition: all 0.4s ease-in;
+            transition: all 0.4s ease-in;
+            animation: spin 1s infinite linear;
+            -webkit-animation: spin 1s infinite linear;
+            -moz-animation: spin 1s infinite linear;
+            -o-animation: spin 1s infinite linear;
+        }
+
+        @keyframes spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+
+        @-moz-keyframes spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+
+        @-webkit-keyframes spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+
+        @-o-keyframes spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+
+        .loading-avatar {
+            width: 100px;
+            height: 100px;
+            overflow: hidden;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            border-radius: 50%;
+            -webkit-transition: border-width 0.4s ease-in;
+            -moz-transition: border-width 0.4s ease-in;
+            -ms-transition: border-width 0.4s ease-in;
+            -o-transition: border-width 0.4s ease-in;
+            transition: border-width 0.4s ease-in;
+        }
+
+        .loading-avatar img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+        }
+
+        .loading-info {
+            position: absolute;
+            top: 130%;
+            width: 160%;
+            -webkit-transition: opacity 0.4s ease-in;
+            -moz-transition: opacity 0.4s ease-in;
+            -ms-transition: opacity 0.4s ease-in;
+            -o-transition: opacity 0.4s ease-in;
+            transition: opacity 0.4s ease-in;
+        }
+
+        .section-fristpage {
+            /*background: #0b0c0e;*/
+            text-align: center;
+            color: #fff;
+            font-size: 30px;
+        }
+
+        .section-fristpage p {
+            padding-bottom: 0;
+        }
+
+        .section-fristpage .fade2 {
+            margin-top: 60px;
+        }
+
+        .section-fristpage .fade3 {
+            margin-top: 60px;
+        }
+
+        .scroll-tip {
+            display: block;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            position: absolute;
+            bottom: -30px;
+            top: auto !important;
+            left: 50%;
+            margin-left: -30px;
+            text-indent: -9999px;
+            background: #fff url(images/bg-down-arrow.png) no-repeat 50% 30%;
+        }
+
+        .section-about {
+            background: #fff;
+        }
+
+        .section-about .about-content h1 {
+            margin-bottom: 30px;
+            font-size: 36px;
+        }
+
+        .section-about .about-content p {
+            font-size: 20px;
+        }
+
+        .section-about .about-content .left {
+
+            margin-left: 10%;
+        }
+
+        .section-about .about-content .my-photo {
+            width: 356px;
+            height: 308px;
+        }
+
+        .section-about .about-content .right .fade4 {
+            top: 0;
+            left: 20px;
+        }
+
+        .section-about .about-content .right .fade4.fade-in {
+            left: 0;
+        }
+
+        .section-about .fade {
+            -webkit-transition: all 0.4s ease-in;
+            -moz-transition: all 0.4s ease-in;
+            -ms-transition: all 0.4s ease-in;
+            -o-transition: all 0.4s ease-in;
+            transition: all 0.4s ease-in;
+        }
+
+        .section-works {
+            background: #27ae60;
+        }
+
+        .works-content h1 {
+            text-align: center;
+            color: #fff;
+        }
+
+        .works-content .works-list .fade {
+            top: 20px;
+            left: 10px;
+            -webkit-transition: all 0.4s ease-in;
+            -moz-transition: all 0.4s ease-in;
+            -ms-transition: all 0.4s ease-in;
+            -o-transition: all 0.4s ease-in;
+            transition: all 0.4s ease-in;
+        }
+
+        .works-content .works-list .fade.fade-in {
+            left: 0;
+            top: 0;
+        }
+
+        .works-content .works-item {
+            position: relative;
+            width: 300px;
+            margin-left: 30px;
+            margin-bottom: 30px;
+            float: left;
+            overflow: hidden;
+        }
+
+        .works-content .works-item img {
+            -webkit-transform: scale(1);
+            -moz-transform: scale(1);
+            -ms-transform: scale(1);
+            -o-transform: scale(1);
+            transform: scale(1);
+            -webkit-transition: all 0.2s ease-in;
+            -moz-transition: all 0.2s ease-in;
+            -ms-transition: all 0.2s ease-in;
+            -o-transition: all 0.2s ease-in;
+            transition: all 0.2s ease-in;
+        }
+
+        .works-content .works-item.first {
+            margin-left: 0;
+        }
+
+        .works-content .works-item:hover img {
+            -webkit-transform: scale(1.5);
+            -moz-transform: scale(1.5);
+            -ms-transform: scale(1.5);
+            -o-transform: scale(1.5);
+            transform: scale(1.5);
+        }
+
+        .works-content .works-item:hover .work-info {
+            top: 0;
+        }
+
+        .works-content .works-item .work-info {
+            position: absolute;
+            top: 137px;
+            padding: 10px;
+            left: 0;
+            right: 0;
+            height: 100%;
+            color: #fff;
+            background: rgba(0,0,0,0.8);
+            -webkit-transition: all 0.2s ease-in;
+            -moz-transition: all 0.2s ease-in;
+            -ms-transition: all 0.2s ease-in;
+            -o-transition: all 0.2s ease-in;
+            transition: all 0.2s ease-in;
+        }
+
+        .works-content .works-item .work-info h2 {
+            margin-bottom: 20px;
+        }
+
+        .more-link {
+            color: #fff;
+            display: block;
+            padding: 10px 20px;
+            width: 60px;
+            text-align: center;
+            margin: 0 auto;
+            background: #3d3d3d;
+            background: rgba(0,0,0,0.6);
+        }
+
+        .more-link:hover {
+            color: #fff;
+            background: #3d3d3d;
+            background: rgba(0,0,0,0.4);
+        }
+
+        .section-skill {
+            background: #2980b9;
+        }
+
+        .skill-content h1 {
+            color: #fff;
+        }
+
+        .skill-content ul {
+            color: #fff;
+        }
+
+        .skill-content li {
+            font-size: 18px;
+            line-height: 2;
+        }
+
+        .skill-content .fade {
+            top: 0;
+            left: 10px;
+            -webkit-transition: all 0.2s ease-in;
+            -moz-transition: all 0.2s ease-in;
+            -ms-transition: all 0.2s ease-in;
+            -o-transition: all 0.2s ease-in;
+            transition: all 0.2s ease-in;
+        }
+
+        .skill-content .fade.fade-in {
+            left: 0;
+        }
+
+        .section-contact {
+            background: #c0392b;
+            color: #dadada;
+        }
+
+        .section-contact a {
+            color: #fff;
+        }
+
+        .section-contact a:hover {
+            color: #dadada;
+        }
+
+        .section-contact .contact-content .left {
+            width: 40%;
+        }
+
+        .section-contact .contact-content .right {
+            width: 50%;
+        }
+
+        .section-contact .contact-content h1 {
+            color: #fff;
+            margin-bottom: 30px;
+        }
+
+        .section-contact .contact-content .contact-info {
+            margin-top: 20px;
+        }
+
+        .section-contact .contact-content h2 {
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        .section-contact .contact-content .right ul {
+            list-style-type: square;
+            padding-left: 30px;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .section-contact .contact-ways li {
+            line-height: 1.8;
+        }
+
+        .footer {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 40px;
+            background: #000;
+            color: #fff;
+        }
+
+        .state-indicator {
+            position: absolute;
+            top: -999em;
+            left: -999em;
+            z-index: 1;
+        }
+
+        @media only screen and (-webkit-min-device-pixel-ratio: 2) {
+            .state-indicator {
+                z-index: 2;
+            }
+
+            .nav .back-home a {
+                background-image: url(images/avatar@2x.jpg);
+            }
+        }
+
+        @media only screen and (max-width: 1024px) {
+            .works-content {
+                margin-top: 140px !important;
+            }
+        }
+
+        @media only screen and (max-width: 960px) {
+            .nav {
+                width: 760px;
+            }
+
+            .section {
+                width: 760px;
+            }
+        }
+
+        @media only screen and (max-width: 800px) {
+            .section-about .about-content {
+                position: relative;
+            }
+
+            .section-about .about-content .left {
+                float: none;
+                margin: 20px 0 0 20px;
+            }
+
+            .section-about .about-content .right {
+                position: absolute;
+                right: 10px;
+                top: 0;
+            }
+
+            .section-about .about-content .my-photo {
+                width: 250px;
+                height: auto;
+            }
+
+            .works-list {
+                width: 630px;
+                margin: 0 auto;
+            }
+
+            .works-content .works-item:nth-child(2n+1) {
+                margin-left: 0 !important;
+            }
+
+            .works-content .works-item:nth-child(2n) {
+                margin-left: 30px !important;
+            }
+
+            .skill-content {
+                width: 600px;
+                margin: 0 auto;
+            }
+
+            .contact-content {
+                width: 600px;
+                margin: 0 auto;
+            }
+
+            .section-contact .contact-content h1 {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body class="loading-process">
+<div class="loading">
+    <div class="loading-circle"></div>
+    <div class="loading-avatar"><img src="imgs/icon.jpg" alt="" width="100" height="100"></div>
+    <div class="loading-info">正在拼命加载中...</div>
+</div>
+<div class="section-header">
+    <div class="section">
+        <nav class="nav" role="navigation">
+            <ul>
+                <li class="nav-about fade fade1"><a href="#about">关于我们</a></li>
+                <li class="nav-works fade fade4"><a href="#works">下载APP</a></li>
+                <li class="fade back-home"><a href="#top">首页</a></li>
+                <li class="nav-skill fade fade2"><a href="#skill">在线聊天</a></li>
+                <li class="nav-contact fade fade3"><a href="#contact">联系我们</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="nav-bg"></div>
+</div>
+<div class="home-bg">
+    <img src="imgs/bg.png" alt="" width="1000" height="667">
+</div>
+<div class="section-wrap section-fristpage">
+    <div class="section">
+        <div class="section-content">
+            <p class="fade fade1">实打实大顶顶顶顶</p>
+            <p class="fade fade2">实打实大顶顶顶顶顶顶实打实大顶顶顶顶实打实大顶顶顶顶</p>
+            <p class="fade fade3">实打实大顶顶顶顶实打实大顶大顶顶顶顶</p>
+        </div>
+        <a href="#" class="scroll-tip fade fade4">向下滚动</a>
+    </div>
+</div>
+<div id="about" class="section-wrap section-about">
+    <div class="section">
+        <div class="about-content clearfix section-content">
+            <div class="left">
+                <h1>关于我们</h1>
+                <p class="fade fade1">关于我们关于我们关于我们</p>
+                <p class="fade fade2">关于我们</p>
+                <p class="fade fade3">关于我们关于我们</p>
+                <p class="fade fade4">关于我们关于我们关于我们</p>
+                <p class="fade fade5">关于我们关于我们关于我们关于我们</p>
+                <p class="fade fade6">关于我们关于我们</p>
+            </div>
+            <div class="right">
+                <img class="my-photo fade fade4" src="images/about.png" alt="" width="356" height="308">
+            </div>
+        </div>
+    </div>
+</div>
+<div id="works" class="section-wrap section-works">
+    <div class="section">
+        <div class="works-content section-content">
+            <h1>下载APP</h1>
+            <div class="works-list clearfix">
+                <div class="works-item first fade fade1">
+                    <a href="http://www.lianbaotouzi.com/" target="_blank">
+                        <img src="/images/works/lbtz.png" alt="" width="300" height="180">
+                        <div class="work-info">
+                            <h2>IOS</h2>
+                            <p>
+                               扫描二维码下载
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="works-item fade fade2">
+                    <a href="http://www.seaning.com/" target="_blank">
+                        <img src="/images/works/seaning.png" alt="" width="300" height="180">
+                        <div class="work-info">
+                            <h2>android</h2>
+                            <p>
+                                扫描二维码下载
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="skill" class="section-wrap section-skill">
+    <div class="section">
+        <div class="skill-content section-content">
+            <h1>在线聊天</h1>
+            <ul>
+                <a>在线聊天</a>
+            </ul>
+        </div>
+    </div>
+</div>
+<div id="contact" class="section-wrap section-contact">
+    <div class="section">
+        <div class="contact-content clearfix section-content">
+            <h1>联系我们</h1>
+            <div class="left">
+                <div class="contact-ways fade fade1">
+                    <h2>地址</h2>
+                    <ul>
+                        <li>邮箱：<a target="_blank" href="mailto:seaning@seaning.com">1232323@qq.com</a></li>
+                        <li>tel:23333333</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="overlay"></div>
+<div class="state-indicator"></div>
+<script type="text/javascript" src="libs/jquery/jquery-2.1.4.min.js"></script>
+<script src="/js/global.js"></script>
+<script>
+    ;(function($) {
+
+//这是万恶的全局变量
+        var Global = {
+            section_name : [],
+            isScrolling : true,
+            section_num : 1
+        };
+//缓出现函数
+        Global.fadeInByOrder = function(selector,interval,callback){
+            var i = 1,
+                    length = $(selector+' .fade').length + 1,
+                    intervala = interval || 100,
+                    callbacka = callback || function(){ return; };
+
+            (function fadeInIt(){
+                if ( i < length ) {
+                    $(selector+' .fade'+i).addClass('fade-in');
+                    i++;
+                    setTimeout( arguments.callee , intervala );
+                    if ( i === length) {
+                        callbacka();
+                    }
+                }
+            })();
+        };
+//函数节流
+        Global.throttle = function(fn, delay) {
+            var timer = null;
+            return function () {
+                var context = this, args = arguments;
+                clearTimeout(timer);
+                timer = setTimeout(function () {
+                    fn.apply(context, args);
+                }, delay);
+            };
+        };
+//重新计算元素位置
+        Global.reCal = function(){
+
+            //居中加载动画
+            (function centerLoading() {
+                if ( !$('body').hasClass('finish-loading') ) {
+                    var topOffset = ( $(window).height() - 175 ) / 2  ,
+                            leftOffset = ( $(window).width() - $('loading').width() ) / 2 - 60;
+
+                    $('.loading').css({
+                        top: topOffset,
+                        left: leftOffset,
+                        right: 'auto',
+                        bottom: 'auto'
+                    });
+                }
+            })();
+
+            //处理每个区块
+            $('.section-wrap').each(function(index, el) {
+                Global.section_name[index] = $(this).attr('class').substr(($(this).attr('class').indexOf('section-wrap ')+13));
+                $(this).find('.section').height($(window).height());
+            });
+
+            //高度居中主体内容
+            $('.section-content').each(function(){
+                $(this).css({
+                    marginTop: ( $(window).height() - 40 - $(this).height() ) / 2
+                });
+            });
+
+        };
+//处理首页背景图片
+        Global.fixedbg = function(){
+            var slide_rate = 1000 / 667,
+                    window_rate;
+            (function(){
+                window_rate = $(window).width() / $(window).height();
+                if ( window_rate < slide_rate ) {
+                    $('.home-bg img').css({height:$(window).height()+'px',width:($(window).height()*slide_rate)+'px','margin-left':'-'+($(window).height()*slide_rate-$(window).width())/2+'px'});
+                }else{
+                    $('.home-bg img').css({height:($(window).width()/slide_rate)+'px',width:$(window).width()+'px','margin-left':0});
+                }
+            })();
+        };
+//头部交互
+        Global.shrinkHeader = function(doShrink){
+            if (doShrink) {
+                $('.section-header').addClass('shrink');
+            }else{
+                $('.section-header').removeClass('shrink');
+            }
+        };
+//高亮菜单
+        Global.fire_nav = function(theNav){
+            $('.nav .fade').removeClass('hover');
+            switch(theNav){
+                case 2:
+                    $('.nav .fade1').addClass('hover');
+                    break;
+                case 3:
+                    $('.nav .fade4').addClass('hover');
+                    break;
+                case 4:
+                    $('.nav .fade2').addClass('hover');
+                    break;
+                case 5:
+                    $('.nav .fade3').addClass('hover');
+                    break;
+            }
+        };
+//鼠标滚动后处理函数
+        Global.scrollHandle = function(scrollDown){
+            if (!Global.isScrolling) {
+
+                Global.isScrolling = true;
+                var targetScrollTopValue = scrollDown ? Global.targetScrollTop(++Global.section_num) : Global.targetScrollTop(--Global.section_num);
+
+                if ( scrollDown ) {
+                    if ( Global.section_num > 1 ) {
+                        Global.shrinkHeader(true);
+                    }
+                }else{
+                    if ( Global.section_num === 1 ) {
+                        Global.shrinkHeader(false);
+                    }
+                }
+
+                $('html,body').animate({scrollTop: targetScrollTopValue}, 600,function(){
+                    Global.isScrolling = false;
+                });
+                Global.fire_nav(Global.section_num);
+
+            }
+        };
+//计算要滚动到的高度
+        Global.targetScrollTop = function(n){
+            if(n > Global.section_name.length){
+                Global.section_num = Global.section_name.length;
+            }
+            if(n < 1){
+                Global.section_num = 1;
+            }
+            return ($(window).height() * (Global.section_num - 1));
+        };
+//根据 CSS3 判断屏幕
+//原理：http://yujiangshui.com/use-javascript-css-media-queries-detect-device-state/
+        Global.forRetina = function(){
+
+            $('body').append('<div class="state-indicator"></div>');
+
+            function getDeviceState() {
+                switch(parseInt($('.state-indicator').css('z-index'),10)) {
+                    case 1:
+                        return false;
+                    case 2:
+                        return true;
+                }
+            }
+
+            if( getDeviceState() ){
+                Global.changeDBImg();
+            }
+
+            $('.state-indicator').remove();
+        };
+//将 img 处理成 @2x 像素
+        Global.changeDBImg = function(){
+            function changeDBURL(imgURL,imgType){
+                return imgURL.substring(0,imgURL.indexOf('.'+imgType)) + '@2x.' + imgType;
+            }
+            $('.my-photo').attr('src',function(){
+                return changeDBURL($(this).attr('src'),'jpg');
+            });
+        };
+//面向平板电脑的触摸手势
+        Global.handleTouchEvent = function(event){
+            if (event.touches.length == 1) {
+
+                var touchStartY,
+                        touchMoveY;
+
+                switch (event.type) {
+                    case "touchstart":
+                        touchStartY =  event.touches[0].clientY;
+                        break;
+                    case "touchmove":
+                        touchMoveY  =  event.changedTouches[0].clientY;
+                        break;
+                }
+                Global.scrollHandle( touchStartY > touchMoveY ? true : false );
+
+            }
+            event.preventDefault();
+        };
+
+
+        $(document).ready(function() {
+
+            $('a[href="#"]').click( function(e) { e.preventDefault(); return false; } );
+
+            Global.reCal();
+            Global.fixedbg();
+            Global.forRetina();
+
+            $('.nav a').click(function(e) {
+
+                var target = $(this).attr('href');
+                switch(target){
+                    case '#top':
+                        target = 1;
+                        break;
+                    case '#about':
+                        target = 2;
+                        break;
+                    case '#works':
+                        target = 3;
+                        break;
+                    case '#skill':
+                        target = 4;
+                        break;
+                    case '#contact':
+                        target = 5;
+                        break;
+                }
+                Global.section_num = target;
+                if ( target == 1 ) {
+                    Global.shrinkHeader(false);
+                    $('.nav .fade').removeClass('hover');
+                }else{
+                    Global.fire_nav(target);
+                    Global.shrinkHeader(true);
+                }
+                $('body,html').animate({scrollTop:Global.targetScrollTop(target)},600,function(){
+
+                });
+
+                e.preventDefault(); return false;
+            });
+
+            $('.scroll-tip').click(function(event) {
+                if (!Global.isScrolling) {
+                    Global.isScrolling = true;
+                    $('html,body').animate({scrollTop: Global.targetScrollTop(++Global.section_num)}, 400,function(){
+                        Global.isScrolling = false;
+                    });
+                    if ( Global.section_num > 1 ) {
+                        Global.shrinkHeader(true);
+                    }
+                }
+            });
+
+        });
+
+
+        window.onresize = Global.throttle(function(){
+            Global.reCal();
+            Global.fixedbg();
+        },50);
+
+
+        $(window).load(function() {
+
+            Global.fixedbg();
+            Global.reCal();
+            $('html,body').animate({scrollTop:0}, 100);
+            Global.isScrolling = false;
+
+            (function load_init(){
+
+                //资源加载完成之后，开始初始化
+
+                $("body").addClass('finish-loading');
+
+                $('.finish-loading .loading').animate({top:"20px"},600,function(){
+                    $('.back-home').css('opacity',1);
+                    $('.loading').remove();
+                });
+
+                setTimeout(function(){
+                    $('body').removeClass('loading-process');
+                },600);
+
+                Global.fadeInByOrder('.nav',100,function(){
+                    Global.fadeInByOrder('.section-fristpage',300);
+                });
+
+            })();
+
+        });
+
+        window.onscroll = Global.throttle(function(){
+
+            $('body').removeClass('finish-loading');
+            var fadeInTarget;
+            switch(Global.section_num){
+                case 1:
+                    fadeInTarget = '.section-fristpage';
+                    $('body').addClass('finish-loading');
+                    break;
+                case 2:
+                    fadeInTarget = '.about-content';
+                    break;
+                case 3:
+                    fadeInTarget = '.works-list';
+                    break;
+                case 4:
+                    fadeInTarget = '.skill-content';
+                    break;
+                case 5:
+                    fadeInTarget = '.contact-content';
+                    break;
+            }
+
+            Global.fadeInByOrder(fadeInTarget,200);
+
+        },50);
+
+//判断鼠标滚动方向
+        $(document).on('mousewheel DOMMouseScroll', function(e){
+            var e0 = e.originalEvent,
+                    delta = e0.wheelDelta || -e0.detail,
+                    isMouseScrollDown = delta < 0 ? true : false;
+
+            //处理好上下元素数组，开始滚动
+            if (isMouseScrollDown) { //鼠标向下滚动
+
+                Global.scrollHandle(true);
+
+            }else{
+
+                Global.scrollHandle(false);
+
+            }
+
+            e.preventDefault();
+        });
+
+
+    })(jQuery);
+
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?89e36e1431695fd173e2326ff4541313";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+</body>
+</html>

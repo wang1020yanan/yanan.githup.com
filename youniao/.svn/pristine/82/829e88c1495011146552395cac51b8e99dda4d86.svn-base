@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>课程详细</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-mobile.css" rel="stylesheet">
+    <link href="css/responsive-nav.css" rel="stylesheet">
+    <script src="js/responsive-nav.min.js"></script>
+     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!--[if IE 7]>
+    <link rel="stylesheet" href="css/font-awesome-ie7.min.css">
+    <![endif]-->
+    <script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://libs.baidu.com/jquery/2.1.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <div class="wapper">
+      <div class="nav_bot">
+        <div class="nav_bot_l nav_bot_lx"><a><img src="images/nav_b_l.png"><span>路线</span></a></div>
+        <div class="nav_bot_l nav_bot_sc"><a><img src="images/nav_b_s.png"><span>收藏</span></a></div>
+        <div class="nav_bot_l nav_bot_fx"><a href="#" data-toggle="modal" data-target=".mod_sha"><img src="images/nav_b_f.png"><span>分享</span></a></div>
+        <div class="nav_bot_r nav_bot_qkyy">
+          <a href="#" class="nb_qkyy_btn" data-toggle="modal" data-target=".mod_qkyy">抢课预约</a>
+        </div>
+      </div>
+      
+
+      <div class="container container_body">
+        <div class="cdetail_v_con">
+          <img class="cdetail_v_p" src="images/v_p.png">
+          <img class="cdetail_pic_con" src="images/c_pic.png">
+        </div>
+        <div class="cdetail_inf">
+
+          <div class="cdetail_inf_ti">
+            <span class="c_ti">初中一年级英语精英班</span>
+            <span class="c_pc c_q_con">券</span><span class="c_pc c_t_con">荐</span>
+            <span class="c_loc">123.5km</span>
+          </div>
+          <div class="cdetail_gl">
+            <p>口译、新概念系列课程均享有较高知名度。沪上英语培训一线品牌，口译、新概念系列课程均享口译、新概念系列课程均...<span class="cdetail_gl_ar"><img src="images/a_b.png"></span></p>
+          </div>
+          <div class="cdetail_prs">
+            <div class="class_prs"><span class="prs_con">5000元</span><span class="prs_sale">减100～5000元</span></div>
+            <div class="class_ord"><span>231人已预约</span>/<span>1300人已试听</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="container container_body">
+        <a herf="#" onClick="location.href='schooldetail.html'" class="brand_link">
+          <div class="brand_pic"><img src="images/jg-logo.png"></div>
+          <div class="brand_name">精锐一对一<span class="brand_det_btn">></span></div>
+        </a>
+      </div>
+      <div class="container container_body">
+        <div class="cdetail_inf_b">
+          <div><span class="c_pc_b c_q_con">券</span><span class="cdetail_inf_b_r"><b>优惠：</b>抢课预约随机立减100~5000元</span><button class="btn btn_quan" data-toggle="modal" data-target=".mod_quan">爱学鸟</button></div>
+          <div><span class="c_pc_b c_tel_con"><img src="images/ico_tel.png"></span><span class="cdetail_inf_b_r"><b>电话：</b>15250081888</span></div>
+          <div><span class="c_pc_b c_loc_con"><img src="images/ico_loc.png"></span><span class="cdetail_inf_b_r"><b>地址：</b>上海市宝山区三门路561号复旦软件园1A01</span></div>
+          <div><span class="c_pc_b c_tea_con"><img src="images/ico_tea.png"></span><span class="cdetail_inf_b_r"><b>老师：</b>张老师 教龄6年</span><button class="btn btn_tea" data-toggle="modal" data-target=".mod_tea">学鸟名师</button></div>
+          <div><span class="c_pc_b c_tim_con"><img src="images/ico_tim.png"></span><span class="cdetail_inf_b_r"><b>开课：</b>2017年8月上旬 总12课时
+            <div class="tim_con_tab"><span class="tim_con_tab_xq">星期六</span><span class="tim_con_tab_clk">20:00~22:00</span></div>
+            <div class="tim_con_tab"><span class="tim_con_tab_xq">星期日</span><span class="tim_con_tab_clk">20:00~22:00</span></div>
+            <div class="tim_con_tab"><span class="tim_con_tab_xq">星期六</span><span class="tim_con_tab_clk">20:00~22:00</span></div>
+            <div class="tim_con_tab"><span class="tim_con_tab_xq">星期六</span><span class="tim_con_tab_clk">20:00~22:00</span></div>
+          </span></div>
+
+        </div>
+      </div>
+      <div class="class_abt container container_body">
+        <div class="sub_ti"><span class="sub_ti_con">相关课程</span><span class="sub_ti_mor">更多课程 ></span></div>
+        <div class="class_abt_con">
+          <ul>
+            <li>
+              <a href="#" onClick="location.href='classdetail.html'">
+                <div class="abt_pic_con">
+                  <img class="abt_v_p" src="images/v_p.png">
+                  <img class="abt_c_pic" src="images/c_pic.png">
+                </div>
+                <div class="abt_inf">
+                  <p class="abt_inf_ti">初中二年级英语一对一</p>
+                  <p class="abt_inf_time">开班：2017-2-20</p>
+                  <p class="abt_inf_tea"><span>授课：张老师</span><span>教龄：5年</span></p>
+                  <p><span class="c_loc">100人已试听</span><span class="c_pc c_q_con">券</span><span class="c_pc c_t_con">荐</span></p>
+                </div>
+              </a>
+            </li>
+            <li class="abt_gapl">
+              <a href="#" onClick="location.href='classdetail.html'">
+                <div class="abt_pic_con">
+                  <img class="abt_v_p" src="images/v_p.png">
+                  <img class="abt_c_pic" src="images/c_pic.png">
+                </div>
+                <div class="abt_inf">
+                  <p class="abt_inf_ti">初中二年级英语一对一</p>
+                  <p class="abt_inf_time">开班：2017-2-20</p>
+                  <p class="abt_inf_tea"><span>授课：张老师</span><span>教龄：5年</span></p>
+                  <p><span class="c_loc">100人已试听</span><span class="c_pc c_q_con">券</span><span class="c_pc c_t_con">荐</span></p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" onClick="location.href='classdetail.html'">
+                <div class="abt_pic_con">
+                  <img class="abt_v_p" src="images/v_p.png">
+                  <img class="abt_c_pic" src="images/c_pic.png">
+                </div>
+                <div class="abt_inf">
+                  <p class="abt_inf_ti">初中二年级英语一对一</p>
+                  <p class="abt_inf_time">开班：2017-2-20</p>
+                  <p class="abt_inf_tea"><span>授课：张老师</span><span>教龄：5年</span></p>
+                  <p><span class="c_loc">100人已试听</span><span class="c_pc c_q_con">券</span><span class="c_pc c_t_con">荐</span></p>
+                </div>
+              </a>
+            </li>
+            <li class="abt_gapl">
+              <a href="#" onClick="location.href='classdetail.html'">
+                <div class="abt_pic_con">
+                  <img class="abt_v_p" src="images/v_p.png">
+                  <img class="abt_c_pic" src="images/c_pic.png">
+                </div>
+                <div class="abt_inf">
+                  <p class="abt_inf_ti">初中二年级英语一对一</p>
+                  <p class="abt_inf_time">开班：2017-2-20</p>
+                  <p class="abt_inf_tea"><span>授课：张老师</span><span>教龄：5年</span></p>
+                  <p><span class="c_loc">100人已试听</span><span class="c_pc c_q_con">券</span><span class="c_pc c_t_con">荐</span></p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- footer -->
+      <div class="copyright"><p>Copyright ©2016 上海优鸟教育科技有限公司 沪ICP备17002711号</p></div>
+      <!--end footer -->
+    </div>
+
+    <!-- 选券预约弹框 -->
+    <div class="modal mod_qkyy_c mod_qkyy" tabindex="-1" role="dialog">
+          <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title">选券预约</h4>
+                </div>
+                <div class="modal-body-con">
+                  <div class="modal-body-con-b">
+                    <div class="mod_qkyy_con">
+                      <div class="mod_qkyy_con_n"><p>您的学鸟券不适用此课程，您可将此券“赠送好友”后再抢此课程。</p></div>
+                      <ul>
+
+                        <li>
+                          <div class="mod_qkyy_q_con">
+                            <div class="mod_qkyy_t_con">
+                              <div class="mod_qkyy_t_l">
+                                <span class="q_prs_con"><b>¥</b>200</span>
+                                <span class="q_ts_con"><img src="images/q_ico_tx.png">还有3天过期</span>
+                              </div>
+                              <div class="mod_qkyy_t_r">
+                                <div class="q_no_con">
+                                  <span class="q_no_t">NO.</span><span class="q_no_s">161231000001</span><span class="q_no_bss">可使用</span>
+                                </div>
+                                <div class="q_morec_con">
+                                  <span>12门课程均可使用此券</span>
+                                </div>
+                                <div class="q_time_con">
+                                  <span>有效期截止2016年12月25日</span>
+                                </div>
+                              </div>
+                            </div>
+                            <img class="q_bg" src="images/q_b_bg.png">
+                          </div>
+                          <div class="mod_qkyy_btn_yy"><button data-dismiss="modal">预约</button></div>
+                        </li>
+
+                        <li>
+                          <div class="mod_qkyy_q_con">
+                            <div class="mod_qkyy_t_con">
+                              <div class="mod_qkyy_t_l">
+                                <span class="q_prs_con"><b>¥</b>200</span>
+                                <span class="q_ts_con"><img src="images/q_ico_tx.png">还有3天过期</span>
+                              </div>
+                              <div class="mod_qkyy_t_r">
+                                <div class="q_no_con">
+                                  <span class="q_no_t">NO.</span><span class="q_no_s">161231000001</span><span class="q_no_bss">可使用</span>
+                                </div>
+                                <div class="q_morec_con">
+                                  <span>12门课程均可使用此券</span>
+                                </div>
+                                <div class="q_time_con">
+                                  <span>有效期截止2016年12月25日</span>
+                                </div>
+                              </div>
+                            </div>
+                            <img class="q_bg" src="images/q_b_bg.png">
+                          </div>
+                          <div class="mod_qkyy_btn_yy"><button data-dismiss="modal">预约</button></div>
+                        </li>
+
+                        <li>
+                          <div class="mod_qkyy_q_con">
+                            <div class="mod_qkyy_t_con">
+                              <div class="mod_qkyy_t_l">
+                                <span class="q_prs_con"><b>¥</b>200</span>
+                                <span class="q_ts_con"><img src="images/q_ico_tx.png">还有3天过期</span>
+                              </div>
+                              <div class="mod_qkyy_t_r">
+                                <div class="q_no_con">
+                                  <span class="q_no_t">NO.</span><span class="q_no_s">161231000001</span><span class="q_no_bss">可使用</span>
+                                </div>
+                                <div class="q_morec_con">
+                                  <span>12门课程均可使用此券</span>
+                                </div>
+                                <div class="q_time_con">
+                                  <span>有效期截止2016年12月25日</span>
+                                </div>
+                              </div>
+                            </div>
+                            <img class="q_bg" src="images/q_b_bg.png">
+                          </div>
+                          <div class="mod_qkyy_btn_yy"><button data-dismiss="modal">预约</button></div>
+                        </li>
+
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+    </div>
+    <!-- end 选券预约弹框 -->
+
+    <!-- 学鸟名师弹框 -->
+    <div class="modal mod_con mod_tea" tabindex="-1" role="dialog">
+          <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="images/tk-close.png"></span></button>
+                  <img class="modal-header-axn" src="images/tk-tn.png">
+
+                </div>
+                <div class="modal-body-con">
+                  <div class="mod_header_con mod_header_tea">
+                      <img class="mod_header_yun" src="images/tk-yun.png">
+                  </div>
+                  <div class="modal-body-con-b">
+                      <div class="mod_tea_con">
+                        <div class="mod_bhead_con">
+                          <span class="mod_quan_head_con ">学鸟名师</span>
+                        </div>
+                        <div class="mod_tea_body_con">
+                          <div class="mod_body_text mod_body_text1">
+                            <p>
+爱学鸟所有课程均经过严格筛选。凡标注“学鸟名师”的课程，更是优中选精，一课难求。
+                            </p>
+                          </div>
+                          <div class="mod_body_text mod_body_text2">
+                            <p>
+每家机构仅有122名最优秀的老师能够当选学鸟名师。
+                            </p>
+                          </div>
+                          <div class="mod_body_text mod_body_text3">
+                            <p>
+学鸟名师不仅教学能力强、效果好，深受学生喜爱，而且多有独到的教育理念，丰富的教学经验，是各学科的教学精英。
+                            </p>
+                          </div>
+
+                          <div class="mod_body_tea_more" data-dismiss="modal" >
+                            <button class="mod_tea_more_btn">精选好课 在线试听 >></button>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+    </div>
+    <!-- end 学鸟名师弹框 -->
+
+    <!-- 爱学鸟弹框 -->
+    <div class="modal mod_con mod_quan" tabindex="-1" role="dialog">
+          <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="images/tk-close.png"></span></button>
+                  <img class="modal-header-axn" src="images/tk-tn.png">
+
+                </div>
+                <div class="modal-body-con">
+                  <div class="mod_header_con mod_header_quan">
+                      <img class="mod_header_yun" src="images/tk-yun.png">
+                  </div>
+                  <div class="modal-body-con-b">
+                      <div class="mod_tea_con">
+                        <div class="mod_bhead_con">
+                          <span class="mod_tea_head_con ">学鸟券</span>
+                        </div>
+                        <div class="mod_tea_body_con">
+                          <div class="mod_body_text mod_body_text1">
+                            <p>
+                              <span>如何获得</span>
+点击点部“0元抢课”或“必须抢”，参加全民抢课抽奖活动，就能获得学鸟券。据说中奖率100%哦!
+                            </p>
+                          </div>
+
+                          <div class="mod_body_text mod_body_text2">
+                            <p>
+                              <span>券的价值</span>
+点击点部“0元抢课”或“必须抢”，参加全民抢课抽奖活动，就能获得学鸟券。据说中奖率100%哦!
+                            </p>
+                          </div>
+
+                          <div class="mod_body_text mod_body_text3">
+                            <p>
+                              <span>使用范围</span>
+点击点部“0元抢课”或“必须抢”，参加全民抢课抽奖活动，就能获得学鸟券。据说中奖率100%哦!
+                            </p>
+                          </div>
+
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+    </div>
+    <!-- end 爱学鸟弹框 -->
+
+
+
+ <!-- 更改地址弹框 -->
+      <div class="modal mod_con mod_cds" tabindex="-1" role="dialog">
+          <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="images/tk-close.png"></span></button>
+                  <img class="modal-header-axn" src="images/tk-tn.png">
+                </div>
+                <div class="modal-body-con">
+                  <div class="modal-body-con-b">
+                    <div class="mod_cds_con">
+                      <div class="mod_cds_ti"><p>请选择地址类型</p></div>
+                      <div class="mod_cds_c mod_cds_hq"><img src="images/m_hqdz.png"><span>当前位置</span></div>
+                      <div class="mod_cds_c mod_cds_zdy"><img src="images/m_zdydz.png"><span>自定义地址</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+      </div> 
+      <!-- end 更改地址弹框 -->
+
+
+
+    <!-- 分享好友弹框 -->
+    <div class="modal mod_sha_c mod_sha" tabindex="-1" role="dialog">
+          <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-body-con">
+                  <div class="mod_sha_c_btn"><a href="#"  data-dismiss="modal"><img src="images/sha_pic.png"></a></div>
+                </div>
+              </div>
+          </div>
+    </div>
+    <!--  end 分享好友弹框 -->
+
+
+  </body>
+</html>

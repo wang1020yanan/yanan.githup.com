@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>我的学鸟券</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-mobile.css" rel="stylesheet">
+    <link href="css/responsive-nav.css" rel="stylesheet">
+    <script src="js/responsive-nav.min.js"></script>
+     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!--[if IE 7]>
+    <link rel="stylesheet" href="css/font-awesome-ie7.min.css">
+    <![endif]-->
+    <!-- Owl Stylesheets -->
+    <script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://libs.baidu.com/jquery/2.1.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <div class="wapper">
+
+      <div class="container container_body usermag_body">
+        <div class="usermag_tx_con usermag_tx_con_q">
+          <img class="user_tx" src="images/touxiang.png">
+          <div class="user_in">
+           <h3 class="user_name">李思思</h3>
+            <p class="user_no">学鸟号：1234567890</p>
+          </div>
+          <button class="user_code_btn"><img src="images/ico_cod.png"></button>
+        </div>
+      </div>
+
+      <div class="container user_quan_con">
+        <div class="user_q_con">
+          <div class="quan_con">
+              <div class="quan_t_con">
+                <div class="quan_t_l">
+                  <span class="q_prs_con">200</span>
+                  <span class="q_ts_con"><img src="images/q_ico_tx.png">还有3天过期</span>
+                </div>
+                <div class="quan_t_r">
+                  <div class="q_no_con">
+                    <span class="q_no_t">NO.</span><span class="q_no_s">161231000001</span><span class="q_no_bss">可使用</span>
+                  </div>
+                  <div class="q_morec_con">
+                    <span>12门课程均可使用</span>
+                  </div>
+                  <div class="q_time_con">
+                    <span>有效期截止2016年12月25日</span>
+                  </div>
+                </div>
+              </div>
+              <img class="q_bg" src="images/q_b_bg.png">
+          </div>
+          <div class="quan_class">
+            <div class="quan_class_top">
+              <span>初中一年级英语强化班</span><button class="actlis_yu_btn c_btn" data-toggle="modal" data-target=".mod_yu_con">预约课程</button><button class="actlis_detail_btn c_btn" onClick="location.href='classdetail.html'">课程详情</button>
+            </div>
+            <div class="quan_class_b">
+              <p>上课时间：2016-12-25</p>
+              <p>上课地址：上海市宝山区三门路复旦软件园高竞123号</p>
+            </div>
+            <div class="quan_btn_con">
+              <button class="q_btn moc_btn" onClick="location.href='classlist_q.html'">查看所有可用课程</button><button onClick="location.href='usermag_sel_frd.html'" class="q_btn con_btn">赠送好友</button>
+            </div>
+          </div>
+        </div>
+        <div class="user_q_con">
+          <div class="quan_con">
+              <div class="quan_t_con">
+                <div class="quan_t_l">
+                  <span class="q_prs_con">100</span>
+                  <span class="q_ts_con"><img src="images/q_ico_tx.png">还有3天过期</span>
+                </div>
+                <div class="quan_t_r">
+                  <div class="q_no_con">
+                    <span class="q_no_t">NO.</span><span class="q_no_s">161231000001</span><span class="q_no_bss">可使用</span>
+                  </div>
+                  <div class="q_morec_con">
+                    <span>1234门课程均可使用</span>
+                  </div>
+                  <div class="q_time_con">
+                    <span>有效期截止2016年12月25日</span>
+                  </div>
+                </div>
+              </div>
+              <img class="q_bg" src="images/q_g_bg.png">
+          </div>
+          <div class="quan_class">
+            <div class="quan_class_top">
+              <span>初中一年级英语强化班</span><button class="actlis_yu_btn c_btn" data-toggle="modal" data-target=".mod_yu_con">预约课程</button><button class="actlis_detail_btn c_btn" onClick="location.href='classdetail.html'">课程详情</button>
+            </div>
+            <div class="quan_class_b">
+              <p>上课时间：2016-12-25</p>
+              <p>上课地址：上海市宝山区三门路复旦软件园高竞123号</p>
+            </div>
+            <div class="quan_btn_con">
+              <button class="q_btn moc_btn" onClick="location.href='classlist_q.html'">查看所有可用课程</button><button onClick="location.href='usermag_sel_frd.html'" class="q_btn con_btn">赠送好友</button>
+            </div>
+          </div>
+        </div>
+        <div class="user_q_con user_q_share">
+          <div class="quan_con quan_share">
+              <div class="quan_t_con">
+                <div class="quan_t_l">
+                  <span class="q_prs_con">500</span>
+                  <span class="q_ts_con"><img src="images/q_ico_tx.png">还有3天过期</span>
+                </div>
+                <div class="quan_t_r">
+                  <div class="q_no_con">
+                    <span class="q_no_t">NO.</span><span class="q_no_s">161231000001</span><span class="q_no_bss">转赠中</span>
+                  </div>
+                  <div class="q_morec_con">
+                    <span>12门课程均可使用</span>
+                  </div>
+                  <div class="q_time_con">
+                    <span>有效期截止2016年12月25日</span>
+                  </div>
+                </div>
+              </div>
+              <img class="q_bg" src="images/q_r_bg.png">
+          </div>
+          <div class="quan_class">
+            <div class="quan_class_top">
+              <span>初中一年级英语强化班</span><button class="actlis_yu_btn c_btn">预约课程</button><button class="actlis_detail_btn c_btn" onClick="location.href='classdetail.html'">课程详情</button>
+            </div>
+            <div class="quan_class_b">
+              <p>上课时间：2016-12-25</p>
+              <p>上课地址：上海市宝山区三门路复旦软件园高竞123号</p>
+            </div>
+            <div class="quan_btn_con">
+              <button class="q_btn moc_btn" onClick="location.href='classlist_q.html'">查看所有可用课程</button><button class="q_btn cancel_btn">取消转赠</button>
+            </div>
+          </div>
+        </div>
+        <div class="user_q_con user_q_outdate">
+          <div class="quan_con quan_outdate">
+              <div class="quan_t_con">
+                <div class="quan_t_l">
+                  <span class="q_prs_con">200</span>
+                  <span class="q_ts_con"><img src="images/q_ico_tx.png">已过期</span>
+                </div>
+                <div class="quan_t_r">
+                  <div class="q_no_con">
+                    <span class="q_no_t">NO.</span><span class="q_no_s">161231000001</span><span class="q_no_bss">已过期</span>
+                  </div>
+                  <div class="q_morec_con">
+                    <span>12门课程均可使用</span>
+                  </div>
+                  <div class="q_time_con">
+                    <span>有效期截止2016年12月25日</span>
+                  </div>
+                </div>
+              </div>
+              <img class="q_bg" src="images/q_n_bg.png">
+          </div>
+          <div class="quan_class">
+            <div class="quan_class_top">
+              <span>初中一年级英语强化班</span><button class="actlis_yu_btn c_btn">预约课程</button><button class="actlis_detail_btn c_btn" onClick="location.href='classdetail.html'">课程详情</button>
+            </div>
+            <div class="quan_class_b">
+              <p>上课时间：2016-12-25</p>
+              <p>上课地址：上海市宝山区三门路复旦软件园高竞123号</p>
+            </div>
+            <div class="quan_btn_con">
+              <button class="q_btn del_btn">删除此券</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- footer -->
+      <div class="copyright"><p>Copyright ©2016 上海优鸟教育科技有限公司 沪ICP备17002711号</p></div>
+      <!--end footer -->
+    </div>
+
+
+    <!-- 预约确认 -->
+      <div class="modal mod_con mod_yu_con" tabindex="-1" role="dialog">
+          <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="images/tk-close.png"></span></button>
+                  <img class="modal-header-axn" src="images/tk-tn.png">
+                </div>
+                <div class="modal-body-con">
+                  <div class="modal-body-con-b">
+                    <div class="mod_top_gap"></div>
+                    <div class="mod_bhead_con">
+                        <span class="mod_quan_head_con ">预约成功</span>
+                    </div>
+                    <div class="mod_yu_b">
+                      <div class="mod_yu_b_con">
+                        <h3 class="mod_yu_b_t">初一英语提升班一对三</h3>
+                        <p class="mod_yu_b_d"><span>上海市宝山区三门路561号复旦软件园1A01-108</span></p>
+                        <p class="mod_yu_b_p"><span>021-12345678</span><button>立即咨询</button></p>
+                        <p class="mod_yu_b_r"><span>2017年2月15日前报名有效</span></p>
+                        <div class="mod_yu_b_n">学鸟券编号：<span>161225000001</span></div>
+                      </div>
+                      <div class="mod_yu_b_btm">
+                        <p>报名时出示此券，可抵200元课程费用</p>
+                        <p>报名前请电话确认课程尚未招满</p>
+                        <p>报名从速，额满即止</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+      </div> 
+      <!-- end 预约确认 -->
+  </body>
+</html>

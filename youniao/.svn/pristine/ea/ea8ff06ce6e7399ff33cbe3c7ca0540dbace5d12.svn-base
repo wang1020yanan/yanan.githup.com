@@ -1,0 +1,30 @@
+
+/*----------------------------------------Mobile Styles----------------------------------------*/
+@media only screen and (max-width: 1640px){
+}
+@media only screen and (max-width: 1440px){
+
+}
+
+
+@media only screen and (max-width: 1310px){
+}
+@media only screen and (max-width: 1201px){
+}
+@media only screen and (max-width: 768px){
+    body { font-size: 0.75rem; max-width: 100%; 
+     }
+}
+@media only screen and (min-width: 768px){
+    body .wapper { width: 50%; margin: 0 auto;}
+    body .container { width: 100%}
+}
+
+
+@media only screen and (max-width: 641px){
+    html {
+       font-size: 110%!important; /* 15.04÷16=94% */
+    }
+    body { font-size: 0.8rem; }
+
+}

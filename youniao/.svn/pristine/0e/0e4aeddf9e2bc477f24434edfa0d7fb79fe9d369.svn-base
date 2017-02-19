@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>学鸟社区</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-mobile.css" rel="stylesheet">
+    <link href="css/responsive-nav.css" rel="stylesheet">
+    <script src="js/responsive-nav.min.js"></script>
+     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!--[if IE 7]>
+    <link rel="stylesheet" href="css/font-awesome-ie7.min.css">
+    <![endif]-->
+    <!-- Owl Stylesheets -->
+    <script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://libs.baidu.com/jquery/2.1.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <div class="wapper">
+      <div class="container container_body">
+        <img class="com_banner_con" src="images/com_banner.png">
+        <ul class="com_t_con">
+          <li class="com_t_no1">
+            <a href="#" data-toggle="modal" data-target=".mod_user_com">
+              <img class="com_code_con" src="images/com_code_no1.png">
+              <h3>初中英语交流群</h3>
+              <p>权威机构一线英语学科名师，帮您推荐众多好课，解答课上课余困惑。</p>
+              <div><button>点击加入</button></div>
+            </a>
+          </li>
+          <li class="com_t_no1">
+            <a href="#" data-toggle="modal" data-target=".mod_user_com">
+              <img class="com_code_con" src="images/com_code_no1.png">
+              <h3>初中英语交流群</h3>
+              <p>权威机构一线英语学科名师，帮您推荐众多好课，解答课上课余困惑。</p>
+              <div><button>点击加入</button></div>
+            </a>
+          </li>
+          <li class="com_t_no1">
+            <a href="#" data-toggle="modal" data-target=".mod_user_com">
+              <img class="com_code_con" src="images/com_code_no1.png">
+              <h3>初中英语交流群</h3>
+              <p>权威机构一线英语学科名师，帮您推荐众多好课，解答课上课余困惑。</p>
+              <div><button>点击加入</button></div>
+            </a>
+          </li>
+          <li class="com_t_no1">
+            <a href="#" data-toggle="modal" data-target=".mod_user_com">
+              <img class="com_code_con" src="images/com_code_no1.png">
+              <h3>初中英语交流群</h3>
+              <p>权威机构一线英语学科名师，帮您推荐众多好课，解答课上课余困惑。</p>
+              <div><button>点击加入</button></div>
+            </a>
+          </li>
+          <li class="com_t_no1">
+            <a href="#" data-toggle="modal" data-target=".mod_user_com">
+              <img class="com_code_con" src="images/com_code_no1.png">
+              <h3>初中英语交流群</h3>
+              <p>权威机构一线英语学科名师，帮您推荐众多好课，解答课上课余困惑。</p>
+              <div><button>点击加入</button></div>
+            </a>
+          </li>
+          <li class="com_t_no1">
+            <a href="#" data-toggle="modal" data-target=".mod_user_com">
+              <img class="com_code_con" src="images/com_code_no1.png">
+              <h3>初中英语交流群</h3>
+              <p>权威机构一线英语学科名师，帮您推荐众多好课，解答课上课余困惑。</p>
+              <div><button>点击加入</button></div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- footer -->
+      <div class="copyright"><p>Copyright ©2016 上海优鸟教育科技有限公司 沪ICP备17002711号</p></div>
+      <!--end footer -->
+    </div>
+
+     <!-- 二维码弹框 -->
+      <div class="modal mod_con mod_user_com" tabindex="-1" role="dialog">
+          <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="images/tk-close.png"></span></button>
+                </div>
+                <div class="modal-body-con">
+                  <div class="modal-body-con-b">
+                    <img class="mod_com_code_con" src="images/com_code_no1.png">
+                    <p>长按识别二维码加入此群</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+      </div> 
+      <!-- end 二维码弹框 -->
+  </body>
+</html>

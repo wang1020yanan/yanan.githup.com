@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Wangyanan</title>
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->		
+<!--fonts-->
+<link href='http://fonts.useso.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400' rel='stylesheet' type='text/css'>
+<link href='http://fonts.useso.com/css?family=Signika:700,300,400,600' rel='stylesheet' type='text/css'>
+<!--//fonts-->
+<script src="js/jquery.min.js"> </script>
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<!-- js -->
+<script src="js/bootstrap.js"></script>
+<!-- js -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<!--/script-->
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+$(".scroll").click(function(event){		
+event.preventDefault();
+$('html,body').animate({scrollTop:$(this.hash).offset().top},900);
+});
+});
+</script>
+</head>
+<body>
+<!--header-->
+<div id="home" class="header">
+		<div class="header-top">
+			<div class="container">
+					<div class="header-right-text">
+						<h3>telephone:<span>086</span><i>18501751990</i></h3>
+					</div>
+					<div class="header-btn">
+						<a href="tel:18501751990">拨打电话</a>
+					</div>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+<div class="header-nav effect2">
+	<div class="container">
+		<div class="navigation">
+			<nav class="navbar navbar-default">
+				<div class="navbar-header">
+					  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+					  </button>
+					</div>
+					<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+					  <ul class="nav navbar-nav">
+						<li class="active"><a class="scroll" href="#home">主页 <span class="sr-only">(current)</span></a></li>
+						<li><a class="scroll" href="#About">技能</a></li>
+						<li><a class="scroll" href="#Portfolio">项目</a></li>
+						<li><a class="scroll" href="#Contact">联系</a></li>
+					  </ul>
+			  <div class="clearfix"> </div>
+			</div><!-- /.navbar-collapse -->
+		</nav>
+	</div>
+	</div>
+	</div>
+	<div class="clearfix"> </div>
+</div>
+			  <!-- script-for-menu -->
+		 <script>
+				$("span.menu").click(function(){
+					$(".top-nav ul").slideToggle("slow" , function(){
+					});
+				});
+		 </script>
+		 <!-- script-for-menu -->
+<div class="banner">
+	<div class="container">
+		<div class="grid__item color-9">
+				<a class="link link--ilin" href="#"><span>Yanan</span><span>Wang</span></a>
+			</div>
+		<p>一个对互联网执爱的WEB前端开发‘人员’。。。</span></p>
+	</div>
+</div>
+<div class="content-part">
+<div class="body-pic">
+	<div class="container">
+		<img src="images/body.png" />
+	</div>
+	<div class="body-pic-bottom">
+	
+</div>
+
+</div>
+<div class="clearfix"> </div>
+<div id="About" class="skills">
+	<div class="container">
+		<div class="skills-info">
+		<h3>职业技能</h3>
+			<div class="study2">
+						<h4>Html</h4>
+							<div class="progress">
+							  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
+								<span class="sr-only">90% Complete (success)</span>
+							  </div>
+							</div>
+						<h4>Css</h4>
+						<div class="progress">
+						  <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
+							<span class="sr-only">90% Complete</span>
+						  </div>
+						</div>
+						<h4>Js</h4>
+						<div class="progress">
+						  <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
+							<span class="sr-only">90% Complete (warning)</span>
+						  </div>
+						</div>
+				        <h4>VueJs</h4>
+				        <div class="progress">
+				        	<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
+				        		<span class="sr-only">50% Complete (warning)</span>
+				        	</div>
+				        </div>
+				        <h4>AngularJs</h4>
+				        <div class="progress">
+				        	<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+				        		<span class="sr-only">60% Complete (warning)</span>
+				        	</div>
+				        </div>
+						<h4>Php</h4><h4>
+						<div class="progress">
+						  <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+							<span class="sr-only">80% Complete (danger)</span>
+						  </div>
+						</div>
+				        <h4>Java</h4><h4>
+				        <div class="progress">
+				        	<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+				        		<span class="sr-only">40% Complete (danger)</span>
+				        	</div>
+				        </div>
+				        		</h4>
+			</div>
+			</div>
+			</div>
+			</div>
+</div>
+<!--<div class="social-icon">-->
+	<!--<div class="container">-->
+		<!--<a href="#">-->
+		<!--<div class="facebook">-->
+			<!--<span class="icon1"> </span>-->
+			<!--<label><i>微信</i> <br />wyn1019707077</label>-->
+		<!--</div>-->
+		<!--</a>-->
+		<!--<a href="#">-->
+		<!--<div class="twitter">-->
+			<!--<span class="icon2"> </span>-->
+			<!--<label><i>QQ</i> <br />1019707077</label>-->
+		<!--</div>-->
+		<!--</a>-->
+		<!--<a href="#">-->
+		<!--<div class="youtube">-->
+			<!--<span class="icon3"> </span>-->
+			<!--<label><i>githup</i> <br />wang1020yanan</label>-->
+		<!--</div>-->
+		<!--</a>-->
+		<!--<div class="clearfix"> </div>-->
+	<!--</div>-->
+	<!--<div class="clearfix"> </div>-->
+<!--</div>-->
+		<!--light-box-js -->
+				<script src="js/jquery.chocolat.js"></script>
+				<link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen" charset="utf-8" />
+				<!--light-box-files -->
+				<script type="text/javascript" charset="utf-8">
+				$(function() {
+					$('.moments-bottom a').Chocolat();
+				});
+				</script> 
+			<!--//end-gallery js-->
+<div id="Portfolio" class="portfolio">
+			<div class="container">
+				<h3>项目快照</h3>
+        <div class="gallery-info">
+				<div class="col-md-4 galry-grids moments-bottom">
+					<a class="b-link-stripe b-animate-go" href="images/img9.jpg">
+						<img src="images/img9.jpg" class="img-responsive" alt="">
+						<div class="b-wrapper">
+							<span class="b-animate b-from-left    b-delay03 ">
+								<img class="img-responsive" src="images/e.png" alt=""/>
+							</span>					
+						</div>
+					</a>				
+				</div>
+				<div class="col-md-4 galry-grids moments-bottom">
+					<a class="b-link-stripe b-animate-go" href="images/img10.jpg">
+						<img src="images/img10.jpg" class="img-responsive" alt="">
+						<div class="b-wrapper">
+							<span class="b-animate b-from-left b-delay03 ">
+								<img class="img-responsive" src="images/e.png" alt=""/>
+							</span>					
+						</div>
+					</a>				
+				</div>
+				<div class="col-md-4 galry-grids moments-bottom">
+					<a class="b-link-stripe b-animate-go" href="images/img11.jpg">
+						<img src="images/img11.jpg" class="img-responsive" alt="">
+						<div class="b-wrapper">
+							<span class="b-animate b-from-left    b-delay03 ">
+								<img class="img-responsive" src="images/e.png" alt=""/>
+							</span>					
+						</div>
+					</a>				
+				</div>				
+				<div class="col-md-4 galry-grids moments-bottom">
+					<a class="b-link-stripe b-animate-go" href="images/img12.jpg">
+						<img src="images/img12.jpg" class="img-responsive" alt="">
+						<div class="b-wrapper">
+							<span class="b-animate b-from-left    b-delay03 ">
+								<img class="img-responsive" src="images/e.png" alt=""/>
+							</span>					
+						</div>
+					</a>				
+				</div>
+				<div class="col-md-4 galry-grids moments-bottom">
+					<a class="b-link-stripe b-animate-go" href="images/img13.jpg">
+						<img src="images/img13.jpg" class="img-responsive" alt="">
+						<div class="b-wrapper">
+							<span class="b-animate b-from-left    b-delay03 ">
+								<img class="img-responsive" src="images/e.png" alt=""/>
+							</span>					
+						</div>
+					</a>				
+				</div>
+				<div class="col-md-4 galry-grids moments-bottom">
+					<a class="b-link-stripe b-animate-go" href="images/img14.jpg">
+						<img src="images/img14.jpg" class="img-responsive" alt="">
+						<div class="b-wrapper">
+							<span class="b-animate b-from-left    b-delay03 ">
+								<img class="img-responsive" src="images/e.png" alt=""/>
+							</span>					
+						</div>
+					</a>				
+				</div>
+				<div class="col-md-4 galry-grids moments-bottom">
+					<a class="b-link-stripe b-animate-go" href="images/img15.jpg">
+						<img src="images/img15.jpg" class="img-responsive" alt="">
+						<div class="b-wrapper">
+							<span class="b-animate b-from-left    b-delay03 ">
+								<img class="img-responsive" src="images/e.png" alt=""/>
+							</span>					
+						</div>
+					</a>				
+				</div>
+				<div class="col-md-4 galry-grids moments-bottom">
+					<a class="b-link-stripe b-animate-go" href="images/img16.jpg">
+						<img src="images/img16.jpg" class="img-responsive" alt="">
+						<div class="b-wrapper">
+							<span class="b-animate b-from-left    b-delay03 ">
+								<img class="img-responsive" src="images/e.png" alt=""/>
+							</span>					
+						</div>
+					</a>				
+				</div>
+				<div class="col-md-4 galry-grids moments-bottom">
+					<a class="b-link-stripe b-animate-go" href="images/img17.jpg" >
+						<img src="images/img17.jpg" class="img-responsive" alt="">
+						<div class="b-wrapper">
+							<span class="b-animate b-from-left    b-delay03 ">
+								<img class="img-responsive" src="images/e.png" alt=""/>
+							</span>					
+						</div>
+					</a>				
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			</div>
+</div>
+			<div id="Contact" class="contact">
+	<div class="container">
+		<div class="content_middle_bottom">
+          <h3 class="tz-title-3">联系我哦</h3>
+		  <h4>拥有独立的开发能力，有求知欲，缜密的逻辑思维，不怕吃苦，性格积极向上，扎实的前端基础，两年的开发经验！</h4>
+		</div>
+		<div class="col-sm-8 grid_2">
+		   <h3>联系我</h3>
+	       <form>
+			 <input type="text" class="text" value="姓名" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Name';}">
+			 <input type="text" class="text" value="Email" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Email';}">
+			 <textarea value="备注" onFocus="this.value= '';" onBlur="if (this.value == '') {this.value = 'Message';}">Message</textarea>
+			 <input id="submits" type="submit" value="发送">
+		  </form>
+	    </div>
+		<div class="col-sm-4 map">
+
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+</div>
+<div class="footer">
+	<div class="copy">
+		<p>Copyright &copy; 2016.yananwang</p>
+   </div>
+   <script type="text/javascript">
+						$(document).ready(function() {
+							/*
+							var defaults = {
+					  			containerID: 'toTop', // fading element id
+								containerHoverID: 'toTopHover', // fading element hover id
+								scrollSpeed: 1200,
+								easingType: 'linear' 
+					 		};
+							*/
+							
+							$().UItoTop({ easingType: 'easeOutQuart' });
+							
+						});
+					</script>
+				<a href="#" id="toTop" style="display: block;"><span id="toTopHover"></span> <span id="toTopHover" style="opacity: 1;"> </span></a>
+</div>
+</body>
+</html>

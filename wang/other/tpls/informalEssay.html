@@ -1,0 +1,24 @@
+<link rel="stylesheet" href="./css/informalEssay.css">
+<div class="container info-con">
+   <div class="row">
+       <div class="col-md-3 my-right hidden-xs">
+           <div class="col-md-12  alert  all-info text-c"  role="alert">
+               <a class="button button-primary button-rounded" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                   <i class="fa fa-bars"></i>&nbsp;select
+               </a>
+               <div class="collapse" id="collapseExample">
+                   <div class="well" style="margin-bottom: 0">
+                       <p><a class="button button-royal button-rounded button-large" href="#/informalEssay/infos" role="button" >文章&nbsp;<i class="fa fa-edit"></i></a></p>
+
+                       <p><a class="button button-highlight button-rounded button-large" href="#/informalEssay/tools" role="button">工具&nbsp;<i class="fa fa-gear"></i></a></p>
+
+                       <p><a class="button button-caution button-rounded button-large " href="#/informalEssay/loves" role="button">收藏&nbsp;<i class="fa fa-heart-o"></i></a></p>
+                   </div>
+               </div>
+           </div>
+       </div>
+       <div class="col-md-9 all-contain" ui-view="" style=" height:{{height}}px">
+
+       </div>
+   </div>
+</div>

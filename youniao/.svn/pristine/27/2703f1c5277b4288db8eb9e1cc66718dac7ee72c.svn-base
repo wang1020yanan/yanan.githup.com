@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>课程列表</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-mobile.css" rel="stylesheet">
+    <link href="css/responsive-nav.css" rel="stylesheet">
+    <script src="js/responsive-nav.min.js"></script>
+     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!--[if IE 7]>
+    <link rel="stylesheet" href="css/font-awesome-ie7.min.css">
+    <![endif]-->
+    <script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://libs.baidu.com/jquery/2.1.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <div class="wapper">
+      
+      <div class="container">
+        <div class="top_select">
+          <div class="t_s_c">年级<span><img src="images/a_b.png"></span></div>
+          <div class="t_s_s">科目<span><img src="images/a_b.png"></span></div>
+          <div class="t_s_p">品牌<span><img src="images/a_b.png"></span></div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="loc_con"><span><img src="images/i_l.png"></span>当前位置：宝山区</div>
+        <div class="c-loc"><button data-toggle="modal" data-target=".mod_cds">更改地址</button></div>
+      </div>
+      <div class="container container_body">
+        <ul class="class_list_con">
+          <li class="class_li">
+            <a class="class_li_a">
+              <div class="lis_l">
+                <img class="clis_v_p" src="images/v_p.png">
+                <img class="clis_pic_con" src="images/c_pic.png">
+                <span>123人已试听</span>
+              </div>
+              <div class="lis_r">
+                <div class="lis_r_t">
+                  <span class="c_ti">初中一年级英语精英班</span><span class="c_pc c_q_con">券</span><span class="c_pc c_t_con">荐</span><span class="c_loc">123.5km</span>
+                </div>
+                <div class="lis_r_m">
+                  <div class="c_pas">
+                    <span>精锐一对一</span>
+                    <span>七年级</span>
+                    <span>英语</span>
+                    <span>一对三</span>
+                  </div>
+                </div>
+                <div class="lis_r_b">
+                  <div class="class_prs"><span class="prs_con">5000元</span><span class="prs_sale">减100～5000元</span></div>
+                  <div class="class_ord">231人已预约</div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="class_li">
+            <a class="class_li_a">
+              <div class="lis_l">
+                <img class="clis_v_p" src="images/v_p.png">
+                <img class="clis_pic_con" src="images/c_pic.png">
+                <span>123人已试听</span>
+              </div>
+              <div class="lis_r">
+                <div class="lis_r_t">
+                  <span class="c_ti">初中一年级英语精英班</span><span class="c_pc c_q_con">券</span><span class="c_pc c_t_con">荐</span><span class="c_loc">123.5km</span>
+                </div>
+                <div class="lis_r_m">
+                  <div class="c_pas">
+                    <span>精锐一对一</span>
+                    <span>七年级</span>
+                    <span>英语</span>
+                    <span>一对三</span>
+                  </div>
+                </div>
+                <div class="lis_r_b">
+                  <div class="class_prs"><span class="prs_con">5000元</span><span class="prs_sale">减100～5000元</span></div>
+                  <div class="class_ord">231人已预约</div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="class_li">
+            <a class="class_li_a">
+              <div class="lis_l">
+                <img class="clis_v_p" src="images/v_p.png">
+                <img class="clis_pic_con" src="images/c_pic.png">
+                <span>123人已试听</span>
+              </div>
+              <div class="lis_r">
+                <div class="lis_r_t">
+                  <span class="c_ti">初中一年级英语精英班</span><span class="c_pc c_q_con">券</span><span class="c_pc c_t_con">荐</span><span class="c_loc">123.5km</span>
+                </div>
+                <div class="lis_r_m">
+                  <div class="c_pas">
+                    <span>精锐一对一</span>
+                    <span>七年级</span>
+                    <span>英语</span>
+                    <span>一对三</span>
+                  </div>
+                </div>
+                <div class="lis_r_b">
+                  <div class="class_prs"><span class="prs_con">5000元</span><span class="prs_sale">减100～5000元</span></div>
+                  <div class="class_ord">231人已预约</div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="class_li">
+            <a class="class_li_a">
+              <div class="lis_l">
+                <img class="clis_v_p" src="images/v_p.png">
+                <img class="clis_pic_con" src="images/c_pic.png">
+                <span>123人已试听</span>
+              </div>
+              <div class="lis_r">
+                <div class="lis_r_t">
+                  <span class="c_ti">初中一年级英语精英班</span><span class="c_pc c_q_con">券</span><span class="c_pc c_t_con">荐</span><span class="c_loc">123.5km</span>
+                </div>
+                <div class="lis_r_m">
+                  <div class="c_pas">
+                    <span>精锐一对一</span>
+                    <span>七年级</span>
+                    <span>英语</span>
+                    <span>一对三</span>
+                  </div>
+                </div>
+                <div class="lis_r_b">
+                  <div class="class_prs"><span class="prs_con">5000元</span><span class="prs_sale">减100～5000元</span></div>
+                  <div class="class_ord">231人已预约</div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="class_li">
+            <a class="class_li_a">
+              <div class="lis_l">
+                <img class="clis_v_p" src="images/v_p.png">
+                <img class="clis_pic_con" src="images/c_pic.png">
+                <span>123人已试听</span>
+              </div>
+              <div class="lis_r">
+                <div class="lis_r_t">
+                  <span class="c_ti">初中一年级英语精英班</span><span class="c_pc c_q_con">券</span><span class="c_pc c_t_con">荐</span><span class="c_loc">123.5km</span>
+                </div>
+                <div class="lis_r_m">
+                  <div class="c_pas">
+                    <span>精锐一对一</span>
+                    <span>七年级</span>
+                    <span>英语</span>
+                    <span>一对三</span>
+                  </div>
+                </div>
+                <div class="lis_r_b">
+                  <div class="class_prs"><span class="prs_con">5000元</span><span class="prs_sale">减100～5000元</span></div>
+                  <div class="class_ord">231人已预约</div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="class_li">
+            <a class="class_li_a">
+              <div class="lis_l">
+                <img class="clis_v_p" src="images/v_p.png">
+                <img class="clis_pic_con" src="images/c_pic.png">
+                <span>123人已试听</span>
+              </div>
+              <div class="lis_r">
+                <div class="lis_r_t">
+                  <span class="c_ti">初中一年级英语精英班</span><span class="c_pc c_q_con">券</span><span class="c_pc c_t_con">荐</span><span class="c_loc">123.5km</span>
+                </div>
+                <div class="lis_r_m">
+                  <div class="c_pas">
+                    <span>精锐一对一</span>
+                    <span>七年级</span>
+                    <span>英语</span>
+                    <span>一对三</span>
+                  </div>
+                </div>
+                <div class="lis_r_b">
+                  <div class="class_prs"><span class="prs_con">5000元</span><span class="prs_sale">减100～5000元</span></div>
+                  <div class="class_ord">231人已预约</div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="class_li">
+            <a class="class_li_a">
+              <div class="lis_l">
+                <img class="clis_v_p" src="images/v_p.png">
+                <img class="clis_pic_con" src="images/c_pic.png">
+                <span>123人已试听</span>
+              </div>
+              <div class="lis_r">
+                <div class="lis_r_t">
+                  <span class="c_ti">初中一年级英语精英班</span><span class="c_pc c_q_con">券</span><span class="c_pc c_t_con">荐</span><span class="c_loc">123.5km</span>
+                </div>
+                <div class="lis_r_m">
+                  <div class="c_pas">
+                    <span>精锐一对一</span>
+                    <span>七年级</span>
+                    <span>英语</span>
+                    <span>一对三</span>
+                  </div>
+                </div>
+                <div class="lis_r_b">
+                  <div class="class_prs"><span class="prs_con">5000元</span><span class="prs_sale">减100～5000元</span></div>
+                  <div class="class_ord">231人已预约</div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="class_li">
+            <a class="class_li_a">
+              <div class="lis_l">
+                <img class="clis_v_p" src="images/v_p.png">
+                <img class="clis_pic_con" src="images/c_pic.png">
+                <span>123人已试听</span>
+              </div>
+              <div class="lis_r">
+                <div class="lis_r_t">
+                  <span class="c_ti">初中一年级英语精英班</span><span class="c_pc c_q_con">券</span><span class="c_pc c_t_con">荐</span><span class="c_loc">123.5km</span>
+                </div>
+                <div class="lis_r_m">
+                  <div class="c_pas">
+                    <span>精锐一对一</span>
+                    <span>七年级</span>
+                    <span>英语</span>
+                    <span>一对三</span>
+                  </div>
+                </div>
+                <div class="lis_r_b">
+                  <div class="class_prs"><span class="prs_con">5000元</span><span class="prs_sale">减100～5000元</span></div>
+                  <div class="class_ord">231人已预约</div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="class_li">
+            <a class="class_li_a">
+              <div class="lis_l">
+                <img class="clis_v_p" src="images/v_p.png">
+                <img class="clis_pic_con" src="images/c_pic.png">
+                <span>123人已试听</span>
+              </div>
+              <div class="lis_r">
+                <div class="lis_r_t">
+                  <span class="c_ti">初中一年级英语精英班</span><span class="c_pc c_q_con">券</span><span class="c_pc c_t_con">荐</span><span class="c_loc">123.5km</span>
+                </div>
+                <div class="lis_r_m">
+                  <div class="c_pas">
+                    <span>精锐一对一</span>
+                    <span>七年级</span>
+                    <span>英语</span>
+                    <span>一对三</span>
+                  </div>
+                </div>
+                <div class="lis_r_b">
+                  <div class="class_prs"><span class="prs_con">5000元</span><span class="prs_sale">减100～5000元</span></div>
+                  <div class="class_ord">231人已预约</div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="class_li">
+            <a class="class_li_a">
+              <div class="lis_l">
+                <img class="clis_v_p" src="images/v_p.png">
+                <img class="clis_pic_con" src="images/c_pic.png">
+                <span>123人已试听</span>
+              </div>
+              <div class="lis_r">
+                <div class="lis_r_t">
+                  <span class="c_ti">初中一年级英语精英班</span><span class="c_pc c_q_con">券</span><span class="c_pc c_t_con">荐</span><span class="c_loc">123.5km</span>
+                </div>
+                <div class="lis_r_m">
+                  <div class="c_pas">
+                    <span>精锐一对一</span>
+                    <span>七年级</span>
+                    <span>英语</span>
+                    <span>一对三</span>
+                  </div>
+                </div>
+                <div class="lis_r_b">
+                  <div class="class_prs"><span class="prs_con">5000元</span><span class="prs_sale">减100～5000元</span></div>
+                  <div class="class_ord">231人已预约</div>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="container page_con">
+        <button class="but_dis">上一页</button>
+        <button class="but_on">下一页</button>
+      </div>
+      <!-- footer -->
+      <div class="copyright"><p>Copyright ©2016 上海优鸟教育科技有限公司<br> 沪ICP备17002711号</p></div>
+      <!--end footer -->
+    </div>
+      <!-- 更改地址弹框 -->
+      <div class="modal mod_con mod_cds" tabindex="-1" role="dialog">
+          <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="images/tk-close.png"></span></button>
+                  <img class="modal-header-axn" src="images/tk-tn.png">
+                </div>
+                <div class="modal-body-con">
+                  <div class="modal-body-con-b">
+                    <div class="mod_cds_con">
+                      <div class="mod_cds_ti"><p>请选择地址类型</p></div>
+                      <div class="mod_cds_c mod_cds_hq"><img src="images/m_hqdz.png"><span>当前位置</span></div>
+                      <div class="mod_cds_c mod_cds_zdy"><img src="images/m_zdydz.png"><span>自定义地址</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+      </div> 
+      <!-- end 更改地址弹框 -->
+
+  </body>
+</html>
